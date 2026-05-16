@@ -1,72 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><html xmlns="http://www.w3.org/1999/xhtml"><head><style id="xml-viewer-style">/* Copyright 2014 The Chromium Authors
- * Use of this source code is governed by a BSD-style license that can be
- * found in the LICENSE file.
- */
-
-:root {
-  color-scheme: light dark;
-}
-
-div.header {
-    border-bottom: 2px solid black;
-    padding-bottom: 5px;
-    margin: 10px;
-}
-
-@media (prefers-color-scheme: dark) {
-  div.header {
-    border-bottom: 2px solid white;
-  }
-}
-
-div.folder &gt; div.hidden {
-    display:none;
-}
-
-div.folder &gt; span.hidden {
-    display:none;
-}
-
-.pretty-print {
-    margin-top: 1em;
-    margin-left: 20px;
-    font-family: monospace;
-    font-size: 13px;
-}
-
-#webkit-xml-viewer-source-xml {
-    display: none;
-}
-
-.opened {
-    margin-left: 1em;
-}
-
-.comment {
-    white-space: pre;
-}
-
-.folder-button {
-    user-select: none;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: -10px;
-    width: 10px;
-    background-repeat: no-repeat;
-    background-position: left top;
-    vertical-align: bottom;
-}
-
-.fold {
-    background: url("data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'&gt;&lt;path d='M0 0 L8 0 L4 7 Z'/&gt;&lt;/svg&gt;");
-    height: 10px;
-}
-
-.open {
-    background: url("data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'&gt;&lt;path d='M0 0 L0 8 L7 4 Z'/&gt;&lt;/svg&gt;");
-    height: 10px;
-}
-</style></head><body><div id="webkit-xml-viewer-source-xml"><rss xmlns="" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns="" version="2.0">
   <channel>
     <title><![CDATA[Journal of Craniofacial Surgery - Latest Articles]]></title>
     <link>https://journals.lww.com/jcraniofacialsurgery/toc/9900/00000</link>
@@ -579,19 +512,19 @@ Pediatric traumatic pericallosal artery aneurysms are frequently nonspecific in 
       <title><![CDATA[Vertical Ramus Osteotomy With Free Condylar Replantation for Adult High Condylar Fractures: A Midterm Retrospective Study]]></title>
       <description><![CDATA[<a href="https://journals.lww.com/jcraniofacialsurgery/fulltext/9900/vertical_ramus_osteotomy_with_free_condylar.4108.aspx"><img src="https://images.journals.lww.com/jcraniofacialsurgery/SmallThumb.00001665-990000000-04108.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
 
-Due to the]]><![CDATA[ complex anatomy and confined operative field, the surgical management of high-level condylar fractures is still a technical challenge for craniofacial surgeons, particularly those involving the intracapsular region and the condylar neck. Vertical ramus osteotomy (VRO) with free condylar replantatio]]><![CDATA[n may improve exposure and allow precise reduction. However, evidence regarding its long-term efficacy and safety profile remains limited.
+Due to the complex anatomy and confined operative field, the surgical management of high-level condylar fractures is still a technical challenge for craniofacial surgeons, particularly those involving the intracapsular region and the condylar neck. Vertical ramus osteotomy (VRO) with free condylar replantation may improve exposure and allow precise reduction. However, evidence regarding its long-term efficacy and safety profile remains limited.
 
 Objective: 
 
-This study aimed to evaluate the clinical outcomes and safety of VRO with free condylar replantation for the treatment of high condylar fractur]]><![CDATA[es in adults.
+This study aimed to evaluate the clinical outcomes and safety of VRO with free condylar replantation for the treatment of high condylar fractures in adults.
 
 Methods: 
 
-A retrospective case series was conducted on 25 adults (16 males, 9 females; mean age: 29.8 y) with high condylar fractures (total 37 joints). All the patients underwent VRO and free condylar replantation between August 2010 and May 2018. Follow-up ranged from 2 to 4 y]]><![CDATA[ears. Clinical assessments included maximal mouth opening (MMO), occlusal relationship, temporomandibular joint (TMJ) pain assessed by a visual analog scale (VAS), patient satisfaction (5-point Likert scale), and radiographic assessment of healing.
+A retrospective case series was conducted on 25 adults (16 males, 9 females; mean age: 29.8 y) with high condylar fractures (total 37 joints). All the patients underwent VRO and free condylar replantation between August 2010 and May 2018. Follow-up ranged from 2 to 4 years. Clinical assessments included maximal mouth opening (MMO), occlusal relationship, temporomandibular joint (TMJ) pain assessed by a visual analog scale (VAS), patient satisfaction (5-point Likert scale), and radiographic assessment of healing.
 
 Results: 
 
-The incidence of postoperative malo]]><![CDATA[cclusion decreased from 100% (25/25) preoperatively to 12% (3/25) immediately after surgery. Immediate postoperative CT scans confirmed anatomic reduction in 86% (32/37) of the involved joints. Follow-up CT images demonstrated bony union in all cases. The mean TMJ pain VAS score improved significantly from 9 preoperatively to 1 at the 2-year follow-up. The mean MMO increased significantly from 19.24±2.24 mm preoperatively to 38.44±2.60 mm at 2 years postoperatively (P<0.001). Temporary weakness of the marginal mandibular branch of the facial nerve occurred in 1 patient (4%), with complete resolution within 3 months. The mean patient satisfaction score was 4.6±0.5.
+The incidence of postoperative malocclusion decreased from 100% (25/25) preoperatively to 12% (3/25) immediately after surgery. Immediate postoperative CT scans confirmed anatomic reduction in 86% (32/37) of the involved joints. Follow-up CT images demonstrated bony union in all cases. The mean TMJ pain VAS score improved significantly from 9 preoperatively to 1 at the 2-year follow-up. The mean MMO increased significantly from 19.24±2.24 mm preoperatively to 38.44±2.60 mm at 2 years postoperatively (P<0.001). Temporary weakness of the marginal mandibular branch of the facial nerve occurred in 1 patient (4%), with complete resolution within 3 months. The mean patient satisfaction score was 4.6±0.5.
 
 Conclusion: 
 
@@ -1542,7 +1475,7 @@ Adjunctive polynucleotide-hyaluronic acid gel was associated with a phase-specif
       <author><![CDATA[Guler, Meryem; Kreh, Caroline; Manasyan, Artur; Kim, Anika; Turk, Marvee; Naidu, Priyanka; Urata, Mark; Hammoudeh, Jeffrey]]></author>
       <category><![CDATA[Original Article]]></category>
       <title><![CDATA[Algorithm-Based Reconstruction for Pediatric Mandibular Desmoid Tumors: Two Decades From a Single Institution]]></title>
-      <description><![CDATA[<a href="https://journals.lww.com/jcraniofacialsurgery/fulltext/9900/algorithm_based_reconstruction_for_pediatric.4048.aspx"><img src="https://images.journals.lww.com/jcraniofacialsurgery/SmallThumb.00001665-990000000-04048.F1.jpeg" border="0" align ="left" alt="image"/></a>Pediatric mandibular desm]]><![CDATA[oid tumors are rare, locally aggressive lesions that can create composite defects in a growing craniofacial skeleton. We retrospectively reviewed biopsy-proven pediatric desmoid tumors involving the mandible region treated at a tertiary children’s hospital (2004–2024) and mapped each case to an ]]><![CDATA[institutional, algorithm-based reconstructive pathway (A–D) incorporating a mandibular resection index (RI; threshold 32%) and 2 modifiers (modifier 1: systemic therapy/radiotherapy; modifier 2: staged bony reconstruction for inadequate bone stock). We summarized pathway assignments, transitions o]]><![CDATA[ver time, and cumulative operative burden. Eight mandibular cases were included in the algorithm analysis. Initial pathway assignments were A (n=4), B (n=3), C (n=1), and D (n=0). Modifier 1 was applied in 2/8 (25%) and modifier 2 in 4/8 (50%). During follow-up, 4/8 patients escalated to a higher pathway (A→B→C, B→C, B→D, C→D). Among 7 operative patients, median age at index reconstructive surgery was 5.1 years (range: 0.9–11.9), with mean cumulative hospitalization of 25.1±21.8 days and mean cumulative operative time of 18.4±12.7 hours. Patients requiring pathway escalation had higher cumulative burden (hospitalization 34.0±21.8 days; operative time 26.5±10.6 hours; median 5 operations). Algorithm-based pathway assignment captures the longitudinal reconstructive reality of pediatric mandibular desmoid tumors. Early recognition of predictable failure modes (infection, hardware compromise, and inadequate bone stock) may help teams select definitive reconstruction earlier in select patients and reduce cumulative surgical burden.]]></description>
+      <description><![CDATA[<a href="https://journals.lww.com/jcraniofacialsurgery/fulltext/9900/algorithm_based_reconstruction_for_pediatric.4048.aspx"><img src="https://images.journals.lww.com/jcraniofacialsurgery/SmallThumb.00001665-990000000-04048.F1.jpeg" border="0" align ="left" alt="image"/></a>Pediatric mandibular desmoid tumors are rare, locally aggressive lesions that can create composite defects in a growing craniofacial skeleton. We retrospectively reviewed biopsy-proven pediatric desmoid tumors involving the mandible region treated at a tertiary children’s hospital (2004–2024) and mapped each case to an institutional, algorithm-based reconstructive pathway (A–D) incorporating a mandibular resection index (RI; threshold 32%) and 2 modifiers (modifier 1: systemic therapy/radiotherapy; modifier 2: staged bony reconstruction for inadequate bone stock). We summarized pathway assignments, transitions over time, and cumulative operative burden. Eight mandibular cases were included in the algorithm analysis. Initial pathway assignments were A (n=4), B (n=3), C (n=1), and D (n=0). Modifier 1 was applied in 2/8 (25%) and modifier 2 in 4/8 (50%). During follow-up, 4/8 patients escalated to a higher pathway (A→B→C, B→C, B→D, C→D). Among 7 operative patients, median age at index reconstructive surgery was 5.1 years (range: 0.9–11.9), with mean cumulative hospitalization of 25.1±21.8 days and mean cumulative operative time of 18.4±12.7 hours. Patients requiring pathway escalation had higher cumulative burden (hospitalization 34.0±21.8 days; operative time 26.5±10.6 hours; median 5 operations). Algorithm-based pathway assignment captures the longitudinal reconstructive reality of pediatric mandibular desmoid tumors. Early recognition of predictable failure modes (infection, hardware compromise, and inadequate bone stock) may help teams select definitive reconstruction earlier in select patients and reduce cumulative surgical burden.]]></description>
       <pubDate>Tue, 05 May 2026 00:00:00 GMT-05:00</pubDate>
       <citation><![CDATA[Journal of Craniofacial Surgery. ():10.1097/SCS.0000000000012808, . doi: 10.1097/SCS.0000000000012808]]></citation>
       <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
@@ -1595,11 +1528,11 @@ TargetCool, particularly in combination with microneedling, substantially enhanc
       <title><![CDATA[Could Autism Spectrum Disorder Be Associated With Craniosynostosis?]]></title>
       <description><![CDATA[<a href="https://journals.lww.com/jcraniofacialsurgery/fulltext/9900/could_autism_spectrum_disorder_be_associated_with.4051.aspx"></a>Introduction: 
 
-Craniosynostosis is a common pediatric condition that results in variable symptoms that range from asymptomatic cosmetic deformities to severe signs]]><![CDATA[ of intracranial hypertension. Little is understood about the relationship between craniosynostosis and neurocognitive and neurodevelopmental symptoms, including autism spectrum disorder (ASD).
+Craniosynostosis is a common pediatric condition that results in variable symptoms that range from asymptomatic cosmetic deformities to severe signs of intracranial hypertension. Little is understood about the relationship between craniosynostosis and neurocognitive and neurodevelopmental symptoms, including autism spectrum disorder (ASD).
 
 Objective: 
 
-The purpose of this study is to compare skull vault measurements between patients with A]]><![CDATA[SD and craniosynostosis to determine if those with ASD have abnormal findings related to synostotic changes.
+The purpose of this study is to compare skull vault measurements between patients with ASD and craniosynostosis to determine if those with ASD have abnormal findings related to synostotic changes.
 
 Methods: 
 
@@ -7213,7 +7146,7 @@ This study demonstrates the relationship between craniofacial morphology, mastic
       <author><![CDATA[Nikkhah, Dariush; Shtarbanov, Petko; Ponniah, Allan]]></author>
       <category><![CDATA[Original Study-Brief Clinical]]></category>
       <title><![CDATA[Total Nasal Reconstruction Redefined: Classic Craft Meets Microsurgical Innovation]]></title>
-      <description><![CDATA[<a href="https://journals.lww.com/jcraniofacialsurgery/fulltext/9900/total_nasal_reconstruction_redefined__classic.3717.aspx"><img src="https://images.journals.lww.com/jcraniofacialsurgery/SmallThumb.00001665-990000000-03717.F1.jpeg" border="0" align ="left" alt="image"/></a>The authors illustrate a unique case of total nasal reconstruction that successfully combined historical reconstructive techniques with modern microsurgery, supported by artificial intelligence-assisted operative planning. The patient presented with multiple failed nasal reconstructions, previously performed at different surgical units, aimed to correct congenital nasal dysplasia due to Binder syndrome. In this case, a prelaminated radial forearm free flap was used for the nasal lining, a costal cartilage tripod for structural support, and a delayed forehead flap for external coverage. To reconstruct the nasal septum and ensure an anatomically aligned airway, the authors employed a vascularised corticocancellous free flap from the medial femoral condyle. Fourteen months postoperatively, the patient had a well-healed, mucosalised airway and an improved nasal structure.]]></description>
+      <description><![CDATA[<a href="https://journals.lww.com/jcraniofacialsurgery/fulltext/9900/total_nasal_reconstruction_redefined__classic.3717.aspx"><img src="https://images.journals.lww.com/jcraniofacialsurgery/SmallThumb.00001665-990000000-03717.F1.jpeg" border="0" align ="left" alt="image"/></a>The authors illustrate a]]><![CDATA[ unique case of total nasal reconstruction that successfully combined historical reconstructive techniques with modern microsurgery, supported by artificial intelligence-assisted operative planning. The patient presented with multiple failed nasal reconstructions, previously performed at different surgical units, aimed to correct congenital nasal dysplasia due to Binder syndrome. In this case, a prelaminated radial forearm free flap was used for the nasal lining, a costal cartilage tripod for structural support, and a delayed forehead flap for external coverage. To reconstruct the nasal septum and ensure an anatomically aligned airway, the authors employed a vascularised corticocancellous free flap from the medial femoral condyle. Fourteen months postoperatively, the patient had a well-healed, mucosalised airway and an improved nasal structure.]]></description>
       <pubDate>Mon, 02 Feb 2026 00:00:00 GMT-06:00</pubDate>
       <citation><![CDATA[Journal of Craniofacial Surgery. ():10.1097/SCS.0000000000012507, . doi: 10.1097/SCS.0000000000012507]]></citation>
       <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
@@ -12403,19 +12336,19 @@ Pediatric traumatic pericallosal artery aneurysms are frequently nonspecific in 
       </span><div class="folder" id="folder184"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;title&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Vertical Ramus Osteotomy With Free Condylar Replantation for Adult High Condylar Fractures: A Midterm Retrospective Study ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/title&gt;</span></div></div><span>
       </span><div class="folder" id="folder185"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ &lt;a href="https://journals.lww.com/jcraniofacialsurgery/fulltext/9900/vertical_ramus_osteotomy_with_free_condylar.4108.aspx"&gt;&lt;img src="https://images.journals.lww.com/jcraniofacialsurgery/SmallThumb.00001665-990000000-04108.F1.jpeg" border="0" align ="left" alt="image"/&gt;&lt;/a&gt;Background: 
 
-Due to the ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[  complex anatomy and confined operative field, the surgical management of high-level condylar fractures is still a technical challenge for craniofacial surgeons, particularly those involving the intracapsular region and the condylar neck. Vertical ramus osteotomy (VRO) with free condylar replantatio ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ n may improve exposure and allow precise reduction. However, evidence regarding its long-term efficacy and safety profile remains limited.
+Due to the complex anatomy and confined operative field, the surgical management of high-level condylar fractures is still a technical challenge for craniofacial surgeons, particularly those involving the intracapsular region and the condylar neck. Vertical ramus osteotomy (VRO) with free condylar replantation may improve exposure and allow precise reduction. However, evidence regarding its long-term efficacy and safety profile remains limited.
 
 Objective: 
 
-This study aimed to evaluate the clinical outcomes and safety of VRO with free condylar replantation for the treatment of high condylar fractur ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ es in adults.
+This study aimed to evaluate the clinical outcomes and safety of VRO with free condylar replantation for the treatment of high condylar fractures in adults.
 
 Methods: 
 
-A retrospective case series was conducted on 25 adults (16 males, 9 females; mean age: 29.8 y) with high condylar fractures (total 37 joints). All the patients underwent VRO and free condylar replantation between August 2010 and May 2018. Follow-up ranged from 2 to 4 y ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ ears. Clinical assessments included maximal mouth opening (MMO), occlusal relationship, temporomandibular joint (TMJ) pain assessed by a visual analog scale (VAS), patient satisfaction (5-point Likert scale), and radiographic assessment of healing.
+A retrospective case series was conducted on 25 adults (16 males, 9 females; mean age: 29.8 y) with high condylar fractures (total 37 joints). All the patients underwent VRO and free condylar replantation between August 2010 and May 2018. Follow-up ranged from 2 to 4 years. Clinical assessments included maximal mouth opening (MMO), occlusal relationship, temporomandibular joint (TMJ) pain assessed by a visual analog scale (VAS), patient satisfaction (5-point Likert scale), and radiographic assessment of healing.
 
 Results: 
 
-The incidence of postoperative malo ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ cclusion decreased from 100% (25/25) preoperatively to 12% (3/25) immediately after surgery. Immediate postoperative CT scans confirmed anatomic reduction in 86% (32/37) of the involved joints. Follow-up CT images demonstrated bony union in all cases. The mean TMJ pain VAS score improved significantly from 9 preoperatively to 1 at the 2-year follow-up. The mean MMO increased significantly from 19.24±2.24 mm preoperatively to 38.44±2.60 mm at 2 years postoperatively (P&lt;0.001). Temporary weakness of the marginal mandibular branch of the facial nerve occurred in 1 patient (4%), with complete resolution within 3 months. The mean patient satisfaction score was 4.6±0.5.
+The incidence of postoperative malocclusion decreased from 100% (25/25) preoperatively to 12% (3/25) immediately after surgery. Immediate postoperative CT scans confirmed anatomic reduction in 86% (32/37) of the involved joints. Follow-up CT images demonstrated bony union in all cases. The mean TMJ pain VAS score improved significantly from 9 preoperatively to 1 at the 2-year follow-up. The mean MMO increased significantly from 19.24±2.24 mm preoperatively to 38.44±2.60 mm at 2 years postoperatively (P&lt;0.001). Temporary weakness of the marginal mandibular branch of the facial nerve occurred in 1 patient (4%), with complete resolution within 3 months. The mean patient satisfaction score was 4.6±0.5.
 
 Conclusion: 
 
@@ -13366,7 +13299,7 @@ Adjunctive polynucleotide-hyaluronic acid gel was associated with a phase-specif
       </span><div class="folder" id="folder539"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;author&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Guler, Meryem; Kreh, Caroline; Manasyan, Artur; Kim, Anika; Turk, Marvee; Naidu, Priyanka; Urata, Mark; Hammoudeh, Jeffrey ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/author&gt;</span></div></div><span>
       </span><div class="folder" id="folder540"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;category&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Original Article ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/category&gt;</span></div></div><span>
       </span><div class="folder" id="folder541"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;title&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Algorithm-Based Reconstruction for Pediatric Mandibular Desmoid Tumors: Two Decades From a Single Institution ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/title&gt;</span></div></div><span>
-      </span><div class="folder" id="folder542"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ &lt;a href="https://journals.lww.com/jcraniofacialsurgery/fulltext/9900/algorithm_based_reconstruction_for_pediatric.4048.aspx"&gt;&lt;img src="https://images.journals.lww.com/jcraniofacialsurgery/SmallThumb.00001665-990000000-04048.F1.jpeg" border="0" align ="left" alt="image"/&gt;&lt;/a&gt;Pediatric mandibular desm ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ oid tumors are rare, locally aggressive lesions that can create composite defects in a growing craniofacial skeleton. We retrospectively reviewed biopsy-proven pediatric desmoid tumors involving the mandible region treated at a tertiary children’s hospital (2004–2024) and mapped each case to an  ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ institutional, algorithm-based reconstructive pathway (A–D) incorporating a mandibular resection index (RI; threshold 32%) and 2 modifiers (modifier 1: systemic therapy/radiotherapy; modifier 2: staged bony reconstruction for inadequate bone stock). We summarized pathway assignments, transitions o ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ ver time, and cumulative operative burden. Eight mandibular cases were included in the algorithm analysis. Initial pathway assignments were A (n=4), B (n=3), C (n=1), and D (n=0). Modifier 1 was applied in 2/8 (25%) and modifier 2 in 4/8 (50%). During follow-up, 4/8 patients escalated to a higher pathway (A→B→C, B→C, B→D, C→D). Among 7 operative patients, median age at index reconstructive surgery was 5.1 years (range: 0.9–11.9), with mean cumulative hospitalization of 25.1±21.8 days and mean cumulative operative time of 18.4±12.7 hours. Patients requiring pathway escalation had higher cumulative burden (hospitalization 34.0±21.8 days; operative time 26.5±10.6 hours; median 5 operations). Algorithm-based pathway assignment captures the longitudinal reconstructive reality of pediatric mandibular desmoid tumors. Early recognition of predictable failure modes (infection, hardware compromise, and inadequate bone stock) may help teams select definitive reconstruction earlier in select patients and reduce cumulative surgical burden. ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/description&gt;</span></div></div><span>
+      </span><div class="folder" id="folder542"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ &lt;a href="https://journals.lww.com/jcraniofacialsurgery/fulltext/9900/algorithm_based_reconstruction_for_pediatric.4048.aspx"&gt;&lt;img src="https://images.journals.lww.com/jcraniofacialsurgery/SmallThumb.00001665-990000000-04048.F1.jpeg" border="0" align ="left" alt="image"/&gt;&lt;/a&gt;Pediatric mandibular desmoid tumors are rare, locally aggressive lesions that can create composite defects in a growing craniofacial skeleton. We retrospectively reviewed biopsy-proven pediatric desmoid tumors involving the mandible region treated at a tertiary children’s hospital (2004–2024) and mapped each case to an institutional, algorithm-based reconstructive pathway (A–D) incorporating a mandibular resection index (RI; threshold 32%) and 2 modifiers (modifier 1: systemic therapy/radiotherapy; modifier 2: staged bony reconstruction for inadequate bone stock). We summarized pathway assignments, transitions over time, and cumulative operative burden. Eight mandibular cases were included in the algorithm analysis. Initial pathway assignments were A (n=4), B (n=3), C (n=1), and D (n=0). Modifier 1 was applied in 2/8 (25%) and modifier 2 in 4/8 (50%). During follow-up, 4/8 patients escalated to a higher pathway (A→B→C, B→C, B→D, C→D). Among 7 operative patients, median age at index reconstructive surgery was 5.1 years (range: 0.9–11.9), with mean cumulative hospitalization of 25.1±21.8 days and mean cumulative operative time of 18.4±12.7 hours. Patients requiring pathway escalation had higher cumulative burden (hospitalization 34.0±21.8 days; operative time 26.5±10.6 hours; median 5 operations). Algorithm-based pathway assignment captures the longitudinal reconstructive reality of pediatric mandibular desmoid tumors. Early recognition of predictable failure modes (infection, hardware compromise, and inadequate bone stock) may help teams select definitive reconstruction earlier in select patients and reduce cumulative surgical burden. ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/description&gt;</span></div></div><span>
       </span><div class="line"><span class="html-tag">&lt;pubDate&gt;</span><span>Tue, 05 May 2026 00:00:00 GMT-05:00</span><span class="html-tag">&lt;/pubDate&gt;</span></div><span>
       </span><div class="folder" id="folder543"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;citation&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Journal of Craniofacial Surgery. ():10.1097/SCS.0000000000012808, . doi: 10.1097/SCS.0000000000012808 ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/citation&gt;</span></div></div><span>
       </span><div class="folder" id="folder544"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;copyright&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ (C)2010 Lippincott Williams &amp; Wilkins, Inc. ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/copyright&gt;</span></div></div><span>
@@ -13419,11 +13352,11 @@ TargetCool, particularly in combination with microneedling, substantially enhanc
       </span><div class="folder" id="folder562"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;title&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Could Autism Spectrum Disorder Be Associated With Craniosynostosis? ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/title&gt;</span></div></div><span>
       </span><div class="folder" id="folder563"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ &lt;a href="https://journals.lww.com/jcraniofacialsurgery/fulltext/9900/could_autism_spectrum_disorder_be_associated_with.4051.aspx"&gt;&lt;/a&gt;Introduction: 
 
-Craniosynostosis is a common pediatric condition that results in variable symptoms that range from asymptomatic cosmetic deformities to severe signs ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[  of intracranial hypertension. Little is understood about the relationship between craniosynostosis and neurocognitive and neurodevelopmental symptoms, including autism spectrum disorder (ASD).
+Craniosynostosis is a common pediatric condition that results in variable symptoms that range from asymptomatic cosmetic deformities to severe signs of intracranial hypertension. Little is understood about the relationship between craniosynostosis and neurocognitive and neurodevelopmental symptoms, including autism spectrum disorder (ASD).
 
 Objective: 
 
-The purpose of this study is to compare skull vault measurements between patients with A ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ SD and craniosynostosis to determine if those with ASD have abnormal findings related to synostotic changes.
+The purpose of this study is to compare skull vault measurements between patients with ASD and craniosynostosis to determine if those with ASD have abnormal findings related to synostotic changes.
 
 Methods: 
 
@@ -19037,7 +18970,7 @@ This study demonstrates the relationship between craniofacial morphology, mastic
       </span><div class="folder" id="folder2744"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;author&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Nikkhah, Dariush; Shtarbanov, Petko; Ponniah, Allan ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/author&gt;</span></div></div><span>
       </span><div class="folder" id="folder2745"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;category&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Original Study-Brief Clinical ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/category&gt;</span></div></div><span>
       </span><div class="folder" id="folder2746"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;title&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Total Nasal Reconstruction Redefined: Classic Craft Meets Microsurgical Innovation ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/title&gt;</span></div></div><span>
-      </span><div class="folder" id="folder2747"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ &lt;a href="https://journals.lww.com/jcraniofacialsurgery/fulltext/9900/total_nasal_reconstruction_redefined__classic.3717.aspx"&gt;&lt;img src="https://images.journals.lww.com/jcraniofacialsurgery/SmallThumb.00001665-990000000-03717.F1.jpeg" border="0" align ="left" alt="image"/&gt;&lt;/a&gt;The authors illustrate a unique case of total nasal reconstruction that successfully combined historical reconstructive techniques with modern microsurgery, supported by artificial intelligence-assisted operative planning. The patient presented with multiple failed nasal reconstructions, previously performed at different surgical units, aimed to correct congenital nasal dysplasia due to Binder syndrome. In this case, a prelaminated radial forearm free flap was used for the nasal lining, a costal cartilage tripod for structural support, and a delayed forehead flap for external coverage. To reconstruct the nasal septum and ensure an anatomically aligned airway, the authors employed a vascularised corticocancellous free flap from the medial femoral condyle. Fourteen months postoperatively, the patient had a well-healed, mucosalised airway and an improved nasal structure. ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/description&gt;</span></div></div><span>
+      </span><div class="folder" id="folder2747"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ &lt;a href="https://journals.lww.com/jcraniofacialsurgery/fulltext/9900/total_nasal_reconstruction_redefined__classic.3717.aspx"&gt;&lt;img src="https://images.journals.lww.com/jcraniofacialsurgery/SmallThumb.00001665-990000000-03717.F1.jpeg" border="0" align ="left" alt="image"/&gt;&lt;/a&gt;The authors illustrate a ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[  unique case of total nasal reconstruction that successfully combined historical reconstructive techniques with modern microsurgery, supported by artificial intelligence-assisted operative planning. The patient presented with multiple failed nasal reconstructions, previously performed at different surgical units, aimed to correct congenital nasal dysplasia due to Binder syndrome. In this case, a prelaminated radial forearm free flap was used for the nasal lining, a costal cartilage tripod for structural support, and a delayed forehead flap for external coverage. To reconstruct the nasal septum and ensure an anatomically aligned airway, the authors employed a vascularised corticocancellous free flap from the medial femoral condyle. Fourteen months postoperatively, the patient had a well-healed, mucosalised airway and an improved nasal structure. ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/description&gt;</span></div></div><span>
       </span><div class="line"><span class="html-tag">&lt;pubDate&gt;</span><span>Mon, 02 Feb 2026 00:00:00 GMT-06:00</span><span class="html-tag">&lt;/pubDate&gt;</span></div><span>
       </span><div class="folder" id="folder2748"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;citation&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Journal of Craniofacial Surgery. ():10.1097/SCS.0000000000012507, . doi: 10.1097/SCS.0000000000012507 ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/citation&gt;</span></div></div><span>
       </span><div class="folder" id="folder2749"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;copyright&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ (C)2010 Lippincott Williams &amp; Wilkins, Inc. ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/copyright&gt;</span></div></div><span>

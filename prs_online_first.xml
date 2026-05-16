@@ -1,72 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><html xmlns="http://www.w3.org/1999/xhtml"><head><style id="xml-viewer-style">/* Copyright 2014 The Chromium Authors
- * Use of this source code is governed by a BSD-style license that can be
- * found in the LICENSE file.
- */
-
-:root {
-  color-scheme: light dark;
-}
-
-div.header {
-    border-bottom: 2px solid black;
-    padding-bottom: 5px;
-    margin: 10px;
-}
-
-@media (prefers-color-scheme: dark) {
-  div.header {
-    border-bottom: 2px solid white;
-  }
-}
-
-div.folder &gt; div.hidden {
-    display:none;
-}
-
-div.folder &gt; span.hidden {
-    display:none;
-}
-
-.pretty-print {
-    margin-top: 1em;
-    margin-left: 20px;
-    font-family: monospace;
-    font-size: 13px;
-}
-
-#webkit-xml-viewer-source-xml {
-    display: none;
-}
-
-.opened {
-    margin-left: 1em;
-}
-
-.comment {
-    white-space: pre;
-}
-
-.folder-button {
-    user-select: none;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: -10px;
-    width: 10px;
-    background-repeat: no-repeat;
-    background-position: left top;
-    vertical-align: bottom;
-}
-
-.fold {
-    background: url("data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'&gt;&lt;path d='M0 0 L8 0 L4 7 Z'/&gt;&lt;/svg&gt;");
-    height: 10px;
-}
-
-.open {
-    background: url("data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'&gt;&lt;path d='M0 0 L0 8 L7 4 Z'/&gt;&lt;/svg&gt;");
-    height: 10px;
-}
-</style></head><body><div id="webkit-xml-viewer-source-xml"><rss xmlns="" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns="" version="2.0">
   <channel>
     <title><![CDATA[Plastic and Reconstructive Surgery - PRS Online First]]></title>
     <link>https://journals.lww.com/plasreconsurg/toc/9900/00000</link>
@@ -466,7 +399,7 @@ Copyright © 2026 by the American Society of Plastic Surgeons]]></description>
       <title><![CDATA[Bilateral Dynamic CT for Scapholunate Instability: Toward Personalized, Protocol-Standardized Kinematic Diagnosis]]></title>
       <description><![CDATA[<a href="https://journals.lww.com/plasreconsurg/fulltext/9900/bilateral_dynamic_ct_for_scapholunate_instability_.3243.aspx"></a>Background: 
 
-Dynamic CT imaging enables three-dimensional assessment of wrist motion, is increasingly being used to diagnose scapholunate (SL) ligament injuries. However]]><![CDATA[, protocol variability across institutions limits comparability and standardization. A key consideration is whether to use unilateral or bilateral scanning, since unilateral scanning often requires reference sets for diagnosis. This study evaluates whether contralateral referencing in bilateral dyna]]><![CDATA[mic CT scanning supports SL injury diagnosis by assessing (1) the influence of scan protocol variation; (2) similarity between wrists of healthy individuals and contralateral wrists of patients; (3) wrist motion symmetry in healthy individuals; and (4) contralateral referencing in patients with a unilateral SL injury.
+Dynamic CT imaging enables three-dimensional assessment of wrist motion, is increasingly being used to diagnose scapholunate (SL) ligament injuries. However, protocol variability across institutions limits comparability and standardization. A key consideration is whether to use unilateral or bilateral scanning, since unilateral scanning often requires reference sets for diagnosis. This study evaluates whether contralateral referencing in bilateral dynamic CT scanning supports SL injury diagnosis by assessing (1) the influence of scan protocol variation; (2) similarity between wrists of healthy individuals and contralateral wrists of patients; (3) wrist motion symmetry in healthy individuals; and (4) contralateral referencing in patients with a unilateral SL injury.
 
 Methods: 
 
@@ -1661,11 +1594,11 @@ Copyright © 2026 by the American Society of Plastic Surgeons]]></description>
       <title><![CDATA[Artificial Intelligence-Derived Emotionality State Score Correlates with Layperson Assessment and Objective Measurements in Facial Paralysis]]></title>
       <description><![CDATA[<a href="https://journals.lww.com/plasreconsurg/fulltext/9900/artificial_intelligence_derived_emotionality_state.3189.aspx"></a>Background: 
 
-There is growing interest in using artificial intelligence (AI) to track the outcomes of patients with facial paralysis (FP). However, validation studies of]]><![CDATA[ the AI output with other outcome measurements are still scarce in the literature. We aimed to correlate an AI-derived emotionality state score (ESS) with layperson assessment and objective oral commissure excursion in facial reanimation outcomes.
+There is growing interest in using artificial intelligence (AI) to track the outcomes of patients with facial paralysis (FP). However, validation studies of the AI output with other outcome measurements are still scarce in the literature. We aimed to correlate an AI-derived emotionality state score (ESS) with layperson assessment and objective oral commissure excursion in facial reanimation outcomes.
 
 Methods: 
 
-In this retrospective cohort study, ]]><![CDATA[videos of voluntary smiles from 63 patients with FP across a variety of facial reanimation procedures were analyzed by the FaceReader software before and after the surgery. The ESS was defined as the intensity score (IS) of happiness emotion minus the IS of the negative emotion (sadness, fear, anger]]><![CDATA[, disgust, contempt) with the highest IS. Five lay observers rated the videos with the Terzis score. The oral commissure excursion was measured with the Emotrics software.
+In this retrospective cohort study, videos of voluntary smiles from 63 patients with FP across a variety of facial reanimation procedures were analyzed by the FaceReader software before and after the surgery. The ESS was defined as the intensity score (IS) of happiness emotion minus the IS of the negative emotion (sadness, fear, anger, disgust, contempt) with the highest IS. Five lay observers rated the videos with the Terzis score. The oral commissure excursion was measured with the Emotrics software.
 
 Results: 
 
@@ -2891,15 +2824,15 @@ Copyright © 2026 The Authors. Published by Wolters Kluwer Health, Inc. on behal
       <title><![CDATA[First Repair is Best: The Facial Growth Consequences of Revision Cleft Surgeries]]></title>
       <description><![CDATA[<a href="https://journals.lww.com/plasreconsurg/fulltext/9900/first_repair_is_best__the_facial_growth.3136.aspx"></a>Purpose: 
 
-Surgical scarring has long been hypothesized to contribute to maxillary hypoplasia in patients with cleft lip and palate (CLP), often leading to a need for orthognathic s]]><![CDATA[urgery (OGS). This study aimed to identify clinical and surgical factors associated with maxillary hypoplasia in skeletally mature patients with CLP using cephalometric analysis.
+Surgical scarring has long been hypothesized to contribute to maxillary hypoplasia in patients with cleft lip and palate (CLP), often leading to a need for orthognathic surgery (OGS). This study aimed to identify clinical and surgical factors associated with maxillary hypoplasia in skeletally mature patients with CLP using cephalometric analysis.
 
 Methods: 
 
-A retrospective review was performed of CLP patients aged ≥16 years with available cone beam CT scans. ]]><![CDATA[Cephalometric measurements were obtained using Mimics software. Patient records were reviewed for cleft morphology, number and type of cleft-related surgeries (ages 0–16), surgical timing, demographics, and history of OGS. Linear and logistic regressions were used to evaluate predictors of maxilla]]><![CDATA[ry hypoplasia and OGS.
+A retrospective review was performed of CLP patients aged ≥16 years with available cone beam CT scans. Cephalometric measurements were obtained using Mimics software. Patient records were reviewed for cleft morphology, number and type of cleft-related surgeries (ages 0–16), surgical timing, demographics, and history of OGS. Linear and logistic regressions were used to evaluate predictors of maxillary hypoplasia and OGS.
 
 Results: 
 
-Among 106 patients, 47.2% had bilateral CLP and 49.1% underwent OGS. The average number of cleft-related surgeries was 4.28. BCLP patients demonstrated significantly reduced maxillary width compared to UCLP (–2.87 mm, p = 0.001). Increasing total number of su]]><![CDATA[rgeries was significantly associated with decreased SNA, ANB, and facial convexity angles (p < 0.001). Surgeries performed between ages 0–5 were significantly associated with decreased SNA, facial convexity angle, and alveolar length (p < 0.02). Linear regression showed that each surgery beyond three predicted a 1.94° reduction in SNA, 0.81° reduction in ANB, and 2.82° reduction in facial convexity angle. Surgical burden was not predictive of OGS.
+Among 106 patients, 47.2% had bilateral CLP and 49.1% underwent OGS. The average number of cleft-related surgeries was 4.28. BCLP patients demonstrated significantly reduced maxillary width compared to UCLP (–2.87 mm, p = 0.001). Increasing total number of surgeries was significantly associated with decreased SNA, ANB, and facial convexity angles (p < 0.001). Surgeries performed between ages 0–5 were significantly associated with decreased SNA, facial convexity angle, and alveolar length (p < 0.02). Linear regression showed that each surgery beyond three predicted a 1.94° reduction in SNA, 0.81° reduction in ANB, and 2.82° reduction in facial convexity angle. Surgical burden was not predictive of OGS.
 
 Conclusions: 
 
@@ -3097,15 +3030,15 @@ Copyright © 2026 by the American Society of Plastic Surgeons]]></description>
       <title><![CDATA[Velopharyngeal Insufficiency Effects on Life Outcome Scores and Decision-Making for Secondary Speech Surgery after Palatoplasty]]></title>
       <description><![CDATA[<a href="https://journals.lww.com/plasreconsurg/fulltext/9900/velopharyngeal_insufficiency_effects_on_life.3124.aspx"></a>Background: 
 
-Twenty to thirty percent of patients develop velopharyngeal insufficiency (VPI) after cleft palate repair, and quality of life (QoL) may outweigh objective parame]]><![CDATA[ters in decision for surgery. We evaluated QoL using the Velopharyngeal Insufficiency Effects on Life Outcomes (VELO) instrument in post-palatoplasty patients and its impact on decision making for speech surgery.
+Twenty to thirty percent of patients develop velopharyngeal insufficiency (VPI) after cleft palate repair, and quality of life (QoL) may outweigh objective parameters in decision for surgery. We evaluated QoL using the Velopharyngeal Insufficiency Effects on Life Outcomes (VELO) instrument in post-palatoplasty patients and its impact on decision making for speech surgery.
 
 Methods: 
 
-Using cross-sectional methodology, patients ages 3-18 with history of c]]><![CDATA[left palate repair and their parents were recruited to complete the VELO. Hypernasality, a common manifestation of VPI, was determined by speech pathologist (SLP) documentation. Additional management of hypernasality included nasendoscopy and/or surgery. Clinical and demographic variables were extra]]><![CDATA[cted from medical records and summarized using descriptive statistics. Bivariate tests compared VELO scores, decision for additional management, and other variables of interest.
+Using cross-sectional methodology, patients ages 3-18 with history of cleft palate repair and their parents were recruited to complete the VELO. Hypernasality, a common manifestation of VPI, was determined by speech pathologist (SLP) documentation. Additional management of hypernasality included nasendoscopy and/or surgery. Clinical and demographic variables were extracted from medical records and summarized using descriptive statistics. Bivariate tests compared VELO scores, decision for additional management, and other variables of interest.
 
 Results: 
 
-Four patients and 66 parents completed the VELO instrument, representing seventy patients (52.9% female, m]]><![CDATA[ean age 8.2 years) with a median VELO score of 82.7 (IQR 20.0). Almost half (48.6%) of patients had hypernasality. Clinically evident hypernasality was associated with lower VELO scores (p=0.05). Patients with hypernasality who pursued additional management had lower VELO scores (median=62.5, IQR=13.0) than those with hypernasality who were offered but did not pursue additional management (median=83.7, IQR=11.3) (p=0.02). Patients with hypernasality who were offered but did not pursue additional management had similar VELO scores as those without hypernasality (median=86.5, IQR=18.6) (p=0.75).
+Four patients and 66 parents completed the VELO instrument, representing seventy patients (52.9% female, mean age 8.2 years) with a median VELO score of 82.7 (IQR 20.0). Almost half (48.6%) of patients had hypernasality. Clinically evident hypernasality was associated with lower VELO scores (p=0.05). Patients with hypernasality who pursued additional management had lower VELO scores (median=62.5, IQR=13.0) than those with hypernasality who were offered but did not pursue additional management (median=83.7, IQR=11.3) (p=0.02). Patients with hypernasality who were offered but did not pursue additional management had similar VELO scores as those without hypernasality (median=86.5, IQR=18.6) (p=0.75).
 
 Conclusions: 
 
@@ -3695,15 +3628,15 @@ Copyright © 2026 by the American Society of Plastic Surgeons]]></description>
       <title><![CDATA[Defining Predictors of Tactile and Thermal Sensory Recovery After Reduction Mammaplasty: Insights from Multimodal Testing]]></title>
       <description><![CDATA[<a href="https://journals.lww.com/plasreconsurg/fulltext/9900/defining_predictors_of_tactile_and_thermal_sensory.3094.aspx"></a>Background: 
 
-Sensory loss following reduction mammaplasty remains a key concern for patients. While general tactile recovery has been well studied, less is known about t]]><![CDATA[emperature sensation or region-specific recovery patterns. This study evaluates tactile and thermal sensory recovery across the breast and identifies clinical and operative predictors of postoperative sensory loss.
+Sensory loss following reduction mammaplasty remains a key concern for patients. While general tactile recovery has been well studied, less is known about temperature sensation or region-specific recovery patterns. This study evaluates tactile and thermal sensory recovery across the breast and identifies clinical and operative predictors of postoperative sensory loss.
 
 Methods: 
 
-A prospective cohort study was conducted at our institution and enrol]]><![CDATA[led patients undergoing bilateral reduction mammaplasty using a superior or superomedial pedicle and Wise-pattern incisions. Tactile sensation was measured using a pressure-specified device, and thermal sensation was assessed via heat and cold detection. Testing was performed preoperatively, and at ]]><![CDATA[1 month and 3–6 months postoperatively. Linear and logistic regression analyses were used to identify predictors of sensory loss, including age, BMI, and resection weight.
+A prospective cohort study was conducted at our institution and enrolled patients undergoing bilateral reduction mammaplasty using a superior or superomedial pedicle and Wise-pattern incisions. Tactile sensation was measured using a pressure-specified device, and thermal sensation was assessed via heat and cold detection. Testing was performed preoperatively, and at 1 month and 3–6 months postoperatively. Linear and logistic regression analyses were used to identify predictors of sensory loss, including age, BMI, and resection weight.
 
 Results: 
 
-Forty-nine patients (98 breasts) were included. Tactile sensation worsened significantly at the NAC and inner ]]><![CDATA[breast at 1 month but returned to baseline by 3–6 months. Thermal sensation at the NAC and inferior breast remained impaired at 3–6 months. Resection weight predicted early tactile loss, while BMI and age were associated with early thermal deficits. At 3–6 months, higher BMI—but not resectio]]><![CDATA[n weight—remained a predictor of persistent tactile loss. No long-term predictors of thermal sensation were identified.
+Forty-nine patients (98 breasts) were included. Tactile sensation worsened significantly at the NAC and inner breast at 1 month but returned to baseline by 3–6 months. Thermal sensation at the NAC and inferior breast remained impaired at 3–6 months. Resection weight predicted early tactile loss, while BMI and age were associated with early thermal deficits. At 3–6 months, higher BMI—but not resection weight—remained a predictor of persistent tactile loss. No long-term predictors of thermal sensation were identified.
 
 Conclusion: 
 
@@ -6400,7 +6333,7 @@ Copyright © 2025 by the American Society of Plastic Surgeons]]></description>
       <author><![CDATA[Sun, Jo-Yun; Cha, Soo-Min; Chen, Laura Chia-Fang; Kwon, Soo-Ha; Chen, Lisa Wen-Yu; Sung, Cheyenne Wei-Hsuan; Lu, Johnny Chuieng-Yi; Huang, Jung-Ju; Chuang, David Chwei-Chin; Chang, Tommy Nai-Jen]]></author>
       <category><![CDATA[Ideas and Innovations]]></category>
       <title><![CDATA[Vascularized Sural Nerve Graft with its Chimeric Skin Paddle Using Three Different Methods for Upper and Lower Extremities Reconstruction]]></title>
-      <description><![CDATA[<a href="https://journals.lww.com/plasreconsurg/fulltext/9900/vascularized_sural_nerve_graft_with_its_chimeric.2991.aspx"></a>Reconstructing nerve gaps greater than 13-15 centimeters often requires vascularized nerve grafts. However, using the sural nerve presents a technical challenge due to the la]]><![CDATA[ck of a consistent adjacent artery. This study introduces various free vascularized sural nerve flap designs to overcome this limitation. From 2018 to 2020, six patients at Chang Gung Memorial Hospital underwent eight free vascularized sural nerve grafts reconstruction, including brachial plexus, me]]><![CDATA[dian, ulnar, posterior tibial, and sciatic nerve reconstructions. Three types of flap designs were performed: shunt-restricted arterialized lessor saphenous venous flap, vascularized sural nerve graft, and chimeric flap with peroneal or posterior tibial artery perforator flap. Most flaps maintained circulation successfully, with only one requiring conversion due to thrombosis. Mild congestion occurred in some venous flaps but resolved spontaneously. Tinel’s sign advanced progressively in all patients, suggesting active nerve regeneration. These findings demonstrate that free vascularized sural nerve flaps are a flexible and effective option for managing long nerve defects. Tailoring the flap design to the clinical context offers reconstructive surgeons with a versatile strategy for peripheral nerve repair.
+      <description><![CDATA[<a href="https://journals.lww.com/plasreconsurg/fulltext/9900/vascularized_sural_nerve_graft_with_its_chimeric.2991.aspx"></a>Reconstructing nerve gaps greater than 13-15 centimeters often requires vascularized nerve grafts. However, using the sural nerve presents a technical challenge due to the lack of a consistent adjacent artery. This study introduces various free vascularized sural nerve flap designs to overcome this limitation. From 2018 to 2020, six patients at Chang Gung Memorial Hospital underwent eight free vascularized sural nerve grafts reconstruction, including brachial plexus, median, ulnar, posterior tibial, and sciatic nerve reconstructions. Three types of flap designs were performed: shunt-restricted arterialized lessor saphenous venous flap, vascularized sural nerve graft, and chimeric flap with peroneal or posterior tibial artery perforator flap. Most flaps maintained circulation successfully, with only one requiring conversion due to thrombosis. Mild congestion occurred in some venous flaps but resolved spontaneously. Tinel’s sign advanced progressively in all patients, suggesting active nerve regeneration. These findings demonstrate that free vascularized sural nerve flaps are a flexible and effective option for managing long nerve defects. Tailoring the flap design to the clinical context offers reconstructive surgeons with a versatile strategy for peripheral nerve repair.
 
 Reconstructing nerve gaps greater than 13-15 centimeters often requires vascularized nerve grafts. However, using the sural nerve presents a technical challenge due to the lack of a consistent adjacent artery. This study introduces various free vascularized sural nerve flap designs to overcome this limitation. From 2018 to 2020, six patients at Chang Gung Memorial Hospital underwent eight free vascularized sural nerve grafts reconstruction, including brachial plexus, median, ulnar, posterior tibial, and sciatic nerve reconstructions. Three types of flap designs were performed: shunt-restricted arterialized lessor saphenous venous flap, vascularized sural nerve graft, and chimeric flap with peroneal or posterior tibial artery perforator flap. Most flaps maintained circulation successfully, with only one requiring conversion due to thrombosis. Mild congestion occurred in some venous flaps but resolved spontaneously. Tinel’s sign advanced progressively in all patients, suggesting active nerve regeneration. These findings demonstrate that free vascularized sural nerve flaps are a flexible and effective option for managing long nerve defects. Tailoring the flap design to the clinical context offers reconstructive surgeons with a versatile strategy for peripheral nerve repair.
 
@@ -9337,19 +9270,19 @@ Copyright © 2025 by the American Society of Plastic Surgeons]]></description>
       <title><![CDATA[Positive Effect of Wrapping with Nerve Conduit on Nerve Recovery After Peripheral Nerve Suturing]]></title>
       <description><![CDATA[<a href="https://journals.lww.com/plasreconsurg/fulltext/9900/positive_effect_of_wrapping_with_nerve_conduit_on.2863.aspx"></a>Background: 
 
-Complete recovery after end-to-end peripheral nerve suturing remains challenging due to perineural scarring. We developed a biodegradable nerve conduit composed of poly L-lactide (PLA) and poly ε-caprolactone (PCL) to prevent adhesion and promote nerve regeneration. This study assessed whether wrapping a sutured nerve with this conduit could reduce adhesion and enhance recovery in a rat model.
+Complete recovery after end-to-end peripheral nerve suturing remains challenging due to perineural scarring. We developed a biodegradable nerve conduit compo]]><![CDATA[sed of poly L-lactide (PLA) and poly ε-caprolactone (PCL) to prevent adhesion and promote nerve regeneration. This study assessed whether wrapping a sutured nerve with this conduit could reduce adhesion and enhance recovery in a rat model.
 
 Methods: 
 
-Thirty-six rats underwent sciatic nerve transection, suturing, and adhesion induction, then were assigned to a control group (no wrapping) or a wrapping group (PLA/PCL conduit). At 12 weeks, functional recovery was assessed using the von Frey test, sciatic functional index, and gastrocnemius muscle weight. Electrophysiological assessments included compound muscle action potential (CMAP) amplitude and nerve conduction velocity (NCV). Histological analyses evaluated axonal regeneration, perineural scarring, and fascicular morphology with immunostaining and Masson’s trichrome staining. Fascicular circularity was analyzed for correlation with electrophysiological outcomes.
+Thirty-six rats underwent sciatic nerve tra]]><![CDATA[nsection, suturing, and adhesion induction, then were assigned to a control group (no wrapping) or a wrapping group (PLA/PCL conduit). At 12 weeks, functional recovery was assessed using the von Frey test, sciatic functional index, and gastrocnemius muscle weight. Electrophysiological assessments in]]><![CDATA[cluded compound muscle action potential (CMAP) amplitude and nerve conduction velocity (NCV). Histological analyses evaluated axonal regeneration, perineural scarring, and fascicular morphology with immunostaining and Masson’s trichrome staining. Fascicular circularity was analyzed for correlation]]><![CDATA[ with electrophysiological outcomes.
 
 Results: 
 
-The wrapping group showed significantly better sensory and motor recovery, with higher CMAP amplitude and NCV on electrophysiological assessments. Histological examination revealed enhanced axonal regeneration, reduced perineural scarring, and preservation of fascicular circularity. Fascicular circularity was positively correlated with electrophysiological performance.
+The wrapping group showed significantly better sensory and motor recovery, with higher CMAP amplitude and NCV on electrophysiological assessments. Histological examination revealed enhanced axonal regeneration, reduced perineural scarring, and pre]]><![CDATA[servation of fascicular circularity. Fascicular circularity was positively correlated with electrophysiological performance.
 
 Conclusions: 
 
-The PLA/PCL conduit effectively minimized perineural scar adhesion and nerve compression while promoting nerve regeneration and functional recovery during the first 12 weeks. Its tubular structure maintained integrity, preventing scar invasion and preserving funicular morphology. Although these findings highlight the short-term potential of the PLA/PCL conduit for peripheral nerve repair, further studies are warranted to evaluate its long-term safety and efficacy beyond the early postoperative phase.
+The PLA/PCL conduit effectively minimized perineural scar adhesion and nerve compression while promoting nerve regeneration and functional recovery during ]]><![CDATA[the first 12 weeks. Its tubular structure maintained integrity, preventing scar invasion and preserving funicular morphology. Although these findings highlight the short-term potential of the PLA/PCL conduit for peripheral nerve repair, further studies are warranted to evaluate its long-term safety and efficacy beyond the early postoperative phase.
 
 Clinical Relevance Statement: 
 
@@ -10461,7 +10394,7 @@ Copyright © 2026 by the American Society of Plastic Surgeons ]]&gt;</span></div
       </span><div class="folder" id="folder149"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;title&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Bilateral Dynamic CT for Scapholunate Instability: Toward Personalized, Protocol-Standardized Kinematic Diagnosis ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/title&gt;</span></div></div><span>
       </span><div class="folder" id="folder150"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ &lt;a href="https://journals.lww.com/plasreconsurg/fulltext/9900/bilateral_dynamic_ct_for_scapholunate_instability_.3243.aspx"&gt;&lt;/a&gt;Background: 
 
-Dynamic CT imaging enables three-dimensional assessment of wrist motion, is increasingly being used to diagnose scapholunate (SL) ligament injuries. However ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ , protocol variability across institutions limits comparability and standardization. A key consideration is whether to use unilateral or bilateral scanning, since unilateral scanning often requires reference sets for diagnosis. This study evaluates whether contralateral referencing in bilateral dyna ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ mic CT scanning supports SL injury diagnosis by assessing (1) the influence of scan protocol variation; (2) similarity between wrists of healthy individuals and contralateral wrists of patients; (3) wrist motion symmetry in healthy individuals; and (4) contralateral referencing in patients with a unilateral SL injury.
+Dynamic CT imaging enables three-dimensional assessment of wrist motion, is increasingly being used to diagnose scapholunate (SL) ligament injuries. However, protocol variability across institutions limits comparability and standardization. A key consideration is whether to use unilateral or bilateral scanning, since unilateral scanning often requires reference sets for diagnosis. This study evaluates whether contralateral referencing in bilateral dynamic CT scanning supports SL injury diagnosis by assessing (1) the influence of scan protocol variation; (2) similarity between wrists of healthy individuals and contralateral wrists of patients; (3) wrist motion symmetry in healthy individuals; and (4) contralateral referencing in patients with a unilateral SL injury.
 
 Methods: 
 
@@ -11656,11 +11589,11 @@ Copyright © 2026 by the American Society of Plastic Surgeons ]]&gt;</span></div
       </span><div class="folder" id="folder506"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;title&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Artificial Intelligence-Derived Emotionality State Score Correlates with Layperson Assessment and Objective Measurements in Facial Paralysis ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/title&gt;</span></div></div><span>
       </span><div class="folder" id="folder507"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ &lt;a href="https://journals.lww.com/plasreconsurg/fulltext/9900/artificial_intelligence_derived_emotionality_state.3189.aspx"&gt;&lt;/a&gt;Background: 
 
-There is growing interest in using artificial intelligence (AI) to track the outcomes of patients with facial paralysis (FP). However, validation studies of ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[  the AI output with other outcome measurements are still scarce in the literature. We aimed to correlate an AI-derived emotionality state score (ESS) with layperson assessment and objective oral commissure excursion in facial reanimation outcomes.
+There is growing interest in using artificial intelligence (AI) to track the outcomes of patients with facial paralysis (FP). However, validation studies of the AI output with other outcome measurements are still scarce in the literature. We aimed to correlate an AI-derived emotionality state score (ESS) with layperson assessment and objective oral commissure excursion in facial reanimation outcomes.
 
 Methods: 
 
-In this retrospective cohort study,  ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ videos of voluntary smiles from 63 patients with FP across a variety of facial reanimation procedures were analyzed by the FaceReader software before and after the surgery. The ESS was defined as the intensity score (IS) of happiness emotion minus the IS of the negative emotion (sadness, fear, anger ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ , disgust, contempt) with the highest IS. Five lay observers rated the videos with the Terzis score. The oral commissure excursion was measured with the Emotrics software.
+In this retrospective cohort study, videos of voluntary smiles from 63 patients with FP across a variety of facial reanimation procedures were analyzed by the FaceReader software before and after the surgery. The ESS was defined as the intensity score (IS) of happiness emotion minus the IS of the negative emotion (sadness, fear, anger, disgust, contempt) with the highest IS. Five lay observers rated the videos with the Terzis score. The oral commissure excursion was measured with the Emotrics software.
 
 Results: 
 
@@ -12886,15 +12819,15 @@ Copyright © 2026 The Authors. Published by Wolters Kluwer Health, Inc. on behal
       </span><div class="folder" id="folder884"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;title&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ First Repair is Best: The Facial Growth Consequences of Revision Cleft Surgeries ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/title&gt;</span></div></div><span>
       </span><div class="folder" id="folder885"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ &lt;a href="https://journals.lww.com/plasreconsurg/fulltext/9900/first_repair_is_best__the_facial_growth.3136.aspx"&gt;&lt;/a&gt;Purpose: 
 
-Surgical scarring has long been hypothesized to contribute to maxillary hypoplasia in patients with cleft lip and palate (CLP), often leading to a need for orthognathic s ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ urgery (OGS). This study aimed to identify clinical and surgical factors associated with maxillary hypoplasia in skeletally mature patients with CLP using cephalometric analysis.
+Surgical scarring has long been hypothesized to contribute to maxillary hypoplasia in patients with cleft lip and palate (CLP), often leading to a need for orthognathic surgery (OGS). This study aimed to identify clinical and surgical factors associated with maxillary hypoplasia in skeletally mature patients with CLP using cephalometric analysis.
 
 Methods: 
 
-A retrospective review was performed of CLP patients aged ≥16 years with available cone beam CT scans.  ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ Cephalometric measurements were obtained using Mimics software. Patient records were reviewed for cleft morphology, number and type of cleft-related surgeries (ages 0–16), surgical timing, demographics, and history of OGS. Linear and logistic regressions were used to evaluate predictors of maxilla ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ ry hypoplasia and OGS.
+A retrospective review was performed of CLP patients aged ≥16 years with available cone beam CT scans. Cephalometric measurements were obtained using Mimics software. Patient records were reviewed for cleft morphology, number and type of cleft-related surgeries (ages 0–16), surgical timing, demographics, and history of OGS. Linear and logistic regressions were used to evaluate predictors of maxillary hypoplasia and OGS.
 
 Results: 
 
-Among 106 patients, 47.2% had bilateral CLP and 49.1% underwent OGS. The average number of cleft-related surgeries was 4.28. BCLP patients demonstrated significantly reduced maxillary width compared to UCLP (–2.87 mm, p = 0.001). Increasing total number of su ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ rgeries was significantly associated with decreased SNA, ANB, and facial convexity angles (p &lt; 0.001). Surgeries performed between ages 0–5 were significantly associated with decreased SNA, facial convexity angle, and alveolar length (p &lt; 0.02). Linear regression showed that each surgery beyond three predicted a 1.94° reduction in SNA, 0.81° reduction in ANB, and 2.82° reduction in facial convexity angle. Surgical burden was not predictive of OGS.
+Among 106 patients, 47.2% had bilateral CLP and 49.1% underwent OGS. The average number of cleft-related surgeries was 4.28. BCLP patients demonstrated significantly reduced maxillary width compared to UCLP (–2.87 mm, p = 0.001). Increasing total number of surgeries was significantly associated with decreased SNA, ANB, and facial convexity angles (p &lt; 0.001). Surgeries performed between ages 0–5 were significantly associated with decreased SNA, facial convexity angle, and alveolar length (p &lt; 0.02). Linear regression showed that each surgery beyond three predicted a 1.94° reduction in SNA, 0.81° reduction in ANB, and 2.82° reduction in facial convexity angle. Surgical burden was not predictive of OGS.
 
 Conclusions: 
 
@@ -13092,15 +13025,15 @@ Copyright © 2026 by the American Society of Plastic Surgeons ]]&gt;</span></div
       </span><div class="folder" id="folder940"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;title&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Velopharyngeal Insufficiency Effects on Life Outcome Scores and Decision-Making for Secondary Speech Surgery after Palatoplasty ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/title&gt;</span></div></div><span>
       </span><div class="folder" id="folder941"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ &lt;a href="https://journals.lww.com/plasreconsurg/fulltext/9900/velopharyngeal_insufficiency_effects_on_life.3124.aspx"&gt;&lt;/a&gt;Background: 
 
-Twenty to thirty percent of patients develop velopharyngeal insufficiency (VPI) after cleft palate repair, and quality of life (QoL) may outweigh objective parame ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ ters in decision for surgery. We evaluated QoL using the Velopharyngeal Insufficiency Effects on Life Outcomes (VELO) instrument in post-palatoplasty patients and its impact on decision making for speech surgery.
+Twenty to thirty percent of patients develop velopharyngeal insufficiency (VPI) after cleft palate repair, and quality of life (QoL) may outweigh objective parameters in decision for surgery. We evaluated QoL using the Velopharyngeal Insufficiency Effects on Life Outcomes (VELO) instrument in post-palatoplasty patients and its impact on decision making for speech surgery.
 
 Methods: 
 
-Using cross-sectional methodology, patients ages 3-18 with history of c ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ left palate repair and their parents were recruited to complete the VELO. Hypernasality, a common manifestation of VPI, was determined by speech pathologist (SLP) documentation. Additional management of hypernasality included nasendoscopy and/or surgery. Clinical and demographic variables were extra ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ cted from medical records and summarized using descriptive statistics. Bivariate tests compared VELO scores, decision for additional management, and other variables of interest.
+Using cross-sectional methodology, patients ages 3-18 with history of cleft palate repair and their parents were recruited to complete the VELO. Hypernasality, a common manifestation of VPI, was determined by speech pathologist (SLP) documentation. Additional management of hypernasality included nasendoscopy and/or surgery. Clinical and demographic variables were extracted from medical records and summarized using descriptive statistics. Bivariate tests compared VELO scores, decision for additional management, and other variables of interest.
 
 Results: 
 
-Four patients and 66 parents completed the VELO instrument, representing seventy patients (52.9% female, m ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ ean age 8.2 years) with a median VELO score of 82.7 (IQR 20.0). Almost half (48.6%) of patients had hypernasality. Clinically evident hypernasality was associated with lower VELO scores (p=0.05). Patients with hypernasality who pursued additional management had lower VELO scores (median=62.5, IQR=13.0) than those with hypernasality who were offered but did not pursue additional management (median=83.7, IQR=11.3) (p=0.02). Patients with hypernasality who were offered but did not pursue additional management had similar VELO scores as those without hypernasality (median=86.5, IQR=18.6) (p=0.75).
+Four patients and 66 parents completed the VELO instrument, representing seventy patients (52.9% female, mean age 8.2 years) with a median VELO score of 82.7 (IQR 20.0). Almost half (48.6%) of patients had hypernasality. Clinically evident hypernasality was associated with lower VELO scores (p=0.05). Patients with hypernasality who pursued additional management had lower VELO scores (median=62.5, IQR=13.0) than those with hypernasality who were offered but did not pursue additional management (median=83.7, IQR=11.3) (p=0.02). Patients with hypernasality who were offered but did not pursue additional management had similar VELO scores as those without hypernasality (median=86.5, IQR=18.6) (p=0.75).
 
 Conclusions: 
 
@@ -13690,15 +13623,15 @@ Copyright © 2026 by the American Society of Plastic Surgeons ]]&gt;</span></div
       </span><div class="folder" id="folder1108"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;title&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Defining Predictors of Tactile and Thermal Sensory Recovery After Reduction Mammaplasty: Insights from Multimodal Testing ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/title&gt;</span></div></div><span>
       </span><div class="folder" id="folder1109"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ &lt;a href="https://journals.lww.com/plasreconsurg/fulltext/9900/defining_predictors_of_tactile_and_thermal_sensory.3094.aspx"&gt;&lt;/a&gt;Background: 
 
-Sensory loss following reduction mammaplasty remains a key concern for patients. While general tactile recovery has been well studied, less is known about t ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ emperature sensation or region-specific recovery patterns. This study evaluates tactile and thermal sensory recovery across the breast and identifies clinical and operative predictors of postoperative sensory loss.
+Sensory loss following reduction mammaplasty remains a key concern for patients. While general tactile recovery has been well studied, less is known about temperature sensation or region-specific recovery patterns. This study evaluates tactile and thermal sensory recovery across the breast and identifies clinical and operative predictors of postoperative sensory loss.
 
 Methods: 
 
-A prospective cohort study was conducted at our institution and enrol ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ led patients undergoing bilateral reduction mammaplasty using a superior or superomedial pedicle and Wise-pattern incisions. Tactile sensation was measured using a pressure-specified device, and thermal sensation was assessed via heat and cold detection. Testing was performed preoperatively, and at  ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ 1 month and 3–6 months postoperatively. Linear and logistic regression analyses were used to identify predictors of sensory loss, including age, BMI, and resection weight.
+A prospective cohort study was conducted at our institution and enrolled patients undergoing bilateral reduction mammaplasty using a superior or superomedial pedicle and Wise-pattern incisions. Tactile sensation was measured using a pressure-specified device, and thermal sensation was assessed via heat and cold detection. Testing was performed preoperatively, and at 1 month and 3–6 months postoperatively. Linear and logistic regression analyses were used to identify predictors of sensory loss, including age, BMI, and resection weight.
 
 Results: 
 
-Forty-nine patients (98 breasts) were included. Tactile sensation worsened significantly at the NAC and inner  ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ breast at 1 month but returned to baseline by 3–6 months. Thermal sensation at the NAC and inferior breast remained impaired at 3–6 months. Resection weight predicted early tactile loss, while BMI and age were associated with early thermal deficits. At 3–6 months, higher BMI—but not resectio ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ n weight—remained a predictor of persistent tactile loss. No long-term predictors of thermal sensation were identified.
+Forty-nine patients (98 breasts) were included. Tactile sensation worsened significantly at the NAC and inner breast at 1 month but returned to baseline by 3–6 months. Thermal sensation at the NAC and inferior breast remained impaired at 3–6 months. Resection weight predicted early tactile loss, while BMI and age were associated with early thermal deficits. At 3–6 months, higher BMI—but not resection weight—remained a predictor of persistent tactile loss. No long-term predictors of thermal sensation were identified.
 
 Conclusion: 
 
@@ -16395,7 +16328,7 @@ Copyright © 2025 by the American Society of Plastic Surgeons ]]&gt;</span></div
       </span><div class="folder" id="folder1883"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;author&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Sun, Jo-Yun; Cha, Soo-Min; Chen, Laura Chia-Fang; Kwon, Soo-Ha; Chen, Lisa Wen-Yu; Sung, Cheyenne Wei-Hsuan; Lu, Johnny Chuieng-Yi; Huang, Jung-Ju; Chuang, David Chwei-Chin; Chang, Tommy Nai-Jen ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/author&gt;</span></div></div><span>
       </span><div class="folder" id="folder1884"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;category&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Ideas and Innovations ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/category&gt;</span></div></div><span>
       </span><div class="folder" id="folder1885"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;title&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Vascularized Sural Nerve Graft with its Chimeric Skin Paddle Using Three Different Methods for Upper and Lower Extremities Reconstruction ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/title&gt;</span></div></div><span>
-      </span><div class="folder" id="folder1886"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ &lt;a href="https://journals.lww.com/plasreconsurg/fulltext/9900/vascularized_sural_nerve_graft_with_its_chimeric.2991.aspx"&gt;&lt;/a&gt;Reconstructing nerve gaps greater than 13-15 centimeters often requires vascularized nerve grafts. However, using the sural nerve presents a technical challenge due to the la ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ ck of a consistent adjacent artery. This study introduces various free vascularized sural nerve flap designs to overcome this limitation. From 2018 to 2020, six patients at Chang Gung Memorial Hospital underwent eight free vascularized sural nerve grafts reconstruction, including brachial plexus, me ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ dian, ulnar, posterior tibial, and sciatic nerve reconstructions. Three types of flap designs were performed: shunt-restricted arterialized lessor saphenous venous flap, vascularized sural nerve graft, and chimeric flap with peroneal or posterior tibial artery perforator flap. Most flaps maintained circulation successfully, with only one requiring conversion due to thrombosis. Mild congestion occurred in some venous flaps but resolved spontaneously. Tinel’s sign advanced progressively in all patients, suggesting active nerve regeneration. These findings demonstrate that free vascularized sural nerve flaps are a flexible and effective option for managing long nerve defects. Tailoring the flap design to the clinical context offers reconstructive surgeons with a versatile strategy for peripheral nerve repair.
+      </span><div class="folder" id="folder1886"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ &lt;a href="https://journals.lww.com/plasreconsurg/fulltext/9900/vascularized_sural_nerve_graft_with_its_chimeric.2991.aspx"&gt;&lt;/a&gt;Reconstructing nerve gaps greater than 13-15 centimeters often requires vascularized nerve grafts. However, using the sural nerve presents a technical challenge due to the lack of a consistent adjacent artery. This study introduces various free vascularized sural nerve flap designs to overcome this limitation. From 2018 to 2020, six patients at Chang Gung Memorial Hospital underwent eight free vascularized sural nerve grafts reconstruction, including brachial plexus, median, ulnar, posterior tibial, and sciatic nerve reconstructions. Three types of flap designs were performed: shunt-restricted arterialized lessor saphenous venous flap, vascularized sural nerve graft, and chimeric flap with peroneal or posterior tibial artery perforator flap. Most flaps maintained circulation successfully, with only one requiring conversion due to thrombosis. Mild congestion occurred in some venous flaps but resolved spontaneously. Tinel’s sign advanced progressively in all patients, suggesting active nerve regeneration. These findings demonstrate that free vascularized sural nerve flaps are a flexible and effective option for managing long nerve defects. Tailoring the flap design to the clinical context offers reconstructive surgeons with a versatile strategy for peripheral nerve repair.
 
 Reconstructing nerve gaps greater than 13-15 centimeters often requires vascularized nerve grafts. However, using the sural nerve presents a technical challenge due to the lack of a consistent adjacent artery. This study introduces various free vascularized sural nerve flap designs to overcome this limitation. From 2018 to 2020, six patients at Chang Gung Memorial Hospital underwent eight free vascularized sural nerve grafts reconstruction, including brachial plexus, median, ulnar, posterior tibial, and sciatic nerve reconstructions. Three types of flap designs were performed: shunt-restricted arterialized lessor saphenous venous flap, vascularized sural nerve graft, and chimeric flap with peroneal or posterior tibial artery perforator flap. Most flaps maintained circulation successfully, with only one requiring conversion due to thrombosis. Mild congestion occurred in some venous flaps but resolved spontaneously. Tinel’s sign advanced progressively in all patients, suggesting active nerve regeneration. These findings demonstrate that free vascularized sural nerve flaps are a flexible and effective option for managing long nerve defects. Tailoring the flap design to the clinical context offers reconstructive surgeons with a versatile strategy for peripheral nerve repair.
 
@@ -19332,19 +19265,19 @@ Copyright © 2025 by the American Society of Plastic Surgeons ]]&gt;</span></div
       </span><div class="folder" id="folder2746"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;title&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Positive Effect of Wrapping with Nerve Conduit on Nerve Recovery After Peripheral Nerve Suturing ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/title&gt;</span></div></div><span>
       </span><div class="folder" id="folder2747"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ &lt;a href="https://journals.lww.com/plasreconsurg/fulltext/9900/positive_effect_of_wrapping_with_nerve_conduit_on.2863.aspx"&gt;&lt;/a&gt;Background: 
 
-Complete recovery after end-to-end peripheral nerve suturing remains challenging due to perineural scarring. We developed a biodegradable nerve conduit composed of poly L-lactide (PLA) and poly ε-caprolactone (PCL) to prevent adhesion and promote nerve regeneration. This study assessed whether wrapping a sutured nerve with this conduit could reduce adhesion and enhance recovery in a rat model.
+Complete recovery after end-to-end peripheral nerve suturing remains challenging due to perineural scarring. We developed a biodegradable nerve conduit compo ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ sed of poly L-lactide (PLA) and poly ε-caprolactone (PCL) to prevent adhesion and promote nerve regeneration. This study assessed whether wrapping a sutured nerve with this conduit could reduce adhesion and enhance recovery in a rat model.
 
 Methods: 
 
-Thirty-six rats underwent sciatic nerve transection, suturing, and adhesion induction, then were assigned to a control group (no wrapping) or a wrapping group (PLA/PCL conduit). At 12 weeks, functional recovery was assessed using the von Frey test, sciatic functional index, and gastrocnemius muscle weight. Electrophysiological assessments included compound muscle action potential (CMAP) amplitude and nerve conduction velocity (NCV). Histological analyses evaluated axonal regeneration, perineural scarring, and fascicular morphology with immunostaining and Masson’s trichrome staining. Fascicular circularity was analyzed for correlation with electrophysiological outcomes.
+Thirty-six rats underwent sciatic nerve tra ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ nsection, suturing, and adhesion induction, then were assigned to a control group (no wrapping) or a wrapping group (PLA/PCL conduit). At 12 weeks, functional recovery was assessed using the von Frey test, sciatic functional index, and gastrocnemius muscle weight. Electrophysiological assessments in ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ cluded compound muscle action potential (CMAP) amplitude and nerve conduction velocity (NCV). Histological analyses evaluated axonal regeneration, perineural scarring, and fascicular morphology with immunostaining and Masson’s trichrome staining. Fascicular circularity was analyzed for correlation ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[  with electrophysiological outcomes.
 
 Results: 
 
-The wrapping group showed significantly better sensory and motor recovery, with higher CMAP amplitude and NCV on electrophysiological assessments. Histological examination revealed enhanced axonal regeneration, reduced perineural scarring, and preservation of fascicular circularity. Fascicular circularity was positively correlated with electrophysiological performance.
+The wrapping group showed significantly better sensory and motor recovery, with higher CMAP amplitude and NCV on electrophysiological assessments. Histological examination revealed enhanced axonal regeneration, reduced perineural scarring, and pre ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ servation of fascicular circularity. Fascicular circularity was positively correlated with electrophysiological performance.
 
 Conclusions: 
 
-The PLA/PCL conduit effectively minimized perineural scar adhesion and nerve compression while promoting nerve regeneration and functional recovery during the first 12 weeks. Its tubular structure maintained integrity, preventing scar invasion and preserving funicular morphology. Although these findings highlight the short-term potential of the PLA/PCL conduit for peripheral nerve repair, further studies are warranted to evaluate its long-term safety and efficacy beyond the early postoperative phase.
+The PLA/PCL conduit effectively minimized perineural scar adhesion and nerve compression while promoting nerve regeneration and functional recovery during  ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ the first 12 weeks. Its tubular structure maintained integrity, preventing scar invasion and preserving funicular morphology. Although these findings highlight the short-term potential of the PLA/PCL conduit for peripheral nerve repair, further studies are warranted to evaluate its long-term safety and efficacy beyond the early postoperative phase.
 
 Clinical Relevance Statement: 
 

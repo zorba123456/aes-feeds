@@ -1,72 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><html xmlns="http://www.w3.org/1999/xhtml"><head><style id="xml-viewer-style">/* Copyright 2014 The Chromium Authors
- * Use of this source code is governed by a BSD-style license that can be
- * found in the LICENSE file.
- */
-
-:root {
-  color-scheme: light dark;
-}
-
-div.header {
-    border-bottom: 2px solid black;
-    padding-bottom: 5px;
-    margin: 10px;
-}
-
-@media (prefers-color-scheme: dark) {
-  div.header {
-    border-bottom: 2px solid white;
-  }
-}
-
-div.folder &gt; div.hidden {
-    display:none;
-}
-
-div.folder &gt; span.hidden {
-    display:none;
-}
-
-.pretty-print {
-    margin-top: 1em;
-    margin-left: 20px;
-    font-family: monospace;
-    font-size: 13px;
-}
-
-#webkit-xml-viewer-source-xml {
-    display: none;
-}
-
-.opened {
-    margin-left: 1em;
-}
-
-.comment {
-    white-space: pre;
-}
-
-.folder-button {
-    user-select: none;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: -10px;
-    width: 10px;
-    background-repeat: no-repeat;
-    background-position: left top;
-    vertical-align: bottom;
-}
-
-.fold {
-    background: url("data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'&gt;&lt;path d='M0 0 L8 0 L4 7 Z'/&gt;&lt;/svg&gt;");
-    height: 10px;
-}
-
-.open {
-    background: url("data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'&gt;&lt;path d='M0 0 L0 8 L7 4 Z'/&gt;&lt;/svg&gt;");
-    height: 10px;
-}
-</style></head><body><div id="webkit-xml-viewer-source-xml"><rss xmlns="" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns="" version="2.0">
   <channel>
     <title><![CDATA[Plastic and Reconstructive Surgery – Global Open - Current Issue]]></title>
     <link>https://journals.lww.com/prsgo/pages/currenttoc.aspx</link>
@@ -738,7 +671,7 @@ Despite its first descriptions in the previous decade, the use of the hemostatic
       <title><![CDATA[The Therapeutic Benefit of Allopurinol in the Treatment of Foreign Body Granulomas Caused by Polymethylmethacrylate Microspheres]]></title>
       <description><![CDATA[<a href="https://journals.lww.com/prsgo/fulltext/2026/04000/the_therapeutic_benefit_of_allopurinol_in_the.44.aspx"><img src="https://images.journals.lww.com/prsgo/SmallThumb.01720096-202604000-00044.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
 
-Polymethylmethacrylate (PMMA) micr]]><![CDATA[ospheres are permanent dermal fillers used in aesthetic procedures but may cause foreign body granulomas, resulting in chronic inflammation and discomfort. Allopurinol, a xanthine oxidase inhibitor with anti-inflammatory properties, has shown promise in granuloma management, although robust evidence]]><![CDATA[ remains limited. This systematic review aims to evaluate the efficacy and safety of allopurinol, alone or in combination with steroids, in treating PMMA-induced granulomas.
+Polymethylmethacrylate (PMMA) microspheres are permanent dermal fillers used in aesthetic procedures but may cause foreign body granulomas, resulting in chronic inflammation and discomfort. Allopurinol, a xanthine oxidase inhibitor with anti-inflammatory properties, has shown promise in granuloma management, although robust evidence remains limited. This systematic review aims to evaluate the efficacy and safety of allopurinol, alone or in combination with steroids, in treating PMMA-induced granulomas.
 
 Methods: 
 
@@ -1086,7 +1019,7 @@ Burnout is a recognized phenomenon among residents and attending surgeons in the
       <title><![CDATA[Breast Cancer Screening Considerations for Transgender Patients Undergoing Chest Surgery: Evidence Review and Suggested Approaches]]></title>
       <description><![CDATA[<a href="https://journals.lww.com/prsgo/fulltext/2026/04000/breast_cancer_screening_considerations_for.31.aspx"></a>Summary: 
 
-This article reviews current practices and challenges in breast cancer screening for transgender individuals undergoing gender-affirming chest surgery, highlighting the un]]><![CDATA[ique role of plastic surgeons in long-term oncological care. As masculinizing mastectomies become more common, concerns persist regarding residual breast tissue and cancer risk. Although surgery substantially reduces risk—comparable to the protective effect of reduction mammaplasty in cisgender wo]]><![CDATA[men—it does not eliminate risk entirely, as 1%–2% of breast tissue typically remains. Patient-driven aesthetic decisions may further influence oncological risk and complicate imaging, underscoring the importance of patient education and ongoing surveillance. The effects of exogenous hormones on breast cancer risk remain incompletely defined. Feminizing hormone therapy, family history, and obesity are established risk factors in cisgender women, but their independent contribution to risk in transgender women remains under investigation. Patients with genetic predisposition or strong family history should be referred to breast oncology specialists for individualized risk assessment. Systemic barriers—including delayed initiation of imaging, limited primary care–based risk assessment, and inconsistent insurance coverage—position plastic surgeons to address critical gaps in care. Recommended practices include annual clinical chest examinations for transgender men following mastectomy, continuation of age-appropriate screening for transgender women on long-term estrogen therapy, and routine documentation of counseling and referrals to ensure continuity of care. By integrating epidemiological data, practice surveys, and surgical considerations, this article provides a distinct specialty perspective and calls for interdisciplinary collaboration to establish evidence-based screening protocols for this growing patient population.]]></description>
+This article reviews current practices and challenges in breast cancer screening for transgender individuals undergoing gender-affirming chest surgery, highlighting the unique role of plastic surgeons in long-term oncological care. As masculinizing mastectomies become more common, concerns persist regarding residual breast tissue and cancer risk. Although surgery substantially reduces risk—comparable to the protective effect of reduction mammaplasty in cisgender women—it does not eliminate risk entirely, as 1%–2% of breast tissue typically remains. Patient-driven aesthetic decisions may further influence oncological risk and complicate imaging, underscoring the importance of patient education and ongoing surveillance. The effects of exogenous hormones on breast cancer risk remain incompletely defined. Feminizing hormone therapy, family history, and obesity are established risk factors in cisgender women, but their independent contribution to risk in transgender women remains under investigation. Patients with genetic predisposition or strong family history should be referred to breast oncology specialists for individualized risk assessment. Systemic barriers—including delayed initiation of imaging, limited primary care–based risk assessment, and inconsistent insurance coverage—position plastic surgeons to address critical gaps in care. Recommended practices include annual clinical chest examinations for transgender men following mastectomy, continuation of age-appropriate screening for transgender women on long-term estrogen therapy, and routine documentation of counseling and referrals to ensure continuity of care. By integrating epidemiological data, practice surveys, and surgical considerations, this article provides a distinct specialty perspective and calls for interdisciplinary collaboration to establish evidence-based screening protocols for this growing patient population.]]></description>
       <pubDate>Wed, 15 Apr 2026 00:00:00 GMT-05:00</pubDate>
       <citation><![CDATA[Plastic and Reconstructive Surgery – Global Open. 14(4):e7629, April 2026. doi: 10.1097/GOX.0000000000007629]]></citation>
       <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
@@ -2483,7 +2416,7 @@ Despite its first descriptions in the previous decade, the use of the hemostatic
       </span><div class="folder" id="folder219"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;title&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ The Therapeutic Benefit of Allopurinol in the Treatment of Foreign Body Granulomas Caused by Polymethylmethacrylate Microspheres ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/title&gt;</span></div></div><span>
       </span><div class="folder" id="folder220"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ &lt;a href="https://journals.lww.com/prsgo/fulltext/2026/04000/the_therapeutic_benefit_of_allopurinol_in_the.44.aspx"&gt;&lt;img src="https://images.journals.lww.com/prsgo/SmallThumb.01720096-202604000-00044.F1.jpeg" border="0" align ="left" alt="image"/&gt;&lt;/a&gt;Background: 
 
-Polymethylmethacrylate (PMMA) micr ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ ospheres are permanent dermal fillers used in aesthetic procedures but may cause foreign body granulomas, resulting in chronic inflammation and discomfort. Allopurinol, a xanthine oxidase inhibitor with anti-inflammatory properties, has shown promise in granuloma management, although robust evidence ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[  remains limited. This systematic review aims to evaluate the efficacy and safety of allopurinol, alone or in combination with steroids, in treating PMMA-induced granulomas.
+Polymethylmethacrylate (PMMA) microspheres are permanent dermal fillers used in aesthetic procedures but may cause foreign body granulomas, resulting in chronic inflammation and discomfort. Allopurinol, a xanthine oxidase inhibitor with anti-inflammatory properties, has shown promise in granuloma management, although robust evidence remains limited. This systematic review aims to evaluate the efficacy and safety of allopurinol, alone or in combination with steroids, in treating PMMA-induced granulomas.
 
 Methods: 
 
@@ -2831,7 +2764,7 @@ Burnout is a recognized phenomenon among residents and attending surgeons in the
       </span><div class="folder" id="folder331"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;title&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Breast Cancer Screening Considerations for Transgender Patients Undergoing Chest Surgery: Evidence Review and Suggested Approaches ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/title&gt;</span></div></div><span>
       </span><div class="folder" id="folder332"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ &lt;a href="https://journals.lww.com/prsgo/fulltext/2026/04000/breast_cancer_screening_considerations_for.31.aspx"&gt;&lt;/a&gt;Summary: 
 
-This article reviews current practices and challenges in breast cancer screening for transgender individuals undergoing gender-affirming chest surgery, highlighting the un ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ ique role of plastic surgeons in long-term oncological care. As masculinizing mastectomies become more common, concerns persist regarding residual breast tissue and cancer risk. Although surgery substantially reduces risk—comparable to the protective effect of reduction mammaplasty in cisgender wo ]]&gt;</span></div><div class="line"><span>&lt;![CDATA[ men—it does not eliminate risk entirely, as 1%–2% of breast tissue typically remains. Patient-driven aesthetic decisions may further influence oncological risk and complicate imaging, underscoring the importance of patient education and ongoing surveillance. The effects of exogenous hormones on breast cancer risk remain incompletely defined. Feminizing hormone therapy, family history, and obesity are established risk factors in cisgender women, but their independent contribution to risk in transgender women remains under investigation. Patients with genetic predisposition or strong family history should be referred to breast oncology specialists for individualized risk assessment. Systemic barriers—including delayed initiation of imaging, limited primary care–based risk assessment, and inconsistent insurance coverage—position plastic surgeons to address critical gaps in care. Recommended practices include annual clinical chest examinations for transgender men following mastectomy, continuation of age-appropriate screening for transgender women on long-term estrogen therapy, and routine documentation of counseling and referrals to ensure continuity of care. By integrating epidemiological data, practice surveys, and surgical considerations, this article provides a distinct specialty perspective and calls for interdisciplinary collaboration to establish evidence-based screening protocols for this growing patient population. ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/description&gt;</span></div></div><span>
+This article reviews current practices and challenges in breast cancer screening for transgender individuals undergoing gender-affirming chest surgery, highlighting the unique role of plastic surgeons in long-term oncological care. As masculinizing mastectomies become more common, concerns persist regarding residual breast tissue and cancer risk. Although surgery substantially reduces risk—comparable to the protective effect of reduction mammaplasty in cisgender women—it does not eliminate risk entirely, as 1%–2% of breast tissue typically remains. Patient-driven aesthetic decisions may further influence oncological risk and complicate imaging, underscoring the importance of patient education and ongoing surveillance. The effects of exogenous hormones on breast cancer risk remain incompletely defined. Feminizing hormone therapy, family history, and obesity are established risk factors in cisgender women, but their independent contribution to risk in transgender women remains under investigation. Patients with genetic predisposition or strong family history should be referred to breast oncology specialists for individualized risk assessment. Systemic barriers—including delayed initiation of imaging, limited primary care–based risk assessment, and inconsistent insurance coverage—position plastic surgeons to address critical gaps in care. Recommended practices include annual clinical chest examinations for transgender men following mastectomy, continuation of age-appropriate screening for transgender women on long-term estrogen therapy, and routine documentation of counseling and referrals to ensure continuity of care. By integrating epidemiological data, practice surveys, and surgical considerations, this article provides a distinct specialty perspective and calls for interdisciplinary collaboration to establish evidence-based screening protocols for this growing patient population. ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/description&gt;</span></div></div><span>
       </span><div class="line"><span class="html-tag">&lt;pubDate&gt;</span><span>Wed, 15 Apr 2026 00:00:00 GMT-05:00</span><span class="html-tag">&lt;/pubDate&gt;</span></div><span>
       </span><div class="folder" id="folder333"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;citation&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Plastic and Reconstructive Surgery – Global Open. 14(4):e7629, April 2026. doi: 10.1097/GOX.0000000000007629 ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/citation&gt;</span></div></div><span>
       </span><div class="folder" id="folder334"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;copyright&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ (C)2010 Lippincott Williams &amp; Wilkins, Inc. ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/copyright&gt;</span></div></div><span>

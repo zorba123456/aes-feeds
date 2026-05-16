@@ -1,72 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><html xmlns="http://www.w3.org/1999/xhtml"><head><style id="xml-viewer-style">/* Copyright 2014 The Chromium Authors
- * Use of this source code is governed by a BSD-style license that can be
- * found in the LICENSE file.
- */
-
-:root {
-  color-scheme: light dark;
-}
-
-div.header {
-    border-bottom: 2px solid black;
-    padding-bottom: 5px;
-    margin: 10px;
-}
-
-@media (prefers-color-scheme: dark) {
-  div.header {
-    border-bottom: 2px solid white;
-  }
-}
-
-div.folder &gt; div.hidden {
-    display:none;
-}
-
-div.folder &gt; span.hidden {
-    display:none;
-}
-
-.pretty-print {
-    margin-top: 1em;
-    margin-left: 20px;
-    font-family: monospace;
-    font-size: 13px;
-}
-
-#webkit-xml-viewer-source-xml {
-    display: none;
-}
-
-.opened {
-    margin-left: 1em;
-}
-
-.comment {
-    white-space: pre;
-}
-
-.folder-button {
-    user-select: none;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: -10px;
-    width: 10px;
-    background-repeat: no-repeat;
-    background-position: left top;
-    vertical-align: bottom;
-}
-
-.fold {
-    background: url("data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'&gt;&lt;path d='M0 0 L8 0 L4 7 Z'/&gt;&lt;/svg&gt;");
-    height: 10px;
-}
-
-.open {
-    background: url("data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'&gt;&lt;path d='M0 0 L0 8 L7 4 Z'/&gt;&lt;/svg&gt;");
-    height: 10px;
-}
-</style></head><body><div id="webkit-xml-viewer-source-xml"><rss xmlns="" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns="" version="2.0">
   <channel>
     <title><![CDATA[Plastic and Reconstructive Surgery - Video]]></title>
     <link>https://journals.lww.com/plasreconsurg/</link>
@@ -3815,7 +3748,8 @@ For  consumer information on plastic surgery and to find a board certified plast
     <item>
       <link>https://journals.lww.com/plasreconsurg/pages/video.aspx?autoPlay=false&amp;v=605</link>
       <author><![CDATA[Grant W. Carlson, MD]]></author>
-      <title><![CDATA[Video Discussion:  “Advanced Age Is a Predictor of 30-Day Complications after Autologous but Not Implant-Based Postmastectomy Breast Reconstruction” – Grant W. Carlson, MD]]></title>
+      <title><![CDATA[Video Discussion:  “Advanced Age Is a Predictor of 30-Day Complications after Autologous but Not Implant-Based Postmastectomy
+Breast Reconstruction” – Grant W. Carlson, MD]]></title>
       <description><![CDATA[In this video, Grant W. Carlson, MD discusses the article “Advanced Age Is a Predictor of 30-Day Complications after Autologous but Not Implant-Based Postmastectomy?Breast Reconstruction” by Butz et al., appearing in the February 2015 issue of Plastic and Reconstructive Surgery, Volume 135 Issue 2. Keywords: Breast reconstruction; Postmastectomy; Age; Complications;]]></description>
       <pubDate>Fri, 23 Jan 2015 20:28:27 GMT-06:00</pubDate>
       <guid isPermaLink="true">https://journals.lww.com/plasreconsurg/pages/video.aspx?autoPlay=false&amp;v=605</guid>
@@ -27903,7 +27837,8 @@ For  consumer information on plastic surgery and to find a board certified plast
     </span><div class="folder" id="folder1806"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;item&gt;</span></div><div class="opened"><span>
       </span><div class="line"><span class="html-tag">&lt;link&gt;</span><span>https://journals.lww.com/plasreconsurg/pages/video.aspx?autoPlay=false&amp;v=605</span><span class="html-tag">&lt;/link&gt;</span></div><span>
       </span><div class="folder" id="folder1807"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;author&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Grant W. Carlson, MD ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/author&gt;</span></div></div><span>
-      </span><div class="folder" id="folder1808"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;title&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Video Discussion:  “Advanced Age Is a Predictor of 30-Day Complications after Autologous but Not Implant-Based Postmastectomy Breast Reconstruction” – Grant W. Carlson, MD ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/title&gt;</span></div></div><span>
+      </span><div class="folder" id="folder1808"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;title&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Video Discussion:  “Advanced Age Is a Predictor of 30-Day Complications after Autologous but Not Implant-Based Postmastectomy
+Breast Reconstruction” – Grant W. Carlson, MD ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/title&gt;</span></div></div><span>
       </span><div class="folder" id="folder1809"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ In this video, Grant W. Carlson, MD discusses the article “Advanced Age Is a Predictor of 30-Day Complications after Autologous but Not Implant-Based Postmastectomy?Breast Reconstruction” by Butz et al., appearing in the February 2015 issue of Plastic and Reconstructive Surgery, Volume 135 Issue 2. Keywords: Breast reconstruction; Postmastectomy; Age; Complications; ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/description&gt;</span></div></div><span>
       </span><div class="line"><span class="html-tag">&lt;pubDate&gt;</span><span>Fri, 23 Jan 2015 20:28:27 GMT-06:00</span><span class="html-tag">&lt;/pubDate&gt;</span></div><span>
       </span><div class="line"><span class="html-tag">&lt;guid<span class="html-attribute"> <span class="html-attribute-name">isPermaLink</span>="<span class="html-attribute-value">true</span>"</span>&gt;</span><span>https://journals.lww.com/plasreconsurg/pages/video.aspx?autoPlay=false&amp;v=605</span><span class="html-tag">&lt;/guid&gt;</span></div><span>
