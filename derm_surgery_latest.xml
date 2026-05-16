@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?><html xmlns="http://www.w3.org/1999/xhtml"><head><style id="xml-viewer-style">/* Copyright 2014 The Chromium Authors
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+
+:root {
+  color-scheme: light dark;
+}
+
+div.header {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  div.header {
+    border-bottom: 2px solid white;
+  }
+}
+
+div.folder &gt; div.hidden {
+    display:none;
+}
+
+div.folder &gt; span.hidden {
+    display:none;
+}
+
+.pretty-print {
+    margin-top: 1em;
+    margin-left: 20px;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+#webkit-xml-viewer-source-xml {
+    display: none;
+}
+
+.opened {
+    margin-left: 1em;
+}
+
+.comment {
+    white-space: pre;
+}
+
+.folder-button {
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: -10px;
+    width: 10px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    vertical-align: bottom;
+}
+
+.fold {
+    background: url("data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'&gt;&lt;path d='M0 0 L8 0 L4 7 Z'/&gt;&lt;/svg&gt;");
+    height: 10px;
+}
+
+.open {
+    background: url("data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'&gt;&lt;path d='M0 0 L0 8 L7 4 Z'/&gt;&lt;/svg&gt;");
+    height: 10px;
+}
+</style></head><body><div id="webkit-xml-viewer-source-xml"><rss xmlns="" version="2.0">
+  <channel>
+    <title><![CDATA[Dermatologic Surgery - Latest Articles]]></title>
+    <link>https://journals.lww.com/dermatologicsurgery/pages/latestarticles.aspx</link>
+    <description><![CDATA[Overview
+Exclusively devoted to dermatologic surgery, the Dermatologic Surgery journal publishes the most clinically comprehensive and up-to-date information in its field. This unique monthly journal provides today’s most expansive and in-depth coverage of cosmetic and reconstructive skin surgery and skin cancer through peer-reviewed original articles, extensive illustrations, case reports, ongoing features, literature reviews and correspondence. The journal provides information on the latest scientific information for all types of dermatologic surgery including:
+
+Ambulatory phlebectomy
+Blepharoplasty
+Body contouring
+Chemical peels
+Cryosurgery
+Curettage and desiccation
+Dermabrasion
+Excision and closure
+Flap Surgery
+Grafting
+Hair restoration surgery
+Injectable neuromodulators
+Laser surgery
+Liposuction
+Microdermabrasion
+Microlipoinjection
+Micropigmentation
+Mohs micrographic surgery
+Nail surgery
+Phlebology
+Sclerotherapy
+Skin cancer surgery
+Skin resurfacing
+Soft-tissue fillers
+Dermatologists, dermatologic surgeons, plastic surgeons, oculoplastic surgeons and facial plastic surgeons consider this a must-read publication for anyone in the field.
+
+This is the official publication of the American Society for Dermatologic Surgery.]]></description>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 May 2026 23:59:57 -0500</lastBuildDate>
+    <generator>Wolters Kluwer Health RSS Generator</generator>
+    <image>
+      <url>https://images.journals.lww.com/dermatologicsurgery/XLargeThumb.00042728-202605000-00000.CV.jpeg</url>
+      <title><![CDATA[Dermatologic Surgery - Latest Articles]]></title>
+      <link>https://journals.lww.com/dermatologicsurgery/pages/latestarticles.aspx</link>
+    </image>
+  </channel>
+</rss></div><div class="header"><span>This XML file does not appear to have any style information associated with it. The document tree is shown below.</span><br /></div><div class="pretty-print"><div class="folder" id="folder0"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;rss<span class="html-attribute"> <span class="html-attribute-name">version</span>="<span class="html-attribute-value">2.0</span>"</span>&gt;</span></div><div class="opened"><span>
+  </span><div class="folder" id="folder1"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;channel&gt;</span></div><div class="opened"><span>
+    </span><div class="folder" id="folder2"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;title&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Dermatologic Surgery - Latest Articles ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/title&gt;</span></div></div><span>
+    </span><div class="line"><span class="html-tag">&lt;link&gt;</span><span>https://journals.lww.com/dermatologicsurgery/pages/latestarticles.aspx</span><span class="html-tag">&lt;/link&gt;</span></div><span>
+    </span><div class="folder" id="folder3"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Overview
+Exclusively devoted to dermatologic surgery, the Dermatologic Surgery journal publishes the most clinically comprehensive and up-to-date information in its field. This unique monthly journal provides today’s most expansive and in-depth coverage of cosmetic and reconstructive skin surgery and skin cancer through peer-reviewed original articles, extensive illustrations, case reports, ongoing features, literature reviews and correspondence. The journal provides information on the latest scientific information for all types of dermatologic surgery including:
+
+Ambulatory phlebectomy
+Blepharoplasty
+Body contouring
+Chemical peels
+Cryosurgery
+Curettage and desiccation
+Dermabrasion
+Excision and closure
+Flap Surgery
+Grafting
+Hair restoration surgery
+Injectable neuromodulators
+Laser surgery
+Liposuction
+Microdermabrasion
+Microlipoinjection
+Micropigmentation
+Mohs micrographic surgery
+Nail surgery
+Phlebology
+Sclerotherapy
+Skin cancer surgery
+Skin resurfacing
+Soft-tissue fillers
+Dermatologists, dermatologic surgeons, plastic surgeons, oculoplastic surgeons and facial plastic surgeons consider this a must-read publication for anyone in the field.
+
+This is the official publication of the American Society for Dermatologic Surgery. ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/description&gt;</span></div></div><span>
+    </span><div class="line"><span class="html-tag">&lt;language&gt;</span><span>en-us</span><span class="html-tag">&lt;/language&gt;</span></div><span>
+    </span><div class="line"><span class="html-tag">&lt;lastBuildDate&gt;</span><span>Thu, 14 May 2026 23:59:57 -0500</span><span class="html-tag">&lt;/lastBuildDate&gt;</span></div><span>
+    </span><div class="line"><span class="html-tag">&lt;generator&gt;</span><span>Wolters Kluwer Health RSS Generator</span><span class="html-tag">&lt;/generator&gt;</span></div><span>
+    </span><div class="folder" id="folder4"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;image&gt;</span></div><div class="opened"><span>
+      </span><div class="line"><span class="html-tag">&lt;url&gt;</span><span>https://images.journals.lww.com/dermatologicsurgery/XLargeThumb.00042728-202605000-00000.CV.jpeg</span><span class="html-tag">&lt;/url&gt;</span></div><span>
+      </span><div class="folder" id="folder5"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;title&gt;</span></div><div class="opened"><div class="line"><span>&lt;![CDATA[ Dermatologic Surgery - Latest Articles ]]&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/title&gt;</span></div></div><span>
+      </span><div class="line"><span class="html-tag">&lt;link&gt;</span><span>https://journals.lww.com/dermatologicsurgery/pages/latestarticles.aspx</span><span class="html-tag">&lt;/link&gt;</span></div><span>
+    </span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/image&gt;</span></div></div><span>
+  </span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/channel&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/rss&gt;</span></div></div></div></body></html>
