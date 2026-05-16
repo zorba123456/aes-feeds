@@ -1,0 +1,65 @@
+{
+    "_meta": {
+        "version": "3.1.0",
+        "description": "LWW 全量破甲补丁 (Inoreader 回输版)",
+        "updated": "2026-05-16"
+    },
+    "lww_journals": [
+        {
+            "name": "aswc_current_issue",
+            "url": "http://journals.lww.com/aswcjournal/_layouts/OAKS.Journals/feed.aspx?FeedType=CurrentIssue"
+        },
+        {
+            "name": "aswc_latest_articles",
+            "url": "https://journals.lww.com/aswcjournal/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles&year=9000&issue=00000"
+        },
+        {
+            "name": "annals_plast_surg_current",
+            "url": "https://journals.lww.com/annalsplasticsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=CurrentIssue"
+        },
+        {
+            "name": "annals_plast_surg_latest",
+            "url": "https://journals.lww.com/annalsplasticsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint&year=9900&issue=00000"
+        },
+        {
+            "name": "derm_surgery_ahead",
+            "url": "http://journals.lww.com/dermatologicsurgery/_layouts/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint"
+        },
+        {
+            "name": "derm_surgery_latest",
+            "url": "https://journals.lww.com/dermatologicsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles&year=9000&issue=00000"
+        },
+        {
+            "name": "j_craniofacial_surg_latest",
+            "url": "https://journals.lww.com/jcraniofacialsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint&year=9900&issue=00000"
+        },
+        {
+            "name": "j_craniofacial_surg_open_latest",
+            "url": "https://journals.lww.com/jcso/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles"
+        },
+        {
+            "name": "prs_video",
+            "url": "http://journals.lww.com/plasreconsurg/_layouts/OAKS.Journals/feed.aspx?FeedType=Video"
+        },
+        {
+            "name": "prs_current_issue",
+            "url": "http://journals.lww.com/plasreconsurg/_layouts/OAKS.Journals/feed.aspx?FeedType=CurrentIssue"
+        },
+        {
+            "name": "prs_latest_articles",
+            "url": "https://journals.lww.com/plasreconsurg/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles"
+        },
+        {
+            "name": "prs_online_first",
+            "url": "https://journals.lww.com/plasreconsurg/_layouts/15/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint&year=9900&issue=00000"
+        },
+        {
+            "name": "prs_go_current_issue",
+            "url": "https://journals.lww.com/prsgo/_layouts/15/OAKS.Journals/feed.aspx?FeedType=CurrentIssue"
+        },
+        {
+            "name": "prs_go_latest_articles",
+            "url": "https://journals.lww.com/prsgo/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles"
+        }
+    ]
+}
