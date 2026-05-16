@@ -5,8 +5,8 @@ import subprocess
 import re
 from DrissionPage import ChromiumPage, ChromiumOptions
 
-# 全局版本号升级为 3.1.1
-__version__ = "3.1.1-纯净提纯版"
+# 全局版本号升级为 3.2.0，切入 Edge 物理隔离架构
+__version__ = "3.2.0-Edge隔离提纯版"
 
 def load_config():
     with open('config.json', 'r', encoding='utf-8') as f:
@@ -31,15 +31,20 @@ def download_403_feeds():
     print("=" * 45)
     
     co = ChromiumOptions()
+    
+    # 【物理隔离核心配置】：强行指定接管 macOS 下的 Microsoft Edge
+    edge_path = '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge'
+    co.set_browser_path(edge_path)
+    
     co.headless(False) 
     co.set_argument('--no-sandbox')    
     co.set_argument('--disable-gpu')   
-    co.set_local_port(9666)            
+    co.set_local_port(9666) # 挂载独立专属自动化端口          
     
     try:
         page = ChromiumPage(co)
     except Exception as e:
-        print(f"💥 内核启动失败！错误详情: {e}")
+        print(f"💥 Edge 内核启动失败！请检查 Edge 是否正确安装。详情: {e}")
         return
 
     output_dir = './' 
@@ -78,7 +83,7 @@ def download_403_feeds():
                     time.sleep(1) 
             
             if success:
-                # 【核心修补】：暴力切除 Chrome 强加的 HTML 包装纸，确保 Inoreader 能够识别
+                # 暴力剥离浏览器强加的 HTML 网页外壳，提取纯净 XML
                 match = re.search(r'(<\?xml|<rss|<feed)', raw_xml, re.IGNORECASE)
                 if match:
                     raw_xml = raw_xml[match.start():] 
