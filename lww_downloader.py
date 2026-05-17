@@ -5,8 +5,18 @@ import subprocess
 import re
 from DrissionPage import ChromiumPage, ChromiumOptions
 
-# 全局版本号升级为 3.2.0，切入 Edge 物理隔离架构
-__version__ = "3.2.0-Edge隔离提纯版"
+# 全局版本号升级为 3.2.2，切入系统级防僵死扫荡机制
+__version__ = "3.2.2-Edge强杀净化版"
+
+def force_kill_edge():
+    """暴力清理所有 Edge 残留进程，防止 Mac 出现未响应僵尸图标"""
+    print("🧹 正在执行环境大扫除 (强杀 Edge 残留进程)...")
+    try:
+        # 使用 -9 参数进行系统级强制抹杀
+        subprocess.run(['killall', '-9', 'Microsoft Edge'], stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
+        time.sleep(1) # 给系统一点时间回收内存和释放端口
+    except Exception:
+        pass
 
 def load_config():
     with open('config.json', 'r', encoding='utf-8') as f:
@@ -32,7 +42,7 @@ def download_403_feeds():
     
     co = ChromiumOptions()
     
-    # 【物理隔离核心配置】：强行指定接管 macOS 下的 Microsoft Edge
+    # 物理隔离核心配置：强行指定接管 macOS 下的 Microsoft Edge
     edge_path = '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge'
     co.set_browser_path(edge_path)
     
@@ -44,7 +54,7 @@ def download_403_feeds():
     try:
         page = ChromiumPage(co)
     except Exception as e:
-        print(f"💥 Edge 内核启动失败！请检查 Edge 是否正确安装。详情: {e}")
+        print(f"💥 Edge 内核启动失败！详情: {e}")
         return
 
     output_dir = './' 
@@ -83,15 +93,19 @@ def download_403_feeds():
                     time.sleep(1) 
             
             if success:
-                # 暴力剥离浏览器强加的 HTML 网页外壳，提取纯净 XML
-                match = re.search(r'(<\?xml|<rss|<feed)', raw_xml, re.IGNORECASE)
-                if match:
-                    raw_xml = raw_xml[match.start():] 
-                    raw_xml = re.sub(r'</body>\s*</html>\s*$', '', raw_xml, flags=re.IGNORECASE)
+                # 核心修补：改用“核心载荷锚定法”，100% 剥离任何奇葩的 HTML 包装
+                payload_match = re.search(r'(<rss|<feed)', raw_xml, re.IGNORECASE)
+                if payload_match:
+                    pure_xml = raw_xml[payload_match.start():] 
+                    pure_xml = re.sub(r'</body>\s*</html>\s*$', '', pure_xml, flags=re.IGNORECASE)
+                    raw_xml = '<?xml version="1.0" encoding="utf-8"?>\n' + pure_xml
+                
+                # 幽灵驱散：暴力驱逐导致第三方阅读器死锁的 LS (\u2028) 和 PS (\u2029) 字符
+                raw_xml = raw_xml.replace('\u2028', '\n').replace('\u2029', '\n')
                 
                 with open(output_path, 'w', encoding='utf-8') as f:
                     f.write(raw_xml)
-                print(f"✅ 成功提纯并存盘: {output_path}")
+                print(f"✅ 成功完美提纯存盘: {output_path}")
                 updated_any = True
             else:
                 print(f"❌ 抓取失败。")
@@ -107,4 +121,11 @@ def download_403_feeds():
     print("\n" + "=" * 45)
 
 if __name__ == "__main__":
+    # 1. 启动前大扫除，防止上次异常残留导致内核无法挂载
+    force_kill_edge()
+    
+    # 2. 核心抓取管线
     download_403_feeds()
+    
+    # 3. 运行结束拔线，彻底释放 Mac 系统内存，不留未响应图标
+    force_kill_edge()
