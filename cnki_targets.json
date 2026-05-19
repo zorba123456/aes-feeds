@@ -1,0 +1,54 @@
+{
+    "SYPF": {
+        "name": "实用皮肤病学杂志",
+        "rss_url": "https://rss.cnki.net/knavi/rss/SYPF?pcode=CJFD,CCJD"
+    },
+    "ZYXW": {
+        "name": "皮肤科学通报",
+        "rss_url": "https://rss.cnki.net/knavi/rss/ZYXW?pcode=CJFD,CCJD"
+    },
+    "XHYX": {
+        "name": "协和医学杂志",
+        "rss_url": "https://rss.cnki.net/knavi/rss/XHYX?pcode=CJFD,CCJD"
+    },
+    "LCPF": {
+        "name": "临床皮肤科杂志",
+        "rss_url": "https://rss.cnki.net/knavi/rss/LCPF?pcode=CJFD,CCJD"
+    },
+    "SMZW": {
+        "name": "中国美容整形外科杂志",
+        "rss_url": "https://rss.cnki.net/knavi/rss/SMZW?pcode=CJFD,CCJD"
+    },
+    "MRYX": {
+        "name": "中国美容医学",
+        "rss_url": "https://rss.cnki.net/knavi/rss/MRYX?pcode=CJFD,CCJD"
+    },
+    "ZBFX": {
+        "name": "中国皮肤性病学杂志",
+        "rss_url": "https://rss.cnki.net/knavi/rss/ZBFX?pcode=CJFD,CCJD"
+    },
+    "ZGJG": {
+        "name": "中国激光医学杂志",
+        "rss_url": "https://rss.cnki.net/knavi/rss/ZGJG?pcode=CJFD,CCJD"
+    },
+    "ZYLZ": {
+        "name": "中国医疗器械杂志",
+        "rss_url": "https://rss.cnki.net/knavi/rss/ZYLZ?pcode=CJFD,CCJD"
+    },
+    "ZGQX": {
+        "name": "中国医疗器械信息",
+        "rss_url": "https://rss.cnki.net/knavi/rss/ZGQX?pcode=CJFD,CCJD"
+    },
+    "ZHPF": {
+        "name": "中华皮肤科杂志",
+        "rss_url": "https://rss.cnki.net/knavi/rss/ZHPF?pcode=CJFD,CCJD"
+    },
+    "ZHZX": {
+        "name": "中华整形外科杂志",
+        "rss_url": "https://rss.cnki.net/knavi/rss/ZHZX?pcode=CJFD,CCJD"
+    },
+    "ZHMR": {
+        "name": "中华医学美学美容杂志",
+        "rss_url": "https://rss.cnki.net/knavi/rss/ZHMR?pcode=CJFD,CCJD"
+    }
+}
