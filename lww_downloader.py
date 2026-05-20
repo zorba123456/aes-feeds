@@ -5,11 +5,10 @@ import subprocess
 import re
 from DrissionPage import ChromiumPage, ChromiumOptions
 
-# 全局版本号升级为 3.3.2，加入 XML 尾部精准切割手术，彻底根除“Extra content”报错
-__version__ = "3.3.2-XML精准切割版"
+__version__ = "3.4.1-全量正式版"
 
 def force_kill_edge():
-    """暴力清理所有 Edge 残流进程，防止 Mac 出现未响应僵尸图标"""
+    """清理 Edge 残流进程"""
     print("🧹 正在执行环境大扫除 (强杀 Edge 残留进程)...")
     try:
         subprocess.run(['killall', '-9', 'Microsoft Edge'], stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
@@ -18,16 +17,13 @@ def force_kill_edge():
         pass
 
 def load_config():
-    """动态获取当前脚本所在的绝对目录，精准锁定同级目录下的 config.json"""
     current_dir = os.path.dirname(os.path.abspath(__file__))
     config_path = os.path.join(current_dir, 'config.json')
     with open(config_path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
 def push_to_github():
-    """自动化 Git 管线：深入 aes-feeds 子模块内部进行精确推送"""
     print("\n📤 启动 GitHub 自动同步 (LWW Feeds)...")
-    
     current_dir = os.path.dirname(os.path.abspath(__file__))
     
     try:
@@ -36,14 +32,14 @@ def push_to_github():
         subprocess.run(["git", "commit", "-m", commit_msg], cwd=current_dir, check=True)
         subprocess.run(["git", "push"], cwd=current_dir, check=True)
         print("✅ 同步成功！LWW 数据已成功推送至 aes-feeds 独立仓库。")
-    except subprocess.CalledProcessError as e:
+    except subprocess.CalledProcessError:
         print("ℹ️ 未检测到新文献或同步无变动，跳过推送。")
 
 def download_403_feeds():
     config = load_config()
     
     print("=" * 45)
-    print(f"🚀 启动 LWW 强攻与回输管线 [v{__version__}]")
+    print(f"🚀 启动 LWW 强攻与提纯管线 [v{__version__}]")
     print("=" * 45)
     
     co = ChromiumOptions()
@@ -97,27 +93,59 @@ def download_403_feeds():
                     time.sleep(1) 
             
             if success:
-                # 核心修复区：只截取 <rss> 到 </rss> 之间的干净肉体，切除所有尾部注入的毒瘤代码
                 start_match = re.search(r'(<rss|<feed)', raw_xml, re.IGNORECASE)
                 if start_match:
                     start_idx = start_match.start()
                     
-                    # 寻找真正的闭合标签位置
                     raw_lower = raw_xml.lower()
                     end_rss = raw_lower.rfind('</rss>')
                     end_feed = raw_lower.rfind('</feed>')
                     
                     if end_rss != -1:
-                        end_idx = end_rss + 6  # 加上 </rss> 的长度
+                        end_idx = end_rss + 6  
                     elif end_feed != -1:
-                        end_idx = end_feed + 7 # 加上 </feed> 的长度
+                        end_idx = end_feed + 7 
                     else:
                         end_idx = len(raw_xml)
                         
                     pure_xml = raw_xml[start_idx:end_idx]
-                    
-                    # 暴力剥离可能存在的旧版xml声明，重新赋予标准头
                     pure_xml = re.sub(r'<\?xml.*?\?>', '', pure_xml, flags=re.IGNORECASE).strip()
+
+                    items = re.findall(r'<item>.*?</item>', pure_xml, re.DOTALL)
+                    for item in items:
+                        new_item = item
+                        
+                        # 提取 citation
+                        citation_match = re.search(r'<citation><!\[CDATA\[(.*?)\]\]></citation>', new_item, re.DOTALL)
+                        if not citation_match:
+                            citation_match = re.search(r'<citation>(.*?)</citation>', new_item, re.DOTALL)
+                            
+                        issue_info = "最新优先发表"
+                        if citation_match:
+                            citation_text = citation_match.group(1)
+                            issue_match = re.search(r'(\d+\s*\([^)]+\)[^.]*)', citation_text)
+                            if issue_match:
+                                issue_info = issue_match.group(1).strip()
+                            else:
+                                issue_info = citation_text.split('doi:')[0].strip()
+
+                        # 提取 pubDate
+                        pub_date_match = re.search(r'<pubDate>(.*?)</pubDate>', new_item)
+                        pub_date_str = pub_date_match.group(1) if pub_date_match else "未知时间"
+
+                        # 注入 description
+                        desc_match = re.search(r'<description>(.*?)</description>', new_item, re.DOTALL)
+                        if desc_match:
+                            original_desc = desc_match.group(1)
+                            if original_desc.startswith('<![CDATA[') and original_desc.endswith(']]>'):
+                                inner_desc = original_desc[9:-3]
+                                new_desc = f"<![CDATA[<b>所属期数:</b> {issue_info}<br><b>出版时间:</b> {pub_date_str}<br><br>{inner_desc}]]>"
+                            else:
+                                new_desc = f"<![CDATA[<b>所属期数:</b> {issue_info}<br><b>出版时间:</b> {pub_date_str}<br><br>{original_desc}]]>"
+                            
+                            new_item = new_item.replace(f"<description>{original_desc}</description>", f"<description>{new_desc}</description>")
+                            pure_xml = pure_xml.replace(item, new_item)
+
                     raw_xml = '<?xml version="1.0" encoding="utf-8"?>\n' + pure_xml
                 
                 raw_xml = raw_xml.replace('\u2028', '\n').replace('\u2029', '\n')
