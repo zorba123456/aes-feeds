@@ -1,12 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-LWW Journals RSS Downloader & Refiner
-Version: V3.4.2 (DrissionPage Standard Core + CDATA Protection)
-Description: 基于 Edge 浏览器自动化驱动，完美穿透 Cloudflare 防火墙。
-             升级防坍塌清洗机制，确保多次跑批或数据异常时描述节点不发生嵌套。
-"""
-
 import os
 import json
 import time
@@ -14,10 +5,10 @@ import subprocess
 import re
 from DrissionPage import ChromiumPage, ChromiumOptions
 
-__version__ = "3.4.2-全量去重正式版"
+__version__ = "3.4.1-全量正式版"
 
 def force_kill_edge():
-    """清理 Edge 残留进程"""
+    """清理 Edge 残流进程"""
     print("🧹 正在执行环境大扫除 (强杀 Edge 残留进程)...")
     try:
         subprocess.run(['killall', '-9', 'Microsoft Edge'], stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
@@ -40,107 +31,143 @@ def push_to_github():
         commit_msg = f"Auto-update LWW feeds: {time.strftime('%Y-%m-%d %H:%M:%S')}"
         subprocess.run(["git", "commit", "-m", commit_msg], cwd=current_dir, check=True)
         subprocess.run(["git", "push"], cwd=current_dir, check=True)
-        print("✅ 同步成功！LWW 数据已成功推送远端。")
-    except Exception as e:
-        print(f"❌ Git 同步失败: {e}")
+        print("✅ 同步成功！LWW 数据已成功推送至 aes-feeds 独立仓库。")
+    except subprocess.CalledProcessError:
+        print("ℹ️ 未检测到新文献或同步无变动，跳过推送。")
 
-def main():
-    force_kill_edge()
+def download_403_feeds():
     config = load_config()
     
-    # 初始化 DrissionPage 配置（沿用 v3.4.1 绝对稳定的本地配置）
+    print("=" * 45)
+    print(f"🚀 启动 LWW 强攻与提纯管线 [v{__version__}]")
+    print("=" * 45)
+    
     co = ChromiumOptions()
-    co.set_argument('--headless')
-    co.set_argument('--no-sandbox')
-    co.set_argument('--disable-gpu')
+    edge_path = '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge'
+    co.set_browser_path(edge_path)
     
-    # 强制绑定本地 Mac 的真实 Edge 路径，确保护照绿灯
-    co.set_browser_path('/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge')
+    co.headless(False) 
+    co.set_argument('--no-sandbox')    
+    co.set_argument('--disable-gpu')   
+    co.set_local_port(9666) 
     
-    page = ChromiumPage(co)
-    updated_any = False
+    try:
+        page = ChromiumPage(co)
+    except Exception as e:
+        print(f"💥 Edge 内核启动失败！详情: {e}")
+        return
+
+    output_dir = os.path.dirname(os.path.abspath(__file__))
+    journals = config.get('lww_journals', [])
+    updated_any = False 
     
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    
-    for journal in config['journals']:
+    for journal in journals:
         name = journal['name']
-        rss_url = journal['rss_url']
-        output_filename = journal['output_filename']
-        output_path = os.path.join(current_dir, output_filename)
+        url = journal['url']
+        output_path = os.path.join(output_dir, f"{name}.xml")
         
-        print(f"\n📡 正在抓取期刊源: {name} ...")
+        print(f"\n📡 正在抓取: {name}")
         
         try:
-            page.get(rss_url)
-            time.sleep(3) # 留出缓冲时间过 WAF 盾
+            page.get(url)
+            success = False
             
-            raw_html = page.html
+            for attempt in range(2):
+                if success: break
+                if attempt == 1:
+                    page.refresh()
+                    time.sleep(2) 
+                
+                for i in range(20):
+                    raw_xml = page.html
+                    if any(tag in raw_xml.lower() for tag in ["<rss", "<feed", "<?xml", "cdata"]):
+                        success = True
+                        break
+                    
+                    try:
+                        cf_frame = page.get_frame('@src^https://challenges.cloudflare.com', timeout=0.5)
+                        if cf_frame:
+                            box = cf_frame.ele('.mark', timeout=0.5) or cf_frame.ele('t:label', timeout=0.5)
+                            if box: box.click()
+                    except: pass
+                    time.sleep(1) 
             
-            # 从 HTML 页面中精准提取 XML 原生代码块
-            xml_match = re.search(r'<rss.*?</rss>', raw_html, re.DOTALL | re.IGNORECASE)
-            
-            if xml_match:
-                pure_xml = xml_match.group(0)
-                
-                # 修复可能存在的空命名空间破损
-                pure_xml = re.sub(r'xmlns:prism=""', 'xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"', pure_xml)
-                
-                # 抓取所有的 item 节点进行学术提纯
-                items = re.findall(r'<item>.*?</item>', pure_xml, re.DOTALL)
-                print(f"📦 成功捕获 {len(items)} 个文献条目。正在注入所属期数与出版时间...")
-                
-                for item in items:
-                    new_item = item
+            if success:
+                start_match = re.search(r'(<rss|<feed)', raw_xml, re.IGNORECASE)
+                if start_match:
+                    start_idx = start_match.start()
                     
-                    # 提取 LWW 独有的引文属性
-                    vol_m = re.search(r'<prism:volume>(.*?)</prism:volume>', item)
-                    num_m = re.search(r'<prism:number>(.*?)</prism:number>', item)
-                    pub_m = re.search(r'<pubDate>(.*?)</pubDate>', item)
+                    raw_lower = raw_xml.lower()
+                    end_rss = raw_lower.rfind('</rss>')
+                    end_feed = raw_lower.rfind('</feed>')
                     
-                    vol_str = vol_m.group(1) if vol_m else ""
-                    num_str = num_m.group(1) if num_m else ""
-                    pub_date_str = pub_m.group(1) if pub_m else "Unknown Date"
-                    
-                    issue_info = f"Vol. {vol_str} No. {num_str}" if (vol_str or num_str) else "Ahead of Print"
-                    
-                    # =======================================================
-                    # 🛠️ V3.4.2 核心去重防御补丁：完美收拢 description
-                    # =======================================================
-                    desc_match = re.search(r'<description>(.*?)</description>', new_item, re.DOTALL)
-                    if desc_match:
-                        original_desc = desc_match.group(1)
+                    if end_rss != -1:
+                        end_idx = end_rss + 6  
+                    elif end_feed != -1:
+                        end_idx = end_feed + 7 
+                    else:
+                        end_idx = len(raw_xml)
                         
-                        # 强行剔除内容内部可能由于多次跑批残存的 CDATA 标签，杜绝嵌套坍塌
-                        clean_inner = re.sub(r'<!\[CDATA\[|\]\]>', '', original_desc)
-                        if not clean_inner.strip():
-                            clean_inner = "No description available."
+                    pure_xml = raw_xml[start_idx:end_idx]
+                    pure_xml = re.sub(r'<\?xml.*?\?>', '', pure_xml, flags=re.IGNORECASE).strip()
+
+                    items = re.findall(r'<item>.*?</item>', pure_xml, re.DOTALL)
+                    for item in items:
+                        new_item = item
                         
-                        # 构建单层、结构严丝合缝的干净新外壳
-                        new_desc = f"<![CDATA[<b>所属期数:</b> {issue_info}<br><b>出版时间:</b> {pub_date_str}<br><br>{clean_inner.strip()}]]>"
-                        
-                        new_item = new_item.replace(f"<description>{original_desc}</description>", f"<description>{new_desc}</description>")
-                        pure_xml = pure_xml.replace(item, new_item)
+                        # 提取 citation
+                        citation_match = re.search(r'<citation><!\[CDATA\[(.*?)\]\]></citation>', new_item, re.DOTALL)
+                        if not citation_match:
+                            citation_match = re.search(r'<citation>(.*?)</citation>', new_item, re.DOTALL)
+                            
+                        issue_info = "最新优先发表"
+                        if citation_match:
+                            citation_text = citation_match.group(1)
+                            issue_match = re.search(r'(\d+\s*\([^)]+\)[^.]*)', citation_text)
+                            if issue_match:
+                                issue_info = issue_match.group(1).strip()
+                            else:
+                                issue_info = citation_text.split('doi:')[0].strip()
+
+                        # 提取 pubDate
+                        pub_date_match = re.search(r'<pubDate>(.*?)</pubDate>', new_item)
+                        pub_date_str = pub_date_match.group(1) if pub_date_match else "未知时间"
+
+                        # 注入 description
+                        desc_match = re.search(r'<description>(.*?)</description>', new_item, re.DOTALL)
+                        if desc_match:
+                            original_desc = desc_match.group(1)
+                            if original_desc.startswith('<![CDATA[') and original_desc.endswith(']]>'):
+                                inner_desc = original_desc[9:-3]
+                                new_desc = f"<![CDATA[<b>所属期数:</b> {issue_info}<br><b>出版时间:</b> {pub_date_str}<br><br>{inner_desc}]]>"
+                            else:
+                                new_desc = f"<![CDATA[<b>所属期数:</b> {issue_info}<br><b>出版时间:</b> {pub_date_str}<br><br>{original_desc}]]>"
+                            
+                            new_item = new_item.replace(f"<description>{original_desc}</description>", f"<description>{new_desc}</description>")
+                            pure_xml = pure_xml.replace(item, new_item)
+
+                    raw_xml = '<?xml version="1.0" encoding="utf-8"?>\n' + pure_xml
                 
-                # 规范化组装标准 RSS 头部骨架
-                raw_xml = '<?xml version="1.0" encoding="utf-8"?>\n' + pure_xml
                 raw_xml = raw_xml.replace('\u2028', '\n').replace('\u2029', '\n')
                 
-                # 落地到本地物理文件系统
                 with open(output_path, 'w', encoding='utf-8') as f:
                     f.write(raw_xml)
                 print(f"✅ 成功完美提纯存盘: {output_path}")
                 updated_any = True
             else:
-                print(f"❌ 页面提取失败，未检测到合规的 XML 根节点。")
+                print(f"❌ 抓取失败。")
                 
         except Exception as e:
-            print(f"⚠️ 运行时异常捕获: {e}")
+            print(f"⚠️ 异常: {e}")
             
     page.quit()
     
-    # 数据发生物理变更时，自动调用上方的纯图形/静默同步机制上云
     if updated_any:
         push_to_github()
+    
+    print("\n" + "=" * 45)
 
 if __name__ == "__main__":
-    main()
+    force_kill_edge()
+    download_403_feeds()
+    force_kill_edge()

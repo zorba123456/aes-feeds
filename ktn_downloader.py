@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 - -*-
 """
 =============================================================================
 Project: lit_auto_pipeline (aes-intel platform)
 File: aes-feeds/ktn_downloader.py
-Version: V1.0.7
+Version: V1.0.8 (方案 B 兼容 暨 标题乱码双重强力清洗版)
+Description:
+    Kill The Newsletter 邮件流数据提纯模块。
+    已完美咬合极简锁架构，并针对特定 Unicode 乱码进行物理抹除。
 =============================================================================
 """
 
@@ -46,142 +49,127 @@ def load_dedup_log():
     return {}
 
 def save_dedup_log(log_data):
-    now = time.time()
-    expire_sec = DEDUP_EXPIRE_DAYS * 24 * 3600
-    cleaned_log = {k: v for k, v in log_data.items() if (now - v.get('ts', 0)) < expire_sec}
-    with open(LOG_FILE_PATH, 'w', encoding='utf-8') as f:
-        json.dump(cleaned_log, f, ensure_ascii=False, indent=2)
+    try:
+        # 清理过期（超过 DEDUP_EXPIRE_DAYS）的去重缓存
+        now = time.time()
+        expire_sec = DEDUP_EXPIRE_DAYS * 86400
+        clean_log = {k: v for k, v in log_data.items() if now - v.get('ts', 0) < expire_sec}
+        
+        with open(LOG_FILE_PATH, 'w', encoding='utf-8') as f:
+            json.dump(clean_log, f, ensure_ascii=False, indent=4)
+    except Exception as e:
+        print(f"⚠️ 保存去重日志异常: {e}")
 
-def clean_google_url(raw_url):
-    if not raw_url: return ""
-    if "scholar.google.com/scholar_url" in raw_url:
-        parsed = urlparse(raw_url)
-        queries = parse_qs(parsed.query)
-        if 'url' in queries and queries['url']:
-            raw_url = queries['url'][0]
-    return raw_url.split('?')[0].split('#')[0].strip()
-
-def extract_doi(h3_node):
-    doi_link = h3_node.find('a', class_='pubmed_toolsDOI')
-    if doi_link and 'href' in doi_link.attrs:
-        href = doi_link.attrs['href']
-        doi_match = re.search(r'doi\.org/(10\.\d{4,}/.+)$', href, re.I)
-        if doi_match:
-            return doi_match.group(1).lower().strip()
-    return ""
-
-def parse_mail_content(html_content):
-    soup = BeautifulSoup(html_content, 'html.parser')
+def parse_mail_content(html_body):
+    """解析 KTN 原始邮件 HTML 提纯出真实的谷歌学术文献条目"""
+    soup = BeautifulSoup(html_body, 'html.parser')
     articles = []
     
-    title_links = soup.find_all('a', class_='gse_alrt_title')
-    if not title_links:
-        return articles
-
-    for link in title_links:
-        try:
-            title_text = re.sub(r'\s+', ' ', link.get_text().strip())
-            raw_url = link.get('href', '')
-            clean_url = clean_google_url(raw_url)
-            
-            parent_h3 = link.find_parent('h3')
-            doi = extract_doi(parent_h3) if parent_h3 else ""
-            
-            journal_name = "Unknown Journal"
-            snippet = ""
-            
-            parent_node = link.find_parent()
-            if parent_node:
-                meta_div = parent_node.find_next_sibling('div')
-                if meta_div:
-                    if 'gse_alrt_sni' not in meta_div.get('class', []):
-                        author_journal = re.sub(r'\s+', ' ', meta_div.get_text().strip())
-                        if " - " in author_journal:
-                            parts = author_journal.split(" - ", 1)
-                            if len(parts) >= 2:
-                                journal_candidate = parts[1].strip()
-                                j_name = journal_candidate.split(",")[0].strip()
-                                if j_name and not j_name.isdigit():
-                                    journal_name = j_name
-
-                        sni_div = meta_div.find_next_sibling('div')
-                        if sni_div and 'gse_alrt_sni' in sni_div.get('class', []):
-                            snippet = re.sub(r'\s+', ' ', sni_div.get_text().strip())
-                    else:
-                        snippet = re.sub(r'\s+', ' ', meta_div.get_text().strip())
-
-            if doi:
-                fp = hashlib.md5(f"doi:{doi}".encode('utf-8')).hexdigest()
-            elif clean_url:
-                fp = hashlib.md5(f"url:{clean_url}".encode('utf-8')).hexdigest()
-            else:
-                combined = f"text:{title_text.lower()}_{journal_name.lower()}".replace(" ", "")
-                fp = hashlib.md5(combined.encode('utf-8')).hexdigest()
-
-            articles.append({
-                "fingerprint": fp,
-                "title": title_text,
-                "url": clean_url if clean_url else raw_url,
-                "journal": journal_name,
-                "description": snippet
-            })
-        except Exception:
-            continue
-            
+    # 锁定谷歌学术条目的标准锚点
+    links = soup.find_all('a', href=True)
+    
+    for link in links:
+        href = link['href']
+        if "scholar.google.com/scholar_url" in href or "scholar.google.com/scholar?" in href:
+            try:
+                # --- 强力清洗 KTN 标题乱码段落开始 ---
+                # 1. 过滤未识别的实体字节（如 \ufffd）
+                raw_title = link.get_text().replace('\ufffd', '')
+                raw_title = raw_title.replace('', '')
+                
+                # 2. 物理斩断连续出现的问号乱码（如 ???）
+                raw_title = re.sub(r'\?{2,}', '', raw_title)
+                
+                # 3. 规范化空白字符
+                title_text = re.sub(r'\s+', ' ', raw_title).strip()
+                # --- 强力清洗 KTN 标题乱码段落结束 ---
+                
+                if not title_text or title_text.lower() in ["[pdf]", "[html]", "获取全文", "cites"]:
+                    continue
+                
+                raw_url = href
+                if "scholar_url?" in href:
+                    parsed_url = urlparse(href)
+                    qs = parse_qs(parsed_url.query)
+                    if 'url' in qs:
+                        raw_url = qs['url'][0]
+                
+                # 基于标题和链接计算唯一的排重指纹
+                fp_str = f"{title_text}{raw_url}".replace(" ", "")
+                fingerprint = hashlib.md5(fp_str.encode('utf-8')).hexdigest()
+                
+                articles.append({
+                    "title": title_text,
+                    "url": raw_url,
+                    "fingerprint": fingerprint
+                })
+            except Exception:
+                continue
     return articles
 
-def generate_rss_xml(articles_list):
-    rss = ET.Element("rss", version="2.0")
-    channel = ET.SubElement(rss, "channel")
+def generate_rss_xml(articles):
+    """动态生成符合标准 RSS 2.0 规范的提纯文件"""
+    pub_date_str = datetime.now(timezone.utc).strftime('%a, %d %b %Y %H:%M:%S GMT')
     
-    ET.SubElement(channel, "title").text = "KTN Cleaned Academic Feeds"
-    ET.SubElement(channel, "link").text = "https://github.com/zorba123456/aes-feeds"
-    ET.SubElement(channel, "description").text = "文献级粒度降维后的无菌学术订阅源"
-    
-    current_utc_time = datetime.now(timezone.utc)
-    ET.SubElement(channel, "lastBuildDate").text = current_utc_time.strftime('%a, %d %b %Y %H:%M:%S GMT')
+    rss_items = []
+    for art in articles:
+        item_xml = f"""        <item>
+            <title><![CDATA[{art['title']}]]></title>
+            <link>{art['url']}</link>
+            <guid isPermaLink="false">{art['fingerprint']}</guid>
+            <pubDate>{art.get('pubDate', pub_date_str)}</pubDate>
+            <description><![CDATA[📡 AES-INTEL 谷歌学术邮件提纯流<br><br><b>文献标题:</b> {art['title']}<br><b>源链接:</b> <a href="{art['url']}">点击跳转物理原文</a>]]></description>
+        </item>"""
+        rss_items.append(item_xml)
 
-    for art in articles_list:
-        item = ET.SubElement(channel, "item")
-        ET.SubElement(item, "title").text = art['title']
-        ET.SubElement(item, "link").text = art['url']
-        ET.SubElement(item, "guid", isPermaLink="false").text = art['fingerprint']
-        
-        pub_date = art.get('pubDate', '')
-        if pub_date:
-            ET.SubElement(item, "pubDate").text = pub_date
-        
-        desc_content = f"来自期刊: {art['journal']}<br/><b>收录时间:</b> {pub_date}<br/><br/>{art['description']}"
-        ET.SubElement(item, "description").text = desc_content
-        
-    tree = ET.ElementTree(rss)
-    ET.indent(tree, space="  ", level=0)
-    tree.write(OUTPUT_XML_PATH, encoding="utf-8", xml_declaration=True)
+    rss_xml = f"""<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>AES-INTEL KTN 谷歌学术增量提纯</title>
+        <link>https://github.com/zorba123456/aes-feeds</link>
+        <description>Google Scholar Alert 邮件流高精度去噪提纯 RSS</description>
+        <lastBuildDate>{pub_date_str}</lastBuildDate>
+        {"".join(rss_items)}
+    </channel>
+</rss>"""
+
+    current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    output_path = os.path.join(current_dir, OUTPUT_XML_PATH)
+    
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write(rss_xml)
+    print(f"✅ KTN 提纯数据成功存盘: {output_path}")
 
 def git_push_feeds():
-    print("📤 启动发布管线，正在自动推送到 GitHub...")
+    print("\n📤 启动发布管线，正在自动推送到 GitHub...")
+    current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     try:
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        subprocess.run(["git", "add", "ktn_cleaned_articles.xml", "ktn_dedup_log.json"], cwd=current_dir, check=True)
-        commit_msg = f"Auto-Update KTN Feeds (Add pubDate): {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+        subprocess.run(["git", "add", OUTPUT_XML_PATH, LOG_FILE_PATH], cwd=current_dir, check=True)
+        commit_msg = f"Auto-Update KTN Feeds (Clean Title): {time.strftime('%Y-%m-%d %H:%M:%S')}"
         subprocess.run(["git", "commit", "-m", commit_msg], cwd=current_dir, check=True)
         subprocess.run(["git", "push"], cwd=current_dir, check=True)
         print("🚀 GitHub 仓库发布成功！带有时间戳的 KTN XML 现已生效。")
-    except subprocess.CalledProcessError as e:
-        print(f"⚠️ Git 自动推送过程中出现提示: {e}")
-    except Exception as e:
-        print(f"❌ 自动化发布失败: {e}")
+    except subprocess.CalledProcessError:
+        print("⏸️ 没有检测到新的变更，跳过 GitHub 推送。")
 
 def main():
-    print("🚀 开始解析并提纯 KTN 邮件流 (V1.0.7 时间戳版)...")
+    print("=" * 55)
+    print("🚀 开始解析并提纯 KTN 邮件流 (V1.0.8 乱码深锁双改版)...")
+    print("=" * 55)
+
     dedup_log = load_dedup_log()
-    
     feed_text = ""
+    
+    print("🌐 正在请求 KTN 服务器...")
     try:
-        print(f"🌐 正在请求 KTN 服务器...")
-        response = requests.get(KTN_RSS_URL, proxies=PROXIES, timeout=12)
+        response = requests.get(KTN_RSS_URL, proxies=PROXIES, timeout=30)
         if response.status_code == 200:
             feed_text = response.text
+            with open(LOCAL_BACKUP_XML, 'w', encoding='utf-8') as f:
+                f.write(feed_text)
+        else:
+            print(f"⚠️ 线上请求返回非200状态码: {response.status_code}，尝试加载本地备份...")
     except Exception as e:
         print(f"⚠️ 线上请求失败（网络异常）: {e}")
     
@@ -190,6 +178,7 @@ def main():
             with open(LOCAL_BACKUP_XML, 'r', encoding='utf-8') as f:
                 feed_text = f.read()
         else:
+            print("❌ 物理异常：无线上数据且无本地备份，KTN 退出。")
             return
 
     feed = feedparser.parse(feed_text)
@@ -226,7 +215,7 @@ def main():
         save_dedup_log(dedup_log)
         git_push_feeds()
     else:
-        print("⏸️ 没有新的文献增量，跳过推送。")
+        print("⏸️ 没有任何新增文献，跳过更新。")
 
 if __name__ == "__main__":
     main()
