@@ -4,11 +4,10 @@
 =============================================================================
 Project: lit_auto_pipeline (aes-intel platform)
 File: ktn_downloader.py
-Version: V2.2.5 (终极对齐版)
+Version: V2.2.6 (标题深度去噪纯净版)
 Description:
-    100% 保持现状抓取逻辑与 Edge 图形弹窗行为。
-    1. 物理文件名保持纯小写，彻底根治 GitHub 区分大小写导致的 404 挂墙问题。
-    2. RSS 频道标题与 OPML 显示名强制注入大写 "KTN_" 前缀，确保 Inoreader 完美识别。
+    1. 彻底剔除关键词提取阶段的多重双引号噪声，确保呈现标准的 KTN_"关键词" 格式。
+    2. 物理文件名严格锁定小写（ktn_*.xml），彻底根治 GitHub 区分大小写导致的 404。
 =============================================================================
 """
 
@@ -44,7 +43,8 @@ def clean_text_noise(text):
 
 def sanitize_filename(name):
     if not name: return "unknown"
-    s = name.replace('"', '').replace("'", '').strip()
+    # 清洗掉所有类型的引号，防止物理文件名混乱
+    s = name.replace('"', '').replace("'", '').replace('“', '').replace('”', '').strip()
     s = re.sub(r'[^a-zA-Z0-9\u4e00-\u9fa5]+', '_', s)
     return s.lower().strip('_')
 
@@ -114,12 +114,13 @@ def write_channel_xml(keyword, source_type, articles):
         rss_items.append(item_xml)
 
     safe_name = sanitize_filename(keyword)
-    # 🟢 修正：文件名一律保持全小写，规避 Git 大小写不同步的硬伤
     filename = f"ktn_{safe_name}.xml"
-    
     output_path = os.path.join(BASE_DIR, filename)
-    # 🟢 修正：在 RSS 核心标签里强注 KTN_ 前缀，让 Inoreader 抓取后展现新名字
-    display_title = f"KTN_\"{keyword}\" @ {source_type}"
+    
+    # 🟢 深度去噪：先把原本可能存在的各种引号全部砸碎
+    pure_keyword = keyword.replace('"', '').replace("'", '').replace('“', '').replace('”', '').strip()
+    # 🟢 重新规范标准化输出：统一包装为优雅的 KTN_"标准词"
+    display_title = f'KTN_"{pure_keyword}" @ {source_type}'
     
     rss_xml = f"""<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
@@ -169,8 +170,8 @@ def generate_opml_directory(channel_meta_list):
 
 def main():
     print("=" * 65)
-    print("🚀 启动 KTN 精准分流管线 (V2.2.5 终极对齐版)...")
-    print(f"📂 📂 工作目录: {BASE_DIR}")
+    print("🚀 启动 KTN 精准分流管线 (V2.2.6 标题净化版)...")
+    print(f"📂 工作目录: {BASE_DIR}")
     print("=" * 65)
 
     feed_text = ""
@@ -213,7 +214,6 @@ def main():
     print(f"📡 分析出当前混合池中包含 {len(master_channels)} 个明确的监测对象")
 
     channel_meta_list = []
-    
     for (keyword, source_type), articles in master_channels.items():
         res = write_channel_xml(keyword, source_type, articles)
         if res:
@@ -224,7 +224,6 @@ def main():
         generate_opml_directory(channel_meta_list)
 
     print("\n📤 正在自动推送细分流与总目录到 GitHub...")
-    
     custom_env = os.environ.copy()
     custom_env["HTTP_PROXY"] = PROXY_SERVER
     custom_env["HTTPS_PROXY"] = PROXY_SERVER
