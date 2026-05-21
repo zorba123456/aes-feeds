@@ -8,7 +8,14 @@ from datetime import datetime, timezone, timedelta
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
-__version__ = "6.2.1-精准时间戳修复版"
+__version__ = "6.2.2-去噪版"
+
+def clean_text_noise(text):
+    if not text:
+        return ""
+    cleaned = text.replace('\ufffd', '').replace('\u0000', '')
+    cleaned = re.sub(r'\?{2,}', '', cleaned)
+    return re.sub(r'\s+', ' ', cleaned).strip()
 
 def push_to_github():
     print("\n📤 启动 GitHub 自动同步 (CMA Feeds)...")
@@ -18,154 +25,80 @@ def push_to_github():
         commit_msg = f"Auto-update CMA feeds: {time.strftime('%Y-%m-%d %H:%M:%S')}"
         subprocess.run(["git", "commit", "-m", commit_msg], cwd=current_dir, check=True)
         subprocess.run(["git", "push"], cwd=current_dir, check=True)
-        print("✅ 同步成功！CMA 数据已成功推送至 aes-feeds 独立仓库。")
+        print("✅ 同步成功！")
     except subprocess.CalledProcessError:
-        print("ℹ️ 未检测到新文献或同步无变动，跳过推送。")
+        print("ℹ️ 未检测到新文献，跳过推送。")
 
 def fetch_cma_journal(playwright_context, base_url, journal_name, output_filename):
     print(f"\n📡 正在抓取: {journal_name}")
-    
     page = playwright_context.new_page()
     rss_items = []
     page_num = 1
     
     while True:
         sep = "&" if "?" in base_url else "?"
-        page_url = f"{base_url}{sep}pageNo={page_num}"
-        print(f"  ├─ 探测第 {page_num} 页... ", end="")
+        url = f"{base_url}{sep}page={page_num}"
+        print(f"  ├─ 探测第 {page_num} 页...")
         
         try:
-            page.goto(page_url, wait_until="networkidle", timeout=30000)
-            time.sleep(3.0) 
-            html_content = page.content()
-            soup = BeautifulSoup(html_content, 'html.parser')
-        except Exception as e:
-            print(f"❌ 页面加载或网络渲染超时: {e}")
+            page.goto(url, timeout=45000)
+            page.wait_for_selector(".journal-article-item", timeout=15000)
+            content = page.content()
+        except Exception:
             break
-
-        blocks = soup.select('div.s_searchResult_li, li.s_searchResult_li')
-        valid_count = 0
-        seen_links = set()
-
-        if blocks:
-            for node in blocks:
-                title = ""
-                link = ""
+            
+        soup = BeautifulSoup(content, 'html.parser')
+        items = soup.find_all(class_="journal-article-item")
+        
+        if not items:
+            break
+            
+        for item in items:
+            try:
+                title_el = item.find(class_="article-title")
+                # 对抓取到的 HTML 文本进行深度乱码自清洗
+                title = clean_text_noise(title_el.get_text()) if title_el else ""
+                link = "https://www.yiigle.com" + title_el.find("a")["href"] if title_el and title_el.find("a") else ""
                 
-                # 遍历块内所有链接，跳过图标/空标签，锁定标题
-                a_tags = node.select('a[href*="/cmaid/"], a[href*="/article/"]')
-                for a in a_tags:
-                    t = a.get('title') or a.get_text(" ", strip=True)
-                    if t and len(t) > 2 and not any(kw in t for kw in ["下载全文", "阅读全文", "PDF下载", "在线客服"]):
-                        title = t
-                        link = a.get('href', '')
-                        break  
+                author_el = item.find(class_="article-author")
+                author = clean_text_noise(author_el.get_text()) if author_el else "未知作者"
+                
+                desc_el = item.find(class_="article-abstract")
+                description = clean_text_noise(desc_el.get_text()) if desc_el else ""
                 
                 if not title or not link:
                     continue
                     
-                if link.startswith('/'):
-                    link = "https://www.yiigle.com" + link
-                elif not link.startswith('http'):
-                    link = base_url
-
-                if link in seen_links:
-                    continue
-
-                node_text = node.get_text(" ", strip=True)
+                pub_date_str = datetime.now(timezone(timedelta(hours=8))).strftime('%a, %d %b %Y %H:%M:%S +0800')
                 
-                # 1. 提取出版日期并转为标准 RSS 时间格式 (放宽正则限制)
-                pub_date_xml = ""
-                display_date = "未知时间"
-                date_match = re.search(r'(\d{4}-\d{2}-\d{2})', node_text)
-                if date_match:
-                    display_date = date_match.group(1)
-                    try:
-                        dt = datetime.strptime(display_date, "%Y-%m-%d")
-                        pub_date_xml = f"<pubDate>{dt.strftime('%a, %d %b %Y 00:00:00 GMT')}</pubDate>"
-                    except ValueError:
-                        pass
-                
-                # 2. 提取期数 (匹配 "2026年42卷04期" 或 "2026, 42(04)")
-                issue_info = "最新优先发表"
-                issue_match = re.search(r'(\d{4}年\d+卷\d+期)', node_text)
-                if not issue_match:
-                    issue_match = re.search(r'(\d{4},\s*\d+\(\d+\))', node_text)
-                if issue_match:
-                    issue_info = issue_match.group(1)
-
-                # 提取作者
-                authors = "本刊编辑部"
-                author_tags = node.select('.author_sec a.linkuser') or node.select('a.linkuser')
-                if author_tags:
-                    authors = ", ".join([auth.get_text(strip=True) for auth in author_tags if auth.get_text(strip=True)])
-                
-                # 提取摘要
-                abstract = "无摘要"
-                abs_tag = node.select_one('.s_searchResult_li_info')
-                if abs_tag:
-                    abstract = abs_tag.get_text(strip=True)
-
-                # 拼接 XML
-                item_xml = f"""
-        <item>
+                item_xml = f"""        <item>
             <title><![CDATA[{title}]]></title>
             <link>{link}</link>
-            <guid isPermaLink="false">{link}</guid>
-            <author><![CDATA[{authors}]]></author>
-            {pub_date_xml}
-            <description><![CDATA[<b>期数：</b>{issue_info}<br><b>出版日期：</b>{display_date}<br><b>作者：</b>{authors}<br><br><b>摘要：</b>{abstract}]]></description>
+            <guid isPermaLink="true">{link}</guid>
+            <pubDate>{pub_date_str}</pubDate>
+            <description><![CDATA[<b>作者:</b> {author}<br><br><b>摘要:</b> {description}]]></description>
         </item>"""
                 rss_items.append(item_xml)
-                seen_links.add(link)
-                valid_count += 1
-        else:
-            # 兜底模式
-            all_a_tags = soup.select('a[href*="/cmaid/"], a[href*="/article/"]')
-            for a_tag in all_a_tags:
-                title = a_tag.get('title') or a_tag.get_text(" ", strip=True)
-                link = a_tag.get('href', '') or ''
+            except Exception:
+                continue
                 
-                if not title or len(title.strip()) < 2 or any(kw in title for kw in ["下载全文", "阅读全文", "PDF下载", "在线客服"]):
-                    continue
-                    
-                if link.startswith('/'):
-                    link = "https://www.yiigle.com" + link
-                elif not link.startswith('http'):
-                    link = base_url
-
-                if link in seen_links:
-                    continue
-
-                item_xml = f"""
-        <item>
-            <title><![CDATA[{title}]]></title>
-            <link>{link}</link>
-            <guid isPermaLink="false">{link}</guid>
-            <author><![CDATA[本刊编辑部]]></author>
-            <description><![CDATA[<b>期数：</b>最新捕获<br><b>作者：</b>本刊编辑部<br><br><b>摘要：</b>无摘要]]></description>
-        </item>"""
-                rss_items.append(item_xml)
-                seen_links.add(link)
-                valid_count += 1
-
-        print(f"成功捕获 {valid_count} 篇真实文献")
-        break 
-
+        page_num += 1
+        if page_num > 1: # 默认抓取前1页即可满足高频增量提纯
+            break
+            
     page.close()
-
-    if not rss_items:
-        return False
-
-    tz = timezone(timedelta(hours=8))
-    pub_date_str = datetime.now(tz).strftime("%a, %d %b %Y %H:%M:%S +0800")
     
+    if not rss_items:
+        print(f"  └─ ❌ {journal_name} 本次未捕获到任何有效文献。")
+        return False
+        
+    pub_date_str = datetime.now(timezone(timedelta(hours=8))).strftime('%a, %d %b %Y %H:%M:%S +0800')
     rss_xml = f"""<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>{journal_name} - 最新文献</title>
+        <title>CMA - {journal_name}</title>
         <link>{base_url}</link>
-        <description>{journal_name} - 自动聚合源</description>
+        <description>{journal_name} - 自动高精度去噪聚合源</description>
         <lastBuildDate>{pub_date_str}</lastBuildDate>
         {"".join(rss_items)}
     </channel>
@@ -174,8 +107,7 @@ def fetch_cma_journal(playwright_context, base_url, journal_name, output_filenam
     output_path = os.path.abspath(os.path.join(os.path.dirname(__file__), output_filename))
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(rss_xml)
-    
-    print(f"  └─ ✅ 成功存盘: {output_path}，RSS 结构闭合。")
+    print(f"  └─ ✅ 成功存盘: {output_path}")
     return True
 
 if __name__ == "__main__":
@@ -190,18 +122,17 @@ if __name__ == "__main__":
     ]
     
     updated_any = False
-    
     with sync_playwright() as p:
-        browser = p.chromium.launch(channel="chrome", headless=True) 
-        context = browser.new_context(
-            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-        )
-        for target in targets:
-            if fetch_cma_journal(context, target['url'], target['name'], target['filename']):
+        browser = p.chromium.launch(channel="msedge", headless=False)
+        context = browser.new_context()
+        
+        for t in targets:
+            success = fetch_cma_journal(context, t["url"], t["name"], t["filename"])
+            if success:
                 updated_any = True
+                
+        context.close()
         browser.close()
         
     if updated_any:
         push_to_github()
-        
-    print("\n" + "=" * 55)

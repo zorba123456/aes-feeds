@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opml version="2.0">
+    <head>
+        <title>AES-INTEL KTN 谷歌学术细分源总目录</title>
+    </head>
+    <body>
+        <outline text="AES-INTEL 谷歌学术情报网" title="AES-INTEL 谷歌学术情报网">
+            <outline text="&quot;botulinum toxin&quot; @ Google Scholar" title="&quot;botulinum toxin&quot; @ Google Scholar" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/aes-feeds/ktn_botulinum_toxin.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
+            <outline text="&quot;hyaluronic acid&quot;  injection @ Google Scholar" title="&quot;hyaluronic acid&quot;  injection @ Google Scholar" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/aes-feeds/ktn_hyaluronic_acid_injection.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
+            <outline text="&quot;aesthetic surgery&quot; @ Google Scholar" title="&quot;aesthetic surgery&quot; @ Google Scholar" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/aes-feeds/ktn_aesthetic_surgery.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
+        </outline>
+    </body>
+</opml>
