@@ -4,12 +4,11 @@
 =============================================================================
 Project: lit_auto_pipeline (aes-intel platform)
 File: ktn_downloader.py
-Version: V2.2.4 (规范前缀与清理版)
+Version: V2.2.5 (终极对齐版)
 Description:
     100% 保持现状抓取逻辑与 Edge 图形弹窗行为。
-    1. 彻底移除旧的大一统混合池大流 XML 的生成逻辑，保持根目录纯净。
-    2. 新生成的细分流物理文件名与 RSS 标题均强制加注 "KTN_" 大写前缀。
-    3. 自动同步覆盖生成包含最新前缀规则的总目录 OPML 文件并原生通过代理推送。
+    1. 物理文件名保持纯小写，彻底根治 GitHub 区分大小写导致的 404 挂墙问题。
+    2. RSS 频道标题与 OPML 显示名强制注入大写 "KTN_" 前缀，确保 Inoreader 完美识别。
 =============================================================================
 """
 
@@ -25,13 +24,11 @@ from urllib.parse import urlparse, parse_qs
 from bs4 import BeautifulSoup
 
 # ==================== 物理配置区域 ====================
-# 锁定当前脚本所在的绝对目录（即 Git 仓库根目录）
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 KTN_RSS_URL = "https://kill-the-newsletter.com/feeds/uwgwyb1cnivki39x.xml"
 LOCAL_BACKUP_XML = os.path.join(BASE_DIR, "uwgwyb1cnivki39x.xml")
 
-# 本地网络代理配置（同时用于 requests 和 git 进程）
 PROXY_SERVER = "http://127.0.0.1:29758"
 PROXIES = {
     "http": PROXY_SERVER,
@@ -117,12 +114,12 @@ def write_channel_xml(keyword, source_type, articles):
         rss_items.append(item_xml)
 
     safe_name = sanitize_filename(keyword)
-    # ✨ 核心修正：物理文件名加上大写的 KTN_ 前缀
-    filename = f"KTN_{safe_name}.xml"
+    # 🟢 修正：文件名一律保持全小写，规避 Git 大小写不同步的硬伤
+    filename = f"ktn_{safe_name}.xml"
     
     output_path = os.path.join(BASE_DIR, filename)
-    # ✨ 核心修正：显示标题也加上 KTN_ 前缀以便 Inoreader 识别
-    display_title = f"KTN_{keyword} @ {source_type}"
+    # 🟢 修正：在 RSS 核心标签里强注 KTN_ 前缀，让 Inoreader 抓取后展现新名字
+    display_title = f"KTN_\"{keyword}\" @ {source_type}"
     
     rss_xml = f"""<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
@@ -172,8 +169,8 @@ def generate_opml_directory(channel_meta_list):
 
 def main():
     print("=" * 65)
-    print("🚀 启动 KTN 精准分流管线 (V2.2.4 规范前缀版)...")
-    print(f"📂 锚定工作目录: {BASE_DIR}")
+    print("🚀 启动 KTN 精准分流管线 (V2.2.5 终极对齐版)...")
+    print(f"📂 📂 工作目录: {BASE_DIR}")
     print("=" * 65)
 
     feed_text = ""
@@ -226,14 +223,13 @@ def main():
     if channel_meta_list:
         generate_opml_directory(channel_meta_list)
 
-    print("\n📤 正在自动推送细分流与总目录到 GitHub (已注入代理保护)...")
+    print("\n📤 正在自动推送细分流与总目录到 GitHub...")
     
     custom_env = os.environ.copy()
     custom_env["HTTP_PROXY"] = PROXY_SERVER
     custom_env["HTTPS_PROXY"] = PROXY_SERVER
     
     try:
-        # 使用 -A 追踪新生成的带 KTN_ 的文件，并自动暂存所有变化
         subprocess.run(["git", "add", "-A"], cwd=BASE_DIR, check=True)
         commit_msg = f"Auto-Update KTN Target-Channels & OPML Directory: {time.strftime('%Y-%m-%d %H:%M:%S')}"
         subprocess.run(["git", "commit", "-m", commit_msg], cwd=BASE_DIR, check=True)
