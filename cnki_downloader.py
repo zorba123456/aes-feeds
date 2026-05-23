@@ -17,8 +17,8 @@ import re
 import subprocess
 from datetime import datetime, timezone
 
-TARGETS_JSON_PATH = "aes-feeds/cnki_targets.json"
-LOG_FILE_PATH = "aes-feeds/cnki_dedup_log.json"
+TARGETS_JSON_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cnki_targets.json")
+LOG_FILE_PATH = os.path.join(os.environ.get("AES_OUT_DIR", os.path.dirname(os.path.abspath(__file__))), "cnki_dedup_log.json")
 DEDUP_EXPIRE_DAYS = 90
 
 PROXIES = {"http": None, "https": None}
@@ -86,7 +86,8 @@ def generate_rss_xml(articles, j_code, j_name):
 </rss>"""
 
     filename = f"cnki_{j_code.lower()}.xml"
-    output_path = f"aes-feeds/{filename}"
+    out_dir = os.environ.get("AES_OUT_DIR", os.path.dirname(os.path.abspath(__file__)))
+    output_path = os.path.join(out_dir, filename)
     
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(rss_xml)
@@ -126,6 +127,7 @@ def main():
         try:
             response = requests.get(rss_url, headers=HEADERS, proxies=PROXIES, timeout=30)
             if response.status_code != 200:
+                print(f"[REPORT] CHANNEL=CNKI ITEM={j_name} COUNT=0 STATUS=FAIL")
                 continue
                 
             feed = feedparser.parse(response.text)
@@ -156,8 +158,10 @@ def main():
                 except Exception:
                     continue
             print(f"  ✅ {j_name} 解析完成，发现新增: {journal_new_count} 篇")
+            print(f"[REPORT] CHANNEL=CNKI ITEM={j_name} COUNT={journal_new_count} STATUS=SUCCESS")
         except Exception as e:
             print(f"  ⚠️ {j_name} 请求异常: {e}")
+            print(f"[REPORT] CHANNEL=CNKI ITEM={j_name} COUNT=0 STATUS=FAIL")
 
     print(f"\n✨ 全部遍历完成。共发现增量文献: {total_new_count} 篇")
 

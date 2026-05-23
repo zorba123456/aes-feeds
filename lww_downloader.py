@@ -22,6 +22,7 @@ import subprocess
 from datetime import datetime, timezone
 from urllib.parse import urlparse, parse_qs
 from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
 # ==================== 物理配置区域 ====================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -56,16 +57,54 @@ def clean_text_noise(text):
     cleaned = re.sub(r'\?{2,}', '', cleaned)
     return re.sub(r'\s+', ' ', cleaned).strip()
 
-def process_lww_feed(feed_key, url):
+def fetch_lww_feed_via_playwright(playwright_context, url):
+    page = playwright_context.new_page()
+    xml_text = None
+    try:
+        response = page.goto(url, timeout=45000)
+        page.wait_for_load_state("domcontentloaded", timeout=15000)
+        time.sleep(3) # 给页面一定的响应时间
+        
+        # 方式 1：从 Playwright 的响应中直接读取原始文本
+        if response:
+            try:
+                xml_text = response.text()
+            except Exception:
+                pass
+                
+        # 方式 2：使用 DOM 序列化
+        if not xml_text or not xml_text.strip().startswith("<?xml"):
+            try:
+                xml_text = page.evaluate("() => new XMLSerializer().serializeToString(document)")
+            except Exception as e:
+                print(f"      ├─ ⚠️ DOM 序列化失败: {e}")
+                
+        # 方式 3：读取 body 的 innerText 兜底
+        if not xml_text or not xml_text.strip().startswith("<?xml"):
+            try:
+                body_text = page.evaluate("() => document.body.innerText")
+                if body_text and body_text.strip().startswith("<?xml"):
+                    xml_text = body_text
+            except Exception:
+                pass
+                
+    except Exception as e:
+        print(f"  ├─ ⚠️ Playwright 请求异常: {e}")
+    finally:
+        page.close()
+    return xml_text
+
+def process_lww_feed(playwright_context, feed_key, url):
     """请求并提纯单个 LWW RSS 馈送通道"""
     print(f"\n📡 正在抓取: {feed_key}")
     try:
-        response = requests.get(url, proxies=PROXIES, timeout=30)
-        if response.status_code != 200:
-            print(f"❌ 无法请求 {feed_key}, HTTP 状态码: {response.status_code}")
+        xml_text = fetch_lww_feed_via_playwright(playwright_context, url)
+        if not xml_text or not xml_text.strip().startswith("<?xml"):
+            print(f"❌ 无法请求 {feed_key} 或内容非标准 XML")
+            print(f"[REPORT] CHANNEL=LWW ITEM={feed_key} COUNT=0 STATUS=FAIL")
             return None
         
-        feed = feedparser.parse(response.text)
+        feed = feedparser.parse(xml_text)
         pub_date_str = datetime.now(timezone.utc).strftime('%a, %d %b %Y %H:%M:%S GMT')
         rss_items = []
         
@@ -85,7 +124,8 @@ def process_lww_feed(feed_key, url):
             rss_items.append(item_xml)
             
         filename = f"{feed_key}.xml"
-        output_path = os.path.join(BASE_DIR, filename)
+        out_dir = os.environ.get("AES_OUT_DIR", BASE_DIR)
+        output_path = os.path.join(out_dir, filename)
         
         rss_xml = f"""<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
@@ -102,15 +142,17 @@ def process_lww_feed(feed_key, url):
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(rss_xml)
         print(f"✅ 成功完美提纯存盘: {output_path}")
+        print(f"[REPORT] CHANNEL=LWW ITEM={feed_key} COUNT={len(rss_items)} STATUS=SUCCESS")
         return filename
 
     except Exception as e:
         print(f"❌ 强攻 {feed_key} 发生物理异常: {e}")
+        print(f"[REPORT] CHANNEL=LWW ITEM={feed_key} COUNT=0 STATUS=FAIL")
         return None
 
 def main():
     print("=============================================")
-    print("🚀 启动 LWW 强攻与提纯管线 [v3.4.2-语法修复版]")
+    print("🚀 启动 LWW 强攻与提纯管线 [v4.0.0-Playwright 强攻版]")
     print(f"📂 工作目录: {BASE_DIR}")
     print("=============================================")
     
@@ -118,10 +160,22 @@ def main():
     clean_environment()
     
     updated_files = []
-    for feed_key, url in LWW_FEEDS.items():
-        res = process_lww_feed(feed_key, url)
-        if res:
-            updated_files.append(res)
+    with sync_playwright() as p:
+        # 使用 Edge 图形化代理通道启动
+        browser = p.chromium.launch(
+            channel="msedge",
+            headless=False,
+            proxy={"server": PROXY_SERVER}
+        )
+        context = browser.new_context()
+        
+        for feed_key, url in LWW_FEEDS.items():
+            res = process_lww_feed(context, feed_key, url)
+            if res:
+                updated_files.append(res)
+                
+        context.close()
+        browser.close()
             
     if updated_files:
         print("\n📤 正在自动推送 LWW 提纯流到 GitHub...")

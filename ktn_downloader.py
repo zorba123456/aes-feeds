@@ -26,7 +26,7 @@ from bs4 import BeautifulSoup
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 KTN_RSS_URL = "https://kill-the-newsletter.com/feeds/uwgwyb1cnivki39x.xml"
-LOCAL_BACKUP_XML = os.path.join(BASE_DIR, "uwgwyb1cnivki39x.xml")
+LOCAL_BACKUP_XML = os.path.join(os.environ.get("AES_OUT_DIR", BASE_DIR), "uwgwyb1cnivki39x.xml")
 
 PROXY_SERVER = "http://127.0.0.1:29758"
 PROXIES = {
@@ -115,7 +115,8 @@ def write_channel_xml(keyword, source_type, articles):
 
     safe_name = sanitize_filename(keyword)
     filename = f"ktn_{safe_name}.xml"
-    output_path = os.path.join(BASE_DIR, filename)
+    out_dir = os.environ.get("AES_OUT_DIR", BASE_DIR)
+    output_path = os.path.join(out_dir, filename)
     
     # 🟢 深度去噪：先把原本可能存在的各种引号全部砸碎
     pure_keyword = keyword.replace('"', '').replace("'", '').replace('“', '').replace('”', '').strip()
@@ -142,7 +143,7 @@ def generate_opml_directory(channel_meta_list):
     if not channel_meta_list:
         return
         
-    opml_path = os.path.join(BASE_DIR, "ktn_channels_directory.opml")
+    opml_path = os.path.join(os.environ.get("AES_OUT_DIR", BASE_DIR), "ktn_channels_directory.opml")
     
     outline_items = []
     for filename, display_title in channel_meta_list:
@@ -190,6 +191,7 @@ def main():
 
     if not feed_text:
         print("❌ 物理异常：无法获取线上流且无本地备份，KTN 退出。")
+        print("[REPORT] CHANNEL=KTN ITEM=master_feed COUNT=0 STATUS=FAIL")
         return
 
     feed = feedparser.parse(feed_text)
@@ -219,6 +221,9 @@ def main():
         if res:
             filename, display_title = res
             channel_meta_list.append((filename, display_title))
+            print(f"[REPORT] CHANNEL=KTN ITEM={keyword} COUNT={len(articles)} STATUS=SUCCESS")
+        else:
+            print(f"[REPORT] CHANNEL=KTN ITEM={keyword} COUNT=0 STATUS=FAIL")
 
     if channel_meta_list:
         generate_opml_directory(channel_meta_list)

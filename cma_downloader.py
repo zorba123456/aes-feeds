@@ -53,86 +53,82 @@ def fetch_cma_journal(playwright_context, base_url, journal_name, output_filenam
     rss_items = []
     page_num = 1
     
-    while True:
-        sep = "&" if "?" in base_url else "?"
-        url = f"{base_url}{sep}page={page_num}"
-        print(f"  ├─ 探测第 {page_num} 页...")
-        
-        try:
-            page.goto(url, timeout=45000)
-            # 🟢 优化：改用更宽容的 body 标志，只要页面开了就强行往下解析，不再死等选择器
-            page.wait_for_load_state("domcontentloaded", timeout=15000)
-            content = page.content()
-        except Exception as e:
-            print(f"  ├─ ⚠️ 页面加载提示: {e}")
-            break
+    try:
+        while True:
+            sep = "&" if "?" in base_url else "?"
+            url = f"{base_url}{sep}page={page_num}"
+            print(f"  ├─ 探测第 {page_num} 页...")
             
-        soup = BeautifulSoup(content, 'html.parser')
-        # 🟢 兼顾旧版与新版易智编译大典的前端特征
-        items = soup.find_all(class_="journal-article-item") or soup.find_all('div', class_=re.compile(r'article.*item'))
-        
-        if not items:
-            # 尝试做一次最后的兜底兜捕
-            items = soup.select("div.list-item") or soup.find_all('li')
-            
-        valid_count = 0
-        for item in items:
             try:
-                title_el = item.find(class_="article-title") or item.select_one("a.title")
-                if not title_el:
-                    continue
+                page.goto(url, timeout=45000)
+                # 🟢 优化：改用更宽容的 body 标志，只要页面开了就强行往下解析，不再死等选择器
+                page.wait_for_load_state("domcontentloaded", timeout=15000)
+                content = page.content()
+            except Exception as e:
+                print(f"  ├─ ⚠️ 页面加载提示: {e}")
+                break
+                
+            soup = BeautifulSoup(content, 'html.parser')
+            # 🟢 兼顾旧版与新版易智编译大典的前端特征
+            items = soup.find_all(class_="journal-article-item") or soup.find_all('div', class_=re.compile(r'article.*item'))
+            
+            if not items:
+                # 尝试做一次最后的兜底兜捕
+                items = soup.select("div.list-item") or soup.find_all('li')
+                
+            valid_count = 0
+            for item in items:
+                try:
+                    title_el = item.find(class_="article-title") or item.select_one("a.title")
+                    if not title_el:
+                        continue
+                        
+                    title = clean_text_noise(title_el.get_text())
                     
-                title = clean_text_noise(title_el.get_text())
-                
-                # 提取链接
-                a_tag = title_el.find('a') if title_el.name != 'a' else title_el
-                if not a_tag or not a_tag.has_attr('href'):
-                    continue
+                    # 提取链接
+                    a_tag = title_el.find('a') if title_el.name != 'a' else title_el
+                    if not a_tag or not a_tag.has_attr('href'):
+                        continue
+                        
+                    raw_href = a_tag["href"]
+                    link = raw_href if raw_href.startswith("http") else "https://www.yiigle.com" + raw_href
                     
-                raw_href = a_tag["href"]
-                link = raw_href if raw_href.startswith("http") else "https://www.yiigle.com" + raw_href
-                
-                author_el = item.find(class_="article-author") or item.find(class_="author")
-                author = clean_text_noise(author_el.get_text()) if author_el else "未知作者"
-                
-                desc_el = item.find(class_="article-abstract") or item.find(class_="abstract")
-                description = clean_text_noise(desc_el.get_text()) if desc_el else "暂无摘要"
-                
-                if not title or "yiigle.com" not in link:
-                    continue
+                    author_el = item.find(class_="article-author") or item.find(class_="author")
+                    author = clean_text_noise(author_el.get_text()) if author_el else "未知作者"
                     
-                pub_date_str = datetime.now(timezone(timedelta(hours=8))).strftime('%a, %d %b %Y %H:%M:%S +0800')
-                
-                item_xml = f"""        <item>
+                    desc_el = item.find(class_="article-abstract") or item.find(class_="abstract")
+                    description = clean_text_noise(desc_el.get_text()) if desc_el else "暂无摘要"
+                    
+                    if not title or "yiigle.com" not in link:
+                        continue
+                        
+                    pub_date_str = datetime.now(timezone(timedelta(hours=8))).strftime('%a, %d %b %Y %H:%M:%S +0800')
+                    
+                    item_xml = f"""        <item>
             <title><![CDATA[{title}]]></title>
             <link>{link}</link>
             <guid isPermaLink="true">{link}</guid>
             <pubDate>{pub_date_str}</pubDate>
             <description><![CDATA[📡 AES-INTEL 国内核心监测 [来源: 中华医学会 @ {journal_name}]<br><br><b>作者:</b> {author}<br><b>文献摘要:</b> {description}]]></description>
         </item>"""
-                rss_items.append(item_xml)
-                valid_count += 1
-            except Exception:
-                continue
+                    rss_items.append(item_xml)
+                    valid_count += 1
+                except Exception:
+                    continue
+                    
+            if valid_count == 0:
+                break
                 
-        if valid_count == 0:
-            break
-            
-        page_num += 1
-        if page_num > 1: # 保持前 1 页增量高频更新原则
-            break
-            
-    page.close()
-    
-    if not rss_items:
-        print(f"  └─ ❌ {journal_name} 本次未捕获到任何有效文献。")
-        return False
+            page_num += 1
+            if page_num > 1: # 保持前 1 页增量高频更新原则
+                break
+                
+        page.close()
         
-    pub_date_str = datetime.now(timezone(timedelta(hours=8))).strftime('%a, %d %b %Y %H:%M:%S +0800')
-    
-    # 🟢 修正：频道标题强制更名为 KTN_ 前缀，完美匹配你的侧边栏聚合体感
-    display_title = f"KTN_\"{journal_name}\" @ CMA"
-    rss_xml = f"""<?xml version="1.0" encoding="utf-8"?>
+        # 即使 rss_items 为空也强制出盘刷新
+        pub_date_str = datetime.now(timezone(timedelta(hours=8))).strftime('%a, %d %b %Y %H:%M:%S +0800')
+        display_title = f"KTN_\"{journal_name}\" @ CMA"
+        rss_xml = f"""<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
         <title>{display_title}</title>
@@ -143,11 +139,28 @@ def fetch_cma_journal(playwright_context, base_url, journal_name, output_filenam
     </channel>
 </rss>"""
 
-    output_path = os.path.join(BASE_DIR, output_filename)
-    with open(output_path, 'w', encoding='utf-8') as f:
-        f.write(rss_xml)
-    print(f"  └─ ✅ 物理提纯存盘成功: {output_filename} -> ({display_title})")
-    return True
+        out_dir = os.environ.get("AES_OUT_DIR", BASE_DIR)
+        output_path = os.path.join(out_dir, output_filename)
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(rss_xml)
+            
+        if not rss_items:
+            print(f"  └─ ❌ {journal_name} 本次未捕获到任何有效文献（已强制刷新空 XML 骨架）。")
+            print(f"  └─ ✅ 物理提纯存盘成功: {output_filename} -> ({display_title})")
+        else:
+            print(f"  └─ ✅ 物理提纯存盘成功: {output_filename} -> ({display_title})")
+            
+        print(f"[REPORT] CHANNEL=CMA ITEM={journal_name} COUNT={len(rss_items)} STATUS=SUCCESS")
+        return True
+
+    except Exception as e:
+        print(f"❌ 抓取 {journal_name} 发生异常: {e}")
+        print(f"[REPORT] CHANNEL=CMA ITEM={journal_name} COUNT=0 STATUS=FAIL")
+        try:
+            page.close()
+        except Exception:
+            pass
+        return False
 
 if __name__ == "__main__":
     print("=" * 65)
