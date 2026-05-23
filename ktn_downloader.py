@@ -4,10 +4,12 @@
 =============================================================================
 Project: lit_auto_pipeline (aes-intel platform)
 File: ktn_downloader.py
-Version: V2.2.6 (标题深度去噪纯净版)
+Version: V2.2.8-GatedStable
 Description:
     1. 彻底剔除关键词提取阶段的多重双引号噪声，确保呈现标准的 KTN_"关键词" 格式。
-    2. 物理文件名严格锁定小写（ktn_*.xml），彻底根治 GitHub 区分大小写导致的 404。
+    2. 修复上游 [REPORT] 报盘中 keyword 携带半截引号导致入库解析错位的硬伤。
+    3. 物理文件名严格锁定小写（ktn_*.xml），彻底根治 GitHub 区分大小写导致的 404。
+    4. 修正了 VERSION 变量定义缺失导致的 NameError。
 =============================================================================
 """
 
@@ -24,6 +26,8 @@ from bs4 import BeautifulSoup
 
 # ==================== 物理配置区域 ====================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+VERSION = "V2.2.8-GatedStable" # 变量定义前置，彻底杜绝 NameError
 
 KTN_RSS_URL = "https://kill-the-newsletter.com/feeds/uwgwyb1cnivki39x.xml"
 LOCAL_BACKUP_XML = os.path.join(os.environ.get("AES_OUT_DIR", BASE_DIR), "uwgwyb1cnivki39x.xml")
@@ -43,7 +47,6 @@ def clean_text_noise(text):
 
 def sanitize_filename(name):
     if not name: return "unknown"
-    # 清洗掉所有类型的引号，防止物理文件名混乱
     s = name.replace('"', '').replace("'", '').replace('“', '').replace('”', '').strip()
     s = re.sub(r'[^a-zA-Z0-9\u4e00-\u9fa5]+', '_', s)
     return s.lower().strip('_')
@@ -64,6 +67,11 @@ def parse_single_mail(html_content):
     if not keyword:
         keyword = "Unknown_Source"
         source_type = "External"
+
+    # 🟢 进门级核心净化：在解析出关键词的第一时间，粉碎所有干扰的脏双引号，防止向下游传导
+    keyword = keyword.replace('"', '').replace("'", '').replace('“', '').replace('”', '').strip()
+    # 消除连续的双空格，将其规范为单空格
+    keyword = re.sub(r'\s+', ' ', keyword)
 
     articles = []
     links = soup.find_all('a', href=True)
@@ -118,10 +126,8 @@ def write_channel_xml(keyword, source_type, articles):
     out_dir = os.environ.get("AES_OUT_DIR", BASE_DIR)
     output_path = os.path.join(out_dir, filename)
     
-    # 🟢 深度去噪：先把原本可能存在的各种引号全部砸碎
-    pure_keyword = keyword.replace('"', '').replace("'", '').replace('“', '').replace('”', '').strip()
-    # 🟢 重新规范标准化输出：统一包装为优雅的 KTN_"标准词"
-    display_title = f'KTN_"{pure_keyword}" @ {source_type}'
+    # 重新规范标准化输出
+    display_title = f'KTN_"{keyword}" @ {source_type}'
     
     rss_xml = f"""<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
@@ -171,7 +177,7 @@ def generate_opml_directory(channel_meta_list):
 
 def main():
     print("=" * 65)
-    print("🚀 启动 KTN 精准分流管线 (V2.2.6 标题净化版)...")
+    print(f"🚀 启动 KTN 精准分流管线 ({VERSION})...")
     print(f"📂 工作目录: {BASE_DIR}")
     print("=" * 65)
 
@@ -221,6 +227,7 @@ def main():
         if res:
             filename, display_title = res
             channel_meta_list.append((filename, display_title))
+            # 🟢 完美修复：此时输出的 ITEM 字段将是百分百纯净、无空格多余引号的标准化字段
             print(f"[REPORT] CHANNEL=KTN ITEM={keyword} COUNT={len(articles)} STATUS=SUCCESS")
         else:
             print(f"[REPORT] CHANNEL=KTN ITEM={keyword} COUNT=0 STATUS=FAIL")
