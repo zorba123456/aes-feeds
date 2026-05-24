@@ -1,148 +1,143 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+"""
+=============================================================================
+Project: lit_auto_pipeline (aes-intel platform)
+File: aes-feeds/lww_downloader.py
+Version: V4.2.2 (原装 URL 物理恢复版)
+Description:
+    1. 彻底弃用无效的 oai 测试路径，100% 物理回滚至 config.json 中的原装 OAKS.Journals 官方接口。
+    2. 移除 headless 隐身模式，开启可视窗进行强攻，让你亲眼确认不再是 500 报错页。
+    3. 保留 9222 端口通信保护，防止在 Shell 调度中卡死。
+=============================================================================
+"""
+
 import os
 import time
-import hashlib
-import requests
-import feedparser
 import subprocess
-from playwright.sync_api import sync_playwright
+import re
+from DrissionPage import ChromiumPage, ChromiumOptions
 
-# 配置区域
+__version__ = "4.2.2-原装URL物理恢复版"
+
+# ==================== 物理配置区域 ====================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-PROXY = "http://127.0.0.1:29758"
-VERSION = "V4.0.5-GatedWAF"  # 版本号严格递增推进
+PROXY_SERVER = "http://127.0.0.1:29758"
+# ======================================================
 
-def fetch_with_browser(url):
-    """高级浏览器强攻模式：通过行为模拟与特征检测穿透 Cloudflare WAF"""
-    print(f"🚀 [{VERSION}] 正在启动图形化强攻模式访问: {url}")
-    
-    p = None
-    browser = None
-    context = None
-    page = None
-    content = ""
+def push_to_github():
+    print("\n📤 启动 GitHub 自动同步 (LWW Feeds)...")
+    custom_env = os.environ.copy()
+    custom_env["HTTP_PROXY"] = PROXY_SERVER
+    custom_env["HTTPS_PROXY"] = PROXY_SERVER
     
     try:
-        p = sync_playwright().start()
-        browser = p.chromium.launch(
-            channel="msedge", 
-            headless=False, 
-            proxy={"server": PROXY}
-        )
-        
-        # 伪装常用浏览器凭证，降低被拦截概率
-        context = browser.new_context(
-            viewport={"width": 1280, "height": 800},
-            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
-        )
-        page = context.new_page()
-        
-        # 1. 尝试首次加载
-        response = page.goto(url, timeout=60000)
-        
-        # 2. 行为模拟与动态反爬盾对抗
-        print("⏳ 正在进行 WAF 盾对抗与页面渲染机制判读...")
-        page.wait_for_timeout(5000)  # 强制硬等待，给 Cloudflare 挑战页面执行 JS 留出时间
-        
-        # 模拟轻量滚动，使浏览器环境在 WAF 探测中更趋近于真实人类
-        try:
-            page.evaluate("window.scrollTo(0, 100);")
-            time.sleep(1)
-            page.evaluate("window.scrollTo(0, 0);")
-        except Exception:
-            pass
-
-        content = page.content()
-        
-        # 3. 校验获取的内容是否为真实文献
-        if content and not any(k in content for k in ["<rss", "<feed", "<?xml"]):
-            print("⚠️ 警告: 检测到当前页面可能被 Cloudflare 拦截 (非标准 XML)，尝试延长等待...")
-            page.wait_for_timeout(10000)  # 追加等待
-            content = page.content()
-        
+        subprocess.run(["git", "add", "annals_*.xml", "aswc_*.xml", "derm_*.xml", "j_*.xml", "prs_*.xml"], cwd=BASE_DIR, check=True)
+        commit_msg = f"Auto-update LWW feeds: {time.strftime('%Y-%m-%d %H:%M:%S')}"
+        subprocess.run(["git", "commit", "-m", commit_msg], cwd=BASE_DIR, check=True)
+        subprocess.run(["git", "push"], cwd=BASE_DIR, env=custom_env, check=True)
+        print("✅ 同步成功！LWW 提纯数据已安全送达 GitHub 独立仓库。")
     except Exception as e:
-        print(f"⚠️ 强攻异常: {e}")
-        content = ""
-        
-    finally:
-        # 安全断开，防死锁清场机制保持不动
-        try:
-            if page and not page.is_closed():
-                page.close()
-        except Exception:
-            pass
-        try:
-            if context:
-                context.close()
-        except Exception:
-            pass
-        try:
-            if browser:
-                browser.close()
-        except Exception:
-            pass
-        try:
-            if p:
-                p.stop()
-        except Exception:
-            pass
-            
-    return content
+        print(f"ℹ️ 发布管线返回: 无变更或推送被跳过 ({e})")
 
 def main():
-    print(f"=== [LWW] Start ({VERSION}): {time.ctime()} ===")
+    print(f"=== [LWW] Start ({__version__}): {time.ctime()} ===")
     
+    co = ChromiumOptions()
+    # 🟢 移除 '--headless' 隐身模式，强制弹窗，让你肉眼看到真正的 XML 数据
+    co.set_argument('--no-sandbox')
+    co.set_argument('--disable-gpu')
+    co.set_argument('--remote-debugging-port=9222') 
+    co.set_browser_path('/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge')
+    
+    page = ChromiumPage(co)
+    updated_any = False
+    
+    # 🟢 原汁原味：严格对齐你 config.json 中的 14 个真正的原始物理 URL
     targets = [
-        "https://journals.lww.com/aswc/_layouts/15/oai/feed.aspx?feed=currentissue",
-        "https://journals.lww.com/aswc/_layouts/15/oai/feed.aspx?feed=latestarticles",
-        "https://journals.lww.com/annalsofplasticsurgery/_layouts/15/oai/feed.aspx?feed=currentissue",
-        "https://journals.lww.com/annalsofplasticsurgery/_layouts/15/oai/feed.aspx?feed=latestarticles"
+        {"name": "aswc_current_issue", "rss_url": "http://journals.lww.com/aswcjournal/_layouts/OAKS.Journals/feed.aspx?FeedType=CurrentIssue", "output_filename": "aswc_current_issue.xml"},
+        {"name": "aswc_latest_articles", "rss_url": "https://journals.lww.com/aswcjournal/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles&year=9000&issue=00000", "output_filename": "aswc_latest_articles.xml"},
+        {"name": "annals_plast_surg_current", "rss_url": "https://journals.lww.com/annalsplasticsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=CurrentIssue", "output_filename": "annals_plast_surg_current.xml"},
+        {"name": "annals_plast_surg_latest", "rss_url": "https://journals.lww.com/annalsplasticsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint&year=9900&issue=00000", "output_filename": "annals_plast_surg_latest.xml"},
+        {"name": "derm_surgery_ahead", "rss_url": "http://journals.lww.com/dermatologicsurgery/_layouts/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint", "output_filename": "derm_surgery_ahead.xml"},
+        {"name": "derm_surgery_latest", "rss_url": "https://journals.lww.com/dermatologicsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles&year=9000&issue=00000", "output_filename": "derm_surgery_latest.xml"},
+        {"name": "j_craniofacial_surg_latest", "rss_url": "https://journals.lww.com/jcraniofacialsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint&year=9900&issue=00000", "output_filename": "j_craniofacial_surg_latest.xml"},
+        {"name": "j_craniofacial_surg_open_latest", "rss_url": "https://journals.lww.com/jcso/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles", "output_filename": "j_craniofacial_surg_open_latest.xml"},
+        {"name": "prs_video", "rss_url": "http://journals.lww.com/plasreconsurg/_layouts/OAKS.Journals/feed.aspx?FeedType=Video", "output_filename": "prs_video.xml"},
+        {"name": "prs_current_issue", "rss_url": "http://journals.lww.com/plasreconsurg/_layouts/OAKS.Journals/feed.aspx?FeedType=CurrentIssue", "output_filename": "prs_current_issue.xml"},
+        {"name": "prs_latest_articles", "rss_url": "https://journals.lww.com/plasreconsurg/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles", "output_filename": "prs_latest_articles.xml"},
+        {"name": "prs_online_first", "rss_url": "https://journals.lww.com/plasreconsurg/_layouts/15/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint&year=9900&issue=00000", "output_filename": "prs_online_first.xml"},
+        {"name": "prs_go_current_issue", "rss_url": "https://journals.lww.com/prsgo/_layouts/15/OAKS.Journals/feed.aspx?FeedType=CurrentIssue", "output_filename": "prs_go_current_issue.xml"},
+        {"name": "prs_go_latest_articles", "rss_url": "https://journals.lww.com/prsgo/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles", "output_filename": "prs_go_latest_articles.xml"}
     ]
     
-    names = [
-        "aswc_current_issue",
-        "aswc_latest_articles",
-        "annals_plast_surg_current",
-        "annals_plast_surg_latest"
-    ]
-    
-    for url, name in zip(targets, names):
-        print(f"\n📡 正在抓取: {name}")
-        html_content = fetch_with_browser(url)
+    for journal in targets:
+        name = journal['name']
+        rss_url = journal['rss_url']
+        output_filename = journal['output_filename']
+        output_path = os.path.join(BASE_DIR, output_filename)
         
-        if html_content and ("<rss" in html_content or "<feed" in html_content or "<?xml" in html_content):
-            feed = feedparser.parse(html_content)
-            items_count = len(feed.entries)
-            print(f"📥 成功获取 XML 内容，共包含 {items_count} 条原始文献")
+        print(f"\n📡 正在抓取期刊源: {name} ...")
+        
+        try:
+            page.get(rss_url)
+            time.sleep(3) 
             
-            cache_dir = os.path.join(BASE_DIR, "cache")
-            os.makedirs(cache_dir, exist_ok=True)
+            raw_html = page.html
             
-            for entry in feed.entries:
-                title = entry.get("title", "No Title")
-                link = entry.get("link", "")
-                guid = entry.get("id", link)
+            xml_match = re.search(r'<rss.*?</rss>', raw_html, re.DOTALL | re.IGNORECASE)
+            
+            if xml_match:
+                pure_xml = xml_match.group(0)
+                pure_xml = re.sub(r'xmlns:prism=""', 'xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"', pure_xml)
                 
-                guid_hash = hashlib.md5(guid.encode("utf-8")).hexdigest()
-                cache_file = os.path.join(cache_dir, f"{guid_hash}.xml")
+                items = re.findall(r'<item>.*?</item>', pure_xml, re.DOTALL)
+                print(f"📦 成功捕获 {len(items)} 个文献条目。正在注入所属期数与出版时间...")
                 
-                if not os.path.exists(cache_file):
-                    with open(cache_file, "w", encoding="utf-8") as f:
-                        f.write(f"<item><title>{title}</title><link>{link}</link></item>")
+                for item in items:
+                    new_item = item
                     
-                    try:
-                        cmd = ["python3", "push_to_wechat.py", title, link]
-                        subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-                    except Exception:
-                        pass
-            
-            print(f"[REPORT] CHANNEL=LWW ITEM={name} COUNT={items_count} STATUS=SUCCESS")
-        else:
-            print(f"❌ 无法请求 {name} 或内容非标准 XML (可能遭遇 Cloudflare 403 挑战拦截)")
+                    vol_m = re.search(r'<prism:volume>(.*?)</prism:volume>', item)
+                    num_m = re.search(r'<prism:number>(.*?)</prism:number>', item)
+                    pub_m = re.search(r'<pubDate>(.*?)</pubDate>', item)
+                    
+                    vol_str = vol_m.group(1) if vol_m else ""
+                    num_str = num_m.group(1) if num_m else ""
+                    pub_date_str = pub_m.group(1) if pub_m else "Unknown Date"
+                    
+                    issue_info = f"Vol. {vol_str} No. {num_str}" if (vol_str or num_str) else "Ahead of Print"
+                    
+                    desc_match = re.search(r'<description>(.*?)</description>', new_item, re.DOTALL)
+                    if desc_match:
+                        original_desc = desc_match.group(1)
+                        clean_inner = re.sub(r'<!\[CDATA\[|\]\]>', '', original_desc)
+                        if not clean_inner.strip():
+                            clean_inner = "No description available."
+                        
+                        new_desc = f"<![CDATA[<b>所属期数:</b> {issue_info}<br><b>出版时间:</b> {pub_date_str}<br><br>{clean_inner.strip()}]]>"
+                        new_item = new_item.replace(f"<description>{original_desc}</description>", f"<description>{new_desc}</description>")
+                        pure_xml = pure_xml.replace(item, new_item)
+                
+                raw_xml = '<?xml version="1.0" encoding="utf-8"?>\n' + pure_xml
+                raw_xml = raw_xml.replace('\u2028', '\n').replace('\u2029', '\n')
+                
+                with open(output_path, 'w', encoding='utf-8') as f:
+                    f.write(raw_xml)
+                print(f"✅ 成功完美提纯存盘: {output_path}")
+                print(f"[REPORT] CHANNEL=LWW ITEM={name} COUNT={len(items)} STATUS=SUCCESS")
+                updated_any = True
+            else:
+                print(f"❌ 页面提取失败，未检测到合规的 XML 根节点。")
+                print(f"[REPORT] CHANNEL=LWW ITEM={name} COUNT=0 STATUS=FAIL")
+                
+        except Exception as e:
+            print(f"⚠️ 运行时异常捕获: {e}")
             print(f"[REPORT] CHANNEL=LWW ITEM={name} COUNT=0 STATUS=FAIL")
             
-    print(f"=== [LWW] End ({VERSION}): {time.ctime()} ===")
+    page.quit()
+    
+    if updated_any:
+        push_to_github()
 
 if __name__ == "__main__":
     main()
