@@ -5,8 +5,8 @@
     </head>
     <body>
         <outline text="AES-INTEL 谷歌学术情报网" title="AES-INTEL 谷歌学术情报网">
-            <outline text="KTN_&quot;aesthetic surgery&quot; @ Google Scholar" title="KTN_&quot;aesthetic surgery&quot; @ Google Scholar" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/ktn_aesthetic_surgery.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
             <outline text="KTN_&quot;botulinum toxin&quot; @ Google Scholar" title="KTN_&quot;botulinum toxin&quot; @ Google Scholar" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/ktn_botulinum_toxin.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
+            <outline text="KTN_&quot;aesthetic surgery&quot; @ Google Scholar" title="KTN_&quot;aesthetic surgery&quot; @ Google Scholar" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/ktn_aesthetic_surgery.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
             <outline text="KTN_&quot;hyaluronic acid injection&quot; @ Google Scholar" title="KTN_&quot;hyaluronic acid injection&quot; @ Google Scholar" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/ktn_hyaluronic_acid_injection.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
         </outline>
     </body>
