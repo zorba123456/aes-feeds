@@ -4,17 +4,20 @@
 =============================================================================
 Project: lit_auto_pipeline (aes-intel platform)
 File: ktn_downloader.py
-Version: V2.2.8-GatedStable
+Version: V2.2.9-HKScholarURL
 Description:
     1. 彻底剔除关键词提取阶段的多重双引号噪声，确保呈现标准的 KTN_"关键词" 格式。
     2. 修复上游 [REPORT] 报盘中 keyword 携带半截引号导致入库解析错位的硬伤。
     3. 物理文件名严格锁定小写（ktn_*.xml），彻底根治 GitHub 区分大小写导致的 404。
     4. 修正了 VERSION 变量定义缺失导致的 NameError。
+    5. 兼容 scholar.google.com.hk 等区域的 scholar_url 链接，修复 blepharoplasty 等子源缺失。
+    6. RSS 条目标题 "keyword - new results" 作为关键词兜底；OPML 合并磁盘已有 ktn_*.xml。
 =============================================================================
 """
 
 import os
 import sys
+import glob
 import requests
 import feedparser
 import time
@@ -27,7 +30,7 @@ from bs4 import BeautifulSoup
 # ==================== 物理配置区域 ====================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-VERSION = "V2.2.8-GatedStable" # 变量定义前置，彻底杜绝 NameError
+VERSION = "V2.2.9-HKScholarURL"
 
 KTN_RSS_URL = "https://kill-the-newsletter.com/feeds/uwgwyb1cnivki39x.xml"
 LOCAL_BACKUP_XML = os.path.join(os.environ.get("AES_OUT_DIR", BASE_DIR), "uwgwyb1cnivki39x.xml")
@@ -55,11 +58,28 @@ def extract_scholar_keyword(html_body):
     text = html_body.get_text()
     zh_match = re.search(r'因为您关注了\s*\[(.*?)\]\s*的新搜索结果', text)
     if zh_match: return zh_match.group(1).strip()
-    en_match = re.search(r'following new results for\s*\[(.*?)\]', text)
+    en_match = re.search(r'following new results for\s*\[(.*?)\]', text, re.IGNORECASE)
     if en_match: return en_match.group(1).strip()
     return None
 
-def parse_single_mail(html_content):
+def keyword_from_entry_title(entry_title):
+    if not entry_title:
+        return None
+    title = entry_title.strip()
+    m = re.match(r'^["\u201c\u201d]?(.*?)["\u201c\u201d]?\s*-\s*new results\s*$', title, re.IGNORECASE)
+    if m:
+        return m.group(1).strip().strip('"').strip()
+    return None
+
+def is_scholar_article_link(href):
+    if not href:
+        return False
+    href_lower = href.lower()
+    if "scholar.google" not in href_lower:
+        return False
+    return "scholar_url?" in href_lower or "/scholar?" in href_lower
+
+def parse_single_mail(html_content, entry_title=None):
     soup = BeautifulSoup(html_content, 'html.parser')
     keyword = extract_scholar_keyword(soup)
     source_type = "Google Scholar"
@@ -67,6 +87,11 @@ def parse_single_mail(html_content):
     if not keyword:
         keyword = "Unknown_Source"
         source_type = "External"
+
+    title_kw = keyword_from_entry_title(entry_title)
+    if title_kw and (not keyword or keyword == "Unknown_Source"):
+        keyword = title_kw
+        source_type = "Google Scholar"
 
     # 🟢 进门级核心净化：在解析出关键词的第一时间，粉碎所有干扰的脏双引号，防止向下游传导
     keyword = keyword.replace('"', '').replace("'", '').replace('“', '').replace('”', '').strip()
@@ -78,7 +103,7 @@ def parse_single_mail(html_content):
     
     for link in links:
         href = link['href']
-        if "scholar.google.com/scholar_url" in href or "scholar.google.com/scholar?" in href:
+        if is_scholar_article_link(href):
             try:
                 title_text = clean_text_noise(link.get_text())
                 if not title_text or title_text.lower() in ["[pdf]", "[html]", "获取全文", "cites"]:
@@ -145,7 +170,29 @@ def write_channel_xml(keyword, source_type, articles):
     print(f"  ├─ ✅ 物理映射存盘成功: {filename} -> ({display_title})")
     return filename, display_title
 
+def collect_existing_channel_meta():
+    out_dir = os.environ.get("AES_OUT_DIR", BASE_DIR)
+    meta = []
+    for path in glob.glob(os.path.join(out_dir, "ktn_*.xml")):
+        filename = os.path.basename(path)
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                content = f.read()
+            m = re.search(r'<title>([^<]+)</title>', content)
+            display_title = m.group(1).strip() if m else filename
+            meta.append((filename, display_title))
+        except Exception:
+            continue
+    return meta
+
+def merge_channel_meta(channel_meta_list):
+    merged = {fn: dt for fn, dt in channel_meta_list}
+    for fn, dt in collect_existing_channel_meta():
+        merged.setdefault(fn, dt)
+    return sorted(merged.items(), key=lambda x: x[1].lower())
+
 def generate_opml_directory(channel_meta_list):
+    channel_meta_list = merge_channel_meta(channel_meta_list)
     if not channel_meta_list:
         return
         
@@ -208,7 +255,9 @@ def main():
         if not html_content: continue
             
         mail_date = entry.get('published', datetime.now(timezone.utc).strftime('%a, %d %b %Y %H:%M:%S GMT'))
-        keyword, source_type, extracted_articles = parse_single_mail(html_content)
+        keyword, source_type, extracted_articles = parse_single_mail(
+            html_content, entry.get('title', '')
+        )
         
         if not extracted_articles: continue
             
