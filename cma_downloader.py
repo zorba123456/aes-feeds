@@ -4,22 +4,26 @@
 =============================================================================
 Project: lit_auto_pipeline (aes-intel platform)
 File: aes-feeds/cma_downloader.py
-Version: V6.3.8 (工业级无损固化版)
+Version: V6.4.0 (增量指纹去重 + Git Glob 修复版)
 Description:
     1. 固化对齐黄金原版 da0b950 的核心 Bs4 选择器与 pageNo 翻页参数。
     2. 保持原生直连模式（无网页代理），确保完全攻克 net::ERR_CONNECTION_CLOSED 闪退硬伤。
     3. 隔离全局环境变量，确保 Git 物理推送挂载本地代理、网页抓取使用纯净国内直连。
+    4. [V6.4.0 新增] 文章链接列表 MD5 指纹对比：内容未变时跳过写文件和 commit，
+       彻底消除因 lastBuildDate 时间戳每次变化导致的无意义爆炸式提交。
+    5. [V6.4.0 修复] git add 改用 shell=True，确保 glob 通配符在子进程中正确展开。
 =============================================================================
 """
 import os
 import time
+import hashlib
 import subprocess
 import re
 from datetime import datetime, timezone, timedelta
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
-__version__ = "6.3.8-工业级无损固化版"
+__version__ = "6.4.0-增量指纹去重版"
 
 # ==================== 物理配置区域 ====================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -33,7 +37,8 @@ def push_to_github():
     custom_env["HTTP_PROXY"] = PROXY_SERVER
     custom_env["HTTPS_PROXY"] = PROXY_SERVER
     try:
-        subprocess.run(["git", "add", "cma_*.xml"], cwd=BASE_DIR, check=True)
+        # 🟢 [V6.4.0 修复] 使用 shell=True 确保 cma_*.xml glob 通配符被 Shell 正确展开
+        subprocess.run("git add cma_*.xml", cwd=BASE_DIR, check=True, shell=True)
         commit_msg = f"Auto-update CMA feeds: {time.strftime('%Y-%m-%d %H:%M:%S')}"
         subprocess.run(["git", "commit", "-m", commit_msg], cwd=BASE_DIR, check=True)
         subprocess.run(["git", "push"], cwd=BASE_DIR, env=custom_env, check=True)
@@ -41,11 +46,29 @@ def push_to_github():
     except subprocess.CalledProcessError:
         print("ℹ️ 未检测到新文献或同步无变动，跳过推送。")
 
+def _compute_links_fingerprint(links: list) -> str:
+    """计算文章链接列表的 MD5 指纹，用于判断内容是否真正变化"""
+    content = "|".join(sorted(links))
+    return hashlib.md5(content.encode('utf-8')).hexdigest()
+
+
+def _read_existing_fingerprint(output_path: str) -> str:
+    """从已存盘的 XML 文件中读取上次的 MD5 指纹注释"""
+    try:
+        with open(output_path, 'r', encoding='utf-8') as f:
+            first_lines = f.read(512)
+        m = re.search(r'<!--CMA-FINGERPRINT:([a-f0-9]{32})-->', first_lines)
+        return m.group(1) if m else ""
+    except Exception:
+        return ""
+
+
 def fetch_cma_journal(playwright_context, base_url, journal_name, output_filename):
     print(f"\n📡 正在抓取: {journal_name}")
     
     page = playwright_context.new_page()
     rss_items = []
+    collected_links = []  # 🟢 [V6.4.0] 收集链接用于指纹对比
     page_num = 1
     
     while True:
@@ -92,6 +115,7 @@ def fetch_cma_journal(playwright_context, base_url, journal_name, output_filenam
 
                 if link in seen_links:
                     continue
+                collected_links.append(link)  # 🟢 记录链接
 
                 node_text = node.get_text(" ", strip=True)
                 
@@ -152,6 +176,7 @@ def fetch_cma_journal(playwright_context, base_url, journal_name, output_filenam
 
                 if link in seen_links:
                     continue
+                collected_links.append(link)  # 🟢 记录链接（兜底路径）
 
                 item_xml = f"""
         <item>
@@ -174,12 +199,26 @@ def fetch_cma_journal(playwright_context, base_url, journal_name, output_filenam
         print(f"[REPORT] CHANNEL=CMA ITEM={journal_name} COUNT=0 STATUS=FAIL")
         return False
 
+    # 🟢 [V6.4.0] 指纹对比：只有文章链接集合真正改变时才写盘
+    output_path = os.path.abspath(os.path.join(BASE_DIR, output_filename))
+    new_fingerprint = _compute_links_fingerprint(collected_links)
+    old_fingerprint = _read_existing_fingerprint(output_path)
+
+    if new_fingerprint == old_fingerprint:
+        print(f"  ├─ ✅ 内容无变化（指纹一致: {new_fingerprint[:8]}...），跳过写盘。")
+        print(f"[REPORT] CHANNEL=CMA ITEM={journal_name} COUNT=0 STATUS=SUCCESS")
+        return False  # 返回 False 表示无需提交
+
+    print(f"  ├─ 🔄 检测到内容变化（{old_fingerprint[:8] or 'NEW'} → {new_fingerprint[:8]}），写盘更新...")
+
     tz = timezone(timedelta(hours=8))
     pub_date_str = datetime.now(tz).strftime("%a, %d %b %Y %H:%M:%S +0800")
     
     # 🟢 精准对齐融入大写 KTN_ 识别前缀，确保 Inoreader 完美过滤
     display_title = f"KTN_\"{journal_name}\" @ CMA"
+    # 🟢 [V6.4.0] 在 XML 注释中嵌入指纹，供下次对比读取（不影响 RSS 解析）
     rss_xml = f"""<?xml version="1.0" encoding="utf-8"?>
+<!--CMA-FINGERPRINT:{new_fingerprint}-->
 <rss version="2.0">
     <channel>
         <title>{display_title}</title>
@@ -190,7 +229,6 @@ def fetch_cma_journal(playwright_context, base_url, journal_name, output_filenam
     </channel>
 </rss>"""
 
-    output_path = os.path.abspath(os.path.join(BASE_DIR, output_filename))
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(rss_xml)
     

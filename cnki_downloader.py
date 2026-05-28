@@ -4,7 +4,7 @@
 =============================================================================
 Project: lit_auto_pipeline (aes-intel platform)
 File: aes-feeds/cnki_downloader.py
-Version: V1.4.2 (全量路径像素对齐固化版)
+Version: V1.4.3 (BUG FIX: 修正推送目标仓库错误版)
 Description:
     1. 100% 继承 V1.3.1 现行版的高精度清洗去噪与增量哈希去重逻辑。
     2. 彻底修正创世版（da0b950）残留的相对路径缺陷，全量校准为绝对物理路径，根除 Git Pathspec 子模块报错。
@@ -25,7 +25,7 @@ import subprocess
 from datetime import datetime, timezone
 
 # 🟢 固化补齐全局版本定义，消除 NameError
-__version__ = "1.4.2-全量路径像素对齐固化版"
+__version__ = "1.4.3-BUG-FIX-修正仓库错误"
 
 # 🟢 严格使用物理绝对路径定位，确保在外层 Shell 跨目录调用时永不错位
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))  # /Users/.../lit_auto_pipeline/aes-feeds
@@ -118,15 +118,17 @@ def git_push_feeds(updated_files):
     custom_env["HTTPS_PROXY"] = PROXY_SERVER
     
     try:
-        # 🟢 像素级对齐修复：回到项目根目录执行 Git 动作，使用相对根目录的精准路径，彻底破除 Pathspec 报错
+        # 🟢 [BUG FIX] 修正推送目标仓库错误：
+        #   旧错误：cwd=PROJECT_ROOT 导致 CNKI XML 推送到 lit_auto_pipeline 仓库
+        #   正确：cwd=CURRENT_DIR 推送到 aes-feeds 独立仓库，与 Inoreader 订阅 URL 对齐
         for f in updated_files:
-            subprocess.run(["git", "add", f"aes-feeds/{f}"], cwd=PROJECT_ROOT, check=True)
-        subprocess.run(["git", "add", "aes-feeds/cnki_dedup_log.json"], cwd=PROJECT_ROOT, check=True)
+            subprocess.run(["git", "add", f], cwd=CURRENT_DIR, check=True)
+        subprocess.run(["git", "add", "cnki_dedup_log.json"], cwd=CURRENT_DIR, check=True)
         
         commit_msg = f"Auto-Update CNKI Feeds: {time.strftime('%Y-%m-%d %H:%M:%S')}"
-        subprocess.run(["git", "commit", "-m", commit_msg], cwd=PROJECT_ROOT, check=True)
-        subprocess.run(["git", "push"], cwd=PROJECT_ROOT, env=custom_env, check=True)
-        print("🚀 [SUCCESS] 知网中转提纯盘片已成功安全推送至 GitHub 远端仓库。")
+        subprocess.run(["git", "commit", "-m", commit_msg], cwd=CURRENT_DIR, check=True)
+        subprocess.run(["git", "push"], cwd=CURRENT_DIR, env=custom_env, check=True)
+        print("🚀 [SUCCESS] 知网中转提纯盘片已成功安全推送至 GitHub 独立仓库 (aes-feeds)。")
     except subprocess.CalledProcessError as e:
         print(f"ℹ️ 发布管线返回: 无变更或推送被跳过 ({e})")
 
