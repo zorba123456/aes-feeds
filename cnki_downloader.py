@@ -25,7 +25,7 @@ import subprocess
 from datetime import datetime, timezone
 
 # 🟢 固化补齐全局版本定义，消除 NameError
-__version__ = "1.4.3-BUG-FIX-修正仓库错误"
+__version__ = "V1.4.4"
 
 # 🟢 严格使用物理绝对路径定位，确保在外层 Shell 跨目录调用时永不错位
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))  # /Users/.../lit_auto_pipeline/aes-feeds
@@ -169,7 +169,11 @@ def main():
                     if not title or not link:
                         continue
                         
-                    fp_str = f"{title}{link}".replace(" ", "")
+                    # ⚠️ V1.4.4 修复：CNKI article URL 含动态加密参数（v=...），
+                    # 每次请求都会变化，导致同一篇文章的 fingerprint 每次不同，
+                    # 从而永远被视为"新文章"，dedup 失效。
+                    # 改用【期刊代码 + 标题】生成稳定指纹，与 URL 无关。
+                    fp_str = f"{j_code}{title}".replace(" ", "")
                     fp = hashlib.md5(fp_str.encode('utf-8')).hexdigest()
                     
                     if fp not in dedup_log:
