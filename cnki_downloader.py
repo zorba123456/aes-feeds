@@ -101,12 +101,16 @@ def generate_rss_xml(articles, j_code, j_name):
     </channel>
 </rss>"""
 
-    # 🟢 确保盘片精准落地在 aes-feeds 物理文件夹下
+    # 🟢 同时写入两套文件名，保持向后兼容
+    #   主文件：cnki_xxxx.xml（小写，V1.4+ 标准）
+    #   兼容文件：cnki_XXXX_cleaned.xml（旧 URL，Inoreader 现有订阅指向此处）
     filename = f"cnki_{j_code.lower()}.xml"
-    output_path = os.path.join(CURRENT_DIR, filename)
+    filename_legacy = f"cnki_{j_code.upper()}_cleaned.xml"
     
-    with open(output_path, 'w', encoding='utf-8') as f:
-        f.write(rss_xml)
+    for fname in [filename, filename_legacy]:
+        output_path = os.path.join(CURRENT_DIR, fname)
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(rss_xml)
     return filename
 
 def git_push_feeds(updated_files):
@@ -123,6 +127,10 @@ def git_push_feeds(updated_files):
         #   正确：cwd=CURRENT_DIR 推送到 aes-feeds 独立仓库，与 Inoreader 订阅 URL 对齐
         for f in updated_files:
             subprocess.run(["git", "add", f], cwd=CURRENT_DIR, check=True)
+            # 同步 stage 对应的旧 URL 兼容文件
+            legacy = f.replace("cnki_", "cnki_").replace(".xml", "").upper()
+            legacy_name = f"cnki_{f.split('_')[1].split('.')[0].upper()}_cleaned.xml"
+            subprocess.run(["git", "add", legacy_name], cwd=CURRENT_DIR, check=False)
         subprocess.run(["git", "add", "cnki_dedup_log.json"], cwd=CURRENT_DIR, check=True)
         
         commit_msg = f"Auto-Update CNKI Feeds: {time.strftime('%Y-%m-%d %H:%M:%S')}"
