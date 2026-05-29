@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+  <head><title>CNKI 期刊订阅</title></head>
+  <body>
+    <outline text="CNKI" title="CNKI">
+        <outline text="实用皮肤病学杂志 - CNKI" title="实用皮肤病学杂志 - CNKI" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/cnki_sypf.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
+        <outline text="皮肤科学通报 - CNKI" title="皮肤科学通报 - CNKI" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/cnki_zyxw.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
+        <outline text="协和医学杂志 - CNKI" title="协和医学杂志 - CNKI" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/cnki_xhyx.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
+        <outline text="临床皮肤科杂志 - CNKI" title="临床皮肤科杂志 - CNKI" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/cnki_lcpf.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
+        <outline text="中国美容整形外科杂志 - CNKI" title="中国美容整形外科杂志 - CNKI" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/cnki_smzw.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
+        <outline text="中国美容医学 - CNKI" title="中国美容医学 - CNKI" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/cnki_mryx.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
+        <outline text="中国皮肤性病学杂志 - CNKI" title="中国皮肤性病学杂志 - CNKI" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/cnki_zbfx.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
+        <outline text="中国激光医学杂志 - CNKI" title="中国激光医学杂志 - CNKI" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/cnki_zgjg.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
+        <outline text="中国医疗器械杂志 - CNKI" title="中国医疗器械杂志 - CNKI" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/cnki_zylz.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
+        <outline text="中国医疗器械信息 - CNKI" title="中国医疗器械信息 - CNKI" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/cnki_zgqx.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
+        <outline text="中华皮肤科杂志 - CNKI" title="中华皮肤科杂志 - CNKI" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/cnki_zhpf.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
+        <outline text="中华整形外科杂志 - CNKI" title="中华整形外科杂志 - CNKI" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/cnki_zhzx.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
+        <outline text="中华医学美学美容杂志 - CNKI" title="中华医学美学美容杂志 - CNKI" type="rss" xmlUrl="https://raw.githubusercontent.com/zorba123456/aes-feeds/main/cnki_zhmr.xml" htmlUrl="https://github.com/zorba123456/aes-feeds"/>
+    </outline>
+  </body>
+</opml>
