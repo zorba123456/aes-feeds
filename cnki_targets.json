@@ -1,54 +1,68 @@
 {
     "SYPF": {
         "name": "实用皮肤病学杂志",
-        "rss_url": "https://rss.cnki.net/knavi/rss/SYPF?pcode=CJFD,CCJD"
+        "rss_url": "https://rss.cnki.net/knavi/rss/SYPF?pcode=CJFD,CCJD",
+        "web_scrape": true
     },
     "ZYXW": {
         "name": "皮肤科学通报",
-        "rss_url": "https://rss.cnki.net/knavi/rss/ZYXW?pcode=CJFD,CCJD"
+        "rss_url": "https://rss.cnki.net/knavi/rss/ZYXW?pcode=CJFD,CCJD",
+        "web_scrape": true
     },
     "XHYX": {
         "name": "协和医学杂志",
-        "rss_url": "https://rss.cnki.net/knavi/rss/XHYX?pcode=CJFD,CCJD"
+        "rss_url": "https://rss.cnki.net/knavi/rss/XHYX?pcode=CJFD,CCJD",
+        "web_scrape": true
     },
     "LCPF": {
         "name": "临床皮肤科杂志",
-        "rss_url": "https://rss.cnki.net/knavi/rss/LCPF?pcode=CJFD,CCJD"
+        "rss_url": "https://rss.cnki.net/knavi/rss/LCPF?pcode=CJFD,CCJD",
+        "web_scrape": true
     },
     "SMZW": {
         "name": "中国美容整形外科杂志",
-        "rss_url": "https://rss.cnki.net/knavi/rss/SMZW?pcode=CJFD,CCJD"
+        "rss_url": "https://rss.cnki.net/knavi/rss/SMZW?pcode=CJFD,CCJD",
+        "web_scrape": true
     },
     "MRYX": {
         "name": "中国美容医学",
-        "rss_url": "https://rss.cnki.net/knavi/rss/MRYX?pcode=CJFD,CCJD"
+        "rss_url": "https://rss.cnki.net/knavi/rss/MRYX?pcode=CJFD,CCJD",
+        "web_scrape": true,
+        "web_scrape_note": "月刊，当期目录可能超过20条"
     },
     "ZBFX": {
         "name": "中国皮肤性病学杂志",
-        "rss_url": "https://rss.cnki.net/knavi/rss/ZBFX?pcode=CJFD,CCJD"
+        "rss_url": "https://rss.cnki.net/knavi/rss/ZBFX?pcode=CJFD,CCJD",
+        "web_scrape": true
     },
     "ZGJG": {
         "name": "中国激光医学杂志",
-        "rss_url": "https://rss.cnki.net/knavi/rss/ZGJG?pcode=CJFD,CCJD"
+        "rss_url": "https://rss.cnki.net/knavi/rss/ZGJG?pcode=CJFD,CCJD",
+        "web_scrape": true
     },
     "ZYLZ": {
         "name": "中国医疗器械杂志",
-        "rss_url": "https://rss.cnki.net/knavi/rss/ZYLZ?pcode=CJFD,CCJD"
+        "rss_url": "https://rss.cnki.net/knavi/rss/ZYLZ?pcode=CJFD,CCJD",
+        "web_scrape": true
     },
     "ZGQX": {
         "name": "中国医疗器械信息",
-        "rss_url": "https://rss.cnki.net/knavi/rss/ZGQX?pcode=CJFD,CCJD"
+        "rss_url": "https://rss.cnki.net/knavi/rss/ZGQX?pcode=CJFD,CCJD",
+        "web_scrape": true
     },
     "ZHPF": {
         "name": "中华皮肤科杂志",
-        "rss_url": "https://rss.cnki.net/knavi/rss/ZHPF?pcode=CJFD,CCJD"
+        "rss_url": "https://rss.cnki.net/knavi/rss/ZHPF?pcode=CJFD,CCJD",
+        "web_scrape": true
     },
     "ZHZX": {
         "name": "中华整形外科杂志",
-        "rss_url": "https://rss.cnki.net/knavi/rss/ZHZX?pcode=CJFD,CCJD"
+        "rss_url": "https://rss.cnki.net/knavi/rss/ZHZX?pcode=CJFD,CCJD",
+        "web_scrape": true
     },
     "ZHMR": {
         "name": "中华医学美学美容杂志",
-        "rss_url": "https://rss.cnki.net/knavi/rss/ZHMR?pcode=CJFD,CCJD"
+        "rss_url": "https://rss.cnki.net/knavi/rss/ZHMR?pcode=CJFD,CCJD",
+        "web_scrape": true
     }
 }

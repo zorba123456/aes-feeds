@@ -119,6 +119,12 @@ def fetch_cma_journal(playwright_context, base_url, journal_name, output_filenam
 
                 node_text = node.get_text(" ", strip=True)
                 
+                # 🟢 提取期数信息
+                issue_info = ""
+                issue_match = re.search(r'(\d{4}年\d+卷\d+期|\d{4}年\d+期)', node_text)
+                if issue_match:
+                    issue_info = f"[{issue_match.group(1)}] "
+                
                 pub_date_xml = ""
                 display_date = "未知时间"
                 date_match = re.search(r'(\d{4}-\d{2}-\d{2})', node_text)
@@ -149,7 +155,7 @@ def fetch_cma_journal(playwright_context, base_url, journal_name, output_filenam
 
                 item_xml = f"""
         <item>
-            <title><![CDATA[{title}]]></title>
+            <title><![CDATA[{issue_info}{title}]]></title>
             <link>{link}</link>
             <guid isPermaLink="false">{link}</guid>
             <author><![CDATA[{authors}]]></author>
