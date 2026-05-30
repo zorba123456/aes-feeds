@@ -35,6 +35,7 @@ TARGETS_JSON_PATH = os.path.join(CURRENT_DIR, "cnki_targets.json")
 LOG_FILE_PATH = os.path.join(CURRENT_DIR, "cnki_dedup_log.json")
 DEDUP_EXPIRE_DAYS = 90
 USER_DATA_DIR = os.path.join(PROJECT_ROOT, "cnki_playwright_profile")
+PROXY_SERVER = "http://127.0.0.1:29758"
 
 def clean_text_noise(text):
     if not text:
@@ -71,6 +72,21 @@ def save_dedup_log(log_data):
     with open(LOG_FILE_PATH, 'w', encoding='utf-8') as f:
         json.dump(cleaned_data, f, ensure_ascii=False, indent=2)
 
+def push_to_github():
+    """将生成的 XML 和去重记录推送至 GitHub 独立仓库"""
+    print("\n📤 启动 GitHub 自动同步 (CNKI Feeds)...")
+    custom_env = os.environ.copy()
+    custom_env["HTTP_PROXY"] = PROXY_SERVER
+    custom_env["HTTPS_PROXY"] = PROXY_SERVER
+    try:
+        subprocess.run("git add cnki_*.xml cnki_dedup_log.json", cwd=CURRENT_DIR, check=True, shell=True)
+        commit_msg = f"Auto-update CNKI feeds: {time.strftime('%Y-%m-%d %H:%M:%S')}"
+        subprocess.run(["git", "commit", "-m", commit_msg], cwd=CURRENT_DIR, check=True)
+        subprocess.run(["git", "push"], cwd=CURRENT_DIR, env=custom_env, check=True)
+        print("✅ 同步成功！CNKI 数据已成功推送至 aes-feeds 独立仓库。")
+    except subprocess.CalledProcessError as e:
+        print(f"ℹ️ 未检测到新文献或同步无变动，跳过推送。({e})")
+
 def generate_rss_xml(items, journal_code, journal_name):
     """生成标准 RSS 2.0 XML 并写入文件"""
     rss = ET.Element("rss", version="2.0")
@@ -96,7 +112,7 @@ def generate_rss_xml(items, journal_code, journal_name):
     tree = ET.ElementTree(rss)
     ET.indent(tree, space="  ", level=0)
     
-    out_file = os.path.join(PROJECT_ROOT, f"cnki_{journal_code.lower()}.xml")
+    out_file = os.path.join(CURRENT_DIR, f"cnki_{journal_code.lower()}.xml")
     tree.write(out_file, encoding="utf-8", xml_declaration=True)
     return out_file
 
@@ -174,7 +190,7 @@ def wait_for_captcha(page, code, name):
                 time.sleep(2)  # 等待重定向完成
                 try:
                     page.wait_for_load_state("domcontentloaded", timeout=15000)
-                    page.wait_for_selector(".yearissue-m", timeout=15000)
+                    page.wait_for_selector("#CataLogContent dd", timeout=15000)
                 except Exception:
                     pass
                 time.sleep(3)
@@ -196,10 +212,18 @@ def run_web_mode(targets):
     
     with sync_playwright() as p:
         # 必须是有头模式 headless=False，以便人工介入
-        ctx = p.chromium.launch_persistent_context(
-            USER_DATA_DIR, headless=False,
-            args=['--disable-blink-features=AutomationControlled']
-        )
+        # 使用系统的 Microsoft Edge（用户指定的项目浏览器）
+        try:
+            ctx = p.chromium.launch_persistent_context(
+                USER_DATA_DIR, headless=False, channel='msedge',
+                args=['--disable-blink-features=AutomationControlled']
+            )
+        except Exception:
+            # Edge 不可用时回退 Chromium
+            ctx = p.chromium.launch_persistent_context(
+                USER_DATA_DIR, headless=False,
+                args=['--disable-blink-features=AutomationControlled']
+            )
         page = ctx.new_page()
         page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
 
@@ -225,24 +249,23 @@ def run_web_mode(targets):
                 
                 # 等待 AJAX 渲染期刊期数和目录
                 try:
-                    page.wait_for_selector('.yearissue-m', timeout=15000)
+                    page.wait_for_selector('#CataLogContent dd', timeout=20000)
                 except Exception:
-                    print("  ⚠️ 等待 .yearissue-m 超时，可能暂无当期数据")
-                time.sleep(3) # 额外等待渲染完成
+                    print("  ⚠️ 等待 #CataLogContent 超时，可能暂无当期数据或触发了验证码")
+                time.sleep(2) # 额外等待渲染完成
                 
                 html = page.content()
                 soup = BeautifulSoup(html, 'html.parser')
                 
-                # 提取期数
-                issue = soup.select_one('.yearissue-m .yearissue')
-                issue_txt = issue.get_text(strip=True) if issue else '未知期数'
+                # 提取期数（新版 DOM: span.date-list 的文本，如 "2026年02期"）
+                issue_el = soup.select_one('span.date-list')
+                issue_txt = issue_el.get_text(strip=True) if issue_el else '未知期数'
                 pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
                 
-                # 提取当期目录与网络首发
+                # 提取当期目录（网络首发需单独点击 Tab 加载，暂不抓取）
                 new_items = []
                 sections = {
                     "当期目录": '#CataLogContent dd',
-                    "网络首发": '#NetFirst dd'
                 }
                 
                 for section_name, selector in sections.items():
@@ -312,6 +335,9 @@ def main():
         run_rss_mode(targets)
     elif args.mode == 'web':
         run_web_mode(targets)
+
+    # 执行完数据更新后，推送结果到 GitHub 远端仓库
+    push_to_github()
 
 if __name__ == "__main__":
     main()
