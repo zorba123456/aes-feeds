@@ -49,20 +49,5 @@
         "name": "中国医疗器械信息",
         "rss_url": "https://rss.cnki.net/knavi/rss/ZGQX?pcode=CJFD,CCJD",
         "web_scrape": true
-    },
-    "ZHPF": {
-        "name": "中华皮肤科杂志",
-        "rss_url": "https://rss.cnki.net/knavi/rss/ZHPF?pcode=CJFD,CCJD",
-        "web_scrape": true
-    },
-    "ZHZX": {
-        "name": "中华整形外科杂志",
-        "rss_url": "https://rss.cnki.net/knavi/rss/ZHZX?pcode=CJFD,CCJD",
-        "web_scrape": true
-    },
-    "ZHMR": {
-        "name": "中华医学美学美容杂志",
-        "rss_url": "https://rss.cnki.net/knavi/rss/ZHMR?pcode=CJFD,CCJD",
-        "web_scrape": true
     }
 }
