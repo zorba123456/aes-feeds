@@ -50,9 +50,11 @@ def load_targets():
             return json.load(f)
     return {}
 
-def generate_hash(title, url):
-    """基于标题和URL生成唯一哈希"""
-    raw = f"{title}_{url}".encode('utf-8')
+def generate_hash(journal_code, title):
+    """基于期刊代码和标题生成唯一哈希，避免因 URL 中的动态 v 参数导致去重失效"""
+    clean_title = clean_text_noise(title)
+    clean_title = re.sub(r'^\[(?:网络首发|当期目录)\]\s*(?:\[[^\]]+\]\s*)?', '', clean_title).strip()
+    raw = f"{journal_code.lower()}_{clean_title}".encode('utf-8')
     return hashlib.md5(raw).hexdigest()
 
 def parse_cnki_pubdate(date_str):
@@ -151,26 +153,32 @@ def generate_rss_xml(items, journal_code, journal_name):
         except Exception as e:
             print(f"  ⚠️ 读取现有 XML 失败: {e}")
             
-    # 合并新旧文献
-    seen_links = set()
+    # 合并新旧文献并基于纯标题去重
+    seen_titles = set()
     merged_items = []
     
+    def get_clean_title(t):
+        t_clean = clean_text_noise(t)
+        return re.sub(r'^\[(?:网络首发|当期目录)\]\s*(?:\[[^\]]+\]\s*)?', '', t_clean).strip()
+        
     # 优先添加新抓取的文献
     for item in items:
-        link = item.get("link") or item.get("url") or ""
-        key = link if link else item.get("title", "")
-        if key and key not in seen_links:
-            seen_links.add(key)
+        title = item.get("title", "")
+        clean_key = get_clean_title(title)
+        if clean_key and clean_key not in seen_titles:
+            seen_titles.add(clean_key)
+            link = item.get("link") or item.get("url") or ""
             if link and "link" not in item:
                 item["link"] = link
             merged_items.append(item)
             
     # 再添加已有的历史文献
     for item in existing_items:
-        link = item.get("link") or item.get("url") or ""
-        key = link if link else item.get("title", "")
-        if key and key not in seen_links:
-            seen_links.add(key)
+        title = item.get("title", "")
+        clean_key = get_clean_title(title)
+        if clean_key and clean_key not in seen_titles:
+            seen_titles.add(clean_key)
+            link = item.get("link") or item.get("url") or ""
             if link and "link" not in item:
                 item["link"] = link
             merged_items.append(item)
@@ -233,7 +241,7 @@ def run_rss_mode(targets):
                 desc = item.find('description').get_text(strip=True) if item.find('description') else ''
                 pubdate = item.find('pubDate').get_text(strip=True) if item.find('pubDate') else ''
                 
-                h = generate_hash(title, link)
+                h = generate_hash(code, title)
                 if h in dedup_log:
                     continue
                 
@@ -483,7 +491,6 @@ def run_web_mode(targets):
                             
                         author_tag = el.select_one('.author')
                         author = clean_text_noise(author_tag.get_text(strip=True)) if author_tag else ''
-                        desc = f"作者: {author}" if author else ""
                         
                         company_tag = el.select_one('.company')
                         company_txt = company_tag.get('title', '').strip() if company_tag else ''
@@ -493,14 +500,16 @@ def run_web_mode(targets):
                         if view_name == "网络首发":
                             enhanced_title = f"[网络首发] {raw_title}"
                             pub_date = parse_cnki_pubdate(company_txt)
+                            desc = f"<b>期数：</b>网络首发<br><b>出版日期/发布时间：</b>{company_txt}<br><b>作者：</b>{author or '未标明'}"
                         else:
                             enhanced_title = f"[当期目录] [{issue_txt}] {raw_title}"
                             pub_date = parse_cnki_pubdate(company_txt)
+                            desc = f"<b>期数：</b>{issue_txt}<br><b>出版日期/页码：</b>{company_txt}<br><b>作者：</b>{author or '未标明'}"
                             
                         if not pub_date:
                             pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
                             
-                        h = generate_hash(raw_title, link)
+                        h = generate_hash(code, raw_title)
                         all_scraped_items.append({
                             "title": enhanced_title,
                             "link": link,
