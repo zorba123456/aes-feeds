@@ -5,13 +5,114 @@
     <link>https://journals.lww.com/annalsplasticsurgery/toc/9900/00000</link>
     <description><![CDATA[The only independent journal devoted to general plastic and reconstructive surgery, Annals of Plastic Surgery serves as a forum for current scientific and clinical advances in the field and a sounding board for ideas and perspectives on its future. The journal publishes peer-reviewed original articles, brief communications, case reports, and notes in all areas of interest to the practicing plastic surgeon. There are also historical and current reviews, descriptions of surgical technique, and lively editorials and letters to the editor.]]></description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2026 02:05:30 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 06:00:23 -0500</lastBuildDate>
     <generator>Wolters Kluwer Health RSS Generator</generator>
     <image>
       <url>https://images.journals.lww.com/annalsplasticsurgery/XLargeThumb.00000637-202606000-00000.CV.jpeg</url>
       <title><![CDATA[Annals of Plastic Surgery - Latest Articles]]></title>
       <link>https://journals.lww.com/annalsplasticsurgery/toc/9900/00000</link>
     </image>
+    <item>
+      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/9900/conflicts_of_interest_in_plastic_surgery_journals_.1174.aspx</link>
+      <author><![CDATA[Ruta, Michael R; Mahanti, Hannah; Jungbauer, W Nicholas Jr; Bernard, Robert]]></author>
+      <category><![CDATA[Research]]></category>
+      <title><![CDATA[Conflicts of Interest in Plastic Surgery Journals: A Python-Assisted Evaluation of Self-Reported Disclosures]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 29 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/9900/conflicts_of_interest_in_plastic_surgery_journals_.1174.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-990000000-01174.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
+
+Conflicts of interest pose a risk to the integrity of clinical research. As part of the Sunshine Act, the Open Payments Program was established to provide transparency in financial relationships between commercial entities and physicians. Previous research indicates disparities between industry payments self-reported by plastic surgeon authors and those disclosed by commercial entities. This study sought to revisit the accuracy of conflict-of-interest disclosures, comparing current trends with previously published data, and introduce a novel automated search tool designed to facilitate future reviews of self-disclosures.
+
+Methods: 
+
+Articles from the Aesthetic Surgery Journal and Plastic and Reconstructive Surgery published between 2017 and 2022 were reviewed. Self-reported disclosures for plastic surgeon authors were aggregated and compared against the Open Payments database using Python.
+
+Results: 
+
+A total of 8040 articles were reviewed. After filtering and applying inclusion criteria, 961 unique authors and 4226 authorships were identified. A total of 5802 discrepancies were found, with 78.6% of eligible authors having at least 1 discrepancy. Four percent of the included publications were estimated to contain undisclosed relationships that qualified as conflicts of interest. The median total payments for authors with discrepancies were greater than for authors without discrepancies ($9600 vs. $2500; P<0.001). A discrepancy in self-reporting was more likely to be identified among senior authors (P<0.001).
+
+Conclusions: 
+
+Plastic surgeon authors continue to underreport their financial relationships. Automated screening may help identify disclosure discrepancies and support more complete author self-reporting.]]></description>
+      <pubDate>Fri, 29 May 2026 00:00:00 GMT-05:00</pubDate>
+      <citation><![CDATA[Annals of Plastic Surgery. ():10.1097/SAP.0000000000004781, February 2026. doi: 10.1097/SAP.0000000000004781]]></citation>
+      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
+      <guid isPermaLink="false">00000637-990000000-01174</guid>
+    </item>
+    <item>
+      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/9900/dr_leonard_furlow,_personal_reflections_and.1175.aspx</link>
+      <author><![CDATA[Furlow, John]]></author>
+      <category><![CDATA[Sponsored Supplements]]></category>
+      <title><![CDATA[Dr Leonard Furlow, Personal Reflections and Stories From His Son]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 29 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/9900/dr_leonard_furlow,_personal_reflections_and.1175.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-990000000-01175.F1.jpeg" border="0" align ="left" alt="image"/></a>John and Trey Furlow, sons of Dr Leonard Furlow, shared personal reflections and memories of their father at the inaugural Leonard Furlow Symposium, held at Vanderbilt University Medical Center on November 8, 2025. Their accounts offered attendees an intimate portrait of the man behind the legacy, his intellectual rigor, innovative nature, and personal qualities that defined a surgeon whose contributions to plastic and reconstructive surgery remain profound and enduring.]]></description>
+      <pubDate>Fri, 29 May 2026 00:00:00 GMT-05:00</pubDate>
+      <citation><![CDATA[Annals of Plastic Surgery. ():10.1097/SAP.0000000000004782, February 2026. doi: 10.1097/SAP.0000000000004782]]></citation>
+      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
+      <guid isPermaLink="false">00000637-990000000-01175</guid>
+    </item>
+    <item>
+      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/9900/small_joint_denervation__cutting_the_cord_without.1173.aspx</link>
+      <author><![CDATA[Gergoudis, Franklin; Gutama, Barite; Chennupati, Vignesh; Giannas, Emmanuel; Johnson, Jordan; Reddy, Anvith; Karamitros, Georgios; Torres-Guzman, Ricardo; Hill, J. Bradford]]></author>
+      <category><![CDATA[Sponsored Supplement]]></category>
+      <title><![CDATA[Small Joint Denervation: Cutting the Cord Without Burning the Bridge]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 28 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/9900/small_joint_denervation__cutting_the_cord_without.1173.aspx"></a>Small joint osteoarthritis of the hands and fingers accounts for a significant portion of the osteoarthritis burden and is a major cause of pain and functional limitations. Arthroscopy with debridement, arthrodesis, arthroplasty, and tendon interposition and suspension remain standard surgical options but are associated with motion loss, prolonged recovery, and risk of revision. Small joint denervation, however, has emerged as a motion-preserving alternative that does not alter joint mechanics but can significantly improve pain. This narrative summarizes the anatomic foundation, surgical techniques, and clinical outcomes of denervation for small-joint osteoarthritis, compared with more traditional procedures and emerging minimally invasive alternatives, including autologous fat grafting, bone marrow aspirates, and platelet-rich plasma. This manuscript highlights the benefits of denervation, including noticeable pain reduction, preserved range of motion, and rapid postprocedural recovery. Overall, denervation of the carpometacarpal, metacarpophalangeal, and proximal interphalangeal joints can be considered as a promising, minimally invasive strategy for managing osteoarthritis-related pain while maintaining future surgical options if necessary. Further standardized techniques, randomized clinical trials, and long-term follow-up are needed to better determine its place in the treatment algorithm for hand osteoarthritis.]]></description>
+      <pubDate>Thu, 28 May 2026 00:00:00 GMT-05:00</pubDate>
+      <citation><![CDATA[Annals of Plastic Surgery. ():10.1097/SAP.0000000000004787, February 2026. doi: 10.1097/SAP.0000000000004787]]></citation>
+      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
+      <guid isPermaLink="false">00000637-990000000-01173</guid>
+    </item>
+    <item>
+      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/9900/shorter_wound_healing_times_associated_with_select.1172.aspx</link>
+      <author><![CDATA[Sekhon, Shaan; Tompkins-Rhoades, Casey; Uzoekwe, Miracle; Rajaii, Ramin; Trinh, Minh; Sheff, Sydni; Hansen, Scott L.]]></author>
+      <category><![CDATA[Reconstructive Surgery]]></category>
+      <title><![CDATA[Shorter Wound-healing Times Associated With Select Perioperative Medical Therapies in Hidradenitis Suppurativa Surgery, and a Limited Clinical Role of Intraoperative Cultures: A 194-Case Retrospective Review]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 27 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/9900/shorter_wound_healing_times_associated_with_select.1172.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-990000000-01172.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
+
+Hidradenitis suppurativa (HS) is a chronic inflammatory disease of apocrine gland–bearing areas characterized by abscesses, tunneling, scarring, and recurrent flares. Surgical excision is central in refractory disease, but perioperative protocols are variable. We evaluated whether specific perioperative medical therapies are associated with shorter time to documented postoperative wound-healing progress after HS surgery, and whether intraoperative cultures meaningfully guide antibiotic management.
+
+Methods: 
+
+We conducted a retrospective cohort study of 194 HS surgeries performed at a quaternary care center between January 1, 2013, and July 1, 2021. We abstracted perioperative medical therapies (including antibiotics and spironolactone), intraoperative culture results, postoperative antibiotics, and healing times from the medical record. Healing was defined as days from surgery to the first follow-up note documenting substantial wound-healing progress. Time to healing was analyzed with Kaplan-Meier survival curves and Cox proportional hazards models. We also examined whether intraoperative cultures were associated with postoperative antibiotic selection.
+
+Results: 
+
+Perioperative trimethoprim-sulfamethoxazole was associated with shorter time to documented healing [hazard ratio (HR) 2.55, 95% CI: 1.46–4.46, P=0.00099]. Preoperative cephalexin was also associated with shorter time to heal (HR: 4.17, 95% CI: 1.40–12.44, P=0.01), whereas postoperative cephalexin was not (HR: 0.89, 95% CI: 0.44–1.79, P=0.74). Perioperative spironolactone was associated with faster healing (HR: 5.72, 95% CI: 2.08–15.74, P=0.00073). Intraoperative cultures were collected in 28% of surgeries, yielded gram-positive, gram-negative, and anaerobic organisms, showed only weak, nonsignificant associations with preoperative antibiotic exposure, and were not significantly associated with postoperative antibiotic choice.
+
+Conclusions: 
+
+Perioperative trimethoprim-sulfamethoxazole, cephalexin, and spironolactone were each associated with shorter time to documented wound-healing progress after HS surgery in this retrospective cohort. Routine intraoperative cultures demonstrated limited observed clinical utility in guiding immediate postsurgical antibiotics. These findings support efforts to streamline perioperative care while de-emphasizing routine intraoperative culture collection in HS surgery.]]></description>
+      <pubDate>Wed, 27 May 2026 00:00:00 GMT-05:00</pubDate>
+      <citation><![CDATA[Annals of Plastic Surgery. ():10.1097/SAP.0000000000004777, February 2026. doi: 10.1097/SAP.0000000000004777]]></citation>
+      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
+      <guid isPermaLink="false">00000637-990000000-01172</guid>
+    </item>
+    <item>
+      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/9900/regional_differences_in_postexcision_outcomes_of.1171.aspx</link>
+      <author><![CDATA[Kumar, Sailesh I.S.; Katta, Tapasya; Anderson, Michael; McRae, Charlotte; Rallapalle, Vyshnavi; Yerabolu, Krishin; Hale, Elizabeth; Collawn, Sherry S.]]></author>
+      <category><![CDATA[Burn Surgery and Research]]></category>
+      <title><![CDATA[Regional Differences in Postexcision Outcomes of Keloids: A Focus on Auricular Versus Nonauricular Sites]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 25 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/9900/regional_differences_in_postexcision_outcomes_of.1171.aspx"></a>Background: 
+
+The pathophysiology of keloid formation remains poorly understood, and treatment typically involves multimodal approaches. Previous studies suggest that keloids on the earlobes, head, and neck may be more responsive to radiation than those on other anatomic sites due to putative differences in skin tension and biomechanical properties. However, limited comparative data exist to substantiate these anatomic distinctions in clinical outcomes.
+
+Aim: 
+
+To compare recurrence rates, treatment outcomes, and radiation-related side effects between auricular and nonauricular keloids following surgical excision with adjuvant radiation therapy or surgical excision alone.
+
+Methods: 
+
+This retrospective cohort study analysed 168 cases with keloids (60 auricular and 108 nonauricular) treated by a single surgeon between January 2020 and May 2024. Of these, 122 patients underwent surgical excision followed by adjuvant radiation therapy, while 46 patients received surgical excision only. Intralesional 5-Fluorouracil and Kenalog was injected across both groups during surgical excision. Demographic and clinical data, including age, sex, race, BMI, keloid site and size, and treatment modality, were collected. Patients were followed up post-treatment to assess recurrence, radiation-related side effects, and treatment response patterns.
+
+Results: 
+
+Auricular keloids were more common in younger patients and significantly smaller in size (median 12 vs. 19.5 mm for nonauricular, P<0.001). The majority of patients received 2100 cGy of radiation. Among those receiving surgery plus radiation, 17.07% of auricular and 16.22% of nonauricular keloids recurred (P=0.91). In the surgery-only group, recurrence was 47.37% and 44.12%, respectively (P=0.82). Notably, radiation-related side effects were significantly more frequent in nonauricular sites (37%) compared with auricular (20%) (P=0.022). Age, sex, race, BMI, and radiation dose did not independently predict recurrence in the final model.
+
+Conclusion: 
+
+Anatomic site did not significantly influence keloid recurrence rates, challenging previous assumptions about site-specific treatment responses, while adjuvant radiotherapy significantly reduced recurrence irrespective of site. Radiation-related side effects were more common in nonauricular locations. Age, sex, race and BMI did not emerge as statistically significant demographic predictors of recurrence in this study. These findings support the routine inclusion of radiotherapy in keloid management and suggest that demographic and treatment factors may outweigh anatomic considerations in predicting outcomes.]]></description>
+      <pubDate>Mon, 25 May 2026 00:00:00 GMT-05:00</pubDate>
+      <citation><![CDATA[Annals of Plastic Surgery. ():10.1097/SAP.0000000000004775, February 2026. doi: 10.1097/SAP.0000000000004775]]></citation>
+      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
+      <guid isPermaLink="false">00000637-990000000-01171</guid>
+    </item>
     <item>
       <link>https://journals.lww.com/annalsplasticsurgery/fulltext/9900/safety_of_breast_neurotization_using_nerve.1170.aspx</link>
       <author><![CDATA[Chaudhry, Aneeq S.; Rabin, Daniel A.; Kelley, Erin; Kozlowski, Katherine; Tian, William; Adam, Tarifa H.; Ko, Jason H.; Teven, Chad M.; Ellis, Marco F.; Galiano, Robert D.]]></author>
