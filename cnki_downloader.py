@@ -143,12 +143,14 @@ def generate_rss_xml(items, journal_code, journal_name):
                 l_el = item_el.find("link")
                 d_el = item_el.find("description")
                 p_el = item_el.find("pubDate")
+                g_el = item_el.find("guid")
                 
                 existing_items.append({
                     "title": t_el.text if t_el is not None else "",
                     "link": l_el.text if l_el is not None else "",
                     "description": d_el.text if d_el is not None else "",
-                    "pubDate": p_el.text if p_el is not None else ""
+                    "pubDate": p_el.text if p_el is not None else "",
+                    "guid": g_el.text if g_el is not None else ""
                 })
         except Exception as e:
             print(f"  ⚠️ 读取现有 XML 失败: {e}")
@@ -201,7 +203,9 @@ def generate_rss_xml(items, journal_code, journal_name):
         ET.SubElement(item_el, "title").text = item.get("title", "")
         ET.SubElement(item_el, "link").text = item.get("link", "")
         ET.SubElement(item_el, "description").text = item.get("description", "")
-        ET.SubElement(item_el, "guid").text = item.get("link", "")
+        
+        guid_val = item.get("guid") or item.get("hash") or generate_hash(journal_code, item.get("title", ""))
+        ET.SubElement(item_el, "guid", isPermaLink="false").text = guid_val
         
         pub_date = item.get("pubDate")
         if pub_date:
