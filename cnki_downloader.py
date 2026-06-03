@@ -292,27 +292,12 @@ def wait_for_captcha(page, code, name):
     except Exception:
         pass
 
-    # 3. 异步弹出系统警报对话框 (避免阻塞 Captcha 自动检测)
-    dialog_proc = None
-    try:
-        script = (
-            f'display alert "知网安全验证码" '
-            f'message "正在抓取期刊：{name} ({code})\\n请在打开的 Edge 浏览器中完成滑块验证。" '
-            f'as warning buttons {{"已完成"}} default button "已完成" giving up after 600'
-        )
-        dialog_proc = subprocess.Popen(["osascript", "-e", script])
-    except Exception:
-        pass
-        
+    # 3. 打印提示信息
     print("⏳ 等待人工滑过验证码 (最长等待 10 分钟)...")
     wait_start = time.time()
     success = False
     
     while time.time() - wait_start < 600:  # 10分钟
-        # 如果弹窗进程已结束（用户点击了“已完成”或弹窗超时）
-        if dialog_proc and dialog_proc.poll() is not None:
-            pass
-            
         try:
             # 检查页面是否仍然包含"安全验证"
             if "安全验证" not in page.content():
@@ -331,13 +316,7 @@ def wait_for_captcha(page, code, name):
         
         time.sleep(2)
         
-    # 如果弹窗还在运行，将其关闭
-    if dialog_proc and dialog_proc.poll() is None:
-        try:
-            dialog_proc.terminate()
-        except Exception:
-            pass
-            
+
     if not success:
         print("❌ 超时！10 分钟内未完成人工验证，跳过该期刊。")
         return False
