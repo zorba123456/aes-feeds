@@ -4,7 +4,7 @@
 =============================================================================
 Project: lit_auto_pipeline (aes-intel platform)
 File: aes-feeds/cnki_downloader.py
-Version: V2.1.0 (DUAL-TRACK HYBRID SYSTEM)
+Version: V2.1.1 (DUAL-TRACK HYBRID SYSTEM)
 Description:
     1. --mode rss: 快速静默的 RSS 提取逻辑。
     2. --mode web: 使用 Playwright 有头模式提取“当期目录”与“网络首发”。
@@ -29,7 +29,7 @@ from datetime import datetime, timezone, timedelta
 from bs4 import BeautifulSoup
 import requests
 
-__version__ = "V2.1.0"
+__version__ = "V2.1.1"
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(CURRENT_DIR)
@@ -44,6 +44,8 @@ CAPTCHA_WAIT_SECS = 600
 JOURNAL_TIMEOUT_SECS = 300
 CAPTCHA_POLL_INTERVAL = 2
 CAPTCHA_LOG_INTERVAL = 30
+CATALOG_WAIT_SECS = 15
+NET_FIRST_SWITCH_WAIT_SECS = 3
 
 
 def _log(msg):
@@ -105,6 +107,45 @@ def captcha_passed(page):
                 return True
     except Exception:
         pass
+    return False
+
+
+def net_first_is_active(page):
+    try:
+        classes = page.locator('#YearIssueTree dl#NetFirstYear').get_attribute("class") or ""
+        return "cur" in classes
+    except Exception:
+        return False
+
+
+def catalog_item_count(page):
+    try:
+        return page.locator('#CataLogContent dd').count()
+    except Exception:
+        return 0
+
+
+def _wait_for_catalog(page, timeout_secs, label):
+    try:
+        page.wait_for_selector('#CataLogContent dd', timeout=timeout_secs * 1000)
+        return True
+    except Exception as e:
+        if catalog_item_count(page) == 0:
+            return False
+        _log(f"     ⚠️ {label}目录加载超时: {e}")
+        return catalog_item_count(page) > 0
+
+
+def _activate_net_first_view(page):
+    """切换至网络首发视图；若无文献则快速返回 False，避免空等 15 秒。"""
+    if net_first_is_active(page):
+        return catalog_item_count(page) > 0
+    _log("     切换至 [网络首发]...")
+    page.locator('#YearIssueTree dl#NetFirstYear em').click()
+    time.sleep(1)
+    if _wait_for_catalog(page, NET_FIRST_SWITCH_WAIT_SECS, "网络首发"):
+        return True
+    _log("     跳过 [网络首发]（该刊暂无网络首发文献）")
     return False
 
 
@@ -439,16 +480,8 @@ def _scrape_journal_views(page, code, name, journal_start, has_net_first, has_pr
         _log(f"  -> 正在抓取视图: {view_name}...")
 
         if view_name == "网络首发":
-            current_classes = page.locator('#YearIssueTree dl#NetFirstYear').get_attribute("class") or ""
-            if "cur" not in current_classes:
-                _log("     切换至 [网络首发]...")
-                page.locator('#YearIssueTree dl#NetFirstYear em').click()
-                time.sleep(2)
-                try:
-                    page.wait_for_selector('#CataLogContent dd', timeout=15000)
-                except Exception as e:
-                    _log(f"     ⚠️ 网络首发目录加载超时: {e}")
-                time.sleep(1)
+            if not _activate_net_first_view(page):
+                continue
         else:
             current_classes = page.locator('#YearIssueTree dl#NetFirstYear').get_attribute("class") or "" if has_net_first else ""
             if "cur" in current_classes or len(all_scraped_items) > 0:
@@ -461,10 +494,7 @@ def _scrape_journal_views(page, code, name, journal_start, has_net_first, has_pr
                     time.sleep(1)
                 latest_issue_loc.click()
                 time.sleep(2)
-                try:
-                    page.wait_for_selector('#CataLogContent dd', timeout=15000)
-                except Exception as e:
-                    _log(f"     ⚠️ 当期目录加载超时: {e}")
+                _wait_for_catalog(page, CATALOG_WAIT_SECS, "当期")
                 time.sleep(1)
 
         html = page.content()
@@ -577,17 +607,18 @@ def run_web_mode(targets):
                     time.sleep(2)
                     _check_journal_timeout(journal_start, code, name, "catalog_wait")
 
-                    has_net_first = page.locator('#YearIssueTree dl#NetFirstYear').count() > 0
+                    has_net_first_ui = page.locator('#YearIssueTree dl#NetFirstYear').count() > 0
                     has_printed = page.locator('#YearIssueTree a[id^="yq"]').count() > 0
-                    if not has_net_first and not has_printed:
+                    if not has_net_first_ui and not has_printed:
                         _log("  ⚠️ 未检测到任何期数或网络首发目录")
                         dump_debug_page(page, code, "no_issue_tree")
                         continue
 
-                    is_net_first_active = False
-                    if has_net_first:
-                        classes = page.locator('#YearIssueTree dl#NetFirstYear').get_attribute("class") or ""
-                        is_net_first_active = "cur" in classes
+                    is_net_first_active = has_net_first_ui and net_first_is_active(page)
+                    has_net_first = has_net_first_ui
+                    if has_net_first_ui and is_net_first_active and catalog_item_count(page) == 0:
+                        has_net_first = False
+                        _log("  ℹ️ 该刊无网络首发文献，跳过网络首发视图")
 
                     all_scraped_items = _scrape_journal_views(
                         page, code, name, journal_start,
