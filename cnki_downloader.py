@@ -4,38 +4,132 @@
 =============================================================================
 Project: lit_auto_pipeline (aes-intel platform)
 File: aes-feeds/cnki_downloader.py
-Version: V2.0.0 (DUAL-TRACK HYBRID SYSTEM)
+Version: V2.1.0 (DUAL-TRACK HYBRID SYSTEM)
 Description:
     1. --mode rss: 快速静默的 RSS 提取逻辑。
     2. --mode web: 使用 Playwright 有头模式提取“当期目录”与“网络首发”。
        遇到滑块验证码时，发出提示音并给予长达 10 分钟的人工滑动容错时间。
+       改进验证码通过检测、逐刊超时跳过、关键步骤日志与调试页面 dump。
     3. 支持全局基于 Hash 的去重机制。
 =============================================================================
 """
 
 import os
+import sys
 import xml.etree.ElementTree as ET
 import json
 import time
 import hashlib
 import re
 import argparse
+import signal
 import subprocess
 from datetime import datetime, timezone, timedelta
 
 from bs4 import BeautifulSoup
 import requests
 
-__version__ = "V2.0.0"
+__version__ = "V2.1.0"
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(CURRENT_DIR)
 
 TARGETS_JSON_PATH = os.path.join(CURRENT_DIR, "cnki_targets.json")
 LOG_FILE_PATH = os.path.join(CURRENT_DIR, "cnki_dedup_log.json")
+WEB_LOG_DIR = os.path.join(PROJECT_ROOT, "logs")
 DEDUP_EXPIRE_DAYS = 90
 USER_DATA_DIR = os.path.join(PROJECT_ROOT, "cnki_playwright_profile")
 PROXY_SERVER = "http://127.0.0.1:29758"
+CAPTCHA_WAIT_SECS = 600
+JOURNAL_TIMEOUT_SECS = 300
+CAPTCHA_POLL_INTERVAL = 2
+CAPTCHA_LOG_INTERVAL = 30
+
+
+def _log(msg):
+    """带时间戳的即时日志，确保 cron/tee 场景下不丢输出。"""
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"[{ts}] {msg}", flush=True)
+
+
+def is_captcha_url(url):
+    if not url:
+        return False
+    lower = url.lower()
+    return "verify" in lower or "captcha" in lower
+
+
+def is_captcha_title(title):
+    return bool(title and "安全验证" in title)
+
+
+def page_has_catalog(page):
+    try:
+        return page.locator("#CataLogContent dd").count() > 0
+    except Exception:
+        return False
+
+
+def page_has_issue_tree(page):
+    try:
+        return page.locator("#YearIssueTree").count() > 0
+    except Exception:
+        return False
+
+
+def page_has_captcha(page):
+    """检测页面是否仍处于验证码拦截状态（避免 HTML 残留文案误判）。"""
+    try:
+        if is_captcha_url(page.url):
+            return True
+        if is_captcha_title(page.title()):
+            return True
+        if page.locator('#captcha, .verify-wrap, [class*="captcha"], [id*="captcha"]').count() > 0:
+            return True
+        if page_has_catalog(page) or page_has_issue_tree(page):
+            return False
+        content = page.content()
+        return "安全验证" in content and "blockPuzzle" in content
+    except Exception:
+        return False
+
+
+def captcha_passed(page):
+    """验证码已通过：目录或期数树已出现，或已进入期刊详情页且无验证码。"""
+    try:
+        if page_has_catalog(page) or page_has_issue_tree(page):
+            return True
+        if "knavi/journals" in page.url and not page_has_captcha(page):
+            title = page.title() or ""
+            if title and "安全验证" not in title:
+                return True
+    except Exception:
+        pass
+    return False
+
+
+def dump_debug_page(page, code, reason):
+    os.makedirs(WEB_LOG_DIR, exist_ok=True)
+    ts = time.strftime("%Y%m%d_%H%M%S")
+    html_path = os.path.join(WEB_LOG_DIR, f"cnki_debug_{code}_{ts}.html")
+    try:
+        with open(html_path, "w", encoding="utf-8") as f:
+            f.write(page.content())
+        _log(f"  📄 调试页面已保存: {html_path} ({reason})")
+    except Exception as e:
+        _log(f"  ⚠️ 无法保存调试页面: {e}")
+
+
+class JournalTimeout(Exception):
+    pass
+
+
+def _check_journal_timeout(journal_start, code, name, stage):
+    elapsed = time.time() - journal_start
+    if elapsed > JOURNAL_TIMEOUT_SECS:
+        raise JournalTimeout(f"{name} ({code}) 在 [{stage}] 超过 {JOURNAL_TIMEOUT_SECS}s")
+
+
 def clean_text_noise(text):
     if not text:
         return ""
@@ -273,278 +367,302 @@ def run_rss_mode(targets):
     save_dedup_log(dedup_log)
     print("[RSS Mode] 执行完成！")
 
-def wait_for_captcha(page, code, name):
+def wait_for_captcha(page, code, name, journal_start):
     """当出现验证码时，触发系统通知和弹窗置顶提醒，等待人工滑动"""
-    print(f"⚠️ 触发安全验证: {name} ({code})")
-    
-    # 1. 发送 macOS 系统通知
+    _log(f"⚠️ 触发安全验证: {name} ({code})")
+
     try:
-        title = "知网安全验证码"
         subtitle = f"正在抓取: {name}"
-        script = f'display notification "{subtitle}" with title "{title}" sound name "Glass"'
+        script = f'display notification "{subtitle}" with title "知网安全验证码" sound name "Glass"'
         subprocess.run(["osascript", "-e", script], check=False)
     except Exception:
         pass
 
-    # 2. 自动置顶/激活 Edge 浏览器窗口
     try:
         subprocess.run(["osascript", "-e", 'tell application "Microsoft Edge" to activate'], check=False)
     except Exception:
         pass
 
-    # 3. 打印提示信息
-    print("⏳ 等待人工滑过验证码 (最长等待 10 分钟)...")
+    _log(f"⏳ 等待人工滑过验证码 (最长等待 {CAPTCHA_WAIT_SECS // 60} 分钟)...")
     wait_start = time.time()
-    success = False
-    
-    while time.time() - wait_start < 600:  # 10分钟
+    last_progress_log = wait_start
+
+    while time.time() - wait_start < CAPTCHA_WAIT_SECS:
+        _check_journal_timeout(journal_start, code, name, "captcha_wait")
+
         try:
-            # 检查页面是否仍然包含"安全验证"
-            if "安全验证" not in page.content():
-                print("✅ 验证码已通过！继续执行...")
-                time.sleep(2)  # 等待重定向完成
+            if captcha_passed(page):
+                _log("✅ 验证码已通过！等待页面加载...")
+                time.sleep(2)
                 try:
                     page.wait_for_load_state("domcontentloaded", timeout=15000)
-                    page.wait_for_selector("#CataLogContent dd", timeout=15000)
-                except Exception:
-                    pass
-                time.sleep(3)
-                success = True
-                break
-        except Exception:
-            pass
-        
-        time.sleep(2)
-        
+                    page.wait_for_selector("#CataLogContent dd, #YearIssueTree", timeout=15000)
+                except Exception as e:
+                    _log(f"  ⚠️ 验证码通过后等待目录加载: {e}")
+                time.sleep(2)
+                if captcha_passed(page):
+                    return True
+                _log("  ⚠️ 验证码似乎已通过但页面未就绪，继续等待...")
+        except JournalTimeout:
+            raise
+        except Exception as e:
+            _log(f"  ⚠️ 验证码检测异常: {e}")
 
-    if not success:
-        print("❌ 超时！10 分钟内未完成人工验证，跳过该期刊。")
-        return False
-    return True
+        now = time.time()
+        if now - last_progress_log >= CAPTCHA_LOG_INTERVAL:
+            elapsed = int(now - wait_start)
+            _log(f"  … 仍在等待验证码 ({elapsed}s / {CAPTCHA_WAIT_SECS}s)")
+            last_progress_log = now
+
+        time.sleep(CAPTCHA_POLL_INTERVAL)
+
+    _log("❌ 超时！验证码等待时间内未完成人工验证，跳过该期刊。")
+    dump_debug_page(page, code, "captcha_timeout")
+    return False
+
+
+def _scrape_journal_views(page, code, name, journal_start, has_net_first, has_printed, is_net_first_active):
+    views_to_scrape = []
+    if has_net_first:
+        views_to_scrape.append("网络首发")
+    if has_printed:
+        views_to_scrape.append("当期目录")
+    if len(views_to_scrape) == 2:
+        if is_net_first_active:
+            views_to_scrape = ["网络首发", "当期目录"]
+        else:
+            views_to_scrape = ["当期目录", "网络首发"]
+
+    all_scraped_items = []
+    for view_name in views_to_scrape:
+        _check_journal_timeout(journal_start, code, name, f"view_{view_name}")
+        _log(f"  -> 正在抓取视图: {view_name}...")
+
+        if view_name == "网络首发":
+            current_classes = page.locator('#YearIssueTree dl#NetFirstYear').get_attribute("class") or ""
+            if "cur" not in current_classes:
+                _log("     切换至 [网络首发]...")
+                page.locator('#YearIssueTree dl#NetFirstYear em').click()
+                time.sleep(2)
+                try:
+                    page.wait_for_selector('#CataLogContent dd', timeout=15000)
+                except Exception as e:
+                    _log(f"     ⚠️ 网络首发目录加载超时: {e}")
+                time.sleep(1)
+        else:
+            current_classes = page.locator('#YearIssueTree dl#NetFirstYear').get_attribute("class") or "" if has_net_first else ""
+            if "cur" in current_classes or len(all_scraped_items) > 0:
+                _log("     切换至 [当期目录] (最新期数)...")
+                latest_issue_loc = page.locator('#YearIssueTree a[id^="yq"]').first
+                parent_dl = latest_issue_loc.locator("xpath=ancestor::dl")
+                dd_el = parent_dl.locator("dd")
+                if dd_el.is_hidden():
+                    parent_dl.locator("dt").click()
+                    time.sleep(1)
+                latest_issue_loc.click()
+                time.sleep(2)
+                try:
+                    page.wait_for_selector('#CataLogContent dd', timeout=15000)
+                except Exception as e:
+                    _log(f"     ⚠️ 当期目录加载超时: {e}")
+                time.sleep(1)
+
+        html = page.content()
+        soup = BeautifulSoup(html, 'html.parser')
+        issue_el = soup.select_one('span.date-list')
+        issue_txt = issue_el.get_text(strip=True) if issue_el else '未知期数'
+        elements = soup.select('#CataLogContent dd')
+        _log(f"     发现 {len(elements)} 篇文献")
+
+        for el in elements:
+            a_tag = el.select_one('span.name a')
+            if not a_tag:
+                continue
+            raw_title = clean_text_noise(a_tag.get_text(strip=True))
+            link_href = a_tag.get('href', '')
+            if link_href.startswith('/'):
+                link = f"https://navi.cnki.net{link_href}"
+            else:
+                link = link_href
+            author_tag = el.select_one('.author')
+            author = clean_text_noise(author_tag.get_text(strip=True)) if author_tag else ''
+            company_tag = el.select_one('.company')
+            company_txt = company_tag.get('title', '').strip() if company_tag else ''
+            if not company_txt and company_tag:
+                company_txt = company_tag.get_text(strip=True)
+            if view_name == "网络首发":
+                enhanced_title = f"[网络首发] {raw_title}"
+                pub_date = parse_cnki_pubdate(company_txt)
+                desc = f"<b>期数：</b>网络首发<br><b>出版日期/发布时间：</b>{company_txt}<br><b>作者：</b>{author or '未标明'}"
+            else:
+                enhanced_title = f"[当期目录] [{issue_txt}] {raw_title}"
+                pub_date = parse_cnki_pubdate(company_txt)
+                desc = f"<b>期数：</b>{issue_txt}<br><b>出版日期/页码：</b>{company_txt}<br><b>作者：</b>{author or '未标明'}"
+            if not pub_date:
+                pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
+            h = generate_hash(code, raw_title)
+            all_scraped_items.append({
+                "title": enhanced_title,
+                "link": link,
+                "description": desc,
+                "pubDate": pub_date,
+                "hash": h
+            })
+    return all_scraped_items
 
 
 def run_web_mode(targets):
     """深度网页抓取模式 (Playwright)"""
-    print("[Web Mode] 开始执行深度网页抓取...")
     from playwright.sync_api import sync_playwright
-    
-    dedup_log = load_dedup_log()
-    
-    with sync_playwright() as p:
-        # 必须是有头模式 headless=False，以便人工介入
-        # 使用系统的 Microsoft Edge（用户指定的项目浏览器）
-        try:
-            ctx = p.chromium.launch_persistent_context(
-                USER_DATA_DIR, headless=False, channel='msedge',
-                args=[
-                    '--disable-blink-features=AutomationControlled',
-                    '--disable-background-timer-throttling',
-                    '--disable-backgrounding-occluded-windows',
-                    '--disable-renderer-backgrounding'
-                ]
-            )
-        except Exception:
-            # Edge 不可用时回退 Chromium
-            ctx = p.chromium.launch_persistent_context(
-                USER_DATA_DIR, headless=False,
-                args=[
-                    '--disable-blink-features=AutomationControlled',
-                    '--disable-background-timer-throttling',
-                    '--disable-backgrounding-occluded-windows',
-                    '--disable-renderer-backgrounding'
-                ]
-            )
-        page = ctx.new_page()
-        page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
 
-        for code, info in targets.items():
-            name = info.get("name", code)
-            
-            # 只有设置了 web_scrape 为 True 的才进行网页抓取
-            if not info.get("web_scrape", False):
-                print(f"跳过 {name} (未开启 web_scrape)")
-                continue
-                
-            url = f'https://navi.cnki.net/knavi/journals/{code}/detail?uniplatform=NZKPT'
-            print(f"\n正在深度抓取 {name} ({code})...")
-            
+    _log("[Web Mode] 开始执行深度网页抓取...")
+    dedup_log = load_dedup_log()
+    ctx = None
+
+    try:
+        with sync_playwright() as p:
             try:
-                page.goto(url, wait_until='domcontentloaded', timeout=30000)
-                
-                # 检查是否遇到验证码
-                if "安全验证" in page.content():
-                    success = wait_for_captcha(page, code, name)
-                    if not success:
-                        continue
-                
-                # 等待 AJAX 渲染期刊期数和目录
+                ctx = p.chromium.launch_persistent_context(
+                    USER_DATA_DIR, headless=False, channel='msedge',
+                    args=[
+                        '--disable-blink-features=AutomationControlled',
+                        '--disable-background-timer-throttling',
+                        '--disable-backgrounding-occluded-windows',
+                        '--disable-renderer-backgrounding'
+                    ]
+                )
+            except Exception:
+                ctx = p.chromium.launch_persistent_context(
+                    USER_DATA_DIR, headless=False,
+                    args=[
+                        '--disable-blink-features=AutomationControlled',
+                        '--disable-background-timer-throttling',
+                        '--disable-backgrounding-occluded-windows',
+                        '--disable-renderer-backgrounding'
+                    ]
+                )
+            page = ctx.new_page()
+            page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+
+            web_targets = [(c, i) for c, i in targets.items() if i.get("web_scrape", False)]
+            _log(f"共 {len(web_targets)} 本期刊待深度抓取")
+
+            for idx, (code, info) in enumerate(web_targets, 1):
+                name = info.get("name", code)
+                journal_start = time.time()
+                url = f'https://navi.cnki.net/knavi/journals/{code}/detail?uniplatform=NZKPT'
+                _log(f"\n[{idx}/{len(web_targets)}] 正在深度抓取 {name} ({code})...")
+
                 try:
-                    page.wait_for_selector('#CataLogContent dd', timeout=20000)
-                except Exception:
-                    print("  ⚠️ 等待 #CataLogContent 超时，可能暂无数据或触发了验证码")
-                time.sleep(2) # 额外等待渲染完成
-                
-                # 1. 检测可用视图
-                has_net_first = page.locator('#YearIssueTree dl#NetFirstYear').count() > 0
-                has_printed = page.locator('#YearIssueTree a[id^="yq"]').count() > 0
-                
-                if not has_net_first and not has_printed:
-                    print("  ⚠️ 未检测到任何期数或网络首发目录")
-                    continue
-                
-                # 2. 判断当前默认选中视图
-                is_net_first_active = False
-                if has_net_first:
-                    classes = page.locator('#YearIssueTree dl#NetFirstYear').get_attribute("class") or ""
-                    is_net_first_active = "cur" in classes
-                
-                views_to_scrape = []
-                if has_net_first:
-                    views_to_scrape.append("网络首发")
-                if has_printed:
-                    views_to_scrape.append("当期目录")
-                    
-                # 调整抓取顺序以减少不必要的视图切换点击
-                if len(views_to_scrape) == 2:
-                    if is_net_first_active:
-                        views_to_scrape = ["网络首发", "当期目录"]
-                    else:
-                        views_to_scrape = ["当期目录", "网络首发"]
-                
-                all_scraped_items = []
-                
-                # 3. 循环抓取各视图
-                for view_name in views_to_scrape:
-                    print(f"  -> 正在抓取视图: {view_name}...")
-                    
-                    if view_name == "网络首发":
-                        # 如果当前页面并非网络首发，则需点击切换
-                        current_classes = page.locator('#YearIssueTree dl#NetFirstYear').get_attribute("class") or ""
-                        if "cur" not in current_classes:
-                            print("     切换至 [网络首发]...")
-                            page.locator('#YearIssueTree dl#NetFirstYear em').click()
-                            time.sleep(2)
-                            try:
-                                page.wait_for_selector('#CataLogContent dd', timeout=15000)
-                            except Exception:
-                                pass
-                            time.sleep(1)
-                    else:  # view_name == "当期目录"
-                        # 如果当前页面并非当期目录，则需点击切换到最新期数
-                        # 判断当前是否选在网络首发
-                        current_classes = page.locator('#YearIssueTree dl#NetFirstYear').get_attribute("class") or "" if has_net_first else ""
-                        if "cur" in current_classes or len(all_scraped_items) > 0:
-                            print("     切换至 [当期目录] (最新期数)...")
-                            latest_issue_loc = page.locator('#YearIssueTree a[id^="yq"]').first
-                            parent_dl = latest_issue_loc.locator("xpath=ancestor::dl")
-                            dd_el = parent_dl.locator("dd")
-                            if dd_el.is_hidden():
-                                parent_dl.locator("dt").click()
-                                time.sleep(1)
-                            latest_issue_loc.click()
-                            time.sleep(2)
-                            try:
-                                page.wait_for_selector('#CataLogContent dd', timeout=15000)
-                            except Exception:
-                                pass
-                            time.sleep(1)
-                            
-                    # 解析当前视图内容
-                    html = page.content()
-                    soup = BeautifulSoup(html, 'html.parser')
-                    
-                    # 提取期数名称
-                    issue_el = soup.select_one('span.date-list')
-                    issue_txt = issue_el.get_text(strip=True) if issue_el else '未知期数'
-                    
-                    elements = soup.select('#CataLogContent dd')
-                    print(f"     发现 {len(elements)} 篇文献")
-                    
-                    for el in elements:
-                        a_tag = el.select_one('span.name a')
-                        if not a_tag:
+                    _log(f"  导航至期刊页...")
+                    page.goto(url, wait_until='domcontentloaded', timeout=30000)
+                    _check_journal_timeout(journal_start, code, name, "goto")
+
+                    if page_has_captcha(page):
+                        if not wait_for_captcha(page, code, name, journal_start):
                             continue
-                            
-                        raw_title = clean_text_noise(a_tag.get_text(strip=True))
-                        link_href = a_tag.get('href', '')
-                        if link_href.startswith('/'):
-                            link = f"https://navi.cnki.net{link_href}"
+
+                    _log("  等待目录渲染...")
+                    try:
+                        page.wait_for_selector('#CataLogContent dd, #YearIssueTree', timeout=20000)
+                    except Exception as e:
+                        _log(f"  ⚠️ 等待目录超时: {e}")
+                        if page_has_captcha(page):
+                            _log("  ⚠️ 目录超时且仍有验证码，尝试再次等待...")
+                            if not wait_for_captcha(page, code, name, journal_start):
+                                dump_debug_page(page, code, "catalog_timeout_with_captcha")
+                                continue
                         else:
-                            link = link_href
-                            
-                        author_tag = el.select_one('.author')
-                        author = clean_text_noise(author_tag.get_text(strip=True)) if author_tag else ''
-                        
-                        company_tag = el.select_one('.company')
-                        company_txt = company_tag.get('title', '').strip() if company_tag else ''
-                        if not company_txt and company_tag:
-                            company_txt = company_tag.get_text(strip=True)
-                            
-                        if view_name == "网络首发":
-                            enhanced_title = f"[网络首发] {raw_title}"
-                            pub_date = parse_cnki_pubdate(company_txt)
-                            desc = f"<b>期数：</b>网络首发<br><b>出版日期/发布时间：</b>{company_txt}<br><b>作者：</b>{author or '未标明'}"
-                        else:
-                            enhanced_title = f"[当期目录] [{issue_txt}] {raw_title}"
-                            pub_date = parse_cnki_pubdate(company_txt)
-                            desc = f"<b>期数：</b>{issue_txt}<br><b>出版日期/页码：</b>{company_txt}<br><b>作者：</b>{author or '未标明'}"
-                            
-                        if not pub_date:
-                            pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
-                            
-                        h = generate_hash(code, raw_title)
-                        all_scraped_items.append({
-                            "title": enhanced_title,
-                            "link": link,
-                            "description": desc,
-                            "pubDate": pub_date,
-                            "hash": h
-                        })
-                
-                # 4. 过滤新文献并去重
-                seen_hashes_this_run = set()
-                new_items = []
-                for item in all_scraped_items:
-                    h = item["hash"]
-                    if h in dedup_log or h in seen_hashes_this_run:
+                            dump_debug_page(page, code, "catalog_timeout")
+                    time.sleep(2)
+                    _check_journal_timeout(journal_start, code, name, "catalog_wait")
+
+                    has_net_first = page.locator('#YearIssueTree dl#NetFirstYear').count() > 0
+                    has_printed = page.locator('#YearIssueTree a[id^="yq"]').count() > 0
+                    if not has_net_first and not has_printed:
+                        _log("  ⚠️ 未检测到任何期数或网络首发目录")
+                        dump_debug_page(page, code, "no_issue_tree")
                         continue
-                    seen_hashes_this_run.add(h)
-                    new_items.append(item)
-                
-                if new_items:
-                    print(f"  => 汇总提取到 {len(new_items)} 篇新文献")
-                    # 写入去重日志
-                    for item in new_items:
-                        dedup_log[item['hash']] = {"title": item['title'], "timestamp": time.time()}
-                    # 写入 XML
-                    generate_rss_xml(new_items, code, name)
-                else:
-                    print("  => 网页上无新文献")
-                    
-            except Exception as e:
-                print(f"  ❌ 网页抓取异常: {e}")
-                
-        ctx.close()
-        
+
+                    is_net_first_active = False
+                    if has_net_first:
+                        classes = page.locator('#YearIssueTree dl#NetFirstYear').get_attribute("class") or ""
+                        is_net_first_active = "cur" in classes
+
+                    all_scraped_items = _scrape_journal_views(
+                        page, code, name, journal_start,
+                        has_net_first, has_printed, is_net_first_active
+                    )
+
+                    seen_hashes_this_run = set()
+                    new_items = []
+                    for item in all_scraped_items:
+                        h = item["hash"]
+                        if h in dedup_log or h in seen_hashes_this_run:
+                            continue
+                        seen_hashes_this_run.add(h)
+                        new_items.append(item)
+
+                    if new_items:
+                        _log(f"  => 汇总提取到 {len(new_items)} 篇新文献")
+                        for item in new_items:
+                            dedup_log[item['hash']] = {"title": item['title'], "timestamp": time.time()}
+                        generate_rss_xml(new_items, code, name)
+                    else:
+                        _log("  => 网页上无新文献")
+
+                    elapsed = int(time.time() - journal_start)
+                    _log(f"  ✓ {name} 完成 ({elapsed}s)")
+
+                except JournalTimeout as e:
+                    _log(f"  ❌ 期刊超时，跳过: {e}")
+                    dump_debug_page(page, code, "journal_timeout")
+                except Exception as e:
+                    _log(f"  ❌ 网页抓取异常: {e}")
+                    dump_debug_page(page, code, "exception")
+
+            if ctx:
+                ctx.close()
+                ctx = None
+    finally:
+        if ctx:
+            try:
+                ctx.close()
+            except Exception:
+                pass
+
     save_dedup_log(dedup_log)
-    print("\n[Web Mode] 深度抓取完成！")
+    _log("[Web Mode] 深度抓取完成！")
+
+def _install_signal_handlers():
+    def _on_signal(signum, _frame):
+        _log(f"收到信号 {signum}，正在安全退出...")
+        sys.exit(128 + signum)
+
+    for sig_name in ("SIGTERM", "SIGINT", "SIGUSR1"):
+        sig = getattr(signal, sig_name, None)
+        if sig is not None:
+            signal.signal(sig, _on_signal)
+
 
 def main():
     parser = argparse.ArgumentParser(description="CNKI Downloader (Dual-Track)")
     parser.add_argument("--mode", choices=["rss", "web"], required=True, help="运行模式: rss (静默) 或 web (带弹窗)")
     args = parser.parse_args()
-    
+
+    if args.mode == "web":
+        _install_signal_handlers()
+
     targets = load_targets()
     if not targets:
         print(f"配置文件缺失或为空: {TARGETS_JSON_PATH}")
         return
-        
+
     if args.mode == 'rss':
         run_rss_mode(targets)
     elif args.mode == 'web':
         run_web_mode(targets)
 
-    # 执行完数据更新后，推送结果到 GitHub 远端仓库
     push_to_github()
 
 if __name__ == "__main__":
