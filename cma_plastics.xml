@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--CMA-FINGERPRINT:b28a9e5821733ae8914383aaaf2f2cc6-->
+<!--CMA-FINGERPRINT:e7ba738a0d025e54245205186cf48214-->
 <rss version="2.0">
     <channel>
         <title>KTN_"中华整形外科杂志" @ CMA</title>
         <link>https://www.yiigle.com/Journal/ZHZXWKZZ</link>
         <description>中华整形外科杂志 - 自动聚合源</description>
-        <lastBuildDate>Tue, 02 Jun 2026 01:00:38 +0800</lastBuildDate>
+        <lastBuildDate>Thu, 11 Jun 2026 01:00:36 +0800</lastBuildDate>
         
+        <item>
+            <title><![CDATA[[优先出版] A型肉毒毒素治疗多汗症的研究进展]]></title>
+            <link>https://rs.yiigle.com/cmaid/1683313</link>
+            <guid isPermaLink="false">https://rs.yiigle.com/cmaid/1683313</guid>
+            <author><![CDATA[刘宸汐, 闫言, 李莉]]></author>
+            
+            <description><![CDATA[<b>期数：</b>最新优先发表<br><b>出版日期：</b>未知时间<br><b>作者：</b>刘宸汐, 闫言, 李莉<br><br><b>摘要：</b>多汗症是一种临床常见病，以不可控制的过量出汗为主要表现，严重影响患者日常生活及心理健康。多汗症治疗方法多样，A型肉毒毒素(BTX-A)局部皮内注射是临床常用治疗手段，具有起效迅速、疗效确切、安全性良好的优势。该文通过文献回顾的方法，系统总结BTX-A在腋窝、手掌、足底、面部等部位多汗症中的临床应用方案、疗效评估及不良反应，分析其联合治疗、无创给药等新型治疗策略的研究进展，指出当前研究存在的局限，并展望未来研究方向，为多汗症的临床规范化治疗提供参考依据。]]></description>
+        </item>
         <item>
             <title><![CDATA[瘢痕疙瘩继发感染的危险因素分析和治疗探讨]]></title>
             <link>https://rs.yiigle.com/cmaid/1681094</link>
@@ -388,14 +396,6 @@ RPAS可成为评估实时疼痛程度的一种客观检测手段。]]></descript
             <author><![CDATA[刘鹏, 胡光云, 孙全武]]></author>
             
             <description><![CDATA[<b>期数：</b>2026年42卷04期<br><b>出版日期：</b>未知时间<br><b>作者：</b>刘鹏, 胡光云, 孙全武<br><br><b>摘要：</b>由于慢性创面的复杂性，传统治疗手段往往难以协同调控多个愈合环节，近年来，各种新兴纳米材料治疗手段的出现为创面愈合提供了新的治疗范式。该文聚焦于当前热门纳米材料在创面管理中的治疗进展，重点阐述了这些材料的创新设计、药物负载方式、针对不同制剂形式的给药策略以及具体治疗效果。通过深入分析其调控创面微环境的作用机制，进一步探讨了该治疗手段的优点、局限性及未来挑战，以期实现慢性创面的个性化治疗，为开发新一代智能创面制剂提供前瞻性视角。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[面部脂肪室及相关影像学研究进展]]></title>
-            <link>https://rs.yiigle.com/cmaid/1676359</link>
-            <guid isPermaLink="false">https://rs.yiigle.com/cmaid/1676359</guid>
-            <author><![CDATA[姜梦园, 李庆春]]></author>
-            
-            <description><![CDATA[<b>期数：</b>2026年42卷04期<br><b>出版日期：</b>未知时间<br><b>作者：</b>姜梦园, 李庆春<br><br><b>摘要：</b>脂肪组织是面部容积与轮廓的重要组成部分。面部脂肪组织被分为浅层和深层，并被筋膜、韧带构成的纤维网划分为多个独立的脂肪室。近年来，影像学技术的应用为脂肪室的观察与测量提供了新方法，有助于进一步明确面部脂肪室结构与老化机制，为面部年轻化提供更安全、有效的指导。该文对面部脂肪室的解剖结构、衰老相关变化及影像学研究进展进行了阐述，以期为研究者提供参考。]]></description>
         </item>
     </channel>
 </rss>
