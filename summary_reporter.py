@@ -71,7 +71,9 @@ def parse_latest_run_reports(log_path):
     latest_lines = lines[start_line_idx:]
 
     # 正则提取标签数据
-    pattern = re.compile(r'\[REPORT\] CHANNEL=(\S+)\s+ITEM=(.*?)\s+COUNT=(\d+)\s+STATUS=(\S+)')
+    pattern = re.compile(
+        r'\[REPORT\] CHANNEL=(\S+)\s+ITEM=(.*?)\s+COUNT=(\d+)\s+STATUS=(\S+)'
+    )
     reports = []
     
     for line in latest_lines:
@@ -131,7 +133,10 @@ def print_summary_table(reports):
         # 针对状态加上简单的 ANSI 颜色标识
         if rep["status"] == "SUCCESS":
             status_str = " \033[92mSUCCESS\033[0m"
-            padded_status = visual_ljust(status_str, w_status + 9) # 9 是 ANSI 颜色字符长度
+            padded_status = visual_ljust(status_str, w_status + 9)
+        elif rep["status"] in ("STALE", "DEGRADED"):
+            status_str = f" \033[93m{rep['status']}\033[0m"
+            padded_status = visual_ljust(status_str, w_status + 9)
         else:
             status_str = " \033[91mFAIL\033[0m"
             padded_status = visual_ljust(status_str, w_status + 9)
@@ -150,12 +155,13 @@ def print_summary_table(reports):
     print("└" + "─" * total_width + "┘")
 
 def main():
-    log_files = glob.glob(os.path.join(LOG_DIR, "*_new.log"))
+    channel_priority = {"lww.log": 1, "cma.log": 2, "ktn.log": 3, "cnki.log": 4}
+    log_files = [
+        os.path.join(LOG_DIR, name)
+        for name in channel_priority
+        if os.path.exists(os.path.join(LOG_DIR, name))
+    ]
     all_reports = []
-    
-    # 按照 LWW, CMA, KTN, CNKI 顺序对通道排序，使用户看起来更有层次感
-    channel_priority = {"lww_new.log": 1, "cma_new.log": 2, "ktn_new.log": 3, "cnki_new.log": 4}
-    log_files.sort(key=lambda x: channel_priority.get(os.path.basename(x), 99))
 
     for log_path in log_files:
         reports = parse_latest_run_reports(log_path)

@@ -4,7 +4,7 @@
 =============================================================================
 Project: lit_auto_pipeline (aes-intel platform)
 File: ktn_downloader.py
-Version: V2.2.9-HKScholarURL
+Version: V2.3.0-MultiFetchGuard
 Description:
     1. 彻底剔除关键词提取阶段的多重双引号噪声，确保呈现标准的 KTN_"关键词" 格式。
     2. 修复上游 [REPORT] 报盘中 keyword 携带半截引号导致入库解析错位的硬伤。
@@ -12,12 +12,14 @@ Description:
     4. 修正了 VERSION 变量定义缺失导致的 NameError。
     5. 兼容 scholar.google.com.hk 等区域的 scholar_url 链接，修复 blepharoplasty 等子源缺失。
     6. RSS 条目标题 "keyword - new results" 作为关键词兜底；OPML 合并磁盘已有 ktn_*.xml。
+    7. 母流拉取：直连优先 + 代理兜底 + 60s 超时 + 退避重试；备份过期 STALE 禁止 push。
 =============================================================================
 """
 
 import os
 import sys
 import glob
+import socket
 import requests
 import feedparser
 import time
@@ -30,17 +32,103 @@ from bs4 import BeautifulSoup
 # ==================== 物理配置区域 ====================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-VERSION = "V2.2.9-HKScholarURL"
+VERSION = "V2.3.0-MultiFetchGuard"
 
 KTN_RSS_URL = "https://kill-the-newsletter.com/feeds/uwgwyb1cnivki39x.xml"
 LOCAL_BACKUP_XML = os.path.join(os.environ.get("AES_OUT_DIR", BASE_DIR), "uwgwyb1cnivki39x.xml")
 
-PROXY_SERVER = "http://127.0.0.1:29758"
-PROXIES = {
-    "http": PROXY_SERVER,
-    "https": PROXY_SERVER
-}
+PROXY_HOST = "127.0.0.1"
+PROXY_PORT = 29758
+PROXY_SERVER = f"http://{PROXY_HOST}:{PROXY_PORT}"
+PROXIES = {"http": PROXY_SERVER, "https": PROXY_SERVER}
+
+FETCH_TIMEOUT = 60
+MIN_FEED_BYTES = 100_000
+BACKUP_STALE_SECS = 3600
+MAX_FETCH_ATTEMPTS = 3
+RETRY_DELAYS = (5, 10, 20)
+FETCH_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; AES-INTEL/2.0)"}
 # ======================================================
+
+def proxy_port_open(host=PROXY_HOST, port=PROXY_PORT, timeout=2):
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.settimeout(timeout)
+    try:
+        return sock.connect_ex((host, port)) == 0
+    finally:
+        sock.close()
+
+def _fetch_once(use_proxy, timeout=FETCH_TIMEOUT):
+    kwargs = {"timeout": timeout, "headers": FETCH_HEADERS}
+    if use_proxy:
+        kwargs["proxies"] = PROXIES
+    response = requests.get(KTN_RSS_URL, **kwargs)
+    if response.status_code == 200 and len(response.text) >= MIN_FEED_BYTES:
+        return response.text, None
+    return None, f"HTTP {response.status_code} size={len(response.text)}"
+
+def fetch_ktn_feed():
+    """直连优先、代理兜底，带退避重试。返回 (feed_text, meta)。"""
+    routes = [("direct", False)]
+    if proxy_port_open():
+        routes.append(("proxy", True))
+    else:
+        print(f"ℹ️ 代理 {PROXY_HOST}:{PROXY_PORT} 未监听，仅尝试直连")
+
+    errors = []
+    for attempt in range(1, MAX_FETCH_ATTEMPTS + 1):
+        for route_name, use_proxy in routes:
+            try:
+                text, err = _fetch_once(use_proxy)
+                if text:
+                    print(
+                        f"✅ 母流拉取成功: route={route_name} "
+                        f"attempt={attempt}/{MAX_FETCH_ATTEMPTS} size={len(text)}"
+                    )
+                    return text, {
+                        "fresh": True,
+                        "route": route_name,
+                        "attempt": attempt,
+                        "backup_age_secs": 0,
+                    }
+                errors.append(f"{route_name}: {err}")
+            except Exception as exc:
+                errors.append(f"{route_name}: {type(exc).__name__}: {exc}")
+        if attempt < MAX_FETCH_ATTEMPTS:
+            delay = RETRY_DELAYS[attempt - 1]
+            if any("429" in e for e in errors):
+                delay = max(delay, 30)
+            print(f"⏳ 母流拉取第 {attempt} 轮失败，{delay}s 后重试...")
+            time.sleep(delay)
+
+    print("⚠️ 母流全部拉取路径失败:")
+    for err in errors:
+        print(f"   - {err}")
+
+    if not os.path.exists(LOCAL_BACKUP_XML):
+        return None, {"fresh": False, "stale": True, "backup_age_secs": None, "errors": errors}
+
+    backup_age = time.time() - os.path.getmtime(LOCAL_BACKUP_XML)
+    with open(LOCAL_BACKUP_XML, "r", encoding="utf-8") as f:
+        backup_text = f.read()
+    stale = backup_age > BACKUP_STALE_SECS
+    age_h = backup_age / 3600
+    print(
+        f"⚠️ 回退本地备份 (age={age_h:.1f}h, stale={'是' if stale else '否'})"
+    )
+    return backup_text, {
+        "fresh": False,
+        "stale": stale,
+        "backup_age_secs": backup_age,
+        "errors": errors,
+    }
+
+def master_report_status(fetch_meta):
+    if fetch_meta.get("fresh"):
+        return "SUCCESS"
+    if fetch_meta.get("stale"):
+        return "STALE"
+    return "DEGRADED"
 
 def clean_text_noise(text):
     if not text: return ""
@@ -228,24 +316,18 @@ def main():
     print(f"📂 工作目录: {BASE_DIR}")
     print("=" * 65)
 
-    feed_text = ""
-    try:
-        response = requests.get(KTN_RSS_URL, proxies=PROXIES, timeout=30)
-        if response.status_code == 200:
-            feed_text = response.text
-            with open(LOCAL_BACKUP_XML, 'w', encoding='utf-8') as f:
-                f.write(feed_text)
-    except Exception as e:
-        print(f"⚠️ 网络拉取异常: {e}")
-    
-    if not feed_text and os.path.exists(LOCAL_BACKUP_XML):
-        with open(LOCAL_BACKUP_XML, 'r', encoding='utf-8') as f:
-            feed_text = f.read()
-
+    feed_text, fetch_meta = fetch_ktn_feed()
     if not feed_text:
         print("❌ 物理异常：无法获取线上流且无本地备份，KTN 退出。")
         print("[REPORT] CHANNEL=KTN ITEM=master_feed COUNT=0 STATUS=FAIL")
         return
+
+    if fetch_meta.get("fresh"):
+        with open(LOCAL_BACKUP_XML, "w", encoding="utf-8") as f:
+            f.write(feed_text)
+
+    master_status = master_report_status(fetch_meta)
+    print(f"[REPORT] CHANNEL=KTN ITEM=master_feed COUNT=1 STATUS={master_status}")
 
     feed = feedparser.parse(feed_text)
     master_channels = {}
@@ -277,12 +359,19 @@ def main():
             filename, display_title = res
             channel_meta_list.append((filename, display_title))
             # 🟢 完美修复：此时输出的 ITEM 字段将是百分百纯净、无空格多余引号的标准化字段
-            print(f"[REPORT] CHANNEL=KTN ITEM={keyword} COUNT={len(articles)} STATUS=SUCCESS")
+            print(
+                f"[REPORT] CHANNEL=KTN ITEM={keyword} COUNT={len(articles)} "
+                f"STATUS={master_status if master_status != 'FAIL' else 'FAIL'}"
+            )
         else:
             print(f"[REPORT] CHANNEL=KTN ITEM={keyword} COUNT=0 STATUS=FAIL")
 
     if channel_meta_list:
         generate_opml_directory(channel_meta_list)
+
+    if master_status == "STALE":
+        print("\n🛑 母流备份已过期 (STALE)，跳过 GitHub 推送以防假更新。")
+        return
 
     print("\n📤 正在自动推送细分流与总目录到 GitHub...")
     custom_env = os.environ.copy()
