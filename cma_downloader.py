@@ -399,7 +399,11 @@ def fetch_cma_journal(playwright_context, base_url, journal_name, output_filenam
 if __name__ == "__main__":
     print("=" * 65)
     print(f"🚀 启动 CMA 中华医学会抓取管线 [{__version__}]")
-    print("⚠️ 本任务将弹出 Edge 浏览器前台窗口（非 headless 隐形模式）")
+    headless = os.environ.get("CMA_HEADLESS", "").lower() in ("1", "true", "yes")
+    if headless:
+        print("ℹ️ CMA_HEADLESS=1：无头静默模式（不弹 Edge 窗口）")
+    else:
+        print("⚠️ 本任务将弹出 Edge 浏览器前台窗口（设 CMA_HEADLESS=1 可改无头）")
     print(f"📂 锚定工作目录: {BASE_DIR}")
     print("=" * 65)
     
@@ -415,7 +419,7 @@ if __name__ == "__main__":
     with sync_playwright() as p:
         browser = p.chromium.launch(
             channel="msedge", 
-            headless=False,
+            headless=headless,
             args=[
                 '--disable-background-timer-throttling',
                 '--disable-backgrounding-occluded-windows',
