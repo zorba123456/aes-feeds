@@ -11,6 +11,7 @@ Description:
     3. 隔离全局环境变量，确保 Git 物理推送挂载本地代理、网页抓取使用纯净国内直连。
     4. [V6.5.0 新增] 引入 cma_dedup_log.json 持久化去重，实现与 CNKI 一致的
        30条滚动历史去重机制，防止大量历史/优先出版文献一次性刷爆 Inoreader。
+    5. 调度说明：cron 触发时会弹出 Edge 前台窗口（headless=False），并非后台隐形执行。
 =============================================================================
 """
 import os
@@ -398,6 +399,7 @@ def fetch_cma_journal(playwright_context, base_url, journal_name, output_filenam
 if __name__ == "__main__":
     print("=" * 65)
     print(f"🚀 启动 CMA 中华医学会抓取管线 [{__version__}]")
+    print("⚠️ 本任务将弹出 Edge 浏览器前台窗口（非 headless 隐形模式）")
     print(f"📂 锚定工作目录: {BASE_DIR}")
     print("=" * 65)
     
