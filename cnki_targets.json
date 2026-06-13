@@ -30,6 +30,11 @@
         "web_scrape": true,
         "web_scrape_note": "月刊，当期目录可能超过20条"
     },
+    "YLMR": {
+        "name": "中国医疗美容",
+        "rss_url": "https://rss.cnki.net/knavi/rss/YLMR?pcode=CJFD,CCJD",
+        "web_scrape": true
+    },
     "ZBFX": {
         "name": "中国皮肤性病学杂志",
         "rss_url": "https://rss.cnki.net/knavi/rss/ZBFX?pcode=CJFD,CCJD",
