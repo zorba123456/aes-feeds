@@ -246,6 +246,64 @@ def save_dedup_log(log_data):
     with open(LOG_FILE_PATH, 'w', encoding='utf-8') as f:
         json.dump(cleaned_data, f, ensure_ascii=False, indent=2)
 
+def filter_targets(targets, journal_code=None):
+    """按期刊代码过滤 targets（大小写不敏感）。"""
+    if not journal_code:
+        return targets
+    key = journal_code.strip().upper()
+    if key not in targets:
+        known = ", ".join(sorted(targets.keys()))
+        raise SystemExit(f"未知期刊代码: {journal_code}（可选: {known}）")
+    return {key: targets[key]}
+
+
+def is_web_scrape_journal(info):
+    return bool(info.get("web_scrape", False))
+
+
+def is_standard_web_item(title):
+    """深度抓取条目应带 [当期目录] 或 [网络首发] 前缀。"""
+    if not title:
+        return False
+    return title.startswith("[当期目录]") or title.startswith("[网络首发]")
+
+
+def reset_journal_feed(journal_code):
+    """删除某刊 XML 并从去重日志移除其条目（新增期刊误跑 RSS 后重建用）。"""
+    code = journal_code.strip().upper()
+    code_lower = code.lower()
+    xml_paths = [
+        os.path.join(CURRENT_DIR, f"cnki_{code_lower}.xml"),
+        os.path.join(CURRENT_DIR, f"cnki_{code}_cleaned.xml"),
+    ]
+    titles = []
+    for path in xml_paths:
+        if not os.path.exists(path):
+            continue
+        try:
+            tree = ET.parse(path)
+            for item_el in tree.findall(".//item"):
+                t_el = item_el.find("title")
+                if t_el is not None and t_el.text:
+                    titles.append(t_el.text)
+        except Exception as e:
+            _log(f"  ⚠️ 读取 {path} 失败: {e}")
+        os.remove(path)
+        _log(f"  已删除 {os.path.basename(path)}")
+
+    dedup_log = load_dedup_log()
+    removed = 0
+    for title in titles:
+        h = generate_hash(code, title)
+        if h in dedup_log:
+            dedup_log.pop(h, None)
+            removed += 1
+    if removed:
+        save_dedup_log(dedup_log)
+        _log(f"  已从去重日志移除 {removed} 条 {code} 记录")
+    return len(titles)
+
+
 def push_to_github():
     """将生成的 XML 和去重记录推送至 GitHub 独立仓库"""
     print("\n📤 启动 GitHub 自动同步 (CNKI Feeds)...")
@@ -327,8 +385,8 @@ def generate_rss_xml(items, journal_code, journal_name):
     rss = ET.Element("rss", version="2.0")
     channel = ET.SubElement(rss, "channel")
     
-    ET.SubElement(channel, "title").text = f"CNKI - {journal_name}"
-    ET.SubElement(channel, "link").text = f"https://navi.cnki.net/knavi/journals/{journal_code}/detail"
+    ET.SubElement(channel, "title").text = f"{journal_name} - CNKI Feeds"
+    ET.SubElement(channel, "link").text = "https://github.com/zorba123456/aes-feeds"
     ET.SubElement(channel, "description").text = f"知网文献推送: {journal_name}"
     ET.SubElement(channel, "pubDate").text = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
     ET.SubElement(channel, "generator").text = f"Lit Auto Pipeline {__version__}"
@@ -363,10 +421,13 @@ def run_rss_mode(targets):
 
     for code, info in targets.items():
         name = info.get("name", code)
+        if is_web_scrape_journal(info):
+            print(f"跳过 {name} ({code}): web_scrape 期刊仅由 --mode web 写 XML")
+            continue
         rss_url = info.get("rss_url")
         if not rss_url:
             continue
-            
+
         print(f"正在抓取 {name} ({code})...")
         try:
             r = requests.get(rss_url, headers=headers, timeout=15)
@@ -679,6 +740,11 @@ def _install_signal_handlers():
 def main():
     parser = argparse.ArgumentParser(description="CNKI Downloader (Dual-Track)")
     parser.add_argument("--mode", choices=["rss", "web"], required=True, help="运行模式: rss (静默) 或 web (带弹窗)")
+    parser.add_argument("--journal", metavar="CODE", help="仅处理指定期刊代码，如 YLMR")
+    parser.add_argument(
+        "--reset-journal", metavar="CODE",
+        help="删除该刊 XML 并清去重后再抓取（与 --journal 联用）"
+    )
     args = parser.parse_args()
 
     if args.mode == "web":
@@ -687,6 +753,16 @@ def main():
     targets = load_targets()
     if not targets:
         print(f"配置文件缺失或为空: {TARGETS_JSON_PATH}")
+        return
+
+    if args.reset_journal:
+        _log(f"🔄 重置期刊 {args.reset_journal.upper()} 的 XML 与去重记录...")
+        reset_journal_feed(args.reset_journal)
+
+    try:
+        targets = filter_targets(targets, args.journal)
+    except SystemExit as e:
+        print(e)
         return
 
     if args.mode == 'rss':
