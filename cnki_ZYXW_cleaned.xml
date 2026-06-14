@@ -1,220 +1,143 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0">
   <channel>
-    <title>CNKI - 皮肤科学通报</title>
-    <link>https://navi.cnki.net/knavi/journals/ZYXW/detail</link>
+    <title>皮肤科学通报 - CNKI Feeds</title>
+    <link>https://github.com/zorba123456/aes-feeds</link>
     <description>知网文献推送: 皮肤科学通报</description>
-    <pubDate>Thu, 04 Jun 2026 09:05:49 GMT</pubDate>
-    <generator>Lit Auto Pipeline V2.0.0</generator>
+    <pubDate>Sun, 14 Jun 2026 07:57:03 GMT</pubDate>
+    <generator>Lit Auto Pipeline V2.1.1</generator>
     <item>
       <title>[当期目录] [2026年02期] 《成人皮肌炎诊疗中国专家共识（2022年）》解读</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LXC-4dNWHEyYCmIesgHoqaKMR89H7xDSFEbFqJHlwgVcvpGpX7nDO7jgK9hvPST3vg5_4RGUm6WO1FL2O8n_aYgQ4FNVC2qPQlShSsh1E2REtbEDx9cU0ekDOh_jSPh8cKsO4huOuTxKzNO5uknfZX0__M9oAGlo-78Abzd8Gb00A==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK0S9WKZLM0A33-vxkOQCntHXJlfMz9htY9VFlY6jh-Fc-xHiAk9skum8980IE-U1XtwqDSfK_k7QEE93nbT004bqOzK02cxcL7OrtibgZOg6_gh8TELedztAtTE3Z__bOYvFcQBeCoyj5c7XoQun725CxvcSLuMPDOsxboeeaqMZQ==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;105-110&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;罗帅寒天;龙海;陆前进;</description>
       <guid isPermaLink="false">864474b99e282e37583134da90918f20</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] 皮肌炎与恶性肿瘤：从共病机制到临床管理</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LXMKb2TzOACwVbOMBFkTa-VbGUfIPoFRoUf-S-XlhxljuP4lNTKHK8SQSuKuTQAOdH67bi2FTsUItfK80ENnhP28Msi0GVUC8bmWStWWPYhzAR4vgyaI_ENAER62koSzBb0ju7vY6Eso_Aip0bAwFXo7L1yWtDYXmADKCZFEm2dbA==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK0DRhGFHx2IZ7a3scZM7WeGZKLSqyvJp-fHGqxf25OlUbzJ0K3Uj3DwWcuIIdP0MzmGIhZlYjrGOu68ghHpU7TMXS9EeeokrrCzVyFsTl_Znx9Th5RWgUBroZOXUayfTo-y6yJUWgprWefHZGEy88qvJ_HJzKwIxC5Fh9_pCbNOOQ==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;111-117&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;黄莞菲;黎皓;曹华;</description>
       <guid isPermaLink="false">826686ce85a18cf7b95ea4bf7832f452</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] 多发性肌炎/皮肌炎自身抗体谱</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LViljHXJ_aaUmJsp82PNUiOZG7rbbIp3V4CkiDXEvetA8QgNjVgxhSlTjkDMzWmXXo-LtUR7vxR5N0suqicppFtZ6PuTWQksUOzbUhWK_IYNhZyzdHtchcUU8bgmRheeejrgFZBhvuYZ_Ouqjnusf4akzyQIESfn26qDQOxjaCaAA==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK0qpPSFR-SkSrS0zUwpWmiq1jo27l9UCeGRPfW9oefEuceDS-JO-WhBbARH9xPBE0vGzUytmqwdkq4EA0gl32nNW9h0TJomiQYr4GWBS85sXiZC6-c4IsaApr_z8SJgV2ADSxb5fnlNCm7uS459PyCCAspniUDLZFDMxChOomC8zg==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;118-128&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;陆彬;孙莉;李永哲;</description>
       <guid isPermaLink="false">181bc66e8489e2e854be140a5610894b</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] 抗TIF1-γ抗体阳性皮肌炎的研究进展</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LXaMsS2sMvjF_kBbSwj_mWwbfQQCbsj2PvmVhyUQ0JtyceZZWA4Bq-WdsvDooGOhpZxHGjdKOMHuXk3VJbUuSWpN6XfGFTFogUhWLYpwD86J1AykW8wpHIlW7WEeLEqSGtAkkRwZa5qwu-rKodB5VT18vAAmqak6u6Uw-6SpD9Jlw==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK0KdoMR0EZajQo2Ms4ZEGq0e4MJ9EGcY19QYwOSqXkhsUVMHUiJQ7H-ZD28D1waD94ri2lYYpWTuX2R-lcvmdir2tNg6FPRpSCenjDKW3UZlI6JkzDmJQsMMomSPMVNlKk3bGBQGy_TXRWeUgpJVlhrQpOr0Xccn8FstJtTtSCK0g==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;129-134&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;刘珍如;曹华;叶霜;</description>
       <guid isPermaLink="false">7ff0af77611bad7937d5af9fbf4deb20</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] 多发性肌炎及皮肌炎的肌肉MRI诊断价值及临床应用</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LViljHXJ_aaUmJsp82PNUiOZG7rbbIp3V4CkiDXEvetA8QgNjVgxhSlzWBBLzD2qqa_s84OMh-wYSqoRpBKHiWxUnSYsqz1qDPzOgfCoyvZvJINQagFb4q7EwdfeqpwMFXNNtY9FgLNUxhCHFmEQeBYg9WMozgFFfJYHJ6k09Ib5Q==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK3hxVyr4okG93YADIqJvLpNSGYcwiyQc_tewBYmRx-745qpNoIDRxiadYWXoQ7YREisDRkUfGjxRFiYvc3BWvqd6JnCqf2gvU0vy_sp3__ycYKisEihEPB7uR56tr7kov8nBg2ePdcChQ2BM8M2IAVqQSxnz0m_jcLCjY02d8EMtQ==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;135-142&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;郭润财;王玉丽;高宝祥;黄振国;</description>
       <guid isPermaLink="false">a3fdf53ffe318fc0121e9a23330b6c43</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] 皮肌炎的皮肤表现</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LUK1Jqj8DUxxFCoRrdyxkNVb0c5auU7sMFNVAFj7-pXY4fh6xfc_qxklW-wjoGANxZLSPBdijecUe2YcCtKlXA6MADdiOeGXsrvf9qpl_vOmBYfMTencqgl376ae_H-RXaMw_9YKRY78h6FF5glqBgx6HUtPV1ZsulPYL2FavJHGg==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK3y-hFWlPxiQA0nN1rzk0XC93vV0Nw6pJNiUEI8s34V2HZ33y1kBXBDDRPYWWTlVqdOHOPb2UuDOCiLI9WNgEeOfYPk_N_AlwvP3ObfSMwleueq5XQfc-1b79is3jUuoLfemANwgXw8klDi8JXGEILFyLvmt5w6lY2wsHhctJo3Fg==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;143-147&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;张江安;</description>
       <guid isPermaLink="false">039a566a884ac38ae795b1fe15ad4695</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] 利妥昔单抗治疗皮肌炎的研究进展</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LVpVWVZhWwRk95JbzDIffIP60OJF7gGokAP005X0CX8o6JlwN_e8glDyygZlqKQCqWtoiXSdSPzZ1aloTEIITOmYl79KGyAnmeEsyBmJEZVI87DpSCFN63ymy6AwIkMNT6UoK1M6jpa4YNq2Igo7Bm8lcw2Iu63Z4HJxAkY5QZnlw==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK3yGC2IONLfas65nBdYdUxHFqKPUCFEYXTKo51Jv90m8zcmhvl5cgeOTGoI5SFcKxo_jfmc__VgN8rpL2x6XTcRZnH-RCi7vClevuPffiyWlLYNq_hY57RSSKoc4w5BVSNA0rtYuIqJBb6NkKqc11H041YHE2AkNonp2Qz3V4N2yA==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;148-152&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;李霞;张佩莲;胡桂兰;李刘成;杨瑾;廖承成;</description>
       <guid isPermaLink="false">32c5d8c6b04ad3962fb0faf9b91fbe0d</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] UVB诱导BALB/c-nu小鼠皮肤光老化蛋白组学分析</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LXhpFFpCH4GSQbDaceUaZEppcpZcmXI2vKLh2TKv87tynSJNpbabmS4Qf3USzeRCP3BKDrSL1d6xJjsIZ_v_gpija1fXHwL0cX9ab-V1KFq2lJ8n3cocGVB29_QzyceIpX5-1nZCNxEP9XGdyqHMgIA8_4hTRcrKGoJwsjH0SGIEg==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK02zTfMT1cdIrtNM_svXOhOCz4EviCc5ghcLymnYuho8BLm0O4thvW7XIxLR7L6cj9LHokD7--oQTMUMmOax_mjkYSUdgI4OAfy7a-ZQvSsCI67fg0w1nv1W8nGvCk02dmssJ5_KyZl-VjJOVVy6pI3bQE6wmYcgam2SAT1iSAcXA==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;153-160&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;徐远飞;唐伟;龚春梅;杨慧;</description>
       <guid isPermaLink="false">51778fb2799dfc8f2dc84dcd13a7c4d4</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] 1990—2021年我国皮肤及皮下组织疾病负担变化趋势分析</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LWjv9-0cS9g1J0sSLTQkEPg9SU_Of_5dtPL719_RO3ZZoidjkTr6u6wTNF30lw8263ABsZhp02B7EkeKDzyRafOsXUbDIM7xJkDiURR6qgKUUTFMOvt54r-dAl7z2yqnJCdqMb9-mNePEHRoLzUUJ915xe1tcaLhLbk27FkrNeKUg==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK3K6ZaGiI1RjhxqPnSgytVQJFGfL0qz0t_YJxlr6nqsN3hXr1SADzrsMs9yutglnYOwYZWI4_p-Q0rrPj9MgJd-aTFU2zok7Rd-MZJK5LoUyWRYYIEJo6kBvafpLWkIPiC3UWU8ZCSZ-Ta8MXYz0I1j2fHlvoCxjWB79NPRS9P7sA==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;161-169&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;金秋百;刘欣茜;吴琳;宁博彪;李佳琦;宋坪;</description>
       <guid isPermaLink="false">08aefc14e19471e1e0da3373a6f45cac</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] 血清miR-193b,miR-155与艾滋病患者特应性皮炎严重程度的相关性</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LXcdVM24Ge70iK8LDOVqCz-u8glUZpEoh1-qDq5Nju8-ENKB0oQdfbQ2mrlasEndJ1H7s31_qEn1Fum6fIf6jVkFH6F2kYwC58oQeg0gJe0667KeR481CDl3-TReMuVigtDj_d0aoMUZkz7Jx-Wve4_cgI5Dt1WqhlVrBKSyGM5qA==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK3y2Sxs4wbeLLHRTKyZbb0h5frPxtky1VCl47wXJmOYg_Sb8BY0t8t0VXfCEFs97XxLWZOPd5EaG9OskwoYdqMs4o_HKU9RUMNXEkwHziL_CfEtHuU37alNTdMrI0ZD4nmqpOcWug2Gzg2HE99Yz0bkRloOL44JuoPpLMxvUvJV6Q==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;170-176&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;李改叶;白海军;章健;刘保国;</description>
       <guid isPermaLink="false">b5a45c457d7c6bfea55722ac4184e8e2</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] 带状疱疹患者血清IL-17、BDNF、CXCL10水平对后遗神经痛的预测价值分析</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LUMYzXxrJvDtRpBmNi4xtfz2fDTFUIWaRw-X3BksrrVRo_Kc8RCEIQWslcn4FP1PBM_ISS3QardEkZ6xyYZIXKBBl57bSC1KbpWfEllO4Nvs_oQtCzkLlPOkPqbvkfA0dt6_3voVl-byaJ-64LcmJyVIvtAPsLVIY9CeXDNp82xNQ==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK2pib4mH-y5EXoJbKmUEP8taCI5QxaVZAsMLZsLUYKNZdT4m6ckwf1rW-7_Vj2wo0P5FLaSi6oGGugs_hezcosEfLHVhCqy3-7qV21cf30RHyYC9ON27ZMEZkkFXcSMXj3NaayGca3UcPaFy2qwxv15uR1Iuh7iv8U2859qERMn2g==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;177-183&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;张丽;赵振华;李慧敏;</description>
       <guid isPermaLink="false">610154d53eeefbb9abd1f93c258eae7a</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] Fabry病一家系临床调查及基因突变分析</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LW9jU4oc-xXh04O0guRxv-QvgVdxSJwPGHN06dSw9jguXdjakb5XHf-i11-ALVJUijUXyXIN8aVLYWF58ZF8F5ow6PxM9rcMxpW1LooHfph0SD3KQdDN0FoTAI31mBVqfkePiAAoAPZ1u0kS-cvN5RVnErwqbsyKd95lgoQIJ6kWg==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK2pib4mH-y5EXoJbKmUEP8taCI5QxaVZAsMLZsLUYKNZdT4m6ckwf1rhOppVMoi3HIK-YACxWh8jnzGBpDOArdrh7pDcKKOnufFySlSlTS38c-XkZv7P3I-NDPzJnscgsOqg5lmDgOLg0LlCIKNn7Srdk1XbMtSFSG2kyAgUxs71g==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;184-189&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;陈梅花;高婷婷;夏云;覃莉;周小勇;</description>
       <guid isPermaLink="false">831b186146f60f7e928b33d9db4b0dce</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] MDA5抗体阳性皮肌炎合并间质性肺病1例</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LVDUqn3fk7-Mwg3FlFg2zUajBj-fEmYZ_ZVj_3my40bmB8fQY-k5RWfD6jQYEpStXU-fuQ2xUTN7xmNDFRNFKBXBt62pm5pTGW4MN-NYnlNsVQCjTB6DwFxw1LmgJyzXc3mOdfIzUWF92LYZIAWZP8GYHbJXjSI6b-dCmjwPTCrzA==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK38XcgjJ89ZzETdsfIhgHGIkFyFE4410cGvzmHK5Gek1INfn3akWAmqSD1GTI9QzgXhvMkrzfBB_ar9tanMqfI6tihopVQHG1km90MA-ZuOo0wK_ulLiHj1GZLJftNAoDDbJLcZP4t_xbvaBpt5ZcKA_I4Ld7OE1cXkKANWQvEYxw==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;190-193&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;江海娇;毛桐俊;戴晓英;</description>
       <guid isPermaLink="false">e2d0716021b2564023c76eed47cd5f4b</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] 头皮恶性黑色素瘤非典型皮损1例</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LUK1Jqj8DUxxFCoRrdyxkNVb0c5auU7sMFNVAFj7-pXY4fh6xfc_qxk51TT3gGFABDftpkBmJ0IK_1tsafyTJDovlPrqzp6Tg8BM9JtPy22Tp2KCUNGweBIL7YxZvxeFXsi-YWJ4ZCbja75gWF5V5uS-U1jUK8ibiHf_61ffcMhUg==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK3y-hFWlPxiQA0nN1rzk0XC93vV0Nw6pJNiUEI8s34V2HZ33y1kBXBD_JXtVyII_e9BHDISKpze_75t6AG-uFFnp9MwnH8svUfr1-BtxEcj0faiWtvBVlnDv95m5_QZD8nODmz-hTByEGbEHBAEMKl9auLvaZtj8Z3l_388SsvXWg==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;194-198&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;韩泽华;张广静;刘远;艾东方;</description>
       <guid isPermaLink="false">fefce4ea6ff4931ff12fb24a1d29d26a</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] 瘤型麻风伴Ⅱ型麻风反应误诊1例</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LW_6xsRjFrjSTM2zjjsO3LI1Fa16fhFkrTRyazHZVmja_i5bNgazyLcoOZZVQ7JQ-TApV3IlPR4wOPIt_xNHyvp0mlTf5XetcRoATWIEn2E36WtObqC3W3IZVcWwQGbqxx1sjbdD1ccJrL8LdQuKDXqdGUZlsk-YHA8OtVLPmJpyA==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK0qpPSFR-SkSrS0zUwpWmiq1jo27l9UCeGRPfW9oefEuceDS-JO-WhBSmNr1Ie1cUi8Q0RohXaoA2uAS2zVvJeHIMOLijsgIvLgN6ol972MugPp0GMkFug0myaFl6U53BWD7iCDmok03HuDcHxELkQuqxzEQIawG_T4gbK1dOtRxw==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;199-202&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;邹旭辉;徐永强;刘涛;侯涵钊;李霞;张旭;</description>
       <guid isPermaLink="false">218a612a99bf5f20e0f7b5c9717c0b4e</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] 外用莫匹罗星治疗绿甲综合征1例</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LWUFytuhOKzIQkGaQlbjAdQlRgCPuQFm4eLmZJ08tgHkC76aANrygQoUxx5uyufn86WcYpNVuVIPZK96FX7bcODlrgdnIYWaa5pnsDivTPRSZs0USL9XX8U2p1S1WCbcNcowXWgoIxb_HHAelP4RZ5LETiMCdA_AtHWpyeABhj4tQ==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK1QrWtaTv7E95lFm-dpsIDZuSEwVGG8WiskMWb8ivIyJv-8PzH3MpaVTEfCRravVBrE3MgXuh9hvAo2hisMH6xhsoYvwItphKGd6Yk2JRquSFjLxP_XXVH4XzMtgNKe6pGJhrNTcbRFjy2V4ExiyB3jXocI9H8u6mQAJbJmSpTGIQ==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;203-206&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;卢锦玉;傅全威;邓玉霞;薛靖;任凯芳;</description>
       <guid isPermaLink="false">a39907850233ce70cf1531784d45865e</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] 带状疱疹后遗神经痛生物预测因子和预防策略</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LUdApSxLHrzdDLfekLzy0J8fAz17vAgdwKsmreZsXB3spijSC9RzT4vp0Tljxi0lg5EKrVvZRApQ15QaIMW8eeQrtrTqVyRvQP4LZ3lj7aoV7PKQkCasrkk_T-WFhsHzxz8NAjhywOZtVO_Tym0j2g5xma3jksHdmPUfOaJmyR2jw==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK1cYj9bot89HAH-uYrvf0VXdQVLuYbG48CuJy-XB5ITx7wfQ5n6OO34NaV1g6Yc28pvXUDDa-yRM_L6mmB3tNk9ELNCNHK18gF4DYZt30gkPhOHvDximQkHrHnbH7b5Ni1vvo2AC1Do7UQ94bluvjKQa6nfq-70_02qGCX50iTBGg==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;207-213&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;蔡志成;赵阳;陈韦君;杨慧兰;</description>
       <guid isPermaLink="false">763aece742d25bb2f279947b6a5252b9</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] 特应性皮炎生物标志物研究进展</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LV_fKzeKxdmW6TARsCvwhK60MbLkZUd6SWkg3Tvye44JVpNuuo7KtiVj385u1zBDy3LTfesaBMM_0vevYf8uhf8Q2DbZ62IjVAwZtexcxQ9VUfV3uVXXPI8cO_mqYGbztpj1z48ZbNCSXYHO0Hn3bnFMSvczqVogRFGZQX2LcyMVQ==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK0vEAA9Zj9jnW0uGnPniuKTjuid4VRFN3HTUNIYQ6jtdACYB7-DgJyDruVmSbVLFfDeM1Z1ZDSUKcsbhCNtdLu0OiceWNXVatMPwocDp2iIh2ItsIiPw2f_IK6zRwFm1-kU9AraDCbM-_Zrm4vVvHxx1aTMqG_A6jTPFC1C3bN9GQ==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;214-220&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;刘潇;邓丹琪;郭芸;</description>
       <guid isPermaLink="false">627d7a3c3642f3ddbdae7efb069892e8</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
     <item>
       <title>[当期目录] [2026年02期] 聚焦皮肌炎诊疗前沿，共筑精准医疗新防线</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=7jvqSXIa2LWGaapJiLrUQaelQA8ZXHRzhe7cAU6npLhDAficJpk0ppSfZlXnMcUKfSYoU9usQXdoZ58UleIm7lsG1OdzN-Bu8xOpBMg5V3HBjucAb0VqJrtlABKJ01TUloMIASSuoKr9KM-oCbGKA74Sw7WGP1U2fupfocW76uN5qhY5zN4TDg==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK3l1Vu6Et9c3Od3-lJp75YGHvCRIBeeYva7nZpyMYmIw-A4ULuWrXmSntOurPu3ALX90u7BZORMnW5sK9RBa1lX3FhY2R61qXPuNul8av7-ii8I-_RUfXe4MW4SAM9LYEPBWtZJAv5fZjVgfrde23xL2TvGRHLPijPhipGCxfpJ7Q==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年02期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;97-98&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;张江安;</description>
       <guid isPermaLink="false">c2603e2b2283e849e3e0481098150c35</guid>
-      <pubDate>Thu, 04 Jun 2026 09:05:30 GMT</pubDate>
-    </item>
-    <item>
-      <title>[当期目录] [2026年01期] 带状疱疹及后遗神经痛的经典方剂治疗</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=OazRilB95d3eGAwnSW-qUv0CwcEadw9_GzecjzTY1hfgpPA7iKd0jHY1Zc5mxipdZXq1y3sEaeBFMnj3rEzqGAsu2i0cRDfzf2EtRMTbYJwtexfb1I4G8lbsySvNPRQVbv8EJbq7OEYehXtceCbGyKDPm_OZz1VQeJFB_p1x7t4w2l3dmT6uWw==&amp;uniplatform=NZKPT&amp;language=CHS</link>
-      <description>&lt;b&gt;期数：&lt;/b&gt;2026年01期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;21-29&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;张鑫妍;安月鹏;杨素清;</description>
-      <guid isPermaLink="false">https://kns.cnki.net/kcms2/article/abstract?v=OazRilB95d3eGAwnSW-qUv0CwcEadw9_GzecjzTY1hfgpPA7iKd0jHY1Zc5mxipdZXq1y3sEaeBFMnj3rEzqGAsu2i0cRDfzf2EtRMTbYJwtexfb1I4G8lbsySvNPRQVbv8EJbq7OEYehXtceCbGyKDPm_OZz1VQeJFB_p1x7t4w2l3dmT6uWw==&amp;uniplatform=NZKPT&amp;language=CHS</guid>
-      <pubDate>Sun, 31 May 2026 09:41:55 GMT</pubDate>
-    </item>
-    <item>
-      <title>[当期目录] [2026年01期] 火针联合中成药治疗面部化脓性疖肿1例</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=OazRilB95d3eGAwnSW-qUv0CwcEadw9_GzecjzTY1hfgpPA7iKd0jHY1Zc5mxipdTkG6DncdednBko2pSrJivLjN1dDiFquZqiPyp5DizITs2DLFbZhAVWepiA7HnivDXosAanvwuVqjxwuO6f4zVm_1ghv9WLhZ2XdXhI0j8s2-0OfXA_PliQ==&amp;uniplatform=NZKPT&amp;language=CHS</link>
-      <description>&lt;b&gt;期数：&lt;/b&gt;2026年01期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;102-104&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;王清滢;迟慧彦;宋艳丽;李云峰;</description>
-      <guid isPermaLink="false">https://kns.cnki.net/kcms2/article/abstract?v=OazRilB95d3eGAwnSW-qUv0CwcEadw9_GzecjzTY1hfgpPA7iKd0jHY1Zc5mxipdTkG6DncdednBko2pSrJivLjN1dDiFquZqiPyp5DizITs2DLFbZhAVWepiA7HnivDXosAanvwuVqjxwuO6f4zVm_1ghv9WLhZ2XdXhI0j8s2-0OfXA_PliQ==&amp;uniplatform=NZKPT&amp;language=CHS</guid>
-      <pubDate>Sun, 31 May 2026 09:41:55 GMT</pubDate>
-    </item>
-    <item>
-      <title>银屑病相关脱发的临床特征与治疗现状</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk1s_VH45J3JgBqb31L340xqSJiDmq_fqVqkys2_ysSJTdprwpDSwestnvzAgfp2udTKRtp7qkgrtMgB8T-U_5_SznKDtHGYcRkuDZSD1t8Ups7lUOlPO3IujppPQRp07OSksW7sfmt0sY2V0SLL4jKfBOMB3GRMGIsqY1jEP5OxjA==&amp;uniplatform=NZKPT&amp;language=CHS</link>
-      <description>银屑病相关脱发在银屑病临床表现中少见但却具有重要临床意义。目前相关文献报道较为有限，主要包括三种类型：银屑病疾病本身所致脱发、银屑病与其他脱发疾病共病，以及银屑病治疗药物所致的药物诱导性脱发。本文通过整合现有证据，系统综述了上述三种类型的银屑病相关脱发的临床特征、发病机制、组织病理学特点以及治疗策略，并特别强调了毛囊-免疫微环境动态变化在疾病发生发展中的关键作用，旨在为银屑病相关脱发的临床诊疗与机...</description>
-      <guid isPermaLink="false">https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk1s_VH45J3JgBqb31L340xqSJiDmq_fqVqkys2_ysSJTdprwpDSwestnvzAgfp2udTKRtp7qkgrtMgB8T-U_5_SznKDtHGYcRkuDZSD1t8Ups7lUOlPO3IujppPQRp07OSksW7sfmt0sY2V0SLL4jKfBOMB3GRMGIsqY1jEP5OxjA==&amp;uniplatform=NZKPT&amp;language=CHS</guid>
-      <pubDate>Sat, 14 Feb 2026 16:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>特应性皮炎向红皮病转化的核心风险因子探讨</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk1syeOq-FUBtRX7Yc4N8yMua5swAonnPWFvBS8UY6rccdL651KdOzDd05go2xDP-PwoxAYeNqWgfcsvN1lEDBnnc7epMP91WofF7qiWr8Dq8G_s68x7jticf3VrVdTiKNu-ewaSwOru5OWI3Vd0YsJv1IQSPQWm1Bhi3JfrwnF82g==&amp;uniplatform=NZKPT&amp;language=CHS</link>
-      <description>目的 通过对红皮病（erythroderma）患者的实验室检验指标进行标准化偏离分析，构建多指标联合预警模型，以探讨特应性皮炎（AD）向红皮病转化的核心风险因子。方法 对2021年1月—2026年1月本院皮肤科病房收治的红皮病患者进行分析，并纳入同期AD患者作为对照。首先分析红皮病患者常规化验指标的基于正常界值的偏离百分比；采用二元Logistic回归构建AD红皮病风险预测模型，并通过绘制受试者工...</description>
-      <guid isPermaLink="false">https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk1syeOq-FUBtRX7Yc4N8yMua5swAonnPWFvBS8UY6rccdL651KdOzDd05go2xDP-PwoxAYeNqWgfcsvN1lEDBnnc7epMP91WofF7qiWr8Dq8G_s68x7jticf3VrVdTiKNu-ewaSwOru5OWI3Vd0YsJv1IQSPQWm1Bhi3JfrwnF82g==&amp;uniplatform=NZKPT&amp;language=CHS</guid>
-      <pubDate>Sat, 14 Feb 2026 16:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>火针联合颠倒散石膏倒膜治疗轻中度痤疮的临床疗效</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk0qNnfB2v_fvFWz7Ov_e-nlDepBbum-6xfo9SmA3VFO7GAi64G8xIWPwuS25vThv8QbqrNLqjMWdnnLP-sV9S87vMpuCKB4Z_U7uTieWC9Dim0QeQDVqqiZk1ls_g9RmuzqP7Klc9V9TQA8ORru9qV-bnscYZ4XvyaM4fZMcm9C1w==&amp;uniplatform=NZKPT&amp;language=CHS</link>
-      <description>目的 探讨火针疗法联合颠倒散石膏倒膜对轻中度痤疮治疗的效果，及对患者炎症因子、生活质量等的影响。方法 选取本院收治的轻中度痤疮患者320例，随机分为对照组、联合组各160例。对照组采用夫西地酸与阿达帕林治疗，联合组加用火针与颠倒散石膏倒膜疗法。比较两组总有效率、症状严重程度、皮肤生理功能、血清炎症指标、生活质量及不良反应。结果 联合组总有效率(91.88%)高于对照组(81.25%)(P&amp;lt;0...</description>
-      <guid isPermaLink="false">https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk0qNnfB2v_fvFWz7Ov_e-nlDepBbum-6xfo9SmA3VFO7GAi64G8xIWPwuS25vThv8QbqrNLqjMWdnnLP-sV9S87vMpuCKB4Z_U7uTieWC9Dim0QeQDVqqiZk1ls_g9RmuzqP7Klc9V9TQA8ORru9qV-bnscYZ4XvyaM4fZMcm9C1w==&amp;uniplatform=NZKPT&amp;language=CHS</guid>
-      <pubDate>Sat, 14 Feb 2026 16:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>度普利尤单抗治疗高龄大疱性类天疱疮患者的疗效与安全性分析</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk2K-gJWXrYfSKYPzaqjwiDspmm3zBG1wb1AeAbVR9BfciYVqJTRmLhD8GAzIzom6yE3Ma2k7ks-wp2O6S0HV11pszv_uieDmxTto3ZgESK2hmBanmK_40Es3AqpTKgjnjDgx7p5VmxXcfDlqyht-lB4WJuqojL8DXwsmidGmh1Puw==&amp;uniplatform=NZKPT&amp;language=CHS</link>
-      <description>目的 分析度普利尤单抗治疗高龄大疱性类天疱疮患者(bullous pemphigoid, BP)的疗效及安全性。方法 回顾性分析2023年6月—2025年6月于我院皮肤科门诊使用度普利尤单抗治疗(首次600 mg,之后300 mg 2周/次)≥16周的高龄(≥80岁)BP患者的临床资料，包括一般资料，临床情况、实验室指标和不良反应。结果 共纳入10例患者，其中3例为初治患者。4周时，7例(70%)...</description>
-      <guid isPermaLink="false">https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk2K-gJWXrYfSKYPzaqjwiDspmm3zBG1wb1AeAbVR9BfciYVqJTRmLhD8GAzIzom6yE3Ma2k7ks-wp2O6S0HV11pszv_uieDmxTto3ZgESK2hmBanmK_40Es3AqpTKgjnjDgx7p5VmxXcfDlqyht-lB4WJuqojL8DXwsmidGmh1Puw==&amp;uniplatform=NZKPT&amp;language=CHS</guid>
-      <pubDate>Sat, 14 Feb 2026 16:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>度普利尤单抗诱发过敏反应1例</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk0zbzLnlg8Z7DMFpf_k0Khe2FQkXG2Ao99hqJacCt97nKw2iU7do6RuroOU7lONygmiXLOsQn_p4HSWYCyI9f5Gke59oADmZfFezAmuJeocf6JwtGWzvNNDlOwrkc3ndePrdLauUVMOB-Ct-dvQtX2EQdyeqeJ-TX6YOBLDmFXThw==&amp;uniplatform=NZKPT&amp;language=CHS</link>
-      <description>患者男，全身反复红斑、丘疹10余年，使用度普利尤单抗治疗后全身出现新发红斑、脓疱2周。皮损组织病理检查结果示表皮角化过度伴角化不全，表皮内见少许淋巴细胞移入，棘层不规则增生，可见海绵水肿，真皮全层血管周围及附属器周围较多淋巴细胞、单核细胞及个别嗜酸性粒细胞浸润，可见红细胞外溢，皮损镜下形态符合皮炎改变。结合患者用药史及临床表现，考虑为度普利尤单抗诱发的过敏反应。经对症治疗后该患者术全身红斑明显消退...</description>
-      <guid isPermaLink="false">https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk0zbzLnlg8Z7DMFpf_k0Khe2FQkXG2Ao99hqJacCt97nKw2iU7do6RuroOU7lONygmiXLOsQn_p4HSWYCyI9f5Gke59oADmZfFezAmuJeocf6JwtGWzvNNDlOwrkc3ndePrdLauUVMOB-Ct-dvQtX2EQdyeqeJ-TX6YOBLDmFXThw==&amp;uniplatform=NZKPT&amp;language=CHS</guid>
-      <pubDate>Sat, 14 Feb 2026 16:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>免疫功能正常成人原发性皮肤毛霉病1例</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk3dVB-tYo_Om9f1cW_ZGm5DFkiPBHhj7foM8wM7RYvCxDuwxdjOaJraq5mGI2F3pF4VJPVgjeGrI7g3xQTzNuO96TxMDfxuHs8FiajWYuhIlXAstIDYHMHs8FFMT2U4v8m6CyS4NNvDBmqOHGYGNy7mYKcWoIo-yMqNpHnDYvytVA==&amp;uniplatform=NZKPT&amp;language=CHS</link>
-      <description>患者女，24岁，鼻部红斑、丘疹、结痂伴疼痛半年。皮损表现为鼻背浸润性红斑、丘疹、结痂。皮损组织病理检查结果示：感染性肉芽肿，PAS染色及真菌荧光见大量宽大无分隔菌丝。真菌培养鉴定为卷枝毛霉。免疫学及影像学检查排除系统播散及颅内受累。住院期间予两性霉素B胆固醇硫酸酯“复合物”静脉滴注、局部注射，同时行高压氧治疗，出院后口服艾沙康唑维持治疗，2个月后皮损显著消退。原发性皮肤毛霉病临床罕见，易误诊。早期...</description>
-      <guid isPermaLink="false">https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk3dVB-tYo_Om9f1cW_ZGm5DFkiPBHhj7foM8wM7RYvCxDuwxdjOaJraq5mGI2F3pF4VJPVgjeGrI7g3xQTzNuO96TxMDfxuHs8FiajWYuhIlXAstIDYHMHs8FFMT2U4v8m6CyS4NNvDBmqOHGYGNy7mYKcWoIo-yMqNpHnDYvytVA==&amp;uniplatform=NZKPT&amp;language=CHS</guid>
-      <pubDate>Sat, 14 Feb 2026 16:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>获得性反应性穿通性胶原病合并尿毒症1例</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk33U8CeJ7U67aVv6m5nfxpteHcfudJqxmt5RcGsOsI9JCASUxLHA53qvnKZ9ZiQb3HFoRuw_VanhlMZVGGoiZyhPpLg7fsGjOxf3YwpLkbkYCAZ-QqShA9cqjk-9wOgGEqOsRBkQaa_1otKuS7P48YzSaUE1jT-Ex84qmsvP5tNow==&amp;uniplatform=NZKPT&amp;language=CHS</link>
-      <description>患者男，35岁，四肢反复溃疡、结痂7月余，加重4 d。皮肤科情况：四肢远端可见散在黄豆至1元硬币大小丘疹、溃疡，部分融合，皮损中央可见脐状凹陷，凹陷内可见棕褐色黏着性角栓。右侧无名指掌指关节处皮损深达肌腱，右手指屈伸时肌腱外露；右侧外踝上方脐状凹陷内可见肉芽组织，部分陈旧性皮损遗留轻度萎缩性瘢痕，周围伴色素沉着。皮损组织病理检查：表皮局部破溃，呈火山口样改变，破溃处充满角蛋白，细胞碎片和胶原纤维，...</description>
-      <guid isPermaLink="false">https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk33U8CeJ7U67aVv6m5nfxpteHcfudJqxmt5RcGsOsI9JCASUxLHA53qvnKZ9ZiQb3HFoRuw_VanhlMZVGGoiZyhPpLg7fsGjOxf3YwpLkbkYCAZ-QqShA9cqjk-9wOgGEqOsRBkQaa_1otKuS7P48YzSaUE1jT-Ex84qmsvP5tNow==&amp;uniplatform=NZKPT&amp;language=CHS</guid>
-      <pubDate>Sat, 14 Feb 2026 16:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>佩索利单抗治疗合并肝硬化的急性泛发性发疹性脓疱病1例</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk0FCJwZoMSBod_nuLtHV74kMteDGygRTttkICX2vl8hJ-nAwtlsGXgLGwsuYeBYaAwZeJZR2TYpz6Ft78o75O79nvphiuNztZSbyipeDFG-h3ZYclFljFsZJxcXBG6Y-FAXFQkITj1z9so4-2g1b3lbeSfLw__WtGrGWOAD4x6WyA==&amp;uniplatform=NZKPT&amp;language=CHS</link>
-      <description>患者男，64岁，全身红斑伴脓疱14 d。发病前9 d,为治疗乙肝相关性肝硬化口服水飞蓟素胶囊及中草药(成分为白术、鳖甲、炒鸡内金、陈皮、丹参、党参、地黄、煅龙骨、茯苓、红景天、茜草、酸枣仁、淫羊藿、郁金、泽兰),均为首次用药。皮肤科情况：躯干四肢广泛性红斑伴脓疱，部分融合成片，双下肢显著水肿，未见黏膜受累。诊断：急性泛发性发疹性脓疱病(acute generalized exanthematous...</description>
-      <guid isPermaLink="false">https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk0FCJwZoMSBod_nuLtHV74kMteDGygRTttkICX2vl8hJ-nAwtlsGXgLGwsuYeBYaAwZeJZR2TYpz6Ft78o75O79nvphiuNztZSbyipeDFG-h3ZYclFljFsZJxcXBG6Y-FAXFQkITj1z9so4-2g1b3lbeSfLw__WtGrGWOAD4x6WyA==&amp;uniplatform=NZKPT&amp;language=CHS</guid>
-      <pubDate>Sat, 14 Feb 2026 16:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>生物制剂治疗妊娠期泛发性脓疱型银屑病1例</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk09mDlN5nD1_7f4EwssrW_UyaP2yKo7dg5TF8RPaTA5D7fa7Dl9RbyqwvhpiSDh2W5GDXxgDrIYyrsZ0-gfQYYhR9w58pV2UJFq6tKOzBr4_xkm-itmaklE8Ti2fG1gdPV19NtWEb4OSNL58-CeVch6rRbQVIQ-XiIZLQ1t0-RcJA==&amp;uniplatform=NZKPT&amp;language=CHS</link>
-      <description>患者女，27岁，孕12周，全身红斑及脓疱反复发作20年，复发加重3月。皮肤科情况：躯干及四肢分布有大小不一的红斑，红斑表面散布针尖至粟粒大小脓疱，局部红斑表面覆盖黄褐色痂皮。诊断：妊娠期泛发性脓疱型银屑病。患者病情在妊娠期间加重，且伴发系统性炎症反应，先后接受依那西普和司库奇尤单抗治疗。患者在依那西普治疗过程中出现药物过敏反应，转用司库奇尤单抗后症状明显缓解，最终成功分娩健康男婴，体现了生物制剂在...</description>
-      <guid isPermaLink="false">https://kns.cnki.net/kcms2/article/abstract?v=VfSiRbMmQk09mDlN5nD1_7f4EwssrW_UyaP2yKo7dg5TF8RPaTA5D7fa7Dl9RbyqwvhpiSDh2W5GDXxgDrIYyrsZ0-gfQYYhR9w58pV2UJFq6tKOzBr4_xkm-itmaklE8Ti2fG1gdPV19NtWEb4OSNL58-CeVch6rRbQVIQ-XiIZLQ1t0-RcJA==&amp;uniplatform=NZKPT&amp;language=CHS</guid>
-      <pubDate>Sat, 14 Feb 2026 16:00:00 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 07:56:59 GMT</pubDate>
     </item>
   </channel>
 </rss>
