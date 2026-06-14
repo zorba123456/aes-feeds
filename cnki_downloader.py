@@ -294,9 +294,9 @@ def reset_journal_feed(journal_code):
 
     dedup_log = load_dedup_log()
     removed = 0
-    for title in titles:
-        h = generate_hash(code, title)
-        if h in dedup_log:
+    for h, meta in list(dedup_log.items()):
+        title = meta.get("title", "")
+        if generate_hash(code, title) == h:
             dedup_log.pop(h, None)
             removed += 1
     if removed:
