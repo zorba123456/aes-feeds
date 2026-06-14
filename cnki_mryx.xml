@@ -1,11 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0">
   <channel>
-    <title>CNKI - 中国美容医学</title>
-    <link>https://navi.cnki.net/knavi/journals/MRYX/detail</link>
+    <title>中国美容医学 - CNKI Feeds</title>
+    <link>https://github.com/zorba123456/aes-feeds</link>
     <description>知网文献推送: 中国美容医学</description>
-    <pubDate>Fri, 12 Jun 2026 09:08:12 GMT</pubDate>
+    <pubDate>Sun, 14 Jun 2026 02:07:07 GMT</pubDate>
     <generator>Lit Auto Pipeline V2.1.1</generator>
+    <item>
+      <title>[当期目录] [2026年06期] 植皮术联合外用重组人粒细胞巨噬细胞集落刺激因子凝胶治疗Ⅲ度烧伤创面疗效观察</title>
+      <link>https://kns.cnki.net/kcms2/article/abstract?v=mX7l0X-lXK3n0eb6x0VtWFU7kmeZzZ5ZvCvU8dq31zd3dmaKZ96f47_lg7-gbVj872yBnfztYZ7ZW5EelHCXcyZI9FQkHXc2_3Vew7HXEwWE8ihtrt3fDVHt7HcRaRbB2xwxI7qjR9Z7MRYEVbjakOQvxGyuXz1hDLC_F_hHJrKu2xVhRbV2vg==&amp;uniplatform=NZKPT&amp;language=CHS</link>
+      <description>&lt;b&gt;期数：&lt;/b&gt;2026年06期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;31-35&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;刘奇;晁生武;</description>
+      <guid isPermaLink="false">2c60555adae91bcb528b5fd177ff8b4f</guid>
+      <pubDate>Sun, 14 Jun 2026 02:07:07 GMT</pubDate>
+    </item>
     <item>
       <title>[当期目录] [2026年06期] 皮肤镜结合皮肤生理指标检测在3%十二烷基硫酸钠斑贴试验刺激反应中的应用</title>
       <link>https://kns.cnki.net/kcms2/article/abstract?v=MKd1fMAWOtU15i6Ge6WMe3rRJCUcCDf1EWIm9vAW9ZQ2YAk9vDi5B7UCs0Jl3nXOfTm0kDbQQ-aKAoOEGUVbSIEenMpz-I7UCiF5K1W8uXrm4da59wpKUiAWFEhVNh8MxhtdV70QhZHe3iTBE5J1rEjUVFmBZAAMKCO1t4PCLs_qGWGGsydHtA==&amp;uniplatform=NZKPT&amp;language=CHS</link>
@@ -207,13 +214,6 @@
       <link>https://kns.cnki.net/kcms2/article/abstract?v=MKd1fMAWOtUgezNkVi__5WK4mRJ97tP6KFaMX0_xdDtjN_Gab90tbNEEuM1UgNtTBVRZWnNnAeVBRON93RZY7pAJdzIqHEP2dKMIjd7dP7HfVYOslAe-Ovn9jd8tuUe2WubsTO10gcOcPEKfC7xXhpKw3g62FbeSAB_Nfh4cc2QqHBIqaRV39g==&amp;uniplatform=NZKPT&amp;language=CHS</link>
       <description>&lt;b&gt;期数：&lt;/b&gt;2026年06期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;197&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;未标明</description>
       <guid isPermaLink="false">6930080bb0174bb80b9b39bbcdb335f9</guid>
-      <pubDate>Fri, 12 Jun 2026 09:08:12 GMT</pubDate>
-    </item>
-    <item>
-      <title>[当期目录] [2026年06期] 《中国美容医学》 国内涵盖美容医学全学科的专业学术杂志</title>
-      <link>https://kns.cnki.net/kcms2/article/abstract?v=MKd1fMAWOtXpZRTEjdNcDroD1qppAYxTr9mhDD4iAyELwtCFRuvMIOcIIBsKKeK3Kl_JeFUfIKtqEnCfOCTN6jvh5snPXgI5cuHZ7yZi_obfv3XjV79iUOuVIja8oFhSuVGYwd5z0LBuZxsC-jXoeaD1GmlURBJJsVVwNXK7hdJjfxrQGdm4ng==&amp;uniplatform=NZKPT&amp;language=CHS</link>
-      <description>&lt;b&gt;期数：&lt;/b&gt;2026年06期&lt;br&gt;&lt;b&gt;出版日期/页码：&lt;/b&gt;200&lt;br&gt;&lt;b&gt;作者：&lt;/b&gt;未标明</description>
-      <guid isPermaLink="false">2d8e42985a99d4e3fa033e22731feb08</guid>
       <pubDate>Fri, 12 Jun 2026 09:08:12 GMT</pubDate>
     </item>
   </channel>
