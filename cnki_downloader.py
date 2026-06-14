@@ -186,10 +186,14 @@ def load_targets():
             return json.load(f)
     return {}
 
+def get_clean_title(t):
+    """去掉来源前缀与期数标签，得到用于去重/升级的裸标题。"""
+    t_clean = clean_text_noise(t)
+    return re.sub(r'^\[(?:网络首发|当期目录)\]\s*(?:\[[^\]]+\]\s*)?', '', t_clean).strip()
+
 def generate_hash(journal_code, title):
     """基于期刊代码和标题生成唯一哈希，避免因 URL 中的动态 v 参数导致去重失效"""
-    clean_title = clean_text_noise(title)
-    clean_title = re.sub(r'^\[(?:网络首发|当期目录)\]\s*(?:\[[^\]]+\]\s*)?', '', clean_title).strip()
+    clean_title = get_clean_title(title)
     raw = f"{journal_code.lower()}_{clean_title}".encode('utf-8')
     return hashlib.md5(raw).hexdigest()
 
@@ -320,42 +324,105 @@ def push_to_github():
     except subprocess.CalledProcessError as e:
         print(f"ℹ️ 未检测到新文献或同步无变动，跳过推送。({e})")
 
-def generate_rss_xml(items, journal_code, journal_name):
+def load_existing_feed_items(journal_code):
+    """读取当前 XML 中的条目（用于升级时保留 guid/pubDate）。"""
+    out_file = os.path.join(CURRENT_DIR, f"cnki_{journal_code.lower()}.xml")
+    existing_items = []
+    if not os.path.exists(out_file):
+        return existing_items
+    try:
+        tree = ET.parse(out_file)
+        for item_el in tree.getroot().findall(".//item"):
+            t_el = item_el.find("title")
+            l_el = item_el.find("link")
+            d_el = item_el.find("description")
+            p_el = item_el.find("pubDate")
+            g_el = item_el.find("guid")
+            existing_items.append({
+                "title": t_el.text if t_el is not None else "",
+                "link": l_el.text if l_el is not None else "",
+                "description": d_el.text if d_el is not None else "",
+                "pubDate": p_el.text if p_el is not None else "",
+                "guid": g_el.text if g_el is not None else "",
+            })
+    except Exception as e:
+        _log(f"  ⚠️ 读取现有 XML 失败: {e}")
+    return existing_items
+
+
+def _build_existing_index(existing_items):
+    """按裸标题索引现有 Feed 条目。"""
+    by_clean = {}
+    for item in existing_items:
+        ck = get_clean_title(item.get("title", ""))
+        if ck:
+            by_clean[ck] = item
+    return by_clean
+
+
+def _apply_net_first_upgrade_metadata(upgrade_item, existing_entry):
+    """升级条目：保留 guid 与 pubDate，避免 Inoreader 当成新文章或改排序。"""
+    if existing_entry.get("guid"):
+        upgrade_item["guid"] = existing_entry["guid"]
+    if existing_entry.get("pubDate"):
+        upgrade_item["pubDate"] = existing_entry["pubDate"]
+
+
+def classify_scraped_items(all_scraped_items, dedup_log, existing_items):
+    """将爬取结果分为新文献与「网络首发→当期目录」升级文献。"""
+    existing_by_clean = _build_existing_index(existing_items)
+    upgrade_items = []
+    new_items = []
+    seen_hashes_this_run = set()
+
+    for item in all_scraped_items:
+        h = item["hash"]
+        if h in seen_hashes_this_run:
+            continue
+        seen_hashes_this_run.add(h)
+
+        title = item.get("title", "")
+        if title.startswith("[当期目录]"):
+            ck = get_clean_title(title)
+            existing_entry = existing_by_clean.get(ck)
+            old_title = dedup_log.get(h, {}).get("title", "") if h in dedup_log else ""
+            if old_title.startswith("[当期目录]"):
+                continue
+            log_net_first = old_title.startswith("[网络首发]")
+            xml_net_first = existing_entry and existing_entry.get("title", "").startswith("[网络首发]")
+            if log_net_first or xml_net_first:
+                if existing_entry:
+                    _apply_net_first_upgrade_metadata(item, existing_entry)
+                upgrade_items.append(item)
+                continue
+
+        if h in dedup_log:
+            continue
+
+        new_items.append(item)
+
+    return new_items, upgrade_items
+
+
+def generate_rss_xml(items, journal_code, journal_name, upgrade_items=None):
     """生成标准 RSS 2.0 XML 并写入文件 (支持与现有文件合并去重，限额 FEED_ITEM_LIMIT 条，并输出新旧两套文件名兼容)"""
+    upgrade_items = upgrade_items or []
     filename = f"cnki_{journal_code.lower()}.xml"
     out_file = os.path.join(CURRENT_DIR, filename)
     filename_legacy = f"cnki_{journal_code.upper()}_cleaned.xml"
     out_file_legacy = os.path.join(CURRENT_DIR, filename_legacy)
     
-    existing_items = []
-    if os.path.exists(out_file):
-        try:
-            tree = ET.parse(out_file)
-            root = tree.getroot()
-            for item_el in root.findall(".//item"):
-                t_el = item_el.find("title")
-                l_el = item_el.find("link")
-                d_el = item_el.find("description")
-                p_el = item_el.find("pubDate")
-                g_el = item_el.find("guid")
-                
-                existing_items.append({
-                    "title": t_el.text if t_el is not None else "",
-                    "link": l_el.text if l_el is not None else "",
-                    "description": d_el.text if d_el is not None else "",
-                    "pubDate": p_el.text if p_el is not None else "",
-                    "guid": g_el.text if g_el is not None else ""
-                })
-        except Exception as e:
-            print(f"  ⚠️ 读取现有 XML 失败: {e}")
+    existing_items = load_existing_feed_items(journal_code)
             
     # 合并新旧文献并基于纯标题去重
     seen_titles = set()
     merged_items = []
-    
-    def get_clean_title(t):
-        t_clean = clean_text_noise(t)
-        return re.sub(r'^\[(?:网络首发|当期目录)\]\s*(?:\[[^\]]+\]\s*)?', '', t_clean).strip()
+
+    upgrade_map = {}
+    for item in upgrade_items:
+        ck = get_clean_title(item.get("title", ""))
+        if ck:
+            upgrade_map[ck] = item
         
     # 优先添加新抓取的文献
     for item in items:
@@ -368,15 +435,28 @@ def generate_rss_xml(items, journal_code, journal_name):
                 item["link"] = link
             merged_items.append(item)
             
-    # 再添加已有的历史文献
+    # 再添加已有的历史文献（网络首发→当期：同位替换，保留 guid）
     for item in existing_items:
         title = item.get("title", "")
         clean_key = get_clean_title(title)
-        if clean_key and clean_key not in seen_titles:
+        if not clean_key:
+            continue
+        if clean_key in upgrade_map:
+            if clean_key not in seen_titles:
+                seen_titles.add(clean_key)
+                merged_items.append(upgrade_map[clean_key])
+            continue
+        if clean_key not in seen_titles:
             seen_titles.add(clean_key)
             link = item.get("link") or item.get("url") or ""
             if link and "link" not in item:
                 item["link"] = link
+            merged_items.append(item)
+
+    # 已掉出窗口的升级条目：插回列表（guid/pubDate 已在 classify 阶段从旧 XML 保留，若无则用爬取值）
+    for clean_key, item in upgrade_map.items():
+        if clean_key not in seen_titles:
+            seen_titles.add(clean_key)
             merged_items.append(item)
             
     # 截取前 FEED_ITEM_LIMIT 条
@@ -695,20 +775,21 @@ def run_web_mode(targets):
                         has_net_first, has_printed, is_net_first_active
                     )
 
-                    seen_hashes_this_run = set()
-                    new_items = []
-                    for item in all_scraped_items:
-                        h = item["hash"]
-                        if h in dedup_log or h in seen_hashes_this_run:
-                            continue
-                        seen_hashes_this_run.add(h)
-                        new_items.append(item)
+                    existing_feed_items = load_existing_feed_items(code)
+                    new_items, upgrade_items = classify_scraped_items(
+                        all_scraped_items, dedup_log, existing_feed_items
+                    )
 
-                    if new_items:
-                        _log(f"  => 汇总提取到 {len(new_items)} 篇新文献")
+                    if new_items or upgrade_items:
+                        if new_items:
+                            _log(f"  => 汇总提取到 {len(new_items)} 篇新文献")
+                        if upgrade_items:
+                            _log(f"  => 网络首发→当期目录升级 {len(upgrade_items)} 篇（保留 guid/pubDate）")
                         for item in new_items:
                             dedup_log[item['hash']] = {"title": item['title'], "timestamp": time.time()}
-                        generate_rss_xml(new_items, code, name)
+                        for item in upgrade_items:
+                            dedup_log[item['hash']] = {"title": item['title'], "timestamp": time.time()}
+                        generate_rss_xml(new_items, code, name, upgrade_items=upgrade_items)
                     else:
                         _log("  => 网页上无新文献")
 
