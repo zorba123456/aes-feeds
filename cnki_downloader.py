@@ -643,7 +643,7 @@ def run_web_mode(targets):
             page = ctx.new_page()
             page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
 
-            web_targets = [(c, i) for c, i in targets.items() if i.get("web_scrape", False)]
+            web_targets = list(targets.items())  # cnki_targets.json 所有期刊均为 web 深度爬取
             _log(f"共 {len(web_targets)} 本期刊待深度抓取")
 
             for idx, (code, info) in enumerate(web_targets, 1):
