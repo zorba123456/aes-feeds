@@ -46,6 +46,7 @@ CAPTCHA_POLL_INTERVAL = 2
 CAPTCHA_LOG_INTERVAL = 30
 CATALOG_WAIT_SECS = 15
 NET_FIRST_SWITCH_WAIT_SECS = 3
+FEED_ITEM_LIMIT = 120  # XML/Inoreader 展示上限（当期目录+网络首发合并后）
 
 
 def _log(msg):
@@ -320,7 +321,7 @@ def push_to_github():
         print(f"ℹ️ 未检测到新文献或同步无变动，跳过推送。({e})")
 
 def generate_rss_xml(items, journal_code, journal_name):
-    """生成标准 RSS 2.0 XML 并写入文件 (支持与现有文件合并去重，限额 30 条，并输出新旧两套文件名兼容)"""
+    """生成标准 RSS 2.0 XML 并写入文件 (支持与现有文件合并去重，限额 FEED_ITEM_LIMIT 条，并输出新旧两套文件名兼容)"""
     filename = f"cnki_{journal_code.lower()}.xml"
     out_file = os.path.join(CURRENT_DIR, filename)
     filename_legacy = f"cnki_{journal_code.upper()}_cleaned.xml"
@@ -378,8 +379,8 @@ def generate_rss_xml(items, journal_code, journal_name):
                 item["link"] = link
             merged_items.append(item)
             
-    # 截取前 30 条
-    merged_items = merged_items[:30]
+    # 截取前 FEED_ITEM_LIMIT 条
+    merged_items = merged_items[:FEED_ITEM_LIMIT]
     
     # 构建新的 XML
     rss = ET.Element("rss", version="2.0")
