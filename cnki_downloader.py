@@ -414,7 +414,15 @@ def generate_rss_xml(items, journal_code, journal_name):
     return filename
 
 def run_rss_mode(targets):
-    """静默抓取 RSS 模式"""
+    """静默抓取 RSS 模式（当前已禁用）
+
+    cnki_targets.json 所有期刊均由 --mode web 深度爬取，RSS 模式不执行写入。
+    保留此函数作为兜底：若 web 爬取长期失败，可临时将下方 return 注释掉恢复 RSS。
+    """
+    print("[RSS Mode] 所有 CNKI 期刊均使用 web 深度爬取，RSS 模式已跳过。")
+    return
+
+    # ↓↓↓ 以下为 RSS 兜底逻辑，正常情况不执行 ↓↓↓
     print("[RSS Mode] 开始执行静默 RSS 抓取...")
     dedup_log = load_dedup_log()
     headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'}
