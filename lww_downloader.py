@@ -55,7 +55,7 @@ def main():
     
     # 🟢 原汁原味：严格对齐你 config.json 中的 14 个真正的原始物理 URL
     targets = [
-        {"name": "aswc_current_issue", "rss_url": "http://journals.lww.com/aswcjournal/_layouts/OAKS.Journals/feed.aspx?FeedType=CurrentIssue", "output_filename": "aswc_current_issue.xml"},
+        {"name": "aswc_current_issue", "rss_url": "https://journals.lww.com/aswcjournal/_layouts/15/OAKS.Journals/feed.aspx?FeedType=CurrentIssue", "output_filename": "aswc_current_issue.xml"},
         {"name": "aswc_latest_articles", "rss_url": "https://journals.lww.com/aswcjournal/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles&year=9000&issue=00000", "output_filename": "aswc_latest_articles.xml"},
         {"name": "annals_plast_surg_current", "rss_url": "https://journals.lww.com/annalsplasticsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=CurrentIssue", "output_filename": "annals_plast_surg_current.xml"},
         {"name": "annals_plast_surg_latest", "rss_url": "https://journals.lww.com/annalsplasticsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint&year=9900&issue=00000", "output_filename": "annals_plast_surg_latest.xml"},
