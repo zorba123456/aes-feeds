@@ -197,6 +197,11 @@ def parse_single_mail(html_content, entry_title=None):
                 if not title_text or title_text.lower() in ["[pdf]", "[html]", "获取全文", "cites"]:
                     continue
                 
+                # 过滤谷歌学术邮件中的快讯关键字搜索链接与退订管理链接
+                title_clean = title_text.strip().strip('[]"“’”')
+                if title_clean.lower() == keyword.lower() or title_clean.lower() in ["cancel alert", "取消快讯"]:
+                    continue
+                
                 raw_url = href
                 if "scholar_url?" in href:
                     parsed_url = urlparse(href)
