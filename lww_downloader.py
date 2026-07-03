@@ -81,7 +81,7 @@ def main():
         
         try:
             page.get(rss_url)
-            time.sleep(3) 
+            time.sleep(8) 
             
             raw_html = page.html
             
