@@ -16,11 +16,12 @@ import os
 import time
 import subprocess
 import re
+from urllib.parse import urljoin
 from email.utils import formatdate
 from DrissionPage import ChromiumPage, ChromiumOptions
 from bs4 import BeautifulSoup
 
-__version__ = "4.2.3-原装URL物理恢复版+网页直抓"
+__version__ = "5.0.0-Nextjs与Ovid双栖直抓版"
 
 # ==================== 物理配置区域 ====================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -57,15 +58,15 @@ def main():
     
     # 🟢 混合模式：已改版的用直抓 (web_scrape=True)，未改版的用原装 XML 接口 (web_scrape=False)
     targets = [
-        {"name": "aswc_current_issue", "rss_url": "https://journals.lww.com/aswcjournal/_layouts/15/OAKS.Journals/feed.aspx?FeedType=CurrentIssue", "output_filename": "aswc_current_issue.xml", "web_scrape": False},
-        {"name": "aswc_latest_articles", "rss_url": "https://journals.lww.com/aswcjournal/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles&year=9000&issue=00000", "output_filename": "aswc_latest_articles.xml", "web_scrape": False},
-        {"name": "annals_plast_surg_current", "rss_url": "https://journals.lww.com/annalsplasticsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=CurrentIssue", "output_filename": "annals_plast_surg_current.xml", "web_scrape": False},
-        {"name": "annals_plast_surg_latest", "rss_url": "https://journals.lww.com/annalsplasticsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint&year=9900&issue=00000", "output_filename": "annals_plast_surg_latest.xml", "web_scrape": False},
-        {"name": "derm_surgery_ahead", "rss_url": "http://journals.lww.com/dermatologicsurgery/_layouts/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint", "output_filename": "derm_surgery_ahead.xml", "web_scrape": False},
-        {"name": "derm_surgery_latest", "rss_url": "https://journals.lww.com/dermatologicsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles&year=9000&issue=00000", "output_filename": "derm_surgery_latest.xml", "web_scrape": False},
+        {"name": "aswc_current_issue", "rss_url": "https://www.ovid.com/jnls/aswcjournal", "output_filename": "aswc_current_issue.xml", "web_scrape": True},
+        {"name": "aswc_latest_articles", "rss_url": "https://www.ovid.com/jnls/aswcjournal", "output_filename": "aswc_latest_articles.xml", "web_scrape": True},
+        {"name": "annals_plast_surg_current", "rss_url": "https://www.ovid.com/jnls/annalsplasticsurgery", "output_filename": "annals_plast_surg_current.xml", "web_scrape": True},
+        {"name": "annals_plast_surg_latest", "rss_url": "https://www.ovid.com/jnls/annalsplasticsurgery", "output_filename": "annals_plast_surg_latest.xml", "web_scrape": True},
+        {"name": "derm_surgery_ahead", "rss_url": "https://www.ovid.com/jnls/dermatologicsurgery", "output_filename": "derm_surgery_ahead.xml", "web_scrape": True},
+        {"name": "derm_surgery_latest", "rss_url": "https://www.ovid.com/jnls/dermatologicsurgery", "output_filename": "derm_surgery_latest.xml", "web_scrape": True},
         {"name": "j_craniofacial_surg_latest", "rss_url": "https://journals.lww.com/jcraniofacialsurgery/toc/latest", "output_filename": "j_craniofacial_surg_latest.xml", "web_scrape": True},
         {"name": "j_craniofacial_surg_web_latest", "rss_url": "https://journals.lww.com/jcraniofacialsurgery/toc/latest", "output_filename": "j_craniofacial_surg_web_latest.xml", "web_scrape": True},
-        {"name": "j_craniofacial_surg_open_latest", "rss_url": "https://journals.lww.com/jcso/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles", "output_filename": "j_craniofacial_surg_open_latest.xml", "web_scrape": False},
+        {"name": "j_craniofacial_surg_open_latest", "rss_url": "https://www.ovid.com/jnls/jcso", "output_filename": "j_craniofacial_surg_open_latest.xml", "web_scrape": True},
         {"name": "prs_video", "rss_url": "https://journals.lww.com/plasreconsurg/toc/latest", "output_filename": "prs_video.xml", "web_scrape": True},
         {"name": "prs_current_issue", "rss_url": "https://journals.lww.com/plasreconsurg/toc/current", "output_filename": "prs_current_issue.xml", "web_scrape": True},
         {"name": "prs_latest_articles", "rss_url": "https://journals.lww.com/plasreconsurg/toc/latest", "output_filename": "prs_latest_articles.xml", "web_scrape": True},
@@ -101,7 +102,7 @@ def main():
                     if href and ('/fulltext/' in href or '10.1097' in href):
                         title = a.get_text(strip=True)
                         if title and len(title) > 10 and 'PDF' not in title:
-                            full_url = href if href.startswith('http') else f"https://journals.lww.com{href}"
+                            full_url = href if href.startswith('http') else urljoin(rss_url, href)
                             if not any(i['link'] == full_url for i in items):
                                 items.append({'title': title, 'link': full_url})
                 
