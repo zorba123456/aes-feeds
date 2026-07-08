@@ -1,150 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns="" version="2.0">
+<rss xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" version="2.0">
   <channel>
-    <title><![CDATA[Journal of Craniofacial Surgery Open - Latest Articles]]></title>
-    <link>https://journals.lww.com/jcso/pages/latestarticles.aspx</link>
-    <description/>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jul 2026 23:11:11 -0500</lastBuildDate>
-    <generator>Wolters Kluwer Health RSS Generator</generator>
-    <image>
-      <url>https://images.journals.lww.com/jcso/XLargeThumb.02273970-202606010-00000.CV.jpeg</url>
-      <title><![CDATA[Journal of Craniofacial Surgery Open - Latest Articles]]></title>
-      <link>https://journals.lww.com/jcso/pages/latestarticles.aspx</link>
-    </image>
+    <title><![CDATA[j_craniofacial_surg_open_latest]]></title>
+    <link>https://www.ovid.com/jnls/jcso</link>
+    <description><![CDATA[Auto-generated from Web Scrape]]></description>
+    <lastBuildDate>Wed, 08 Jul 2026 07:49:21 GMT</lastBuildDate>
+
     <item>
-      <link>https://journals.lww.com/jcso/fulltext/2026/06010/a_new_mandibular_advancement_device_in_the.4.aspx</link>
-      <author><![CDATA[Yalim, Sidika Deniz]]></author>
-      <category><![CDATA[Original Paper: Scientific Research]]></category>
-      <title><![CDATA[A New Mandibular Advancement Device in the Management of Obstructive Sleep Apnea: A Review of Six Cases]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 28 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/jcso/fulltext/2026/06010/a_new_mandibular_advancement_device_in_the.4.aspx"><img src="https://images.journals.lww.com/jcso/SmallThumb.02273970-202606010-00004.F1.jpeg" border="0" align ="left" alt="image"/></a>Mandibular advancement devices (MADs) have emerged as an effective alternative treatment for obstructive sleep apnea (OSA), particularly in patients with mild to moderate disease or intolerance to continuous positive airway pressure (CPAP). The authors designed a new MAD and presented results of our 6 adult patients, accompanied by current evidence on the efficacy, mechanisms, clinical outcomes, and limitations of MAD therapy. MAD therapy significantly reduces apnea-hypopnea index (AHI), improves oxygen saturation, and enhances subjective sleep quality. Although CPAP achieves greater AHI reduction, MADs demonstrate comparable improvements in daytime sleepiness and quality of life, with higher patient adherence. Also, our patients’ apneas, snoring, and daytime sleepiness decreased while sleep quality and quality of life increased. Adverse effects are generally mild and include temporomandibular discomfort and long-term dental changes. Only one of our patients had a toothache, and it resolved soon. MADs represent a validated and patient-friendly treatment option for selected OSA patients. Advances in device design and individualized titration protocols may further enhance efficacy and reduce adverse effects.]]></description>
-      <pubDate>Thu, 28 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Journal of Craniofacial Surgery Open. 4(2):e0060, June 2026. doi: 10.1097/SC9.0000000000000060]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">02273970-202606010-00004</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/jcso/fulltext/2026/06010/patient_satisfaction_after_noninvasive_contact.5.aspx</link>
-      <author><![CDATA[Ahn, Tae Hwan; Bae, Jung Ho; Kim, Yong Min; Yoo, Chan Hyoung; Seok, Nam H.; Yi, Kyu-Ho]]></author>
-      <category><![CDATA[Contemporary Review]]></category>
-      <title><![CDATA[Patient Satisfaction After Noninvasive Contact Monopolar Radiofrequency Treatment for Inferior Turbinate Hypertrophy]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 28 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/jcso/fulltext/2026/06010/patient_satisfaction_after_noninvasive_contact.5.aspx"><img src="https://images.journals.lww.com/jcso/SmallThumb.02273970-202606010-00005.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Inferior turbinate hypertrophy (ITH) is a frequent anatomic contributor to chronic nasal obstruction in both chronic hypertrophic rhinitis and allergic rhinitis. Although several surgical turbinate reduction techniques exist, treatment acceptance and real-world uptake are strongly influenced by patient-perceived discomfort, downtime, and overall satisfaction.
-
-Objective: 
-
-To evaluate patient satisfaction after noninvasive contact monopolar radiofrequency (RF) treatment for ITH and to describe short-term symptom change and safety in a large single-center cohort.
-
-Methods: 
-
-The authors performed an observational study of 212 consecutive adults with chronic nasal obstruction attributed to ITH. Patients underwent office-based noninvasive contact monopolar RF applied to the inferior turbinate mucosa under endoscopic guidance. Pulsed RF was delivered using 1 MHz for noninflammatory hypertrophy and 2 MHz for inflammatory hypertrophy (power 8 W, pulse duration ≤100 ms, 3–5 applications per turbinate; cumulative delivery limited to a device-defined safety cap to reduce mucosal burn risk). The primary outcome was patient satisfaction at week 12 using a 5-point Likert scale. Secondary outcomes included NOSE score, VAS nasal obstruction, medication use, and adverse events.
-
-Results (Example Reporting): 
-
-At week 12, 82.1% of patients were “Satisfied” or “Very satisfied” with treatment (95% CI: 76.4–86.7). Mean NOSE score improved from 63.8±14.9 at baseline to 28.9±15.8 at week 12, and VAS nasal obstruction improved from 7.2±1.6 to 3.1±2.0. No serious adverse events were observed.
-
-Conclusion: 
-
-In this 212-patient observational cohort, office-based noninvasive monopolar RF treatment for ITH was associated with high patient satisfaction and clinically meaningful short-term symptom improvement with minimal downtime. Given the procedural burden of conventional turbinate surgery, patient-centered endpoints such as satisfaction should be considered key outcomes when evaluating noninvasive turbinate therapies.]]></description>
-      <pubDate>Thu, 28 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Journal of Craniofacial Surgery Open. 4(2):e0057, June 2026. doi: 10.1097/SC9.0000000000000057]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">02273970-202606010-00005</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/jcso/fulltext/2026/06010/autologous_tooth_bone_powder__a_review_of.3.aspx</link>
-      <author><![CDATA[Chen, Dawei; Yan, Xin; Hu, Lingling]]></author>
-      <category><![CDATA[Contemporary Review]]></category>
-      <title><![CDATA[Autologous Tooth Bone Powder: A Review of Osteogenic Mechanism, Preparation, and Clinical Application]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 18 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/jcso/fulltext/2026/06010/autologous_tooth_bone_powder__a_review_of.3.aspx"><img src="https://images.journals.lww.com/jcso/SmallThumb.02273970-202606010-00003.F1.jpeg" border="0" align ="left" alt="image"/></a>Alveolar bone resorption is a common complication after tooth extraction, leading to insufficient bone quality and volume that impairs subsequent implant restoration. To address this issue, bone graft materials have become an essential therapeutic option. As a bone graft material derived from the patient’s own teeth, autologous tooth bone powder has emerged as a research hotspot in the field due to its unique advantages, including convenient harvesting and excellent biocompatibility. This review summarizes the current research status of autologous teeth in terms of osteogenic basis, preparation methods, and clinical applications, aiming to provide clear theoretical guidance for clinical practice.]]></description>
-      <pubDate>Mon, 18 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Journal of Craniofacial Surgery Open. 4(2):e0059, June 2026. doi: 10.1097/SC9.0000000000000059]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">02273970-202606010-00003</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/jcso/fulltext/2026/06010/imaging_features_and_clinical_diagnosis_and.2.aspx</link>
-      <author><![CDATA[Lian, Wenli; Wang, Min]]></author>
-      <category><![CDATA[Case Report]]></category>
-      <title><![CDATA[Imaging Features and Clinical Diagnosis and Treatment Analysis of Endolymphatic Sac Tumor in the Temporal Bone: A Case Report and Literature Review]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 14 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/jcso/fulltext/2026/06010/imaging_features_and_clinical_diagnosis_and.2.aspx"><img src="https://images.journals.lww.com/jcso/SmallThumb.02273970-202606010-00002.F1.jpeg" border="0" align ="left" alt="image"/></a>Objectives: 
-
-Share clinical experience in the diagnosis and treatment of endolymphatic sac tumor (ELST).
-
-Case Report: 
-
-This article reported a case of a 53-year-old female patient with ELST and described her imaging features, surgical findings, and pathologic characteristics. A mass was found in the petrous portion of the left temporal bone with surrounding bone destruction on computed tomography (CT). Magnetic resonance imaging (MRI) revealed a heterogeneous lesion in the left cerebellopontine angle region. On T1-weighted imaging (T1WI), the lesion demonstrated an isointense or hypointense central area with peripheral hyperintensity. On T2-weighted imaging (T2WI), it exhibited mixed isointense or high signals with internal linear hypointense strands. The tumor showed an isointense signal on diffusion-weighted imaging (DWI) and demonstrated marked enhancement on contrast-enhanced MRI. The patient underwent surgical resection, and histopathologic examination confirmed ELST.
-
-Conclusions: 
-
-When imaging of a mass in the cerebellopontine angle reveals a high-signal intensity surrounding the lesion on T1WI, physicians should be highly vigilant for ELST.]]></description>
-      <pubDate>Thu, 14 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Journal of Craniofacial Surgery Open. 4(2):e0058, June 2026. doi: 10.1097/SC9.0000000000000058]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">02273970-202606010-00002</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/jcso/fulltext/2026/06010/restoring_a_severely_atrophic_maxilla_with_a.1.aspx</link>
-      <author><![CDATA[Wilkins, Gregory N.; Rynkowsky, Edward; DeLatour, Frank; McLaughlin, Sloan M.; Handel, Steven E.; Sabol, Jennifer V.]]></author>
-      <category><![CDATA[Case Report]]></category>
-      <title><![CDATA[Restoring a Severely Atrophic Maxilla with a Subperiosteal Implant: A Case Report]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 20 Mar 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/jcso/fulltext/2026/06010/restoring_a_severely_atrophic_maxilla_with_a.1.aspx"><img src="https://images.journals.lww.com/jcso/SmallThumb.02273970-202606010-00001.F1.jpeg" border="0" align ="left" alt="image"/></a>Edentulous patients not amenable to dental implants due to a severely atrophic ridge may not have suitably retentive dental prostheses. Subperiosteal dental implants, once discarded as a viable treatment option due to postoperative infection and subsequent failure, have become a viable treatment option once again due to newer surgical techniques, technology, and biomaterials. A 54-year-old male presented with a chief complaint of an ill-fitting maxillary complete denture and inability to masticate efficiently. Clinical and radiographic examination revealed severe atrophy of the maxilla with pneumatized sinuses and was not a candidate for traditional dental implants or bone augmentation. A new maxillary complete denture was fabricated and used as a scan appliance and fixed prosthesis template to design a subperiosteal implant. A cone beam computed tomography (CBCT) scan and Digital Imaging and Communications in Medicine (DICOM) file were obtained and the information was sent to KLS-Martin (Tuttlingen, Germany) for virtual planning. Once approved by the surgical and restorative teams, the titanium subperiosteal implant and prosthesis prototype were fabricated and delivered under general anesthesia. After 6 months of wearing the PMMA prototype, a definitive zirconia prosthesis was delivered.]]></description>
-      <pubDate>Fri, 20 Mar 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Journal of Craniofacial Surgery Open. 4(2):e0056, June 2026. doi: 10.1097/SC9.0000000000000056]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">02273970-202606010-00001</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/jcso/fulltext/2026/03010/integrated_approach_to_evacuation_of_chronic.3.aspx</link>
-      <author><![CDATA[Stroud, Anna; Van Gelder, James; Boughton, Phillip]]></author>
-      <category><![CDATA[Original Paper]]></category>
+      <link>https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000053~integrated-approach-to-evacuation-of-chronic-subdural</link>
       <title><![CDATA[Integrated Approach to Evacuation of Chronic Subdural Hematoma: Slotted Burr Hole Access and a Novel Bioactive Scaffold for Cranial Defect Closure]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 13 Mar 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/jcso/fulltext/2026/03010/integrated_approach_to_evacuation_of_chronic.3.aspx"><img src="https://images.journals.lww.com/jcso/SmallThumb.02273970-202603010-00003.F1.jpeg" border="0" align ="left" alt="image"/></a>Burr hole craniotomy is the most common approach to chronic subdural hematoma (cSDH) evacuation, yet it leaves a cranial defect that can cause cosmetically significant scalp depression. Drain placement remains highly variable and is associated with migration, obstruction, and potential iatrogenic injury. Modified burr hole geometry and purpose-built closure devices may improve operative access, postoperative outcomes, and patient satisfaction. A systematic review of closure techniques for burr hole defects was performed. In silico and in vitro skull models compared standard burr holes, slotted burr holes, and 30-mm craniotomies in frontal, temporoparietal, and occipital locations. Actv-graft® was subjected to deflection testing, drainage simulation using a saline–carrageenan mixture, and drain dislodgement testing using a load sensor. The literature suggests that burr hole closure reduces visible skin depression without increased complications. Slotted burr holes provided greater surface visualization compared with conventional burr holes, with statistically significant improvement in in vitro simulations. Actv-graft® tolerated 21.9 N of load without dislodgement, demonstrated complete shape recovery, increased drainage volume before occlusion (17.5 versus 1.9 mL; P<0.01), and allowed safe drain removal with a low mean pulling force of 2.12 N. A slotted burr hole technique paired with the use of an Actv-graft® bioscaffold may enhance surgical exposure, reduce cosmetic deformity, improve drainage reliability, and permit safer drain stabilization. These findings support further in vivo evaluation of this integrated approach to burr hole management.]]></description>
-      <pubDate>Fri, 13 Mar 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Journal of Craniofacial Surgery Open. 4(1):e0053, March 2026. doi: 10.1097/SC9.0000000000000053]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">02273970-202603010-00003</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:49:21 GMT<br><br><a href="https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000053~integrated-approach-to-evacuation-of-chronic-subdural"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:49:21 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/jcso/fulltext/2026/03010/3d_stereophotogrammetry_analysis_of_palatal_area.2.aspx</link>
-      <author><![CDATA[Ambrosio, Eloá Cristina Passucci; Dourado, Ana Gabriela Gurgel; da Silveira, Ana Beatriz Vieira; Mello-Peixoto, Yana Cosendey Toledo; Soares, Simone; Nalabothu, Prasad; Carrara, Cleide Felício Carvalho; Machado, Maria Aparecida Andrade Moreira; Oliveira, Thais Marchini]]></author>
-      <category><![CDATA[Original Paper]]></category>
+      <link>https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000049~3d-stereophotogrammetry-analysis-of-palatal-area-and-dental</link>
       <title><![CDATA[3D Stereophotogrammetry Analysis of Palatal Area and Dental Occlusion in Children With and Without Oral Clefts]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 10 Feb 2026 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/jcso/fulltext/2026/03010/3d_stereophotogrammetry_analysis_of_palatal_area.2.aspx"><img src="https://images.journals.lww.com/jcso/SmallThumb.02273970-202603010-00002.F1.jpeg" border="0" align ="left" alt="image"/></a>This study aimed to analyze the area of dental arches and occlusion of children with and without cleft lip and palate at 5 years of age. Methods: Group 1 (unilateral cleft lip and palate) and group 2 (without cleft lip and palate) comprised 30 children each. The palatal surface area was assessed by marking points in a clockwise direction along the gingival margin of the teeth and drawing a straight line between the distal-palatal points of the deciduous second molars. Occlusion was also evaluated using the Atack index. Both the palatal surface and Atack index were assessed using digitized dental models. 3D analyses of the dental arches were performed using the stereophotogrammetry system software. Intraclass correlation coefficient (ICC), Shapiro-Wilk normality test, and Mann-Whitney test were applied (α=5%). Group 1 showed a significantly lower value in the area analysis (P=0.002). Atack index 4 was the most frequent (n=8, 27%), followed by index 1, 2, 5, and 3 (n=7, 23%; n=6, 20%; n=6, 20%; n=3, 10%, respectively). It is concluded that children with cleft lip and palate had a reduced palatal surface area compared with children without craniofacial anomalies at 5 years of age. Most children with orofacial clefts had unfavorable occlusal indices due to negative horizontal overjet and crossbite.]]></description>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Journal of Craniofacial Surgery Open. 4(1):e0049, March 2026. doi: 10.1097/SC9.0000000000000049]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">02273970-202603010-00002</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:49:21 GMT<br><br><a href="https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000049~3d-stereophotogrammetry-analysis-of-palatal-area-and-dental"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:49:21 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/jcso/fulltext/2026/03010/hair_extensions__anatomic,_biological,_and.1.aspx</link>
-      <author><![CDATA[Sydorchuk, Olena; Yi, Kyu‑Ho]]></author>
-      <category><![CDATA[Contemporary Review]]></category>
+      <link>https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000051~hair-extensions-anatomic-biological-and-clinical</link>
       <title><![CDATA[Hair Extensions: Anatomic, Biological, and Clinical Implications in Alopecia]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 02 Feb 2026 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/jcso/fulltext/2026/03010/hair_extensions__anatomic,_biological,_and.1.aspx"><img src="https://images.journals.lww.com/jcso/SmallThumb.02273970-202603010-00001.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Hair extensions are widely used for cosmetic and medical reasons, but durable attachment systems (thermopolymer, adhesive, mechanical, and temporary) can impose mechanical, chemical, and thermal stresses that disrupt scalp biology and precipitate hair loss.
-
-Objective: 
-
-To synthesize anatomic, biological, and clinical evidence on hair-extension practices with emphasis on alopecia risk, diagnosis, prevention, and management.
-
-Methods: 
-
-Narrative review (1990–2025) across dermatology and trichology literature covering biomechanics, barrier/microbiome, thermal injury, phenotypes, diagnostic imaging, prevention, and therapies.
-
-Results: 
-
-Sustained traction remodels the perifollicular matrix, compromises microcirculation, shortens anagen, and promotes miniaturization with frontal/temporal predilection. Adhesives and removers can disrupt the stratum corneum and trigger irritant or allergic contact dermatitis. Occlusion elevates humidity/temperature, shifts pH/TEWL, and fosters dysbiosis. Early load reduction with anti-inflammatory and barrier-repair care reverses most early disease; advanced cases show perifollicular fibrosis with limited reversibility. Standardized wear cycles, anchor-load distribution, patch testing, hygiene/ventilation, and stylist–clinician collaboration reduce risk. Regenerative adjuncts (PRP and low-level laser) have supportive evidence in nonscarring alopecias; exosomes remain investigational.
-
-Conclusions: 
-
-Extensions confer psychosocial benefit yet impose nontrivial biological costs. A prevention-first, medical model—integrating risk stratification, standardized technique, early surveillance, and tiered therapy—can minimize iatrogenic alopecia and maintain scalp health.]]></description>
-      <pubDate>Mon, 02 Feb 2026 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Journal of Craniofacial Surgery Open. 4(1):e0051, March 2026. doi: 10.1097/SC9.0000000000000051]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">02273970-202603010-00001</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:49:21 GMT<br><br><a href="https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000051~hair-extensions-anatomic-biological-and-clinical"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:49:21 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000052~biophysical-mechanisms-and-clinical-potential-of</link>
+      <title><![CDATA[Biophysical Mechanisms and Clinical Potential of Millimeter-Wave Therapy in Aesthetic Medicine]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:49:21 GMT<br><br><a href="https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000052~biophysical-mechanisms-and-clinical-potential-of"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:49:21 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000050~human-serum-albumin-and-dermal-bont-a-safety-consideration</link>
+      <title><![CDATA[Human Serum Albumin and Dermal BoNT: A Safety Consideration]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:49:21 GMT<br><br><a href="https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000050~human-serum-albumin-and-dermal-bont-a-safety-consideration"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:49:21 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000060~a-new-mandibular-advancement-device-in-the-management-of</link>
+      <title><![CDATA[A New Mandibular Advancement Device in the Management of Obstructive Sleep Apnea: A Review of Six Cases]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:49:21 GMT<br><br><a href="https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000060~a-new-mandibular-advancement-device-in-the-management-of"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:49:21 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000057~patient-satisfaction-after-noninvasive-contact-monopolar</link>
+      <title><![CDATA[Patient Satisfaction After Noninvasive Contact Monopolar Radiofrequency Treatment for Inferior Turbinate Hypertrophy]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:49:21 GMT<br><br><a href="https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000057~patient-satisfaction-after-noninvasive-contact-monopolar"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:49:21 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000059~autologous-tooth-bone-powder-a-review-of-osteogenic</link>
+      <title><![CDATA[Autologous Tooth Bone Powder: A Review of Osteogenic Mechanism, Preparation, and Clinical Application]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:49:21 GMT<br><br><a href="https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000059~autologous-tooth-bone-powder-a-review-of-osteogenic"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:49:21 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000031~anatomy-of-facial-aging-and-the-necessity-of-multilayer</link>
+      <title><![CDATA[Anatomy of Facial Aging and the Necessity of Multilayer Rejuvenation]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:49:21 GMT<br><br><a href="https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000031~anatomy-of-facial-aging-and-the-necessity-of-multilayer"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:49:21 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000027~high-intensity-focused-ultrasound-application-to-the-scalp</link>
+      <title><![CDATA[High-Intensity Focused Ultrasound Application to the Scalp to Improve Androgenetic Alopecia in an Adult Woman]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:49:21 GMT<br><br><a href="https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000027~high-intensity-focused-ultrasound-application-to-the-scalp"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:49:21 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000018~instrumental-analysis-of-retaining-ligaments-and-literature</link>
+      <title><![CDATA[Instrumental Analysis of Retaining Ligaments and Literature Review. What Can We Deduce?]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:49:21 GMT<br><br><a href="https://www.ovid.com/jnls/jcso/fulltext/10.1097/sc9.0000000000000018~instrumental-analysis-of-retaining-ligaments-and-literature"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:49:21 GMT</pubDate>
     </item>
   </channel>
 </rss>

@@ -1,130 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns="" version="2.0">
+<rss xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" version="2.0">
   <channel>
-    <title><![CDATA[Advances in Skin & Wound Care - Latest Articles]]></title>
-    <link>https://journals.lww.com/aswcjournal/pages/latestarticles.aspx</link>
-    <description><![CDATA[Advances in Skin and Wound Care, a medical resource journal for skin and wound care research, products, and clinical information in print and digital formats.]]></description>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 30 Jun 2026 11:10:17 -0500</lastBuildDate>
-    <generator>Wolters Kluwer Health RSS Generator</generator>
-    <image>
-      <url>https://images.journals.lww.com/aswcjournal/XLargeThumb.00129334-202607000-00000.CV.jpeg</url>
-      <title><![CDATA[Advances in Skin & Wound Care - Latest Articles]]></title>
-      <link>https://journals.lww.com/aswcjournal/pages/latestarticles.aspx</link>
-    </image>
+    <title><![CDATA[aswc_latest_articles]]></title>
+    <link>https://www.ovid.com/jnls/aswcjournal</link>
+    <description><![CDATA[Auto-generated from Web Scrape]]></description>
+    <lastBuildDate>Wed, 08 Jul 2026 07:48:26 GMT</lastBuildDate>
+
     <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/skin_health_and_persons_with_diabetes.1.aspx</link>
-      <author><![CDATA[Sibbald, R. Gary; Ayello, Elizabeth A.]]></author>
-      <category><![CDATA[Departments: Editorial]]></category>
-      <title><![CDATA[Skin Health and Persons with Diabetes]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 12 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/skin_health_and_persons_with_diabetes.1.aspx"></a>No abstract available]]></description>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):285, July 2026. doi: 10.1097/ASW.0000000000000482]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00001</guid>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000463~repair-of-a-large-ear-defect-including-the-triangular-fossa</link>
+      <title><![CDATA[Repair of a Large Ear Defect Including the Triangular Fossa]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:26 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000463~repair-of-a-large-ear-defect-including-the-triangular-fossa"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:26 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/avoid_wound_ulcer_management_coding_missteps_.2.aspx</link>
-      <author><![CDATA[Schaum, Kathleen D.]]></author>
-      <category><![CDATA[Departments: Payment Strategies]]></category>
-      <title><![CDATA[Avoid Wound/Ulcer Management Coding Missteps: Adopt Correct Coding Steps]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 12 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/avoid_wound_ulcer_management_coding_missteps_.2.aspx"></a>No abstract available]]></description>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):286-287, July 2026. doi: 10.1097/ASW.0000000000000478]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00002</guid>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000462~topical-table-salt-for-the-treatment-of-pyogenic-granuloma-a</link>
+      <title><![CDATA[Topical Table Salt for the Treatment of Pyogenic Granuloma: A Five-Case Series]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:26 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000462~topical-table-salt-for-the-treatment-of-pyogenic-granuloma-a"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:26 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/early_identification_of_pressure_injury__an.3.aspx</link>
-      <author><![CDATA[Neu, Charmaine; Furtado, Stephanie; Dyck, Rebecca; Sheikh, Fatima; Tremain, Leanne; Johnson, Denise]]></author>
-      <category><![CDATA[Departments: Practice Reflections]]></category>
-      <title><![CDATA[Early Identification of Pressure Injury: An Equity-Informed Initiative]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 12 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/early_identification_of_pressure_injury__an.3.aspx"><img src="https://images.journals.lww.com/aswcjournal/SmallThumb.00129334-202607000-00003.F1.jpeg" border="0" align ="left" alt="image"/></a>Early detection is an essential component in averting preventable higher-stage pressure injuries (PI). However, decades of clinical practice have not yielded the elimination of preventable hospital-acquired PIs, especially in patients with dark skin tones. Late detection of PIs in dark skin tones is a health equity issue. As an equity-informed initiative, an interprofessional team in a large hospital complex developed an enabler for practice to address overreliance on simple visual inspection for detecting early skin and tissue damage. The 4Ts practice enabler provides a nontechnological and practical approach for the early identification of stage 1 PIs in all skin tones by examining skin tone, temperature, texture, and twinge (pain). This equity-informed comprehensive approach will impact early detection of PI, thereby triggering expedited measures for effective prevention.]]></description>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):288-293, July 2026. doi: 10.1097/ASW.0000000000000475]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00003</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/perioperative_applications_of_electrical.14.aspx</link>
-      <author><![CDATA[Jiang, Meijun; Zhang, Shaoyun; Xiao, Cong]]></author>
-      <category><![CDATA[Literature Reviews]]></category>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000474~perioperative-applications-of-electrical-stimulation-in-flap</link>
       <title><![CDATA[Perioperative Applications of Electrical Stimulation in Flap Surgeries: Mechanisms and Benefits]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 12 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/perioperative_applications_of_electrical.14.aspx"><img src="https://images.journals.lww.com/aswcjournal/SmallThumb.00129334-202607000-00014.F1.jpeg" border="0" align ="left" alt="image"/></a>OBJECTIVE: 
-
-To review the roles and applications of electrical stimulation in flap transplantation, addressing its potential to reduce flap necrosis.
-
-DATA SOURCES: 
-
-Medical textbooks and a literature search were conducted in databases including PubMed, Google Scholar, Web of Science, and relevant surgical journals.
-
-STUDY SELECTION: 
-
-Articles were screened using keywords including electrical stimulation, flap transplantation, angiogenesis, vasodilation, antibacterial, vasopasm, inflammation, wound healing, cell migration, and cell proliferation. Articles in which the title and/or abstract contained these key words were included in the review. More than 120 journal research articles met the criteria.
-
-DATA EXTRACTION: 
-
-Research highlighted the benefits and molecular mechanisms of electrical stimulation on the healing progress of flap transplantation, which underwent a full-text review and summarization.
-
-DATA SYNTHESIS: 
-
-Classify and descriptively summarize the articles based on perioperative factors closely related to flap survival. The mechanisms underlying these benefits are discussed, alongside their clinical significance.
-
-CONCLUSIONS: 
-
-Preoperative electrical stimulation fosters angiogenesis and new blood vessel growth, whereas postoperative stimulation aids in infection control, edema reduction, and overall wound healing. Electrical stimulation shows significant promise in improving outcomes of flap surgeries.]]></description>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):E295-E302, July 2026. doi: 10.1097/ASW.0000000000000474]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00014</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:26 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000474~perioperative-applications-of-electrical-stimulation-in-flap"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:26 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/utilization_of_autologous_skin_shave_micrografting.17.aspx</link>
-      <category><![CDATA[CE Test]]></category>
-      <title><![CDATA[Utilization of Autologous Skin Shave Micrografting for Treatment of Advanced Stage Pressure Injuries: A Seven-Patient Case Series]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 12 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/utilization_of_autologous_skin_shave_micrografting.17.aspx"></a>No abstract available]]></description>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):E310, July 2026. doi: 10.1097/ASW.0000000000000483]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00017</guid>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000468~medical-devicerelated-pressure-injuries-a-systematic-review</link>
+      <title><![CDATA[Medical Device–Related Pressure Injuries: A Systematic Review for Prevalence, Causes, and Risk Factors Since the COVID-19 Pandemic]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:26 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000468~medical-devicerelated-pressure-injuries-a-systematic-review"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:26 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/utilization_of_autologous_skin_shave_micrografting.4.aspx</link>
-      <author><![CDATA[Melnychuk, Igor; Besh, Jordan]]></author>
-      <category><![CDATA[Clinical Management Extra]]></category>
-      <title><![CDATA[Utilization of Autologous Skin Shave Micrografting for Treatment of Advanced Stage Pressure Injuries: A Seven-Patient Case Series]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 04 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/utilization_of_autologous_skin_shave_micrografting.4.aspx"><img src="https://images.journals.lww.com/aswcjournal/SmallThumb.00129334-202607000-00004.FU3.jpeg" border="0" align ="left" alt="image"/></a>OBJECTIVE: 
-
-The authors present an autologous skin shave micrografting (ASSM) technique for treating stage 3 to 4 pressure injuries (PI).
-
-METHODS: 
-
-Between 2024 and 2025, 7 patients with stage 3 and 4 PIs were treated using skin micrografting.
-
-RESULTS: 
-
-Seven patients with 10 PIs (3 stage 3 and 7 stage 4) underwent ASSM. The average PI size was 7.2 cm2. The average depth was 0.3 cm. The average donor site measured 1.5 cm2. All patients demonstrated complete healing within 4 months. Five of 7 patients remained recurrence-free during a 9-month follow-up period, and only 1 out of 10 PIs was open at 9 months.
-
-CONCLUSIONS: 
-
-ASSM is a promising modality for the treatment of select PIs and may be considered as part of the reconstructive ladder for advanced pressure injuries.
-JOURNAL/aswca/04.03/00129334-202607000-00004/figure1/v/2026-06-13T090907Z/r/image-jpeg
-
-PURPOSE: 
-
-To increase knowledge of the application of the autologous skin shave micrografting (ASSM) technique for the management of advanced-stage pressure injuries (PI).
-
-TARGET AUDIENCE: 
-
-This continuing education activity is intended for physicians, physician assistants, nurse practitioners, and registered nurses with an interest in skin and wound care.
-
-LEARNING OBJECTIVES/OUTCOMES: 
-
-After participating in this educational activity, the participant will:Evaluate patient-specific factors to select optimal treatment strategies for managing PI.Apply the techniques and procedural steps of ASSM for the treatment of advanced-stage PIs.Explain the underlying pathophysiologic mechanisms by which ASSM promotes healing in advanced-stage PIs.]]></description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):294-303, July 2026. doi: 10.1097/ASW.0000000000000472]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00004</guid>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000469~barriers-to-self-management-of-patients-with-diabetic-foot</link>
+      <title><![CDATA[Barriers to Self-Management of Patients with Diabetic Foot Ulcers: A Systematic Review and Qualitative Meta-Synthesis]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:26 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000469~barriers-to-self-management-of-patients-with-diabetic-foot"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:26 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000500~empowering-informal-caregivers-with-the-remindme-app-for</link>
+      <title><![CDATA[Empowering Informal Caregivers With the RemindMe App for Pressure Injury Prevention]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:26 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000500~empowering-informal-caregivers-with-the-remindme-app-for"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:26 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000497~validity-and-reliability-of-barakat-johnson</link>
+      <title><![CDATA[Validity and Reliability of Barakat-Johnson Incontinence-Associated Dermatitis Knowledge Tool: A Methodological Study]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:26 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000497~validity-and-reliability-of-barakat-johnson"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:26 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000495~predicting-risk-factors-of-pressure-injury-for-perioperative</link>
+      <title><![CDATA[Predicting Risk Factors of Pressure Injury for Perioperative Patients Through Machine Learning With SHapley Additive exPlanations Based on Hospital Information System]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:26 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000495~predicting-risk-factors-of-pressure-injury-for-perioperative"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:26 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000377~from-screening-to-full-risk-assessment-in-pressure-injury</link>
+      <title><![CDATA[From Screening to Full Risk Assessment in Pressure Injury Prevention: Targeting the Right Care to the Right Patients]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:26 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000377~from-screening-to-full-risk-assessment-in-pressure-injury"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:26 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/01.asw.0000817840.68588.04~effect-of-varying-repositioning-frequency-on-pressure-injury</link>
+      <title><![CDATA[Effect of Varying Repositioning Frequency on Pressure Injury Prevention in Nursing Home Residents: TEAM-UP Trial Results]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:26 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/01.asw.0000817840.68588.04~effect-of-varying-repositioning-frequency-on-pressure-injury"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:26 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000079~protocol-for-the-development-of-the-fourth-edition-of-the</link>
+      <title><![CDATA[Protocol for the Development of the Fourth Edition of the Prevention and Treatment of Pressure Ulcers/Injuries: Clinical Practice Guideline Using GRADE Methods]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:26 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000079~protocol-for-the-development-of-the-fourth-edition-of-the"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:26 GMT</pubDate>
     </item>
   </channel>
 </rss>

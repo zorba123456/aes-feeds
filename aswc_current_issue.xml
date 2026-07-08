@@ -1,393 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns="" version="2.0">
+<rss xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" version="2.0">
   <channel>
-    <title><![CDATA[Advances in Skin & Wound Care - Current Issue]]></title>
-    <link>https://journals.lww.com/aswcjournal/pages/currenttoc.aspx</link>
-    <description><![CDATA[Advances in Skin and Wound Care, a medical resource journal for skin and wound care research, products, and clinical information in print and digital formats.]]></description>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 06 Jul 2026 17:01:07 -0500</lastBuildDate>
-    <generator>Wolters Kluwer Health RSS Generator</generator>
-    <image>
-      <url>https://images.journals.lww.com/aswcjournal/XLargeThumb.00129334-202607000-00000.CV.jpeg</url>
-      <title><![CDATA[Advances in Skin & Wound Care - Current Issue]]></title>
-      <link>https://journals.lww.com/aswcjournal/pages/currenttoc.aspx</link>
-    </image>
+    <title><![CDATA[aswc_current_issue]]></title>
+    <link>https://www.ovid.com/jnls/aswcjournal</link>
+    <description><![CDATA[Auto-generated from Web Scrape]]></description>
+    <lastBuildDate>Wed, 08 Jul 2026 07:48:19 GMT</lastBuildDate>
+
     <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/skin_health_and_persons_with_diabetes.1.aspx</link>
-      <author><![CDATA[Sibbald, R. Gary; Ayello, Elizabeth A.]]></author>
-      <category><![CDATA[Departments: Editorial]]></category>
-      <title><![CDATA[Skin Health and Persons with Diabetes]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 12 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/skin_health_and_persons_with_diabetes.1.aspx"></a>No abstract available]]></description>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):285, July 2026. doi: 10.1097/ASW.0000000000000482]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00001</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/avoid_wound_ulcer_management_coding_missteps_.2.aspx</link>
-      <author><![CDATA[Schaum, Kathleen D.]]></author>
-      <category><![CDATA[Departments: Payment Strategies]]></category>
-      <title><![CDATA[Avoid Wound/Ulcer Management Coding Missteps: Adopt Correct Coding Steps]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 12 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/avoid_wound_ulcer_management_coding_missteps_.2.aspx"></a>No abstract available]]></description>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):286-287, July 2026. doi: 10.1097/ASW.0000000000000478]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00002</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/early_identification_of_pressure_injury__an.3.aspx</link>
-      <author><![CDATA[Neu, Charmaine; Furtado, Stephanie; Dyck, Rebecca; Sheikh, Fatima; Tremain, Leanne; Johnson, Denise]]></author>
-      <category><![CDATA[Departments: Practice Reflections]]></category>
-      <title><![CDATA[Early Identification of Pressure Injury: An Equity-Informed Initiative]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 12 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/early_identification_of_pressure_injury__an.3.aspx"><img src="https://images.journals.lww.com/aswcjournal/SmallThumb.00129334-202607000-00003.F1.jpeg" border="0" align ="left" alt="image"/></a>Early detection is an essential component in averting preventable higher-stage pressure injuries (PI). However, decades of clinical practice have not yielded the elimination of preventable hospital-acquired PIs, especially in patients with dark skin tones. Late detection of PIs in dark skin tones is a health equity issue. As an equity-informed initiative, an interprofessional team in a large hospital complex developed an enabler for practice to address overreliance on simple visual inspection for detecting early skin and tissue damage. The 4Ts practice enabler provides a nontechnological and practical approach for the early identification of stage 1 PIs in all skin tones by examining skin tone, temperature, texture, and twinge (pain). This equity-informed comprehensive approach will impact early detection of PI, thereby triggering expedited measures for effective prevention.]]></description>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):288-293, July 2026. doi: 10.1097/ASW.0000000000000475]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00003</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/utilization_of_autologous_skin_shave_micrografting.4.aspx</link>
-      <author><![CDATA[Melnychuk, Igor; Besh, Jordan]]></author>
-      <category><![CDATA[Clinical Management Extra]]></category>
-      <title><![CDATA[Utilization of Autologous Skin Shave Micrografting for Treatment of Advanced Stage Pressure Injuries: A Seven-Patient Case Series]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 04 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/utilization_of_autologous_skin_shave_micrografting.4.aspx"><img src="https://images.journals.lww.com/aswcjournal/SmallThumb.00129334-202607000-00004.FU3.jpeg" border="0" align ="left" alt="image"/></a>OBJECTIVE: 
-
-The authors present an autologous skin shave micrografting (ASSM) technique for treating stage 3 to 4 pressure injuries (PI).
-
-METHODS: 
-
-Between 2024 and 2025, 7 patients with stage 3 and 4 PIs were treated using skin micrografting.
-
-RESULTS: 
-
-Seven patients with 10 PIs (3 stage 3 and 7 stage 4) underwent ASSM. The average PI size was 7.2 cm2. The average depth was 0.3 cm. The average donor site measured 1.5 cm2. All patients demonstrated complete healing within 4 months. Five of 7 patients remained recurrence-free during a 9-month follow-up period, and only 1 out of 10 PIs was open at 9 months.
-
-CONCLUSIONS: 
-
-ASSM is a promising modality for the treatment of select PIs and may be considered as part of the reconstructive ladder for advanced pressure injuries.
-JOURNAL/aswca/04.03/00129334-202607000-00004/figure1/v/2026-06-13T090907Z/r/image-jpeg
-
-PURPOSE: 
-
-To increase knowledge of the application of the autologous skin shave micrografting (ASSM) technique for the management of advanced-stage pressure injuries (PI).
-
-TARGET AUDIENCE: 
-
-This continuing education activity is intended for physicians, physician assistants, nurse practitioners, and registered nurses with an interest in skin and wound care.
-
-LEARNING OBJECTIVES/OUTCOMES: 
-
-After participating in this educational activity, the participant will:Evaluate patient-specific factors to select optimal treatment strategies for managing PI.Apply the techniques and procedural steps of ASSM for the treatment of advanced-stage PIs.Explain the underlying pathophysiologic mechanisms by which ASSM promotes healing in advanced-stage PIs.]]></description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):294-303, July 2026. doi: 10.1097/ASW.0000000000000472]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00004</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/revised_baux_score_identifies_a_new_risk_factor.5.aspx</link>
-      <author><![CDATA[Nehila, Timothy; Mikhael, Marian; Arora, Shreya; Jupudi, Rithvic; Criscione, Jaynie X.; Le, Nicole K.; Whalen, Kristen; Buller, Kristina; Laun, Jake; Troy, Jared]]></author>
-      <category><![CDATA[Original Investigations]]></category>
-      <title><![CDATA[Revised Baux Score Identifies a New Risk Factor for Mortality: History of Diabetes]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 18 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/revised_baux_score_identifies_a_new_risk_factor.5.aspx"><img src="https://images.journals.lww.com/aswcjournal/SmallThumb.00129334-202607000-00005.F1.jpeg" border="0" align ="left" alt="image"/></a>OBJECTIVE: 
-
-Over the past several decades, numerous predictive formulas have been developed to estimate the probability of death from burn injury. Despite the preponderance of models, there are relatively few widely accepted objective measures found to impact mortality in patients with burns. These factors include sex, age, burn depth, total body surface area (TBSA), and presence of inhalation injury.
-
-METHODS: 
-
-In this study, the authors retrospectively analyzed mortality in the burn patients over the age of 18 at a Level Ⅰ trauma center between 2015 and 2020 to identify prognostic factors. Significant risk factors for the prediction of mortality based on a set of objective variables were identified using a stepwise forward logistic-regression analysis.
-
-RESULTS: 
-
-Nine hundred sixty-three patients (mean age of 47±17 y; mean TBSA of 9±13%) met inclusion criteria. Mortality was 4%. Eighty-four patients (9%) had inhalational injury. The mean length of hospital stay was 10±15 days. The most prevalent burn etiologies in the population were flame (45.5%) and scald (13.5%). Five risk factors for death after burn injury were identified: increased age, increased TBSA, presence of inhalational injury, presence of third-degree burns, and history of diabetes.
-
-CONCLUSIONS: 
-
-This is the first time, to the authors’ knowledge, that history of diabetes has been identified as a prognostic factor for mortality and suggests that the inclusion of diabetic status in future mortality models would increase their accuracy in comparable populations. On the basis of this data, the authors propose an equation to calculate percent mortality in burn patients, which includes history of diabetes as a prognostic variable.]]></description>
-      <pubDate>Mon, 18 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):304-307, July 2026. doi: 10.1097/ASW.0000000000000471]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00005</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/total_contact_casting_for_diabetic_foot_ulcers_in.6.aspx</link>
-      <author><![CDATA[Ruff, Garrett; Syed, Uzaam; Iannuzzi, Louis; Ross, Frank]]></author>
-      <category><![CDATA[Original Investigations]]></category>
-      <title><![CDATA[Total Contact Casting for Diabetic Foot Ulcers in Partial-Foot Amputations]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 18 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/total_contact_casting_for_diabetic_foot_ulcers_in.6.aspx"><img src="https://images.journals.lww.com/aswcjournal/SmallThumb.00129334-202607000-00006.F1.jpeg" border="0" align ="left" alt="image"/></a>OBJECTIVE: 
-
-This study reports patient outcomes and predictors of outcomes after total contact casting (TCC) for diabetic stump ulceration in patients with partial-foot amputations.
-
-METHODS: 
-
-Retrospective review of patients treated with TCC for diabetic stump ulcerations with ipsilateral partial-foot amputation at a tertiary center from 2015 to 2022 was performed. Patients lost to follow-up, those unable to tolerate TCC, and those with partial amputations of digits 2 to 5 were excluded. Patient demographics, outcomes, and complication rates of TCC were collected and compared. Multivariable linear regression was performed to identify demographic predictors of time to ulcer closure.
-
-RESULTS: 
-
-Forty-three patients were included in this study, with a 93.5% rate of primary ulcer closure, 46.5% rate of re-ulceration, and 9.3% rate of re-amputation. Patients without re-ulceration were significantly more likely to be nonsmokers. Regression analysis also found that smoking history trended toward a longer delay to ulcer closure (P=.097). Age, body mass index, presence of contralateral amputation, and type of amputation did not affect patient outcomes or complication rates.
-
-CONCLUSIONS: 
-
-TCC effectively promotes ulcer closure in diabetic patients with high comorbidity burden and partial-foot amputation, although smoking history increases re-ulceration rates.]]></description>
-      <pubDate>Mon, 18 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):308-313, July 2026. doi: 10.1097/ASW.0000000000000473]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00006</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/the_silent_threat__how_diabetic_foot_ulcers_and.7.aspx</link>
-      <author><![CDATA[Günbaş, Merve; Dervişoğlu, Merve; Büyükkaya Besen, Dilek]]></author>
-      <category><![CDATA[Original Investigations]]></category>
-      <title><![CDATA[The Silent Threat: How Diabetic Foot Ulcers and the Fear of Amputation Shape Patients’ Lives: A Qualitative Exploration of Patient Experiences]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 18 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/the_silent_threat__how_diabetic_foot_ulcers_and.7.aspx"><img src="https://images.journals.lww.com/aswcjournal/SmallThumb.00129334-202607000-00007.F1.jpeg" border="0" align ="left" alt="image"/></a>OBJECTIVE: 
-
-Diabetic foot ulcer (DFU) is a common and serious complication of diabetes. This study aimed to identify the difficulties experienced by people with type 2 diabetes who previously had DFUs, and those who had undergone amputation.
-
-METHODS: 
-
-A qualitative research design utilizing content analysis was used. Semi-structured interviews were conducted with 24 people with type 2 diabetes who had previously experienced DFUs between 2023 and 2024.
-
-RESULTS: 
-
-The interviews were recorded and subsequently transcribed. The data analysis revealed 5 themes: diabetic foot ulcers development process (ingrown nail, cracks, callus removal, foot blisters, etc.), practices in foot care (washing feet, nail clipping, etc.), amputation experience (loss of sensation, not noticing the wound, etc.), fear of amputation (death wish, fear of foot amputation, etc.), effect of diabetic foot ulcer on social life (quitting job, etc.).
-
-CONCLUSIONS: 
-
-The study identified that the most significant factor contributing to the development of DFUs was inadequate foot care practices and a lack of information.]]></description>
-      <pubDate>Mon, 18 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):314-320, July 2026. doi: 10.1097/ASW.0000000000000470]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00007</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/the_relationship_between_frailty_and_care.8.aspx</link>
-      <author><![CDATA[Gurcay, Busra; Bilgin, Aylin; Sert, Havva; Taskin Yilmaz, Feride; Erkin, Alper]]></author>
-      <category><![CDATA[Original Investigations]]></category>
-      <title><![CDATA[The Relationship Between Frailty and Care Dependency in Patients with Diabetic Foot Ulcers: A Structural Equation Modeling Approach]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 18 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/the_relationship_between_frailty_and_care.8.aspx"><img src="https://images.journals.lww.com/aswcjournal/SmallThumb.00129334-202607000-00008.F1.jpeg" border="0" align ="left" alt="image"/></a>OBJECTIVE: 
-
-Frailty, resulting from physical and psychological factors, may lead to the development of care dependency in people diagnosed with diabetic foot. This study was conducted to determine frailty and care dependency in patients diagnosed with diabetic foot ulcers and to examine these patients and the effect of these factors using structural equation modeling.
-
-METHODS: 
-
-This study, conducted with a descriptive design using structural equation modeling, included 302 patients with diabetic foot ulcers treated in the wound care outpatient clinic between July 2023 and September 2023. Data were collected through face-to-face interviews method, using a patient identification form, the Tilburg Frailty Indicator (TFI), and the Care Dependency Scale (CDS).
-
-RESULTS: 
-
-According to the TFI, 96.4% of the participants were frail. The mean CDS score of the patients was 78.97 ± 5.77. According to the structural equation model, age, duration of diabetes diagnosis, and physical frailty had significant effects on care dependency, whereas psychological and social frailty had no significant effect. Collectively, these variables accounted for 27% of the variance in care dependency, and the overall model was statistically significant.
-
-CONCLUSIONS: 
-
-Nearly all patients with diabetic foot ulcers were frail. Although the participants had a high level of independence in meeting their care requirements, physical frailty was found to be a significant predictor of care dependency. Nurses’ determination of the frailty levels of patients with diabetic foot ulcers in the treatment and care process at an early stage and interventions to reduce care dependency can facilitate the daily life of patients.]]></description>
-      <pubDate>Mon, 18 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):321-328, July 2026. doi: 10.1097/ASW.0000000000000461]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00008</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/mobile_health_app_needs_among_patients_with.9.aspx</link>
-      <author><![CDATA[Yao, Jia-li; Gu, Ying-jie; Yin, Yuan-yuan; Yu, Hai-ping; Zhuang, Hui-ren]]></author>
-      <category><![CDATA[Original Investigations]]></category>
-      <title><![CDATA[Mobile Health App Needs Among Patients With Diabetic Foot Ulcers in China: A Qualitative Study From the Perceptions of Patients, Caregivers, and Health Care Professionals]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 18 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/mobile_health_app_needs_among_patients_with.9.aspx"></a>OBJECTIVE: 
-
-To explore the specific needs of patients with diabetic foot ulcers (DFUs), caregivers, and health care professionals (HCPs) for a mobile health (mHealth) app, aiming to inform the design and development of effective mHealth service solutions.
-
-METHODS: 
-
-This descriptive qualitative study was conducted from June to September 2024 in the wound care clinics of 2 local hospitals. Participants included patients with DFUs, caregivers, and HCPs directly involved in their care. Interview data were analyzed, synthesized, and refined using content analysis.
-
-RESULTS: 
-
-Five key themes emerged: the pressing need to implement mHealth app services, convenient and personalized access to information, continuous and specialized health guidance, a multidisciplinary approach to disease management, and free access alongside privacy and legal protections.
-
-CONCLUSIONS: 
-
-This study provides valuable insights for the design and development of an mHealth app for DFU. During the development process, it is essential to consider user needs and ensure the app meets the expectations of patients and related groups for personalized, continuous, and specialized health guidance; free access; privacy protection; and multidisciplinary collaboration. A balance should be struck between convenience and security of the app’s features, to encourage user engagement and enhance the app’s value and effectiveness.]]></description>
-      <pubDate>Mon, 18 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):329-335, July 2026. doi: 10.1097/ASW.0000000000000477]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00009</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/validation_of_the_diabetic_foot_ulcer_scale_for.10.aspx</link>
-      <author><![CDATA[Pereira, M. Graça; Ferreira, Gabriela; Vilaça, Margarida]]></author>
-      <category><![CDATA[Original Investigations]]></category>
-      <title><![CDATA[Validation of the Diabetic Foot Ulcer Scale for Portuguese Patients]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 18 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/validation_of_the_diabetic_foot_ulcer_scale_for.10.aspx"><img src="https://images.journals.lww.com/aswcjournal/SmallThumb.00129334-202607000-00010.F1.jpeg" border="0" align ="left" alt="image"/></a>OBJECTIVE: 
-
-To validate the Diabetic Foot Ulcer Scale (DFS-SF) in a sample of Portuguese patients diagnosed with chronic diabetic foot ulcers (DFUs).
-
-METHODS: 
-
-The sample included 163 participants who completed the DFS-SF, the Short-Form Health Survey (SF-36), and the Hospital Anxiety and Depression Scale (HADS). Construct validity was tested using confirmatory factor analysis. Reliability was evaluated through Cronbach α composite reliability (CR). Convergent validity was tested using Pearson correlations and average variance extracted (AVE).
-
-RESULTS: 
-
-The Portuguese version retains 26 of the original 29 items and introduced one additional subscale, whereas the remaining subscales mirror the original dimensional structure. Reliability for the total scale was excellent (α=0.93; CR=0.97), with subscales values ranging from acceptable to very good, (α and CR=0.69 to 0.90). Significant correlations with SF-36 (r=0.32 to 0.71), and HADS (r=−0.21 to −0.69), alongside AVE coefficients (0.36 to 0.82), supported the construct validity of the Portuguese version.
-
-CONCLUSIONS: 
-
-Although further studies are needed, the Portuguese DFS-SF is a reliable and valid tool for assessing quality of life in patients with DFU in both research and clinical settings.]]></description>
-      <pubDate>Mon, 18 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):E263-E269, July 2026. doi: 10.1097/ASW.0000000000000466]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00010</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/validation_of_the_can_wise__canadian_wound_program.11.aspx</link>
-      <author><![CDATA[Heerschap, Corey; Butt, Britney]]></author>
-      <category><![CDATA[Original Investigations]]></category>
-      <title><![CDATA[Validation of the CAN-WISE (Canadian Wound Program Information, Services, and Evaluation) Questionnaire]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 18 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/validation_of_the_can_wise__canadian_wound_program.11.aspx"></a>OBJECTIVE: 
-
-The Canadian Wound Program Information, Services, and Evaluation (CAN-WISE) questionnaire was developed to assess and evaluate acute wound care programs across Canada, addressing variations in service accessibility and program effectiveness.
-
-METHODS: 
-
-An expert panel of 9 acute care wound management program leads reviewed and assessed the CAN-WISE questionnaire. Content Validity Ratios (CVR), Scale Content Validity Index (S-CVI), Modified Kappa, Gwet’s AC1, and Brennan-Prediger tests were utilized to evaluate the relevance and reliability of both questions and responses. Percentage agreement metrics were also used to assess the clarity and vocabulary of the questions and responses.
-
-RESULTS: 
-
-The results of this validation study demonstrated high consensus among the expert panel for the final questionnaire, with question CVRs ranging from 0.777 to 1, elevated I-CVI scores of 0.888 to 1, and high, statistically relevant inter-rater reliability scores (AC1=0.966, Brennan-Prediger=0.934), demonstrating that the questions included were both essential and well constructed. Questionnaire responses demonstrated similarly high CVR scores (0.777 to 1), I-CVI scores (0.888 to 1), and statistically relevant reliability (AC1=0.988, Brennan-Prediger=0.976). Clarity and vocabulary analysis showed high absolute agreement levels of 95.88% and 98.96%, respectively. These reliability metrics were further supported by high, statistically relevant Gwet’s AC1 and Brennan-Prediger test results for clarity and vocabulary, confirming the tool’s comprehensibility.
-
-CONCLUSIONS: 
-
-The CAN-WISE questionnaire has demonstrated validity and reliability in its ability to evaluate acute care wound management programs in Canada. It provides a valuable tool for assessing program strengths and areas for improvement to improve acute wound care programs throughout the nation.]]></description>
-      <pubDate>Mon, 18 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):E270-E275, July 2026. doi: 10.1097/ASW.0000000000000465]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00011</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/barriers_to_self_management_of_patients_with.12.aspx</link>
-      <author><![CDATA[Liu, Qin; Shi, Lei; Wang, Jin; Zhuang, Huiren]]></author>
-      <category><![CDATA[Literature Reviews]]></category>
-      <title><![CDATA[Barriers to Self-Management of Patients with Diabetic Foot Ulcers: A Systematic Review and Qualitative Meta-Synthesis]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 18 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/barriers_to_self_management_of_patients_with.12.aspx"><img src="https://images.journals.lww.com/aswcjournal/SmallThumb.00129334-202607000-00012.F1.jpeg" border="0" align ="left" alt="image"/></a>OBJECTIVE: 
-
-To synthesize qualitative research on self-management among patients with diabetic foot ulcers (DFUs) to provide insights and recommendations for enhancing self-management interventions.
-
-DATA SOURCES: 
-
-A comprehensive search of PubMed, Embase, Web of Science, Cochrane Library, CBM, CNKI, WanFang, and VIP databases was conducted through August 15, 2024.
-
-STUDY SELECTION: 
-
-Studies were selected based on the PICo-D model; P (Population) was patients with DFUs, I (Interest) was barriers to self-management, Co (Context) was the patient’s life following a DFU diagnosis, and D (Design) was qualitative or mixed-method studies. Exclusion criteria included duplicate publications, unavailable full text, and literature published in languages other than Chinese or English.
-
-DATA EXTRACTION: 
-
-Two researchers independently screened, assessed quality, and extracted data. Discrepancies were resolved by discussion or a third reviewer. Extracted data included authors, year, country, methodology, sample size, phenomenon of interest, and key findings.
-
-DATA SYNTHESIS: 
-
-A meta-synthesis approach integrated findings from 14 studies with 256 participants. Barriers to DFU self-management were grouped into eight themes: (a) cognitive factors (eg, lack of knowledge, information processing, decision-making abilities, self-efficacy); (b) emotional factors; (c) behavioral factors (eg, behavioral habits, adherence); (d) social factors (eg, social resources, social support); (e) economic factors; (f) environmental factors (eg, living environment, environmental support); (g) policy factors (eg, policy support, resource allocation, regulatory restrictions); and (h) cultural factors (eg, cultural identity, traditional beliefs).
-
-CONCLUSIONS: 
-
-Patients with DFUs face multiple barriers to effective self-management. Health care providers should focus on enhancing health education, providing psychological support, fostering a supportive environment, and implementing personalized interventions to improve patients’ self-management abilities and strengthen their overall prognosis.]]></description>
-      <pubDate>Mon, 18 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):E276-E285, July 2026. doi: 10.1097/ASW.0000000000000469]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00012</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/medical_device_related_pressure_injuries__a.13.aspx</link>
-      <author><![CDATA[Alnaeem, Momhammad Minwer; Alshamlan, Mohammad Jumah]]></author>
-      <category><![CDATA[Literature Reviews]]></category>
-      <title><![CDATA[Medical Device–Related Pressure Injuries: A Systematic Review for Prevalence, Causes, and Risk Factors Since the COVID-19 Pandemic]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 18 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/medical_device_related_pressure_injuries__a.13.aspx"><img src="https://images.journals.lww.com/aswcjournal/SmallThumb.00129334-202607000-00013.F1.jpeg" border="0" align ="left" alt="image"/></a>OBJECTIVE: 
-
-The intensive care unit (ICU) is a critical environment where patients are at risk for developing medical device–related pressure injuries (MDRPIs). This review aims to synthesize the literature and assess the prevalence, causes, and risk factors of MDRPIs, particularly in the context of the COVID-19 pandemic.
-
-DATA SOURCES: 
-
-A systematic review was conducted to guide this study. A comprehensive search strategy was used across multiple databases, including PubMed, EMBASE, Web of Science, Scopus, and CINAHL.
-
-STUDY SELECTION: 
-
-The search focused on studies published between 2019 and 2024, specifically targeting adult patients in the ICU. Studies focusing on pediatric populations, patients with mental illnesses, or those investigating ulcers unrelated to MDRPIs were excluded.
-
-DATA EXTRACTION: 
-
-After screening and selecting relevant studies, data were extracted and analyzed in numerical data.
-
-DATA SYNTHESIS: 
-
-The review included 35 studies, revealing a high prevalence of MDRPIs in ICU settings, ranging from 5.01% to 62.4% across various countries. The prevalence was related to several factors, such as patient demographics (age and comorbidities), ICU practices, and the type and duration of medical device usage. Mechanical ventilation, nasogastric tubes, and endotracheal tubes were among the most common devices associated with MDRPIs.
-
-CONCLUSIONS: 
-
-Tailored interventions, such as regular skin assessments and pressure-redistributing devices, are crucial for preventing MDRPIs and improving patient outcomes. The COVID-19 pandemic experience emphasizes the need for vigilant monitoring and evidence-based preventive measures in critical care environments.]]></description>
-      <pubDate>Mon, 18 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):E286-E294, July 2026. doi: 10.1097/ASW.0000000000000468]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00013</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/perioperative_applications_of_electrical.14.aspx</link>
-      <author><![CDATA[Jiang, Meijun; Zhang, Shaoyun; Xiao, Cong]]></author>
-      <category><![CDATA[Literature Reviews]]></category>
-      <title><![CDATA[Perioperative Applications of Electrical Stimulation in Flap Surgeries: Mechanisms and Benefits]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 12 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/perioperative_applications_of_electrical.14.aspx"><img src="https://images.journals.lww.com/aswcjournal/SmallThumb.00129334-202607000-00014.F1.jpeg" border="0" align ="left" alt="image"/></a>OBJECTIVE: 
-
-To review the roles and applications of electrical stimulation in flap transplantation, addressing its potential to reduce flap necrosis.
-
-DATA SOURCES: 
-
-Medical textbooks and a literature search were conducted in databases including PubMed, Google Scholar, Web of Science, and relevant surgical journals.
-
-STUDY SELECTION: 
-
-Articles were screened using keywords including electrical stimulation, flap transplantation, angiogenesis, vasodilation, antibacterial, vasopasm, inflammation, wound healing, cell migration, and cell proliferation. Articles in which the title and/or abstract contained these key words were included in the review. More than 120 journal research articles met the criteria.
-
-DATA EXTRACTION: 
-
-Research highlighted the benefits and molecular mechanisms of electrical stimulation on the healing progress of flap transplantation, which underwent a full-text review and summarization.
-
-DATA SYNTHESIS: 
-
-Classify and descriptively summarize the articles based on perioperative factors closely related to flap survival. The mechanisms underlying these benefits are discussed, alongside their clinical significance.
-
-CONCLUSIONS: 
-
-Preoperative electrical stimulation fosters angiogenesis and new blood vessel growth, whereas postoperative stimulation aids in infection control, edema reduction, and overall wound healing. Electrical stimulation shows significant promise in improving outcomes of flap surgeries.]]></description>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):E295-E302, July 2026. doi: 10.1097/ASW.0000000000000474]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00014</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/topical_table_salt_for_the_treatment_of_pyogenic.15.aspx</link>
-      <author><![CDATA[Karaçoban, Melike; Şenel, Engin]]></author>
-      <category><![CDATA[Case Series]]></category>
-      <title><![CDATA[Topical Table Salt for the Treatment of Pyogenic Granuloma: A Five-Case Series]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 30 Apr 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/topical_table_salt_for_the_treatment_of_pyogenic.15.aspx"><img src="https://images.journals.lww.com/aswcjournal/SmallThumb.00129334-202607000-00015.F1.jpeg" border="0" align ="left" alt="image"/></a>Pyogenic granuloma (PG) is a common benign vascular lesion characterized by rapid growth and a tendency to bleed. This case series presents 5 patients with solitary PG lesions successfully treated with the topical application of table salt under occlusion. All patients achieved complete clinical and dermoscopic resolution without scarring or recurrence, and treatment was well tolerated with high patient satisfaction. Given its simplicity, safety, and cost-effectiveness, topical salt application may represent a valuable noninvasive alternative for managing PG.]]></description>
-      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):E303-E307, July 2026. doi: 10.1097/ASW.0000000000000462]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00015</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/repair_of_a_large_ear_defect_including_the.16.aspx</link>
-      <author><![CDATA[Zaayman, Marcus; Shalabi, Mojahed Mohammad K.; Riva, Hannah R.; Housewright, Chad D.]]></author>
-      <category><![CDATA[Case Report]]></category>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000463~repair-of-a-large-ear-defect-including-the-triangular-fossa</link>
       <title><![CDATA[Repair of a Large Ear Defect Including the Triangular Fossa]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 30 Apr 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/repair_of_a_large_ear_defect_including_the.16.aspx"><img src="https://images.journals.lww.com/aswcjournal/SmallThumb.00129334-202607000-00016.F1.jpeg" border="0" align ="left" alt="image"/></a>Large ear defects in dermatologic surgery can present a difficult challenge to achieve excellent functional and cosmetic results. This article describes a difficult case of a large ear defect as well as considerations for resolution. A 67-year-old male presented for Mohs micrographic surgery of a basal carcinoma of the left ear. Prior skin biopsy showed a nodular and sclerosing basal cell carcinoma that extended to biopsy margins. The lesion was excised in 3 Mohs stages with negative margins in the last stage. Final defect size was 3.5×2.3 cm and extended across the scapha and the crura of the antihelix. Various closure modalities were considered and discussed. Due to extensive tissue loss and size/depth of defect, a preauricular interpolation flap was utilized to best preserve normal anatomic and functional relationships. The patient had an excellent postoperative outcome, including long-term follow-up at 6 months. This case presents a surgical conundrum of a large ear defect and considerations for closure in such cases, as well as a resolution.]]></description>
-      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):E308-E309, July 2026. doi: 10.1097/ASW.0000000000000463]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00016</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:19 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000463~repair-of-a-large-ear-defect-including-the-triangular-fossa"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:19 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/aswcjournal/fulltext/2026/07000/utilization_of_autologous_skin_shave_micrografting.17.aspx</link>
-      <category><![CDATA[CE Test]]></category>
-      <title><![CDATA[Utilization of Autologous Skin Shave Micrografting for Treatment of Advanced Stage Pressure Injuries: A Seven-Patient Case Series]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 12 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/aswcjournal/fulltext/2026/07000/utilization_of_autologous_skin_shave_micrografting.17.aspx"></a>No abstract available]]></description>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Advances in Skin & Wound Care. 39(6):E310, July 2026. doi: 10.1097/ASW.0000000000000483]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00129334-202607000-00017</guid>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000462~topical-table-salt-for-the-treatment-of-pyogenic-granuloma-a</link>
+      <title><![CDATA[Topical Table Salt for the Treatment of Pyogenic Granuloma: A Five-Case Series]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:19 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000462~topical-table-salt-for-the-treatment-of-pyogenic-granuloma-a"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:19 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000474~perioperative-applications-of-electrical-stimulation-in-flap</link>
+      <title><![CDATA[Perioperative Applications of Electrical Stimulation in Flap Surgeries: Mechanisms and Benefits]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:19 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000474~perioperative-applications-of-electrical-stimulation-in-flap"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:19 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000468~medical-devicerelated-pressure-injuries-a-systematic-review</link>
+      <title><![CDATA[Medical Device–Related Pressure Injuries: A Systematic Review for Prevalence, Causes, and Risk Factors Since the COVID-19 Pandemic]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:19 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000468~medical-devicerelated-pressure-injuries-a-systematic-review"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:19 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000469~barriers-to-self-management-of-patients-with-diabetic-foot</link>
+      <title><![CDATA[Barriers to Self-Management of Patients with Diabetic Foot Ulcers: A Systematic Review and Qualitative Meta-Synthesis]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:19 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000469~barriers-to-self-management-of-patients-with-diabetic-foot"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:19 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000500~empowering-informal-caregivers-with-the-remindme-app-for</link>
+      <title><![CDATA[Empowering Informal Caregivers With the RemindMe App for Pressure Injury Prevention]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:19 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000500~empowering-informal-caregivers-with-the-remindme-app-for"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:19 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000497~validity-and-reliability-of-barakat-johnson</link>
+      <title><![CDATA[Validity and Reliability of Barakat-Johnson Incontinence-Associated Dermatitis Knowledge Tool: A Methodological Study]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:19 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000497~validity-and-reliability-of-barakat-johnson"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:19 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000495~predicting-risk-factors-of-pressure-injury-for-perioperative</link>
+      <title><![CDATA[Predicting Risk Factors of Pressure Injury for Perioperative Patients Through Machine Learning With SHapley Additive exPlanations Based on Hospital Information System]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:19 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000495~predicting-risk-factors-of-pressure-injury-for-perioperative"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:19 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000377~from-screening-to-full-risk-assessment-in-pressure-injury</link>
+      <title><![CDATA[From Screening to Full Risk Assessment in Pressure Injury Prevention: Targeting the Right Care to the Right Patients]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:19 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000377~from-screening-to-full-risk-assessment-in-pressure-injury"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:19 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/01.asw.0000817840.68588.04~effect-of-varying-repositioning-frequency-on-pressure-injury</link>
+      <title><![CDATA[Effect of Varying Repositioning Frequency on Pressure Injury Prevention in Nursing Home Residents: TEAM-UP Trial Results]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:19 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/01.asw.0000817840.68588.04~effect-of-varying-repositioning-frequency-on-pressure-injury"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:19 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000079~protocol-for-the-development-of-the-fourth-edition-of-the</link>
+      <title><![CDATA[Protocol for the Development of the Fourth Edition of the Prevention and Treatment of Pressure Ulcers/Injuries: Clinical Practice Guideline Using GRADE Methods]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:19 GMT<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000079~protocol-for-the-development-of-the-fourth-edition-of-the"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:19 GMT</pubDate>
     </item>
   </channel>
 </rss>

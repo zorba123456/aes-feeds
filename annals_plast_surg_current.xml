@@ -1,358 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns="" version="2.0">
+<rss xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" version="2.0">
   <channel>
-    <title><![CDATA[Annals of Plastic Surgery - Current Issue]]></title>
-    <link>https://journals.lww.com/annalsplasticsurgery/pages/currenttoc.aspx</link>
-    <description><![CDATA[The only independent journal devoted to general plastic and reconstructive surgery, Annals of Plastic Surgery serves as a forum for current scientific and clinical advances in the field and a sounding board for ideas and perspectives on its future. The journal publishes peer-reviewed original articles, brief communications, case reports, and notes in all areas of interest to the practicing plastic surgeon. There are also historical and current reviews, descriptions of surgical technique, and lively editorials and letters to the editor.]]></description>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 06 Jul 2026 02:40:20 -0500</lastBuildDate>
-    <generator>Wolters Kluwer Health RSS Generator</generator>
-    <image>
-      <url>https://images.journals.lww.com/annalsplasticsurgery/XLargeThumb.00000637-202607000-00000.CV.jpeg</url>
-      <title><![CDATA[Annals of Plastic Surgery - Current Issue]]></title>
-      <link>https://journals.lww.com/annalsplasticsurgery/pages/currenttoc.aspx</link>
-    </image>
+    <title><![CDATA[annals_plast_surg_current]]></title>
+    <link>https://www.ovid.com/jnls/annalsplasticsurgery</link>
+    <description><![CDATA[Auto-generated from Web Scrape]]></description>
+    <lastBuildDate>Wed, 08 Jul 2026 07:48:33 GMT</lastBuildDate>
+
     <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/the_evolution_of_the__head_and_neck__section_.1.aspx</link>
-      <author><![CDATA[Pontell, Matthew E.; Cho, Daniel Y.; Leto Barone, Angelo A.; Lineaweaver, William C.]]></author>
-      <category><![CDATA[Editorial]]></category>
-      <title><![CDATA[The Evolution of the “Head and Neck” Section: Annals of Plastic Surgery: Embraces “Craniomaxillofacial Surgery”]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 09 Apr 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/the_evolution_of_the__head_and_neck__section_.1.aspx"></a>No abstract available]]></description>
-      <pubDate>Thu, 09 Apr 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):1-2, July 2026. doi: 10.1097/SAP.0000000000004746]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00001</guid>
+      <link>https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004776~methods-of-secondary-smile-salvation-after-a-failed-primary</link>
+      <title><![CDATA[Methods of Secondary Smile Salvation After a Failed Primary Salvation Procedure for Facial Nerve Palsy]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:33 GMT<br><br><a href="https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004776~methods-of-secondary-smile-salvation-after-a-failed-primary"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:33 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/board_based_medicine__the_asps_position_statement.2.aspx</link>
-      <author><![CDATA[Swanson, Eric]]></author>
-      <category><![CDATA[Circumspectus Medicinae]]></category>
-      <title><![CDATA[Board-Based Medicine: The ASPS Position Statement on Gender-Affirming Surgery and the New Minimum Age of 19]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 12 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/board_based_medicine__the_asps_position_statement.2.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-202607000-00002.F1.jpeg" border="0" align ="left" alt="image"/></a>No abstract available]]></description>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):3-6, July 2026. doi: 10.1097/SAP.0000000000004808]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00002</guid>
+      <link>https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004727~allogeneic-stromal-vascular-fraction-accelerates-diabetic</link>
+      <title><![CDATA[Allogeneic Stromal Vascular Fraction Accelerates Diabetic Wound Healing]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:33 GMT<br><br><a href="https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004727~allogeneic-stromal-vascular-fraction-accelerates-diabetic"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:33 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/emerging_legal_risks_in_medical_spa_procedures_.3.aspx</link>
-      <author><![CDATA[Rabin, Daniel A.; Chaudhry, Aneeq S.; Sumra, Hibba; Kozlowski, Katherine; Lopez, Marlynn P.; Adam, Tarifa H.; Ontiveros, Nicole; Galiano, Robert D.]]></author>
-      <category><![CDATA[Aesthetic Surgery]]></category>
-      <title><![CDATA[Emerging Legal Risks in Medical Spa Procedures: Insights From 20 Malpractice Cases]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 28 Apr 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/emerging_legal_risks_in_medical_spa_procedures_.3.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-202607000-00003.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Medical malpractice contributes to an estimated $55.6 billion in overall medical liability system costs per year. The rise of medspas has resulted in an increase in complications and litigation. In this study, we identified all publicly indexed litigation against medical spas and medical spa practitioners using the Westlaw legal database and characterized trends in these findings.
-
-Methods: 
-
-A retrospective analysis of litigation against medical spas and medical providers performing care at medical spas was performed. Cases were indexed from 2006 to 2024 using the Westlaw legal database. Case documents were reviewed for the following datapoints: Patient characteristics (age, sex), legal case characteristics (state in which litigation occurred, reason for litigation, outcome, monetary payments, expert witness involvement), and medical procedure characteristics (type of procedure, location on the body in which the procedure was performed, complication, credentials of person who performed the procedure).
-
-Results: 
-
-Twenty legal cases met inclusion criteria, ranging in date from May 2006 to October 2024. The average patient age was 36 years old (SD 12.570). All plaintiffs were listed as female (n=20). 4 cases sued only the medspas, 15 sued only a medical practitioner, and in one case both the practitioner and medspa were sued. Each of the 20 cases were decided by jury decision at trial. 7 cases were won by the defendants (35%), whereas the remaining 13 cases were won by the plaintiffs. The average jury award was $2,489,128.69.
-
-Conclusions: 
-
-Our findings highlight the importance of properly managing patient expectations and thorough discourse regarding the risks of the procedure to better align patient presurgery expectations with the final result. Our findings also emphasize the positive impact that tighter regulation of medical spas will have on patient safety. Our data is limited by the small sample size that was indexed on Westlaw legal database and descriptive in nature, so future studies analyzing larger cohorts of data may provide additional data to further benefit patient safety.]]></description>
-      <pubDate>Tue, 28 Apr 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):7-16, July 2026. doi: 10.1097/SAP.0000000000004757]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00003</guid>
+      <link>https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004759~submitted-works-in-plastic-surgery-residency-applications</link>
+      <title><![CDATA[Submitted Works in Plastic Surgery Residency Applications]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:33 GMT<br><br><a href="https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004759~submitted-works-in-plastic-surgery-residency-applications"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:33 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/modern_approaches_to_aesthetic_breast_surgery__a.4.aspx</link>
-      <author><![CDATA[Abbott, Erin N.; James, Andrew J.; Savitz, Ben L.; Kalogeromitros, Maria; Christopher, Adrienne; Torres-Guzman, Ricardo A.; Kubiak, Carrie A.]]></author>
-      <category><![CDATA[Breast Surgery]]></category>
-      <title><![CDATA[Modern Approaches to Aesthetic Breast Surgery: A Review of Augmentation, Mastopexy, and Fat Grafting]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 13 Feb 2026 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/modern_approaches_to_aesthetic_breast_surgery__a.4.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-202607000-00004.F1.jpeg" border="0" align ="left" alt="image"/></a>Current trends in cosmetic breast surgery have shifted toward more balanced and natural-appearing aesthetic enhancements. Surgical planning for these procedures requires a nuanced understanding of patient goals, anatomy, implant selection, and consideration for combining procedures to achieve the desired outcome. This review aims to provide a comprehensive guide to current techniques and clinical considerations in aesthetic breast augmentation, mastopexy, and fat grafting.]]></description>
-      <pubDate>Fri, 13 Feb 2026 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):17-23, July 2026. doi: 10.1097/SAP.0000000000004695]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00004</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/regional_differences_in_postexcision_outcomes_of.5.aspx</link>
-      <author><![CDATA[Kumar, Sailesh I.S.; Katta, Tapasya; Anderson, Michael; McRae, Charlotte; Rallapalle, Vyshnavi; Yerabolu, Krishin; Hale, Elizabeth; Collawn, Sherry S.]]></author>
-      <category><![CDATA[Burn Surgery and Research]]></category>
-      <title><![CDATA[Regional Differences in Postexcision Outcomes of Keloids: A Focus on Auricular Versus Nonauricular Sites]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 25 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/regional_differences_in_postexcision_outcomes_of.5.aspx"></a>Background: 
-
-The pathophysiology of keloid formation remains poorly understood, and treatment typically involves multimodal approaches. Previous studies suggest that keloids on the earlobes, head, and neck may be more responsive to radiation than those on other anatomic sites due to putative differences in skin tension and biomechanical properties. However, limited comparative data exist to substantiate these anatomic distinctions in clinical outcomes.
-
-Aim: 
-
-To compare recurrence rates, treatment outcomes, and radiation-related side effects between auricular and nonauricular keloids following surgical excision with adjuvant radiation therapy or surgical excision alone.
-
-Methods: 
-
-This retrospective cohort study analysed 168 cases with keloids (60 auricular and 108 nonauricular) treated by a single surgeon between January 2020 and May 2024. Of these, 122 patients underwent surgical excision followed by adjuvant radiation therapy, while 46 patients received surgical excision only. Intralesional 5-Fluorouracil and Kenalog was injected across both groups during surgical excision. Demographic and clinical data, including age, sex, race, BMI, keloid site and size, and treatment modality, were collected. Patients were followed up post-treatment to assess recurrence, radiation-related side effects, and treatment response patterns.
-
-Results: 
-
-Auricular keloids were more common in younger patients and significantly smaller in size (median 12 vs. 19.5 mm for nonauricular, P<0.001). The majority of patients received 2100 cGy of radiation. Among those receiving surgery plus radiation, 17.07% of auricular and 16.22% of nonauricular keloids recurred (P=0.91). In the surgery-only group, recurrence was 47.37% and 44.12%, respectively (P=0.82). Notably, radiation-related side effects were significantly more frequent in nonauricular sites (37%) compared with auricular (20%) (P=0.022). Age, sex, race, BMI, and radiation dose did not independently predict recurrence in the final model.
-
-Conclusion: 
-
-Anatomic site did not significantly influence keloid recurrence rates, challenging previous assumptions about site-specific treatment responses, while adjuvant radiotherapy significantly reduced recurrence irrespective of site. Radiation-related side effects were more common in nonauricular locations. Age, sex, race and BMI did not emerge as statistically significant demographic predictors of recurrence in this study. These findings support the routine inclusion of radiotherapy in keloid management and suggest that demographic and treatment factors may outweigh anatomic considerations in predicting outcomes.]]></description>
-      <pubDate>Mon, 25 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):24-29, July 2026. doi: 10.1097/SAP.0000000000004775]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00005</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/a_25_year_systematic_review_of_flaps_for_coverage.6.aspx</link>
-      <author><![CDATA[Shin, Stephanie E.; Daniels, Megan E.; Lewcun, Joseph A.; Moxey, Gabriel E.; Vagonis, Alexandra; Baek, Annabel; Bernabe, Rendell; Cyrus, John; Bo, Na; Kim, Beomchang; Mountziaris, Paschalia; Gu, JaHea]]></author>
-      <category><![CDATA[Hand Surgery]]></category>
-      <title><![CDATA[A 25-Year Systematic Review of Flaps for Coverage of the Dorsal Hand]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 01 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/a_25_year_systematic_review_of_flaps_for_coverage.6.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-202607000-00006.F1.jpeg" border="0" align ="left" alt="image"/></a>Purpose: 
-
-Soft-tissue coverage of the dorsal hand poses unique reconstructive challenges, requiring pliable yet durable tissue overlying critical tendon structures. This systematic review aimed to evaluate different options in flap selection for dorsal hand reconstruction.
-
-Materials and Methods: 
-
-Following PRISMA guidelines, a comprehensive search of PubMed, Embase, and Web of Science was conducted for studies published between January 2000 and December 2024. Adult patients who underwent dorsal hand reconstruction with pedicled or free flaps were included. Data regarding flap composition, complications, debulking procedures, and donor-site morbidity were extracted. Statistical analyses were performed using the Fisher exact test, multivariate logistic regression, and the Mann-Kendall test to evaluate temporal trends.
-
-Results: 
-
-Out of 1258 identified studies, 29 met the inclusion criteria, encompassing 372 flaps. Trauma (65.6%) and burn contracture release (25.8%) were the most common indications. Partial and total flap loss rates of 5.64% and 1.07%, respectively. Free flaps (52.7%) and pedicled flaps (47.3%) demonstrated similar complication profiles. Free fasciocutaneous and free muscle flaps were significantly associated with secondary debulking (P<0.001), whereas pedicled flaps showed increased donor-site necrosis (P=0.049). No significant temporal trends in flap selection were observed from 2000 to 2024.
-
-Conclusions: 
-
-Both free and pedicled flaps remain reliable options for dorsal hand reconstruction, demonstrating high success rates. While there is considerable heterogeneity in flap choices, our results suggest free flaps may necessitate additional contouring procedures, while pedicled flaps may carry slightly higher donor-site morbidity. Flap selection continues to reflect surgeon preference and patient-specific considerations rather than evolving trends.]]></description>
-      <pubDate>Fri, 01 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):30-36, July 2026. doi: 10.1097/SAP.0000000000004765]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00006</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/morphologically_malignant_nodular_fasciitis_with.7.aspx</link>
-      <author><![CDATA[Suchi, Mariko; Yuksel, Selcen S.; Oliveira, André M.; Schloemer, Nathan J.; Bone, Kathleen M.; Lin, Kant YK]]></author>
-      <category><![CDATA[Craniomaxillofacial Surgery]]></category>
-      <title><![CDATA[Morphologically Malignant Nodular Fasciitis With COL3A1::USP6 Fusion and aTP53 Mutation]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 24 Mar 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/morphologically_malignant_nodular_fasciitis_with.7.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-202607000-00007.F1.jpeg" border="0" align ="left" alt="image"/></a>Nodular fasciitis is a rapidly growing soft tissue tumor that typically arises in children and young adults. Histologically, it consists of short, sweeping, and intersecting fascicles of bland-appearing myofibroblasts. The majority of nodular fasciitis lesions harbor rearrangements involving the ubiquitin-specific protease 6 (USP6) gene. Most lesions are benign, with a tendency to regress spontaneously or remain stable following conservative excision. However, rare cases have shown clinically aggressive behavior, including distant metastasis. More recently, morphologic variants with malignant features have also been reported. We present a 20-month-old boy who developed a rapidly enlarging facial mass following blunt trauma. The excised mass revealed a variant of nodular fasciitis displaying marked cellular pleomorphism and frequent atypical mitotic figures. Molecular analysis identified a COL3A1::USP6 fusion and a TP53 Y234C mutation. While the majority of facial lesions referred to plastic surgeons for excision are benign, this case highlights the need for a broad differential diagnosis that includes both benign and potentially malignant entities. It also emphasizes the importance of multidisciplinary evaluation and management in patients with complex and unusual pathologic diagnoses.]]></description>
-      <pubDate>Tue, 24 Mar 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):37-41, July 2026. doi: 10.1097/SAP.0000000000004729]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00007</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/forehead_flap_for_simultaneous_reconstruction.8.aspx</link>
-      <author><![CDATA[Wang, Lu; Xu, Fengzhi; Fan, Guo-Kang; Li, Wenpeng; Shen, Lei]]></author>
-      <category><![CDATA[Craniomaxillofacial Surgery]]></category>
-      <title><![CDATA[Forehead Flap for Simultaneous Reconstruction After Head and Neck Malignant Tumor Resection]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 28 Mar 2014 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/forehead_flap_for_simultaneous_reconstruction.8.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-202607000-00008.F1.jpeg" border="0" align ="left" alt="image"/></a>Introduction: 
-
-Oncologic resection of the head and neck malignant tumor often results in complex reconstructive problems that require a reliable flap to restore both the form and function in single-stage operation. The free flap transfer has revolutionized head and neck reconstruction. However, forehead flap pedicled with superficial temporal artery (STA) or supraorbital artery (SOA)/supratrochlear artery (STrA) is a new option for reconstruction of head and neck with its own specific advantages.
-
-Method: 
-
-The forehead flap was applied to reconstruct the defects of the posterior hypopharyngeal wall, external perioral skin and buccal mucosal, and nose and periorbital tissues after malignant tumor resection. Nine of the pa-tients were reconstructed with forehead flap pedicled with STA, 7 of whom underwent postoperative radiation. Eight of the patients were pedicled with SOA (and/or STrA), 1 of whom underwent postoperative radiation.
-
-Results: 
-
-We applied this method in a total of 17 male patients. The mean age of patients was 61 years (range, 47-69 y) with a follow-up time of 12 to 180 months. The biggest defect covered by forehead flap pedicled with STA was measured 10.0×6.5 cm. The biggest defect covered by forehead flap pedicled with SOA and/or STrA was measured 9.0×7.0 cm. In all 17 patients, no vascular crisis happened and no partial or total flap necrosis was observed. All skin graft area and donor site healed well. No patient experienced flap strictures or fistulas after operation or after radiotherapy. No local recurrence developed during the follow-up time. Functions were assessed by specialist as optimal as no limitation of eyes or mouth opening, and no limitation of food swallowing.
-
-Conclusions: 
-
-The forehead flap provides thin pliable tissue with reliable blood supply and high tolerance to radiotherapy. These advantages make it a valuable option to simultaneously reconstruct the defects after head and neck malignant tumor resection in certain selected patients.]]></description>
-      <pubDate>Fri, 28 Mar 2014 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):42-48, July 2026. doi: 10.1097/SAP.0000000000000023]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00008</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/replantation_of_a_severed_finger_in_a_9_month_old.9.aspx</link>
-      <author><![CDATA[Wei, Shunxue; Liu, Zhaojun; Zhang, Wenfeng]]></author>
-      <category><![CDATA[Microsurgery]]></category>
-      <title><![CDATA[Replantation of a Severed Finger in a 9-Month-Old Infant: A Case Report]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 12 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/replantation_of_a_severed_finger_in_a_9_month_old.9.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-202607000-00009.F1.jpeg" border="0" align ="left" alt="image"/></a>This case reports the successful replantation of the distal phalanx of the right index finger in a 9-month-old male infant. The patient sustained a complete distal interphalangeal (DIP)-level amputation due to accidental injury and underwent immediate microsurgical replantation after emergency assessment. The surgical procedure involved meticulous vascular anastomosis and nerve repair, followed by postoperative management, including infection control, anticoagulation, and circulation promotion. A 6-month follow-up demonstrated satisfactory outcomes, with good blood supply, preserved finger contour, and no gross functional impairment. Given the technical challenges of digital replantation in infants and the limited number of such cases reported, this may be among the youngest cases of successful digital replantation to date. This case provides valuable insight into surgical strategies and postoperative care for replantation in very young children.]]></description>
-      <pubDate>Tue, 12 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):49-52, July 2026. doi: 10.1097/SAP.0000000000004771]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00009</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/upper_limb_peripheral_nerve_injuries_associated.10.aspx</link>
-      <author><![CDATA[O’Connor, Michael; McDonnell, Jake M.; Rahman, Abidur; Clerkin, Margaret Ellen; O’Brien, Aoife; Sankar, Shreya; Skeens-Birrane, Joshua; Aljohmani, Lylas; Levins, Kirk; Cronin, Kevin; Dolan, Roisin T.]]></author>
-      <category><![CDATA[Peripheral Nerve Surgery and Research]]></category>
-      <title><![CDATA[Upper Limb Peripheral Nerve Injuries Associated With Subdermal Contraceptive Implants: A Case Series, Systematic Review, and Proposed Evidence-based Treatment Algorithm]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 11 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/upper_limb_peripheral_nerve_injuries_associated.10.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-202607000-00010.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Subdermal contraceptive implants (SCIs) are a widely used form of long-acting reversible contraception (LARC) with high efficacy (Pearl Index 0.00, 95% CI: 0.00-0.14). However, upper limb neurovascular injuries related to SCI insertion and removal are increasingly reported. The true incidence of these complications cannot be reliably estimated from the current literature, which is largely limited to case reports and small case series, although sporadic cases are being described with increasing frequency. These injuries may result in significant morbidity, including chronic neuropathic pain, sensorimotor deficits, and functional impairment, yet standardized management guidelines remain lacking. This study aims to systematically review the literature on SCI-associated upper limb peripheral nerve injuries and present a case series of affected patients treated by the senior authors. The findings are intended to inform evidence-based recommendations for the prevention and management of these injuries.
-
-Methods: 
-
-Following PRISMA guidelines, a systematic review of the literature was conducted to identify and characterize SCI-associated PNIs. Data extraction included demographics, injury-related factors (incidence, clinical presentation, implant type, timing of injury (insertion/removal), nerve injury classification and functional deficits at presentation, and treatment-related factors (management strategies and patient outcomes at latest follow-up). A prospectively collated bi-institutional case series of patients presenting with PNI’s following SCI procedures is also presented.
-
-Results: 
-
-This systematic review identified 24 patients (mean age 28.5 y, range: 19 to 51) with 26 PNIs linked to subdermal contraceptive implants. Most injuries occurred during removal (67%), with the ulnar nerve most frequently affected (52% n=14), followed by the median (26% n=7) and medial antebrachial cutaneous nerves (22% n=6). Injury severity included neuropraxia (33%, n=9), axonotmesis (26%, n=7), axonotmesis with neuroma-in-continuity (33%, n=9), and partial nerve transection (7%, n=2). Surgical intervention was required in 56% (n=13) of cases. At the latest follow-up, 39% (n=9) achieved full recovery, 43% (n=10) had partial recovery, and 9% (n=2) had no recovery. Our case series of 6 patients mirrored these findings, with injuries ranging from transient neuropraxia to persistent deficits.
-
-Conclusions: 
-
-SCI-associated PNIs can cause significant morbidity. The ulnar nerve is particularly at risk, especially during removal, with implant impalpability contributing to injury severity. This study underscores the need for enhanced practitioner training, improved insertion and removal techniques, and consideration of alternative insertion sites to mitigate nerve injury risks. Image-guided removal should be standard practice for impalpable implants.]]></description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):53-66, July 2026. doi: 10.1097/SAP.0000000000004756]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00010</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/experimental,_clinical,_and_technical_aspects_of.11.aspx</link>
-      <author><![CDATA[Cornely, Ronald M.; Bwuchanan, Morgan NV; Gutama, Barite; Savitz, Benjamin; Torres-Guzman, Ricardo; Kassis, Salam; Lineaweaver, William; Thayer, Wesley P.; Assi, Patrick E.]]></author>
-      <category><![CDATA[Peripheral Nerve Surgery and Research]]></category>
-      <title><![CDATA[Experimental, Clinical, and Technical Aspects of Polyethylene Glycol Application to End-to-End Peripheral Nerve Repair]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 08 Dec 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/experimental,_clinical,_and_technical_aspects_of.11.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-202607000-00011.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Conventional peripheral neurorrhaphy techniques often yield suboptimal functional outcomes. The addition of polyethylene glycol (PEG), a hydrophilic polymer, has emerged as a promising adjunct to enhance axonal regeneration and expedite recovery following nerve transection. This manuscript provides a comprehensive overview of the biochemical properties of PEG with its unique features used in peripheral nerve injuries, and the technical considerations underlying its application in acute peripheral nerve repair.
-
-Methods: 
-
-We review preclinical and clinical literature evaluating PEG-mediated axonal fusion, including meta-analyses of animal studies and recent human trials. Emphasis is placed on PEG's mechanism of action, as well as the role of complementary agents such as methylene blue. Additionally, we describe our institution's standardized surgical protocol for PEG-assisted end-to-end neurorrhaphy, supported by intraoperative technical rationale.
-
-Results: 
-
-Data from rodent models and human patients consistently demonstrate accelerated sensory and motor recovery when PEG is integrated into neurorrhaphy protocols. PEG's nonspecific dehydration of axonal membranes facilitates immediate axonal fusion, restoring neural continuity and reducing the latency of regenerative processes. Clinical outcomes are particularly favorable in clean transections repaired within 72 hours, with no significant PEG-related adverse events reported to date.
-
-Conclusions: 
-
-PEG-mediated fusion represents a potential enhancement to standard microsurgical nerve repair. While further investigation is needed to optimize application parameters, address axonal specificity, and define long-term efficacy, current evidence supports PEG as a safe, effective, and accessible technique to improve outcomes in peripheral nerve repair.]]></description>
-      <pubDate>Mon, 08 Dec 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):67-72, July 2026. doi: 10.1097/SAP.0000000000004452]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00011</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/unusual_vascular_anomalies_in_plastic_surgery__a.12.aspx</link>
-      <author><![CDATA[Sharma, Sanjeev Chaand; Jester, Andrea; Vidyadharan, Ramesh]]></author>
-      <category><![CDATA[Reconstructive Surgery]]></category>
-      <title><![CDATA[Unusual Vascular Anomalies in Plastic Surgery: A Case Series]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 22 Apr 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/unusual_vascular_anomalies_in_plastic_surgery__a.12.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-202607000-00012.F1.jpeg" border="0" align ="left" alt="image"/></a>Introduction: 
-
-Rare pediatric vascular tumors and malformations can be diagnostically and therapeutically challenging. They may present atypically, mimic more common conditions, or be life-threatening. Understanding of the various conditions, early recognition, and multidisciplinary management are essential for successful treatment.
-
-Methods: 
-
-A retrospective review was performed of selected pediatric vascular anomaly cases managed at a tertiary referral center between March 2023 and August 2025. Cases were chosen based on diagnostic complexity, rarity, and the requirement for multidisciplinary and/or targeted systemic therapy.
-
-Case Presentation Summary: 
-
-Five cases are presented: kaposiform hemangioendothelioma with Kasabach-Merritt phenomenon, congenital hemangioma, generalized lymphatic anomaly, and PIK3CA-related overgrowth spectrum disorder presenting with multifocal osteolytic lesions and fractures. Diagnoses were established through radiologic, histopathologic, and targeted genetic and molecular testing. Management combined wound care and reconstruction with systemic therapies. Propranolol was used as first-line therapy in infantile hemangioma, corticosteroids and sirolimus were used in vascular tumors with hematological complications, and alpelisib was utilized in PIK3CA-related disease. Outcomes were variable but demonstrated significant symptomatic and functional improvement with good overall tolerance of systemic therapy.
-
-Conclusion: 
-
-These cases highlight the heterogeneity of pediatric vascular anomalies and their potential to mimic nonvascular pathology. Hand and plastic surgeons play a key role in recognition, biopsy, wound care and reconstruction, and rehabilitation within multidisciplinary teams. Novel targeted systemic therapies, such as sirolimus and alpelisib, alongside more traditional agents, including propranolol and corticosteroids, are central where surgery alone is inadequate. Awareness of these rare vascular anomalies is essential for timely diagnosis and treatment.]]></description>
-      <pubDate>Wed, 22 Apr 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):73-81, July 2026. doi: 10.1097/SAP.0000000000004755]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00012</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/the_distally_based_saphenous_neurocutaneous.13.aspx</link>
-      <author><![CDATA[Shengdi, Lu; Wang, Chunyang; Wen, Gen; Han, Pei; Chai, Yimin]]></author>
-      <category><![CDATA[Reconstructive Surgery]]></category>
+      <link>https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000000144~the-distally-based-saphenous-neurocutaneous-perforator-flap</link>
       <title><![CDATA[The Distally Based Saphenous Neurocutaneous Perforator Flap: A Versatile Donor Site for Reconstruction of Complex Soft Tissue Defects of the Lower Leg]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 12 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/the_distally_based_saphenous_neurocutaneous.13.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-202607000-00013.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Repair of both simple and complex defects in the distal lower leg continues to be a challenging task for reconstructive surgeons because of the local paucity of soft tissue available for transfer. The popular neurocutaneous flap, introduced by Masquelet et al in 1992, has provided a reliable and less technically demanding method for resurfacing defects of the lower leg. We herein present our experience with the versatile design of the distally based saphenous neurocutaneous perforator f lap to provide coverage of complex posttraumatic lower leg defects by harvesting multiple tissue compo-nents in various combinations.
-
-Patients and Methods: 
-
-Our series comprised 14 patients (11 men, 3 women; average age, 40.4 years; range, 22–58 years) who underwent an average follow-up period of 19.2 months (range, 9–25 months) (Table 1). The distal pivot point was kept at 5 to 7 cm above the tip of the medial malleolus, pre-serving the distal-most perforator, and 4 flaps were taken with massive sub-cutaneous tissue to obliterate the dead space.
-
-Results: 
-
-The procedure was uneventful in 13 patients. Slight venous con-gestion was noted in 1 patient, and secondary healing was achieved by con-servative treatment.
-
-Conclusions: 
-
-The distally based saphenous neurocutaneous perforator flap is an excellent alternative for skin resurfacing of the distal lower leg, with sat-isfactory functional and aesthetic outcomes.]]></description>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):82-87, July 2026. doi: 10.1097/SAP.0000000000000144]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00013</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:33 GMT<br><br><a href="https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000000144~the-distally-based-saphenous-neurocutaneous-perforator-flap"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:33 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/submitted_works_in_plastic_surgery_residency.14.aspx</link>
-      <author><![CDATA[Quach, Myiah P.; Craig, Jasmine N.; George, Robert E.; Chu, Daniel Y.; Schappe, Alyssa; Larson, Jeffrey D.; Poore, Samuel O.]]></author>
-      <category><![CDATA[Research]]></category>
-      <title><![CDATA[Submitted Works in Plastic Surgery Residency Applications: Longitudinal Trends and Publication Outcomes]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 08 May 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/submitted_works_in_plastic_surgery_residency.14.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-202607000-00014.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Applicants to increasingly competitive Integrated Plastic and Reconstructive Surgery (PRS) lists scholarly works at multiple stages, including “submitted.” The eventual outcomes of these submitted works remain poorly characterized. This study evaluated longitudinal trends in submitted research among PRS applicants and assessed whether submitted works reflect genuine scholarly engagement or inflated reporting.
-
-Methods: 
-
-A retrospective review was conducted of all applicants to a single PRS residency program from 2015 to 2023. Demographic, academic, and research productivity data were collected. Submitted journal articles/abstracts were verified for eventual publication using PubMed, Google Scholar, and Embase. Primary outcomes were the mean number of submitted works per applicant per year and the proportion ultimately published.
-
-Results: 
-
-Among 2098 applicants, the mean numbers of total publications, first-author publications, conference presentations, and submitted manuscripts increased significantly over time (all P<0.001). Both the number of submitted works (P<0.001) and the proportion published (P=0.006) increased over the study period. In 2015, only International Medical Graduate (IMG) status was found to correlate with an increased number of submitted works (P<0.001); this association was no longer present in 2023. In 2023, higher USMLE Step 1 scores, Alpha Omega Alpha (AOA) membership, greater total publications, and more conference presentations were associated with increased submitted works. In both 2015 and 2023, these applicant characteristics were not significantly associated with publication success.
-
-Conclusions: 
-
-Growth in submitted manuscripts among PRS applicants reflects genuine and increasingly successful scholarly engagement rather than systematic misrepresentation. Consideration of submitted works remains appropriate in evaluating the applicant's research productivity.]]></description>
-      <pubDate>Fri, 08 May 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):88-93, July 2026. doi: 10.1097/SAP.0000000000004759]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00014</guid>
+      <link>https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004755~unusual-vascular-anomalies-in-plastic-surgery-a-case-series</link>
+      <title><![CDATA[Unusual Vascular Anomalies in Plastic Surgery]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:33 GMT<br><br><a href="https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004755~unusual-vascular-anomalies-in-plastic-surgery-a-case-series"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:33 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/allogeneic_stromal_vascular_fraction_accelerates.15.aspx</link>
-      <author><![CDATA[Demir, Huseyin; Ozyazgan, Irfan; Gonen, Zeynep Burcin; Yay, Arzu Hanim; Mat, Ozge Cengiz; Gokdemir, Nur Seda]]></author>
-      <category><![CDATA[Transplantation Surgery and Research]]></category>
-      <title><![CDATA[Allogeneic Stromal Vascular Fraction Accelerates Diabetic Wound Healing: A Cost-Effective Alternative to Adipose-Derived Stem Cells]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 18 Mar 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/allogeneic_stromal_vascular_fraction_accelerates.15.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-202607000-00015.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Impaired wound healing in patients with diabetes mellitus is a major clinical problem resulting from chronic hyperglycemia, which disrupts immune function and prolongs inflammation. Cell-based therapies such as mesenchymal stem cells (MSCs) and stromal vascular fraction (SVF) have shown promise in promoting tissue repair, yet comparative data between SVF and adipose-derived stem cells (ADSCs) remain limited.
-
-Methods: 
-
-In this experimental study, a diabetic rat model was used to compare the effects of allogeneic SVF and allogeneic ADSCs on wound healing. Wound areas were measured on days 5, 10, and 14. Histological analyses, including assessments of reepithelialization, fibrosis, and epithelial tongue length, as well as cytokine level measurements, were performed to evaluate tissue regeneration and inflammation.
-
-Results: 
-
-Both SVF and ADSC groups demonstrated significantly smaller wound areas compared with controls at all time points (P<0.05). On days 5, 10, and 14, the wound areas were 3.127±0.382, 0.833±0.360, and 0.552±0.185 cm2 in the control group; 1.968±0.533, 0.543±0.165, and 0.347±0.144 cm2 in the SVF group; and 2.242±0.565, 0.432±0.137, and 0.276±0.131 cm2 in the ADSC group, respectively. Histological evaluation revealed enhanced reepithelialization and greater epithelial tongue length in both treatment groups. No significant differences were observed between SVF and ADSC groups. IL-12 levels on day 5 decreased in the SVF group (76.01±13.65 ng/L) and increased in the ADSC group (96.50±19.66 ng/L) compared with the control group (84.81±15.03 ng/L) (P=0.047).
-
-Conclusions: 
-
-Both allogeneic SVF and ADSC therapies significantly accelerated wound healing in diabetic rats. Given its simpler and faster isolation process, lower cost, and comparable efficacy to ADSCs, SVF may represent a practical and effective alternative for enhancing diabetic wound repair.]]></description>
-      <pubDate>Wed, 18 Mar 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):94-100, July 2026. doi: 10.1097/SAP.0000000000004727]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00015</guid>
+      <link>https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004815~the-rise-of-nerve-transfers-tracing-a-national-evolution</link>
+      <title><![CDATA[The Rise of Nerve Transfers]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:33 GMT<br><br><a href="https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004815~the-rise-of-nerve-transfers-tracing-a-national-evolution"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:33 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/methods_of_secondary_smile_salvation_after_a.16.aspx</link>
-      <author><![CDATA[Thomson, Hamish; Fazliani, Roya; Adala, Embiye; Jones, Christopher]]></author>
-      <category><![CDATA[Review Paper]]></category>
-      <title><![CDATA[Methods of Secondary Smile Salvation After a Failed Primary Salvation Procedure for Facial Nerve Palsy: A Systematic Review]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 04 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/methods_of_secondary_smile_salvation_after_a.16.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-202607000-00016.F1.jpeg" border="0" align ="left" alt="image"/></a>The smile is a fundamental facial expression that is important for emotional wellbeing. Long-term facial nerve palsy leads to an inability to smile, which can have profound effects on mental health. Although numerous techniques exist for facial reanimation, evidence on secondary interventions following a failed primary procedure remains scarce. This systematic review, conducted in accordance with PRISMA guidelines, aimed to identify techniques for secondary smile restoration. A systematic search of PubMed, Scopus, and MEDLINE identified 41 studies; after independent screening using PICOT-based inclusion and exclusion criteria, and a subsequent quality assessment, 4 studies (12 patients) were included. Eight distinct secondary techniques were reported, all of which were associated with improvement in smile-related outcomes and/or facial symmetry, alongside reduced House-Brackmann scores. However, these findings are limited by the small sample size, methodological shortcomings, and incomplete reporting, precluding an indication of the optimal technique. Future high-quality studies, particularly long-term randomised controlled trials with larger cohorts, and comprehensive reporting of patient characteristics and clinical outcomes, are required to establish the most effective method of secondary smile restoration.]]></description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):101-108, July 2026. doi: 10.1097/SAP.0000000000004776]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00016</guid>
+      <link>https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004810~experimental-rat-peripheral-nerve-models-surgical-exposures</link>
+      <title><![CDATA[Experimental Rat Peripheral Nerve Models]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:33 GMT<br><br><a href="https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004810~experimental-rat-peripheral-nerve-models-surgical-exposures"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:33 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/_the_unforgiving_wire___an_uncommon_nerve.17.aspx</link>
-      <author><![CDATA[Forcato, Beatrice; Fornasiero, Maddalena; Ronconi, Gianpaolo; Masiero, Stefano; Coraci, Daniele]]></author>
-      <category><![CDATA[Letters and Commentary]]></category>
-      <title><![CDATA[“The Unforgiving Wire”: An Uncommon Nerve Compression After Surgery Discovered and Solved by Ultrasound]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 05 Jan 2026 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/_the_unforgiving_wire___an_uncommon_nerve.17.aspx"><img src="https://images.journals.lww.com/annalsplasticsurgery/SmallThumb.00000637-202607000-00017.F1.jpeg" border="0" align ="left" alt="image"/></a>No abstract available]]></description>
-      <pubDate>Mon, 05 Jan 2026 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):109-110, July 2026. doi: 10.1097/SAP.0000000000004561]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00017</guid>
+      <link>https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004820~gram-negative-bacteria-and-salvage-rate-in-infected-breast</link>
+      <title><![CDATA[Gram-Negative Bacteria and Salvage Rate in Infected Breast Implants]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:33 GMT<br><br><a href="https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004820~gram-negative-bacteria-and-salvage-rate-in-infected-breast"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:33 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/commentary_on__the_unforgiving_wire___an_uncommon.18.aspx</link>
-      <author><![CDATA[Paulin, Ethan]]></author>
-      <category><![CDATA[Letters and Commentary]]></category>
-      <title><![CDATA[Commentary on “The Unforgiving Wire”: An Uncommon Nerve Compression After Surgery Discovered and Solved by Ultrasound]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 08 Dec 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/annalsplasticsurgery/fulltext/2026/07000/commentary_on__the_unforgiving_wire___an_uncommon.18.aspx"></a>No abstract available]]></description>
-      <pubDate>Mon, 08 Dec 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Annals of Plastic Surgery. 97(1):110, July 2026. doi: 10.1097/SAP.0000000000004562]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00000637-202607000-00018</guid>
+      <link>https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004699~comparative-analysis-of-breast-implant-illness-symptoms-in</link>
+      <title><![CDATA[Comparative Analysis of Breast Implant Illness Symptoms in Implant-Based, Autologous, and No-Reconstruction Mastectomy Patients]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:33 GMT<br><br><a href="https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004699~comparative-analysis-of-breast-implant-illness-symptoms-in"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:33 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004327~serious-complications-of-hyaluronic-acid-fillersa</link>
+      <title><![CDATA[Serious Complications of Hyaluronic Acid Fillers—A Retrospective Study of 290,307 Cases]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:33 GMT<br><br><a href="https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/10.1097/sap.0000000000004327~serious-complications-of-hyaluronic-acid-fillersa"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:33 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/00000637-199810000-00027~guidelines-for-authors</link>
+      <title><![CDATA[Guidelines for Authors]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:33 GMT<br><br><a href="https://www.ovid.com/jnls/annalsplasticsurgery/fulltext/00000637-199810000-00027~guidelines-for-authors"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:33 GMT</pubDate>
     </item>
   </channel>
 </rss>

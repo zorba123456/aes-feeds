@@ -1,303 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns="" version="2.0">
+<rss xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" version="2.0">
   <channel>
-    <title><![CDATA[Dermatologic Surgery - Latest Articles]]></title>
-    <link>https://journals.lww.com/dermatologicsurgery/pages/latestarticles.aspx</link>
-    <description><![CDATA[Overview
-Exclusively devoted to dermatologic surgery, the Dermatologic Surgery journal publishes the most clinically comprehensive and up-to-date information in its field. This unique monthly journal provides today’s most expansive and in-depth coverage of cosmetic and reconstructive skin surgery and skin cancer through peer-reviewed original articles, extensive illustrations, case reports, ongoing features, literature reviews and correspondence. The journal provides information on the latest scientific information for all types of dermatologic surgery including:
+    <title><![CDATA[derm_surgery_latest]]></title>
+    <link>https://www.ovid.com/jnls/dermatologicsurgery</link>
+    <description><![CDATA[Auto-generated from Web Scrape]]></description>
+    <lastBuildDate>Wed, 08 Jul 2026 07:48:54 GMT</lastBuildDate>
 
-Ambulatory phlebectomy
-Blepharoplasty
-Body contouring
-Chemical peels
-Cryosurgery
-Curettage and desiccation
-Dermabrasion
-Excision and closure
-Flap Surgery
-Grafting
-Hair restoration surgery
-Injectable neuromodulators
-Laser surgery
-Liposuction
-Microdermabrasion
-Microlipoinjection
-Micropigmentation
-Mohs micrographic surgery
-Nail surgery
-Phlebology
-Sclerotherapy
-Skin cancer surgery
-Skin resurfacing
-Soft-tissue fillers
-Dermatologists, dermatologic surgeons, plastic surgeons, oculoplastic surgeons and facial plastic surgeons consider this a must-read publication for anyone in the field.
-
-This is the official publication of the American Society for Dermatologic Surgery.]]></description>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 30 Jun 2026 23:10:25 -0500</lastBuildDate>
-    <generator>Wolters Kluwer Health RSS Generator</generator>
-    <image>
-      <url>https://images.journals.lww.com/dermatologicsurgery/XLargeThumb.00042728-202607000-00000.CV.jpeg</url>
-      <title><![CDATA[Dermatologic Surgery - Latest Articles]]></title>
-      <link>https://journals.lww.com/dermatologicsurgery/pages/latestarticles.aspx</link>
-    </image>
     <item>
-      <link>https://journals.lww.com/dermatologicsurgery/fulltext/2026/07000/shoulder_defect_involving_the_deltopectoral_groove.20.aspx</link>
-      <author><![CDATA[Russell, Emma; Knackstedt, Thomas]]></author>
-      <category><![CDATA[RECONSTRUCTIVE CONUNDRUMS]]></category>
-      <title><![CDATA[Shoulder Defect Involving the Deltopectoral Groove]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 01 Jul 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/dermatologicsurgery/fulltext/2026/07000/shoulder_defect_involving_the_deltopectoral_groove.20.aspx"><img src="https://images.journals.lww.com/dermatologicsurgery/SmallThumb.00042728-202607000-00020.F1.jpeg" border="0" align ="left" alt="image"/></a>No abstract available]]></description>
-      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Dermatologic Surgery. 52(7):e25-e27, July 2026. doi: 10.1097/DSS.0000000000005209]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00042728-202607000-00020</guid>
+      <link>https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005061~comparing-a-red-and-blue-light-emitting-diode-light-device</link>
+      <title><![CDATA[Comparing a Red and Blue Light-Emitting Diode Light Device With an Existing Blue Light Device for At-Home Treatment of Inflammatory Acne: An Open-Label Randomized-Controlled Trial]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:54 GMT<br><br><a href="https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005061~comparing-a-red-and-blue-light-emitting-diode-light-device"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:54 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/dermatologicsurgery/fulltext/2026/07000/reconstruction_of_a_large_defect_of_the_nasal.22.aspx</link>
-      <author><![CDATA[McGeough, Olivia; Elder, Alexandra; Lewin, Jesse M.]]></author>
-      <category><![CDATA[RECONSTRUCTIVE CONUNDRUMS]]></category>
-      <title><![CDATA[Reconstruction of a Large Defect of the Nasal Sidewall, Medial, and Infraorbital Cheek]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 01 Jul 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/dermatologicsurgery/fulltext/2026/07000/reconstruction_of_a_large_defect_of_the_nasal.22.aspx"><img src="https://images.journals.lww.com/dermatologicsurgery/SmallThumb.00042728-202607000-00022.F1.jpeg" border="0" align ="left" alt="image"/></a>No abstract available]]></description>
-      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Dermatologic Surgery. 52(7):e31-e33, July 2026. doi: 10.1097/DSS.0000000000005217]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00042728-202607000-00022</guid>
+      <link>https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005063~establishing-a-vocabulary-for-skin-quality-working-toward</link>
+      <title><![CDATA[Establishing a Vocabulary for Skin Quality: Working Toward Consensus Skin Attribute Definitions From the Patient and Physician Perspective]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:54 GMT<br><br><a href="https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005063~establishing-a-vocabulary-for-skin-quality-working-toward"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:54 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/dermatologicsurgery/fulltext/2026/07000/reconstruction_of_a_helical_rim_defect.21.aspx</link>
-      <author><![CDATA[Rajkumar, Jeffrey R.; Kim, Keemberly; Eisen, Daniel B.]]></author>
-      <category><![CDATA[RECONSTRUCTIVE CONUNDRUMS]]></category>
-      <title><![CDATA[Reconstruction of a Helical Rim Defect]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 04 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/dermatologicsurgery/fulltext/2026/07000/reconstruction_of_a_helical_rim_defect.21.aspx"><img src="https://images.journals.lww.com/dermatologicsurgery/SmallThumb.00042728-202607000-00021.F1.jpeg" border="0" align ="left" alt="image"/></a>No abstract available]]></description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Dermatologic Surgery. 52(7):e28-e30, July 2026. doi: 10.1097/DSS.0000000000005205]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00042728-202607000-00021</guid>
+      <link>https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005012~temporal-artery-mapping-with-microvascular-imaging</link>
+      <title><![CDATA[Temporal Artery Mapping With Microvascular Imaging: Anatomical Considerations for Filler Injections]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:54 GMT<br><br><a href="https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005012~temporal-artery-mapping-with-microvascular-imaging"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:54 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/dermatologicsurgery/fulltext/2026/07000/current_attitudes_toward_indoor_tanning__a.35.aspx</link>
-      <author><![CDATA[Gorena, Camille; Holcomb, Katherine]]></author>
-      <category><![CDATA[WEB-COMMUNICATIONS]]></category>
-      <title><![CDATA[Current Attitudes Toward Indoor Tanning: A Cross-Sectional Study of TikTok Content]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 02 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/dermatologicsurgery/fulltext/2026/07000/current_attitudes_toward_indoor_tanning__a.35.aspx"></a>No abstract available]]></description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Dermatologic Surgery. 52(7):e43-e44, July 2026. doi: 10.1097/DSS.0000000000005206]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00042728-202607000-00035</guid>
+      <link>https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005029~platelet-rich-plasma-accelerates-donor-area-healing-after</link>
+      <title><![CDATA[Platelet-Rich Plasma Accelerates Donor Area Healing After Follicular Unit Excision: A Prospective Study]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:54 GMT<br><br><a href="https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005029~platelet-rich-plasma-accelerates-donor-area-healing-after"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:54 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/dermatologicsurgery/fulltext/2026/06000/regenerative_aesthetics__present_advances_and.7.aspx</link>
-      <author><![CDATA[Cattelan, Leila; Dayan, Steven; Cohen, Steven; Muniz, Mariana; Fabi, Sabrina G.]]></author>
-      <category><![CDATA[ARTICLES]]></category>
-      <title><![CDATA[Regenerative Aesthetics: Present Advances and Emerging Strategies for Optimized Tissue Health]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 01 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/dermatologicsurgery/fulltext/2026/06000/regenerative_aesthetics__present_advances_and.7.aspx"><img src="https://images.journals.lww.com/dermatologicsurgery/SmallThumb.00042728-202606000-00007.F1.jpeg" border="0" align ="left" alt="image"/></a>BACKGROUND 
-
-The field of regenerative aesthetics is advancing rapidly, shifting from traditional cosmetic techniques to therapies targeting the biological mechanisms behind tissue degeneration.
-
-OBJECTIVE 
-
-The authors aimed to explore emerging therapies within the 3 pillars of regenerative aesthetics, cellular treatments, biochemical cues, and scaffolds highlighting recent advancements, regulatory challenges, and opportunities for further research.
-
-METHODS 
-
-A literature review was performed to identify clinical evidence for regenerative modalities in aesthetic practice, with 74 articles included for evaluation.
-
-RESULTS 
-
-The review covers adipocyte- and umbilical cord-derived stem cells and stromal vascular fraction (SVF) in aesthetic treatments. Nanofat, created through mechanical emulsification, shows promise by providing higher SVF yields while circumventing stricter regulations on enzymatic methods. Exosomes demonstrate therapeutic potential in wound healing, pigmentation disorders, and skin rejuvenation. Polydeoxyribonucleotides and polynucleotides exhibit significant tissue repair and anti-inflammatory effects; polynucleotides also serve as scaffolds for tissue volumization. In addition, new data suggest that poly-l-lactic acid promotes volumizing effects by increasing adipose-derived stem cells and remodeling the extracellular matrix.
-
-CONCLUSION 
-
-Further research and regulatory standardization are needed. Future directions may involve integrating regenerative aesthetics with longevity medicine to enhance both rejuvenation and sustained tissue function over time.]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Dermatologic Surgery. 52(6):548-560, June 2026. doi: 10.1097/DSS.0000000000004985]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00042728-202606000-00007</guid>
+      <link>https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000004999~injectable-therapy-for-androgenetic-alopecia-a-systematic</link>
+      <title><![CDATA[Injectable Therapy for Androgenetic Alopecia: A Systematic Review]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:54 GMT<br><br><a href="https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000004999~injectable-therapy-for-androgenetic-alopecia-a-systematic"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:54 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/dermatologicsurgery/fulltext/2026/06001/beyond_weight_loss__glp_1_and_the_future_of.1.aspx</link>
-      <author><![CDATA[Mariwalla, Kavita; Minokadeh, Ardalan; Nikolis, Andreas]]></author>
-      <category><![CDATA[INTRODUCTION]]></category>
-      <title><![CDATA[Beyond Weight Loss: GLP-1 and the future of Aesthetic Outcomes]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 01 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/dermatologicsurgery/fulltext/2026/06001/beyond_weight_loss__glp_1_and_the_future_of.1.aspx"></a>No abstract available]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Dermatologic Surgery. 52(6S):S1, June 2026. doi: 10.1097/DSS.0000000000005189]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00042728-202606001-00001</guid>
+      <link>https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005261~punch-debridement-as-an-alternative-minimally-invasive</link>
+      <title><![CDATA[Punch Debridement as an Alternative Minimally Invasive Technique in the Management of Hidradenitis Suppurativa: A Single-center Study]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:54 GMT<br><br><a href="https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005261~punch-debridement-as-an-alternative-minimally-invasive"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:54 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/dermatologicsurgery/fulltext/2026/06001/the_potential_role_of_topical_skincare_approaches.3.aspx</link>
-      <author><![CDATA[Shridharani, Sachin M.; Kourosh, Arianne S.; Saltzman, Erin; Carver, Lucy; Makino, Elizabeth T.; Cheng, Tsing; Maitra, Prithwiraj]]></author>
-      <category><![CDATA[ARTICLES]]></category>
-      <title><![CDATA[The Potential Role of Topical Skincare Approaches After Glucagon-like Peptide-1 Receptor Agonist Use and Rapid Weight Loss]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 01 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/dermatologicsurgery/fulltext/2026/06001/the_potential_role_of_topical_skincare_approaches.3.aspx"></a>BACKGROUND 
-
-Diminished facial and body skin qualities have emerged as unintended consequences of rapid weight loss associated with glucagon-like peptide-1 receptor agonists (GLP-1RAs). Patients experiencing facial and body skin sagging (laxity) are increasingly seeking corrective treatments to address aesthetic concerns.
-
-OBJECTIVE 
-
-To present available information on the effectiveness of topical skincare in addressing post–weight loss concerns such as skin quality and sagging/laxity.
-
-MATERIALS AND METHODS 
-
-A literature review was conducted to assess mechanisms underlying skin effects of GLP-1RA and rapid weight loss, and the role of topical skincare in addressing skin quality and sagging/laxity.
-
-RESULTS 
-
-GLP-1RA effects on subcutaneous adipose tissues and the dermal extracellular matrix include dehydration and nutrient deficiencies, and may lead to reduced skin quality and fibroblast function, decreased production of collagen, and increased degradation of collagen, elastic fibers, and glycosaminoglycans, causing loss of elasticity and skin sagging/laxity. Recent advances in skincare research have identified growth factors, peptides, and botanical extracts with potential rejuvenating effects on skin. Clinical studies have validated the effectiveness of topical formulations in improving facial and body skin sagging/laxity.
-
-CONCLUSION 
-
-Topical skincare formulations with demonstrated effectiveness in improving skin quality and sagging/laxity may be important adjuncts to post–weight loss multimodal aesthetic treatments.]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Dermatologic Surgery. 52(6S):S4-S9, June 2026. doi: 10.1097/DSS.0000000000005151]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00042728-202606001-00003</guid>
+      <link>https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005259~evaluation-of-lentigo-maligna-with-additional</link>
+      <title><![CDATA[Evaluation of Lentigo Maligna With Additional Immunohistochemical Staining on Frozen Sections With PRAME, Melan-A, and SOX10]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:54 GMT<br><br><a href="https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005259~evaluation-of-lentigo-maligna-with-additional"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:54 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/dermatologicsurgery/fulltext/2026/06001/a_novel_cosmetic_anti_inflammatory_peptide_with.5.aspx</link>
-      <author><![CDATA[Lisante, Toni A.; Green, Barbara; Hubert, Kassidy; Parsa, Ramine; Patel Shah, Asha; Shuja, Zunaira; Sylianteg, Guia]]></author>
-      <category><![CDATA[ARTICLES]]></category>
-      <title><![CDATA[A Novel Cosmetic Anti-inflammatory Peptide With Firming and Lifting Benefits: The Potential for Adjunctive Care for Skin Laxity Associated With Weight Loss]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 01 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/dermatologicsurgery/fulltext/2026/06001/a_novel_cosmetic_anti_inflammatory_peptide_with.5.aspx"><img src="https://images.journals.lww.com/dermatologicsurgery/SmallThumb.00042728-202606001-00005.F1.jpeg" border="0" align ="left" alt="image"/></a>BACKGROUND 
-
-Glucagon-like peptide 1 receptor agonists (GLP-1 RAs) have demonstrated substantial therapeutic benefits for patients with Type 2 diabetes mellitus and/or obesity. Their use has recently expanded rapidly across diverse patient populations. However, GLP-1 RA–associated changes in body composition and skin quality, including premature skin aging and alterations in body contour, may create functional and aesthetic concerns for patients. Effective strategies to address these visible and unwanted effects are needed.
-
-OBJECTIVE 
-
-To summarize preclinical and clinical evidence supporting the potential role of AP31, a novel multifunctional micropeptide, in mitigating skin-laxity effects relevant to patients treated with GLP-1 RAs.
-
-MATERIALS AND METHODS 
-
-Preclinical studies have evaluated the biological activity of AP31 across multiple aging-related end points, including inflammatory pathways, extracellular matrix integrity, and age-associated gene expression. In addition, clinical studies have assessed AP31-containing regimens in middle-aged women, with outcomes focused on visible markers of skin aging such as firmness, elasticity, fine lines, wrinkles, facial contour, and structural support.
-
-RESULTS 
-
-Preclinical investigations demonstrated that AP31 reduced proinflammatory markers, increased key extracellular matrix components, and favorably modulated genes associated with intrinsic skin aging. In clinical studies, AP31-containing regimens produced rapid and visible improvements in multiple parameters of skin aging, including enhanced firmness and elasticity, reduction in fine lines and wrinkles, improvement in jawline definition, global facial lift, and reduced prominence of nasolabial folds.
-
-CONCLUSION 
-
-AP31 shows promising biological and clinical activity in improving visible signs of skin aging. While current findings are encouraging in the context of normal aging, randomized controlled trials are warranted to further establish the efficacy of AP31 for patients experiencing skin-related changes associated with GLP-1 RA use.]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Dermatologic Surgery. 52(6S):S16-S22, June 2026. doi: 10.1097/DSS.0000000000005181]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00042728-202606001-00005</guid>
+      <link>https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005232~a-comprehensive-review-of-dermal-fillers-and-biostimulators</link>
+      <title><![CDATA[A Comprehensive Review of Dermal Fillers and Biostimulators for Neck Rejuvenation]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:54 GMT<br><br><a href="https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005232~a-comprehensive-review-of-dermal-fillers-and-biostimulators"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:54 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/dermatologicsurgery/fulltext/2026/06001/aesthetic_concerns_and_nonsurgical_treatment.6.aspx</link>
-      <author><![CDATA[Fabi, Sabrina; Yoo, Jane; Kaufman-Janette, Joely; Dayan, Steve; Boyd, Charles; Sangha, Sara; Ashourian, Nazanin]]></author>
-      <category><![CDATA[ARTICLES]]></category>
-      <title><![CDATA[Aesthetic Concerns and Nonsurgical Treatment Trends in Patients With GLP-1 Agonist–Associated Weight Loss]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 01 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/dermatologicsurgery/fulltext/2026/06001/aesthetic_concerns_and_nonsurgical_treatment.6.aspx"><img src="https://images.journals.lww.com/dermatologicsurgery/SmallThumb.00042728-202606001-00006.F1.jpeg" border="0" align ="left" alt="image"/></a>BACKGROUND 
-
-Weight loss associated with glucagon-like peptide-1 (GLP-1) agonists is frequently accompanied by reduced facial fat, sagging skin, and stubborn pockets of body fat.
-
-OBJECTIVE 
-
-To identify aesthetic concerns related to GLP-1 agonist–associated weight loss and current nonsurgical treatment trends.
-
-MATERIALS AND METHODS 
-
-An electronic survey was sent to health care professionals (HCPs) who were part of 3 large, opt-in databases. HCPs must have had experience treating patients with aesthetic concerns after GLP-1 agonists.
-
-RESULTS 
-
-The 406 HCPs who completed the survey (n = 100 dermatologists, n = 100 plastic surgeons, n = 105 physicians in other specialties, n = 101 nurses/physician assistants) reported treating a mean of 1,249 cosmetic patients per year. HCPs reported a mean increase of 137% in the number of patients receiving GLP-1 agonists from 2023 to 2024. HCPs perceive midface volume loss, face/neck skin laxity, and loose or sagging body skin to be the aesthetic changes most impacted by GLP-1 agonists, with patients also reportedly concerned about stubborn pockets of fat. Hyaluronic acid was considered the best treatment for facial concerns for an average of 47% of patients.
-
-CONCLUSION 
-
-This large survey of HCPs representing various specialties provides insights into patient face- and body-related aesthetic concerns associated with GLP-1–mediated weight loss.]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Dermatologic Surgery. 52(6S):S23-S28, June 2026. doi: 10.1097/DSS.0000000000005166]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00042728-202606001-00006</guid>
+      <link>https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000001248~microneedling-a-review-and-practical-guide</link>
+      <title><![CDATA[Microneedling: A Review and Practical Guide]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:54 GMT<br><br><a href="https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000001248~microneedling-a-review-and-practical-guide"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:54 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/dermatologicsurgery/fulltext/2026/06001/reduced_epidermal_p21_expression_is_identified_in.7.aspx</link>
-      <author><![CDATA[Wyles, Saranya; Gopinath, Shilpa; Lynn, Brock; Pfizenmaier, Zachary; Ozarslan, Bengisu; Purushothaman, K-Raman]]></author>
-      <category><![CDATA[ARTICLES]]></category>
-      <title><![CDATA[Reduced Epidermal p21 Expression Is Identified in Some Subjects on Systemic GLP-1 Receptor Agonists: A Hypothesis-Generating Pilot Study of Metabolic Modulation in Human Skin Senescence]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 01 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/dermatologicsurgery/fulltext/2026/06001/reduced_epidermal_p21_expression_is_identified_in.7.aspx"><img src="https://images.journals.lww.com/dermatologicsurgery/SmallThumb.00042728-202606001-00007.F1.jpeg" border="0" align ="left" alt="image"/></a>BACKGROUND 
-
-Glucagon-like peptide-1 receptor agonists (GLP-1RAs) exert systemic metabolic and anti-inflammatory effects that may be relevant to cellular senescence, a key driver of skin aging. However, human cutaneous data are lacking.
-
-OBJECTIVE 
-
-To explore whether systemic GLP-1RA therapy translates to a detectable reduction in cutaneous senescence, quantified by epidermal p21 expression and supported by AI-driven facial imaging.
-
-MATERIALS AND METHODS 
-
-In this controlled observational pilot study, 3 male adults (GLP-1RA n = 2; GLP-1RA–naïve control n = 1) underwent 3-mm punch biopsies from a standardized, sun-protected gluteal site to isolate intrinsic aging. Senescence was quantified through blinded whole-epidermis digital annotation of p21-positive nuclei. Clinical phenotypes were assessed using noninvasive cheek measurements and AI-based facial age estimation. 
-
-RESULTS 
-
-The cohort demonstrated divergence in senescence-associated biomarkers correlating with GLP-1RA exposure. The GLP-1RA–naïve control exhibited 8.0% (n = 2,062 nuclei) epidermal senescence. By contrast, participants with 163 and 62 days of GLP-1RA exposure showed reduced senescence burdens of 2.4% (n = 2,045) and 0.6% (n = 1,636), respectively. Automated facial age estimation remained concordant with chronological age across subjects.
-
-CONCLUSION 
-
-Systemic GLP-1RA exposure is associated with a substantial reduction in epidermal p21 expression in some subjects, suggesting a senomorphic effect and supporting further mechanistic studies at the interface of metabolic regulation and skin aging.]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Dermatologic Surgery. 52(6S):S29-S34, June 2026. doi: 10.1097/DSS.0000000000005186]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00042728-202606001-00007</guid>
+      <link>https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005088~analysis-of-filler-spread-facial-retinacula-play-a-prominent</link>
+      <title><![CDATA[Analysis of Filler Spread: Facial Retinacula Play a Prominent Role]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:54 GMT<br><br><a href="https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005088~analysis-of-filler-spread-facial-retinacula-play-a-prominent"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:54 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/dermatologicsurgery/fulltext/2026/06001/cutaneous_variations_in_stem_cell_population_in.9.aspx</link>
-      <author><![CDATA[Firsowicz, Maya; Kamrani, Payvand; Zubair, Raheel; Boen, Monica; Dayan, Steven H.; Fabi, Sabrina G.]]></author>
-      <category><![CDATA[ARTICLES]]></category>
+      <link>https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005175~cutaneous-variations-in-stem-cell-population-in-those-on</link>
       <title><![CDATA[Cutaneous Variations in Stem-Cell Population in Those on GLP1-Receptor Agonists: A Comparative Controlled Study]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 01 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/dermatologicsurgery/fulltext/2026/06001/cutaneous_variations_in_stem_cell_population_in.9.aspx"><img src="https://images.journals.lww.com/dermatologicsurgery/SmallThumb.00042728-202606001-00009.F1.jpeg" border="0" align ="left" alt="image"/></a>BACKGROUND 
-
-Glucagon-like peptide-1 (GLP-1) receptor agonists have been associated with cutaneous changes including accelerated skin aging and volume loss. The biological mechanisms underlying these effects remain poorly understood, with limited in vivo human data.
-
-OBJECTIVE 
-
-The aim of this study was to evaluate adipogenesis-associated cellular markers in subcutaneous adipose tissue of patients receiving GLP-1 receptor agonist therapy.
-
-METHODS 
-
-Abdominal adipose tissue biopsies from patients receiving GLP-1 receptor agonists and untreated controls were analyzed using multiplex immunofluorescence to quantify FSP1, CD90, CD105, CD73, and ERG and to characterize adipose-derived stem cells (ADSCs) and fibroblast populations.
-
-RESULTS 
-
-Baseline analysis of 10 adipose tissue samples demonstrated a statistically significant reduction in adipose-derived stem-cell counts in the GLP-1 group compared with controls (11.0 vs 44.8 cells/mm2, p = .039), representing an approximately four-fold decrease. CD90+ cell counts were also significantly lower in the GLP-1 group (p = .047). Fibroblast populations were not significantly different between groups, suggesting selective depletion of the stem-cell compartment.
-
-CONCLUSION 
-
-This is the first in vivo human study demonstrating a significant reduction in the ADSC population in patients on GLP-1 receptor agonist therapy. Selective depletion of ADSCs offers a potential mechanism for the accelerated skin aging changes in this population beyond weight loss alone.]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Dermatologic Surgery. 52(6S):S39-S44, June 2026. doi: 10.1097/DSS.0000000000005175]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00042728-202606001-00009</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/dermatologicsurgery/fulltext/2026/06001/glucagon_like_peptide_1__glp_1__receptor_agonists.10.aspx</link>
-      <author><![CDATA[Vyas, Krishna; Gopinath, Shilpa; Dacso, Mara; Green, Jeremy B.; Wyles, Saranya]]></author>
-      <category><![CDATA[ARTICLES]]></category>
-      <title><![CDATA[Glucagon-Like Peptide-1 (GLP-1) Receptor Agonists and Cutaneous Biology: Implications for Skin Disease and Longevity]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 01 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/dermatologicsurgery/fulltext/2026/06001/glucagon_like_peptide_1__glp_1__receptor_agonists.10.aspx"><img src="https://images.journals.lww.com/dermatologicsurgery/SmallThumb.00042728-202606001-00010.F1.jpeg" border="0" align ="left" alt="image"/></a>BACKGROUND 
-
-Glucagon-like peptide-1 receptor agonists (GLP-1RAs) have expanded from metabolic therapeutics to agents with broad effects on inflammation, tissue repair, cutaneous and adipose biology, and aging-related pathways. Clinicians increasingly encounter cutaneous manifestations and aesthetic sequelae with important implications for dermatologic counseling and multidisciplinary care.
-
-OBJECTIVE 
-
-To review current evidence regarding GLP-1RA effects on skin biology, inflammatory dermatoses, wound healing, cutaneous adverse events, and aesthetic aging.
-
-MATERIALS AND METHODS 
-
-A narrative review of clinical, translational, and mechanistic literature was performed, emphasizing psoriasis, hidradenitis suppurativa, wound repair, skin hypersensitivity reactions, autoimmune blistering disease, and facial volume loss associated with pharmacologic weight reduction.
-
-RESULTS 
-
-GLP-1RAs are hypothesized to improve inflammatory skin conditions and wound repair through anti-inflammatory, immunometabolic, and proreparative pathways. Yet, their use may also be associated with injection-site reactions, hypersensitivity eruptions, rare autoimmune blistering disorders, and clinically significant facial deflation and skin laxity. Current evidence is strongest for mechanistic plausibility and observational clinical signals, whereas dermatology-specific randomized trials remain limited.
-
-CONCLUSION 
-
-GLP-1RAs exert bidirectional effects on cutaneous biology. Recognition of both therapeutic opportunities and potential aesthetic or adverse sequelae is important, with patient counseling ideally occurring within a multidisciplinary framework that integrates metabolic benefits with skin health and appearance.]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Dermatologic Surgery. 52(6S):S45-S54, June 2026. doi: 10.1097/DSS.0000000000005187]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00042728-202606001-00010</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 07:48:54 GMT<br><br><a href="https://www.ovid.com/jnls/dermatologicsurgery/fulltext/10.1097/dss.0000000000005175~cutaneous-variations-in-stem-cell-population-in-those-on"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 07:48:54 GMT</pubDate>
     </item>
   </channel>
 </rss>
