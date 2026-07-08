@@ -1,1065 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns="" version="2.0">
+<rss xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" version="2.0">
   <channel>
-    <title><![CDATA[Plastic and Reconstructive Surgery - Current Issue]]></title>
-    <link>https://journals.lww.com/plasreconsurg/pages/currenttoc.aspx</link>
-    <description><![CDATA[A plastic surgery journal featuring the latest techniques and follow-up for maxillofacial reconstruction, burn repair, cosmetic reshaping and medicolegal issues.]]></description>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 06 Jul 2026 02:39:09 -0500</lastBuildDate>
-    <generator>Wolters Kluwer Health RSS Generator</generator>
-    <image>
-      <url>https://images.journals.lww.com/plasreconsurg/XLargeThumb.00006534-202607000-00000.CV.jpeg</url>
-      <title><![CDATA[Plastic and Reconstructive Surgery - Current Issue]]></title>
-      <link>https://journals.lww.com/plasreconsurg/pages/currenttoc.aspx</link>
-    </image>
+    <title><![CDATA[prs_current_issue]]></title>
+    <link>https://journals.lww.com/plasreconsurg/toc/current</link>
+    <description><![CDATA[Auto-generated from Web Scrape]]></description>
+    <lastBuildDate>Wed, 08 Jul 2026 06:43:25 GMT</lastBuildDate>
+
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/comparing_discharge_timing_in_patients_undergoing.1.aspx</link>
-      <author><![CDATA[Gehring, Michael B.; Wolfe, Brandon; Kalia, Nargis; Helmkamp, Laura J.; Widner, Jodi L.; Christian, Nicole; Tevis, Sarah E.; Murphy, Colleen D.; Cohen, Justin B.; Winocour, Julian S.; Mathes, David W.; Kaoutzanis, Christodoulos]]></author>
-      <category><![CDATA[Breast: Original Articles]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012615~comparing-discharge-timing-in-patients-undergoing-immediate</link>
       <title><![CDATA[Comparing Discharge Timing in Patients Undergoing Immediate Implant-Based Breast Reconstruction: A Randomized Controlled Trial]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 17 Nov 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/comparing_discharge_timing_in_patients_undergoing.1.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00001.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Implementation of enhanced recovery after surgery (ERAS) programs have shown that same-day discharge of patients undergoing immediate implant-based reconstruction following mastectomy is safe. The purpose of this study was to compare outcomes of patients in ERAS programs undergoing mastectomy with immediate implant-based breast reconstruction discharged on the day of the surgery (postoperative day [POD] 0) versus POD 1.
-
-Methods: 
-
-A randomized controlled trial was conducted on patients who underwent immediate implant-based breast reconstruction after mastectomy. Patients were randomized to discharge on either POD 0 or POD 1. All patients completed perioperative patient-reported outcome (PRO) surveys and recorded postoperative opioid consumption (converted to morphine milligram equivalents). Thirty-day postoperative outcomes and complications were recorded.
-
-Results: 
-
-A total of 217 breasts were reconstructed in 121 patients, with mean age of 48 years. The most frequent complication was seroma (4.8%), followed by mastectomy flap necrosis (2.4%). There were no significant differences in 30-day complications between the 2 cohorts. Ten patients presented to the emergency room within 30 days of discharge (POD 0 = 6 versus POD 1 = 4 patients patients) (P = 0.52), with 4 patients requiring hospital admission. Six patients (5%) required reoperation (POD 0 = 4 patients versus POD 1 = 2 patients) (P = 0.99). There was no difference in postoperative pain scores, postoperative milligram morphine equivalent consumption, or in PRO scores.
-
-Conclusions: 
-
-Regardless of whether mastectomy patients undergoing immediate implant-based breast reconstruction are discharged on POD 0 or POD 1, complication rates are similarly low with no difference in PROs or opioid consumption. ERAS pathways may be useful in optimizing patient care to allow for same-day discharge while maintaining high-quality care.]]></description>
-      <pubDate>Mon, 17 Nov 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):1-9, July 2026. doi: 10.1097/PRS.0000000000012615]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00001</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012615~comparing-discharge-timing-in-patients-undergoing-immediate"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/larger_volume_silicone_breast_implants_are_safe_in.2.aspx</link>
-      <author><![CDATA[Garvey, Patrick B.; Larsen, Alan N.; Skoracki, Roman J.; Djohan, Risal S.; Migliori, Mark R.; Tenenbaum, Marissa M.; Friedman, Jeffrey D.; Serletti, Joseph M.; Rebecca, Alanna M.; Kane, William J.]]></author>
-      <category><![CDATA[Breast: Original Articles]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012840~larger-volume-silicone-breast-implants-are-safe-in-breast</link>
       <title><![CDATA[Larger-Volume Silicone Breast Implants Are Safe in Breast Reconstruction: The Athena Multicenter Prospective Study of 400 Patients]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 22 Jan 2026 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/larger_volume_silicone_breast_implants_are_safe_in.2.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00002.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-For women in the United States desiring implant-based breast reconstruction, the maximum volume of commercially available silicone breast implants has, to date, been 800 cc. The authors evaluated the safety of Mentor larger-size MemoryGel Ultra-High Profile breast implants (≥930 cc) in women undergoing postmastectomy breast reconstruction.
-
-Methods: 
-
-This 10-year, multicenter, open-label, prospective, investigational study assessed the safety and effectiveness of larger-volume implants in women undergoing postmastectomy 2-stage primary or revision reconstruction. Three-year Kaplan-Meier curves and multivariable Cox regression analyzed the association between patient and treatment characteristics and surgical outcomes. The BREAST-Q was used to assess effectiveness at 3 years.
-
-Results: 
-
-A total of 400 women were enrolled (225 primary and 175 revision reconstruction). Mean body mass index was 35.8 kg/m2; 81% had a body mass index greater than or equal to 30 kg/m2. At 3 years, the cumulative incidence of postoperative complications (excluding rupture) was 63.0% (95% confidence interval, 58.1% to 67.9%). The reoperation rate was 24.5% (95% CI, 20.4% to 29.1%), and the explantation rate was 15.8% (95% CI, 23.5% to 19.9%). Independent predictors of complications included radiation therapy and a history of smoking. There were no significant associations between postoperative complications and implant volume greater than or equal to 1135 cc or less than 1135 cc. BREAST-Q scores at year 3 showed significant improvements from baseline in Satisfaction with Breasts, Psychosocial Well-Being, Sexual Well-Being, and Physical Well-Being (all P < 0.0001). The mean score for Satisfaction with Outcome was 79.9.
-
-Conclusions: 
-
-These 3-year results demonstrate that larger-volume silicone breast implants represent a safe and effective option for patients with larger breasts who are requesting postmastectomy implant-based reconstruction.]]></description>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):10-23, July 2026. doi: 10.1097/PRS.0000000000012840]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00002</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012840~larger-volume-silicone-breast-implants-are-safe-in-breast"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__larger_volume_silicone_breast_implants.3.aspx</link>
-      <author><![CDATA[Harless, Christin A.; Nguyen, Minh-Doan T.]]></author>
-      <category><![CDATA[Breast: Original Articles]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013033~discussion-larger-volume-silicone-breast-implants-are-safe</link>
       <title><![CDATA[Discussion: Larger-Volume Silicone Breast Implants Are Safe in Breast Reconstruction: The Athena Multicenter Prospective Study of 400 Patients]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__larger_volume_silicone_breast_implants.3.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):24-25, July 2026. doi: 10.1097/PRS.0000000000013033]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00003</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013033~discussion-larger-volume-silicone-breast-implants-are-safe"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/impact_of_intraoperative_blood_pressure_levels_on.4.aspx</link>
-      <author><![CDATA[El Masry, Maxine; Knoedler, Leonard; Knoedler, Samuel; Zeman, Florian; Smul, Thorsten; Schmitz, Paul; Prantl, Lukas; Lamby, Philipp]]></author>
-      <category><![CDATA[Breast: Original Articles]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012607~impact-of-intraoperative-blood-pressure-levels-on</link>
       <title><![CDATA[Impact of Intraoperative Blood Pressure Levels on Postoperative Bleeding in Common Breast Surgical Procedures: A Case-Control Study]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 11 Nov 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/impact_of_intraoperative_blood_pressure_levels_on.4.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00004.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Breast surgery, ranging from aesthetic adjustments to oncologic reconstructions, has seen a significant rise in recent years, with over 4.3 million procedures globally in 2022. However, they pose risks such as postoperative bleeding and hematoma, impacting patient recovery and morbidity. Identifying and mitigating risk factors is crucial for better postoperative outcomes. The effect of blood pressure at the wound closure start on postoperative bleeding complications is a key research area, with current studies showing inconsistent findings. This research gap necessitates further investigation to optimize outcomes in breast surgery.
-
-Methods: 
-
-For this retrospective case-control study, data from 2007 to 2021 were collected from the Caritas Hospital St. Josef database, in Regensburg, Germany. Patients undergoing subcutaneous mastectomy, breast reduction, or breast reconstruction were identified. Perioperative variables, including demographics, health status, blood pressure, and postoperative complications, were analyzed. Statistical analysis was performed using SPSS, matching cases and controls at a 1:4 ratio.
-
-Results: 
-
-A total of 41 patients with postoperative hemorrhage were matched to 164 controls. The primary finding was a significant link between lower systolic blood pressure at wound closure and increased hemorrhage risk, with no other demographic or medical factors (age, body mass index, hypertension, or bleeding disorders) showing a significant association.
-
-Conclusions: 
-
-The authors’ study suggests that low intraoperative blood pressure at wound closure start is a key risk factor for postoperative hemorrhage in breast surgery. Strict blood pressure control during surgery could reduce bleeding risk after breast surgery procedures. Further research is needed to optimize the perioperative workflow regarding blood pressure settings.]]></description>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):1e-7e, July 2026. doi: 10.1097/PRS.0000000000012607]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00004</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012607~impact-of-intraoperative-blood-pressure-levels-on"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/impact_of_breast_cancer_surgery_on_physical.5.aspx</link>
-      <author><![CDATA[Marco, Eden; Liaqat, Anam; Shamoun, Feras; Hosseini, Benita; Metcalfe, Kelly A.; Lim, David W.; O’Neill, Anne C.; Hofer, Stefan O. P.; Croke, Jennifer; Zhong, Toni]]></author>
-      <category><![CDATA[Breast: Original Articles]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012624~impact-of-breast-cancer-surgery-on-physical-well-being-of</link>
       <title><![CDATA[Impact of Breast Cancer Surgery on Physical Well-Being of the Chest: A Longitudinal BREAST-Q Study]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/impact_of_breast_cancer_surgery_on_physical.5.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00005.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Breast-conserving surgery (BCS), mastectomy alone (MA), and mastectomy with immediate breast reconstruction (IBR) offer similar oncologic outcomes in early-stage breast cancer, leading patients to base decisions on nononcologic factors such as chest wall discomfort, tightness, and functional limitations. The authors’ primary objective was to evaluate the effects of these operations on quality of life using the BREAST-Q Physical Well-Being: Chest subscale. The secondary objective was to assess the impact of different radiation regimens on chest physical well-being.
-
-Methods: 
-
-A retrospective review of stage 0 to III breast cancer patients who underwent BCS, MA, or IBR from 2015 to 2019 was conducted. The primary outcome was change in Physical Well-Being: Chest BREAST-Q scores from the preoperative period to 1-year postoperatively. A minimal important difference greater than or equal to 4 points indicated clinical significance.
-
-Results: 
-
-Of 517 patients, 202 underwent BCS, 125 underwent MA, and 190 underwent IBR. BCS patients demonstrated the highest decline of 15.3 points (89.1 to 73.8; P < 0.001) followed by MA with 12.7 points (76.6 to 63.9; P < 0.001). IBR had the smallest decline of 3.7 points (78.0 to 74.3; P = 0.022). A total of 262 radiation patients experienced a mean decline of 15.2 points (84.6 to 69.4; P < 0.001), with the regional node irradiation with boost group exhibiting the greatest decline of 21.5 points (88.5 to 67.0; P < 0.001).
-
-Conclusions: 
-
-BCS patients, despite higher baseline scores, experienced the greatest decline, whereas IBR patients had the smallest. In addition, greater radiation intensity and extent correlated with larger declines. Integrating minimal important difference into clinical practice ensures that patient-reported outcomes capture changes that are meaningful to patients, guiding treatment decisions.]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):27-36, July 2026. doi: 10.1097/PRS.0000000000012624]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00005</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012624~impact-of-breast-cancer-surgery-on-physical-well-being-of"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__impact_of_breast_cancer_surgery_on.6.aspx</link>
-      <author><![CDATA[Shammas, Ronnie L.; Matros, Evan]]></author>
-      <category><![CDATA[Breast: Original Articles]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012731~discussion-impact-of-breast-cancer-surgery-on-physical</link>
       <title><![CDATA[Discussion: Impact of Breast Cancer Surgery on Physical Well-Being of the Chest: A Longitudinal BREAST-Q Study]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__impact_of_breast_cancer_surgery_on.6.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):37-38, July 2026. doi: 10.1097/PRS.0000000000012731]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00006</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012731~discussion-impact-of-breast-cancer-surgery-on-physical"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/optimal_timing_of_expander_to_implant_exchange.7.aspx</link>
-      <author><![CDATA[Shammas, Ronnie L.; Boe, Lillian A.; Wagner, Benjamin D.; Chen, Jenny; Graziano, Francis D.; Stern, Carrie S.; Matros, Evan; Mehrara, Babak J.; Nelson, Jonas A.; Allen, Robert J. Jr]]></author>
-      <category><![CDATA[Breast: Original Articles]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012626~optimal-timing-of-expander-to-implant-exchange-after</link>
       <title><![CDATA[Optimal Timing of Expander-to-Implant Exchange after Postmastectomy Radiation Therapy: 90-Day Complications and Patient-Reported Outcomes]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 17 Nov 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/optimal_timing_of_expander_to_implant_exchange.7.aspx"></a>Background: 
-
-The optimal time for expander-to-implant exchange after postmastectomy radiation therapy (PMRT) remains unknown. The authors performed this study to identify the optimal interval between PMRT and expander-to-implant exchange to minimize complications and assess the impact of the time interval on patient-reported outcomes.
-
-Methods: 
-
-A single-institution, retrospective analysis was performed of patients who underwent 2-stage implant-based breast reconstruction with radiation from 2010 through 2024. The optimal time to expander-to-implant exchange for predicting any 90-day postoperative complication was identified using receiver operating characteristic curves and the Youden index. Multivariable logistic regression was used to assess the association between the dichotomized time interval and postoperative complications. Linear mixed-effects models were used to evaluate the impact on BREAST-Q scores.
-
-Results: 
-
-A total of 1242 patients were included. Ninety-day complications included surgical site infection (10%), reconstructive failure (6%), prosthetic exposure (3.4%), hematoma (0.9%), and seroma (0.8%). A total of 190 days was identified as the optimal time between PMRT and expander-to-implant exchange to reduce the risk of 90-day postoperative complications. Exchange within 190 days was independently associated with an increased risk of complications (OR, 1.64 [95% CI, 1.15 to 2.32]; P = 0.005) versus after 190 days. BREAST-Q scores were not influenced by the timing of implant exchange for satisfaction with breasts (β = −1.6 [95% CI, −4.3 to 0.98]; P = 0.2), physical well-being of the chest (β = −1.4 [95% CI, −3.8 to 1.1]; P = 0.3), or psychosocial well-being (β = −1.5 [95% CI, −4.3 to 1.4]; P = 0.3).
-
-Conclusions: 
-
-Delaying expander-to-implant exchange by 6 months after PMRT reduces the risk of 90-day complications without adversely affecting patient-reported outcomes. Individualized reconstructive timing can incorporate this interval to mitigate complications while preserving patient satisfaction.]]></description>
-      <pubDate>Mon, 17 Nov 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):8e-16e, July 2026. doi: 10.1097/PRS.0000000000012626]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00007</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012626~optimal-timing-of-expander-to-implant-exchange-after"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/the_s_flap_modification__a_short_scar_reduction.8.aspx</link>
-      <author><![CDATA[Hilewitz, Daniel; Ganor, Oren; Adler, Neta; Olshinka, Asaf; Yaacobi, Dafna Shilo; Chen, Itay; Shay, Tamir; Hayun, Yehiel; Ad-El, Dean; Meshulam-Derazon, Sagit]]></author>
-      <category><![CDATA[Breast: Original Articles]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012634~the-s-flap-modification-a-short-scar-reduction-mammaplasty</link>
       <title><![CDATA[The S-Flap Modification: A Short-Scar Reduction Mammaplasty]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 18 Nov 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/the_s_flap_modification__a_short_scar_reduction.8.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00008.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Despite the documented advantages of short-scar reduction mammaplasty, its broad applicability remains debated. Critics argue that it does not manage lower-pole skin excess as effectively as the T-scar technique. The S-flap modification of the Hall-Findlay technique potentially retains the advantages of the short scar while providing a stabler lower pole.
-
-Methods: 
-
-Out of 147 single-surgeon consecutive cases operated on between 2016 and 2022, 58 (39.5%) completed at least 1 year of follow-up and answered a reduction mammaplasty BREAST-Q. They were divided into 3 groups: vertical scar, J scar, and S scar. The S-scar modification was analyzed in relation to the previously used vertical and J-scar techniques.
-
-Results: 
-
-The S-scar group was characterized by a significantly (P = 0.002) higher mean resection weight (456 ± 226 g) versus the vertical scar group (317 ± 158 g), longer preoperative nipple–intramammary fold (IMF) distance (20 ± 3 cm) than the V-scar and J-scar groups (both 16 ± 2 cm), and shorter follow-up time (57 ± 3 weeks versus 128 ± 80 and 110 ± 55 weeks, respectively). Long-term improvement rates in nipple–IMF distance in the J-scar, V-scar, and S-scar groups were 12.44% ± 13.08%, 13.01% ± 13.63%, and 21.83% ± 8.8%, respectively (P = 0.003). BREAST-Q scores across all measures ranged from 72.35 to 98.63, with no significant differences among the groups, except for general outcome and information criteria, which were higher in the S-scar group (P = 0.001 for both).
-
-Conclusions: 
-
-The S-flap modification maintains short-scar advantages in terms of shape, projection, and lower pole stability, as reflected by a shorter nipple–IMF distance and a better general outcome score. Studies with a follow-up period exceeding 1 year and a larger cohort are needed.]]></description>
-      <pubDate>Tue, 18 Nov 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):17e-26e, July 2026. doi: 10.1097/PRS.0000000000012634]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00008</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012634~the-s-flap-modification-a-short-scar-reduction-mammaplasty"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/taking_face_lifts_to_the_next_level__case_series.9.aspx</link>
-      <author><![CDATA[Lacerna Kimbrell, Melinda]]></author>
-      <category><![CDATA[Cosmetic: Face: Original Articles]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012596~taking-face-lifts-to-the-next-level-case-series-reflecting</link>
       <title><![CDATA[Taking Face Lifts to the Next Level: Case Series Reflecting the Safety and Efficacy of Plasma Resurfacing with Face and Neck Lifts]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 12 Nov 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/taking_face_lifts_to_the_next_level__case_series.9.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00009.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Deep facial skin resurfacing with plasma technology is known to produce superior correction of deep rhytids and photoelastosis. When combined with a rhytidectomy, total facial rejuvenation can be achieved in a single surgical session and recovery period.
-
-Methods: 
-
-A single surgeon’s experience (2017 to 2025) is presented involving 96 consecutive patients (93 women and 3 men; age range, 48 to 86 years) who underwent a single-session combination of face and neck lifts, full-face fat grafting, and full-face deep plasma skin resurfacing. Helium plasma radiofrequency was used in 84 patients, and nitrogen radiofrequency plasma was used in 12 patients. A subset of 20 patients underwent additional computerized skin analysis preoperatively and at 90 days postoperatively. The longest follow-up was 6 years.
-
-Results: 
-
-Computerized analysis showed decreased upper cutaneous lip height (0.25 to 2.47 mm; average, 1.26 mm), decreased skin age (1 to 9 years; average, 4.27 years), improved elasticity (1 to 20 years; average, 9.81 years), rhytid reduction (1 to 22 years; average, 7.36 years), and ultraviolet spot reduction (1 to 9 years; average, 4.54 years). The 4 complications (4 of 96 patients [4.1%], all in the helium radiofrequency group) included transient cellulitis (1 patient) and hypertrophic scarring (3 patients). No skin necrosis occurred. Results demonstrated significant correction of deep rhytids and photoelastosis.
-
-Conclusions: 
-
-This 7-year series demonstrates that full-face deep plasma skin resurfacing can be safely and effectively combined with face and neck lifts, along with fat grafting, to achieve comprehensive 3-dimensional facial and neck rejuvenation in a single session without increasing the risk of complications such as skin necrosis. Patients can have enhanced aesthetic outcomes with reduced downtime, surgical time, and anesthesia exposure, offering an efficient alternative to traditional staged procedures.]]></description>
-      <pubDate>Wed, 12 Nov 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):41-54, July 2026. doi: 10.1097/PRS.0000000000012596]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00009</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012596~taking-face-lifts-to-the-next-level-case-series-reflecting"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/nasal_valve_tensioning_versus_crural_strut_grafts.10.aspx</link>
-      <author><![CDATA[Liang, Kate; Wijermars, Leonie G. M.; Darbari Kaul, Rhea; Sacks, Peta-Lee; Lathif, Adil; Palesy, Tom; Kondo, Mickey; Kalish, Larry H.; Marcells, George N.; Harvey, Richard J.]]></author>
-      <category><![CDATA[Cosmetic: Face: Original Articles]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012571~nasal-valve-tensioning-versus-crural-strut-grafts-in-the</link>
       <title><![CDATA[Nasal Valve Tensioning versus Crural Strut Grafts in the Management of External Nasal Valve Dysfunction]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 12 Nov 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/nasal_valve_tensioning_versus_crural_strut_grafts.10.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00010.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-External nasal valve dysfunction, a common cause of nasal obstruction, is unlikely to be restored with septoplasty or turbinoplasty alone. This study assessed 2 rhinoplasty techniques for the prevention and treatment of external nasal valve dysfunction: lateral crural tensioning with articulated alar rim grafts (LCT/AARG) and lateral crural strut grafts (LCSG) in primary and revision rhinoplasty.
-
-Methods: 
-
-A retrospective cohort analysis was performed. Patients received LCT/AARG or LCSG. Assessment occurred at baseline and at least 6 months after surgery. The primary outcome was nasal obstruction sensation, measured by a visual analog scale; the Nasal Obstruction Symptom Evaluation; and an ordinal nasal obstruction score. Secondary outcomes were nasal airflow (assessed by nasal peak inspiratory flow, nasal airway resistance, and minimum cross-sectional area) and patient-perceived aesthetic results (assessed by the Rhinoplasty Outcome Evaluation and a 13-point ordinal score).
-
-Results: 
-
-A total of 203 primary rhinoplasty and 108 revision rhinoplasty patients were included. Both techniques had positive effects in primary and revision cases. In primary rhinoplasty, LCT/AARG was more effective than LCSG in improving nasal obstruction (category improvement of 1 or greater in nasal obstruction score, 81% versus 64% [P < 0.01]), nasal airflow (change in nasal peak inspiratory flow, 21.00 ± 46.43 L/min versus 4.32 ± 42.64 L/min [P = 0.01] and change in nasal airway resistance on the obstructed side, −0.29 [−0.71 to 0.03] Pa/cm3/s versus −0.11 [−0.56 to 0.18] [P = 0.03]), and Rhinoplasty Outcome Evaluation score (42 [21 to 54] versus 31 [13 to 46] [P = 0.02]). Both techniques were similar in revision rhinoplasty.
-
-Conclusion: 
-
-LCT/AARG is a reliable technique offering improved airflow, reduced resistance, and better patient-reported outcomes compared with LCSG.]]></description>
-      <pubDate>Wed, 12 Nov 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):27e-42e, July 2026. doi: 10.1097/PRS.0000000000012571]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00010</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012571~nasal-valve-tensioning-versus-crural-strut-grafts-in-the"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/3_dimensional_simulation_for_breast_augmentation_.11.aspx</link>
-      <author><![CDATA[Lorange, Elisabeth; Bouhadana, Gabriel; Oiknine, Noah; Luc, Mario; Borsuk, Daniel E.]]></author>
-      <category><![CDATA[Cosmetic: Breast: Original Articles]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012683~3-dimensional-simulation-for-breast-augmentation-does-the</link>
       <title><![CDATA[3-Dimensional Simulation for Breast Augmentation: Does the Software Actually Work?]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 04 Dec 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/3_dimensional_simulation_for_breast_augmentation_.11.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00011.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Recent advances in 3-dimensional (3D) imaging, such as the Vectra XT 3D imaging system (Vectra; Canfield Imaging Systems), have enabled simulations for breast augmentation. These simulations are popular and valuable in preoperative consultations, but no studies have evaluated the system’s predictive volume accuracy with a large sample size or explored the patient-specific and surgical factors influencing these simulations.
-
-Methods: 
-
-A prospective cohort study was conducted on patients undergoing breast augmentation simulations with Vectra between January of 2021 and December of 2022. Predictive volumetric accuracy was analyzed with a ±10% precision threshold and Bland-Altman visualization. Linear breast measurements were compared using mean and median absolute error analysis, and a generalized linear model with generalized estimating equations was used to identify factors affecting volume prediction accuracy.
-
-Results: 
-
-The study included 78 patients (154 breasts). Accurate predictions (±10% error) were achieved in 73% of cases, with an average margin of error of 7.52%. The most accurate measurement was sternal–nipple (P = 0.64) and the least accurate measurement was nipple–inframammary fold (P = 0.001). Factors influencing prediction accuracy included pregnancy history, preoperative breast volume, and implant volume.
-
-Conclusions: 
-
-Vectra accurately predicts postoperative breast volumes within a 10% margin of error, although precision decreases with larger breasts (greater than 650 cc). Patient-specific factors, such as pregnancy history and preoperative breast characteristics, should guide preoperative consultations. The system enhances patient education, shared decision-making, and participation in care, reinforcing its value in preoperative planning for breast augmentation.]]></description>
-      <pubDate>Thu, 04 Dec 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):56-65, July 2026. doi: 10.1097/PRS.0000000000012683]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00011</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012683~3-dimensional-simulation-for-breast-augmentation-does-the"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/transaxillary_breast_augmentation__a_randomized.12.aspx</link>
-      <author><![CDATA[Boliglowa, Dominik; Pontillo, Martina; Velotti, Nunzio; Rocco, Nicola]]></author>
-      <category><![CDATA[Cosmetic: Breast: Original Articles]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012546~transaxillary-breast-augmentation-a-randomized-controlled</link>
       <title><![CDATA[Transaxillary Breast Augmentation: A Randomized Controlled Trial Comparing a New Semiendoscopic Video-Assisted Technique versus the Blind Technique]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 20 Oct 2025 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/transaxillary_breast_augmentation__a_randomized.12.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00012.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-The pursuit of optimal aesthetic outcomes in breast surgery has led to the evolution of various surgical techniques. The transaxillary approach leads to high patient satisfaction due to its aesthetic advantage of avoiding visible scars on the breast. This approach is particularly useful in procedures such as breast augmentation and reconstructive surgery after breast cancer treatment, in which achieving an optimal cosmetic outcome is key. In this study, the authors compared the transaxillary blind approach with their new semiendoscopic video-assisted transaxillary approach, and analyzed the benefits and limitations of each method.
-
-Methods: 
-
-A total of 118 patients were randomized to either the transaxillary blind approach or the semiendoscopic video-assisted transaxillary approach for breast augmentation from April of 2019 through December of 2022.
-
-Results: 
-
-The results indicate that the semiendoscopic video-assisted approach required longer operative times but was associated with a lower incidence of complications, including asymmetry (eg, bottoming out, double-bubble deformity), breast animation deformity, and capsular contracture.
-
-Conclusions: 
-
-This randomized trial revealed advantages and limitations of the transaxillary blind approach and a new semiendoscopic video-assisted transaxillary approach, highlighting that endoscopic assistance significantly improved surgical outcomes while maintaining an acceptable surgical time.]]></description>
-      <pubDate>Mon, 20 Oct 2025 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):43e-52e, July 2026. doi: 10.1097/PRS.0000000000012546]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00012</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012546~transaxillary-breast-augmentation-a-randomized-controlled"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/argon_plasma__analysis_of_594_patients_safety,.13.aspx</link>
-      <author><![CDATA[Nahas, Fabio Xerfan; Karner, Bruno Menezes; Secanho, Murilo Sgarbi]]></author>
-      <category><![CDATA[Cosmetic: Body: Original Articles]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012774~argon-plasma-analysis-of-594-patientssafety-complications</link>
       <title><![CDATA[Argon Plasma: Analysis of 594 Patients—Safety, Complications, and Satisfaction]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 30 Dec 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/argon_plasma__analysis_of_594_patients_safety,.13.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00013.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Liposuction is the most frequently performed aesthetic procedure worldwide, with a 38.6% increase over the past decade. Advances in technology have transformed the procedure from simple fat removal to a sculpting technique. Argon plasma coagulation is a monopolar electrosurgical technique that is gaining attention for enhancing skin retraction. This study was performed to evaluate complications and satisfaction with argon plasma use after liposuction.
-
-Methods: 
-
-A multicenter retrospective study was conducted in Brazil with patients who underwent liposuction with argon plasma between January of 2022 and December of 2023. Data were collected from 41 surgeons using a questionnaire. Inclusion criteria comprised adults without comorbidities and a minimum of 6 months of follow-up. Variables analyzed included demographics, surgical characteristics, argon plasma settings, and complications. Statistical significance was set at P < 0.05.
-
-Results: 
-
-A total of 594 patients were included. Most patients were women (92.9%), with a mean age of 39.3 years and body mass index of 25. Complications occurred in 9.4% of cases, with seroma (3.4%) and thermal injuries (2.7%) being the most common. Significant risk factors for seroma included lower body mass index, procedure exceeding 5 hours, and liposuction without adjunct surgery. No increased risk was found in patients undergoing abdominal flap undermining. Satisfaction with skin retraction was high, with mean scores of 8.9 (patients) and 8.8 (surgeons) on a 10-point scale.
-
-Conclusions: 
-
-Argon plasma used after liposuction is associated with a low complication rate and high satisfaction. Seroma is the most frequent complication, with identifiable risk factors. Argon plasma appears safe even in procedures involving abdominal undermining, supporting its role in enhancing aesthetic outcomes.]]></description>
-      <pubDate>Tue, 30 Dec 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):67-73, July 2026. doi: 10.1097/PRS.0000000000012774]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00013</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012774~argon-plasma-analysis-of-594-patientssafety-complications"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__argon_plasma__analysis_of_594.14.aspx</link>
-      <author><![CDATA[Hoyos, Alfredo; Perez, Mauricio]]></author>
-      <category><![CDATA[Cosmetic: Body: Original Articles]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012787~discussion-argon-plasma-analysis-of-594-patientssafety</link>
       <title><![CDATA[Discussion: Argon Plasma: Analysis of 594 Patients—Safety, Complications, and Satisfaction]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__argon_plasma__analysis_of_594.14.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):74-75, July 2026. doi: 10.1097/PRS.0000000000012787]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00014</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012787~discussion-argon-plasma-analysis-of-594-patientssafety"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/efficacy_and_safety_of_botulinum_toxin_type_a_for.15.aspx</link>
-      <author><![CDATA[Chávez-Goicochea, Ana Paula; Lozano-Peralta, Katherine; Caballero-Alvarado, Jose; Lau-Torres, Víctor; Zavaleta-Corvera, Carlos]]></author>
-      <category><![CDATA[Cosmetic: Body: Original Articles]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012631~efficacy-and-safety-of-botulinum-toxin-type-a-for</link>
       <title><![CDATA[Efficacy and Safety of Botulinum Toxin Type A for Pathological Scar Prevention: A Systematic Review and Meta-Analysis]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/efficacy_and_safety_of_botulinum_toxin_type_a_for.15.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00015.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-The objective of this study was to evaluate the efficacy of botulinum toxin type A (BoNT-A) in preventing pathological scars and improving scar quality and to assess treatment safety and patient satisfaction.
-
-Methods: 
-
-Randomized controlled trials and cohort studies identified in PubMed, Scopus, Embase, or Web of Science were included. Outcomes analyzed included scar quality, patient satisfaction, and adverse effects. Statistical analysis was performed using mean differences (MDs) and relative risks (RRs). Risk of bias was assessed with the Risk of Bias 2 and Risk of Bias in Nonrandomized Studies of Interventions tools.
-
-Results: 
-
-Nineteen studies with a total of 686 patients were included. BoNT-A showed significant improvements in several outcomes. The MD was −1.07 (95% CI, −1.59 to −0.56; P < 0.0001) on the Vancouver Scar Scale and 1.18 (95% CI, 0.94 to 1.42; P < 0.00001) on the visual analog scale. Scar width was reduced, with an MD of −0.21 (95% CI, −0.33 to −0.09; P = 0.0008). In the Stony Brook Scar Evaluation Scale and Patient and Observer Scar Assessment Scale, the differences favored BoNT-A, with MD of 1.64 (95% CI, 0.78 to 2.50; P = 0.0002) and −1.28 (95% CI, −2.02 to −0.53; P = 0.0008), respectively. Patient satisfaction was higher with BoNT-A (RR, 1.83 [95% CI, 1.10 to 3.07]; P = 0.02). Adverse effects were minimal and transient, with no significant differences between groups.
-
-Conclusions: 
-
-BoNT-A is an effective and safe intervention. Its use reduces the formation of pathological scars and generates high levels of patient satisfaction, without serious adverse effects. However, studies with larger sample sizes and homogeneous designs are required to confirm these findings.]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):53e-64e, July 2026. doi: 10.1097/PRS.0000000000012631]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00015</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012631~efficacy-and-safety-of-botulinum-toxin-type-a-for"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/ultrasound_evaluation_of_lip_anatomy_and_filler.16.aspx</link>
-      <author><![CDATA[Harris, Steven; Schelke, Leonie; Orlovska, Madara; Wortsman, Ximena; Cotofana, Sebastian; Velthuis, Peter]]></author>
-      <category><![CDATA[Cosmetic: Medicine: Original Article]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012772~ultrasound-evaluation-of-lip-anatomy-and-filler-placement-a</link>
       <title><![CDATA[Ultrasound Evaluation of Lip Anatomy and Filler Placement: A Cross-Sectional Study of Injection Accuracy, Migration, and Demographic Variation]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 05 Jan 2026 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/ultrasound_evaluation_of_lip_anatomy_and_filler.16.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00016.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Lip fillers composed of hyaluronic acid are commonly used for aesthetic enhancement, yet the anatomical changes they induce and their relationship to demographic factors remain incompletely understood.
-
-Methods: 
-
-A cross-sectional study of 126 participants was conducted at clinics in London and Amsterdam. High-frequency ultrasound was used to assess lip layer thickness, submucosal gland dimensions, and filler position. Demographic data were recorded and correlated with anatomical findings and filler distribution.
-
-Results: 
-
-Treated patients demonstrated significantly increased thickness in the connective tissue and pars peripheralis layers. The subcutaneous layer averaged less than 1 mm in both upper and lower lips, resulting in intramuscular filler placement in most treated individuals. Vertical injection techniques were associated with deeper filler deposition, hypervascularity, and evidence of migration. Lip anatomy varied significantly with sex, race and ethnicity, body mass index, and age.
-
-Conclusions: 
-
-Hyaluronic acid fillers alter lip anatomy in measurable ways, often resulting in unintended intramuscular placement due to the limited subcutaneous space. Demographic factors significantly influence lip structure and filler behavior, supporting the need for individualized treatment planning. Future studies should investigate long-term outcomes and patient perspectives.]]></description>
-      <pubDate>Mon, 05 Jan 2026 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):65e-75e, July 2026. doi: 10.1097/PRS.0000000000012772]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00016</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012772~ultrasound-evaluation-of-lip-anatomy-and-filler-placement-a"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/onabotulinumtoxina_for_platysma_prominence__safety.17.aspx</link>
-      <author><![CDATA[Mraz, Deanne; Hanke, C. William; Papel, Ira; Beer, Kenneth; Yoelin, Steven; Weinkle, Susan; Keaney, Terrence; Rohrich, Rod J.; McCaskill, Reva; Shimoga, Sandhya V.; Park, Grace S.; Tong, Warren; Hopfinger, René]]></author>
-      <category><![CDATA[Cosmetic: General: Original Article]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012629~onabotulinumtoxina-for-platysma-prominence-safety-and</link>
       <title><![CDATA[OnabotulinumtoxinA for Platysma Prominence: Safety and Efficacy Results from a Phase 3 Open-Label Repeat Treatment Study]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 04 Dec 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/onabotulinumtoxina_for_platysma_prominence__safety.17.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00017.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-OnabotulinumtoxinA (onabotA) treatment of prominent platysma muscles demonstrates a safety profile consistent with other onabotA aesthetic indications and effectively improves the appearance of vertical neck bands and jawline definition. The authors evaluated the safety and efficacy of repeat onabotA treatment for improving the appearance of moderate to severe platysma prominence.
-
-Methods: 
-
-Participants received up to 4 onabotA treatments administered a minimum of 3 months apart, including treatment with onabotA or placebo in the double-blind lead-in study.
-
-Results: 
-
-All treatment-emergent adverse events related to study treatment were mild in severity with no observed trends across treatment cycles. Four participants reported 6 adverse events of special interest, including dysphagia (4 events) and facial paresis (2 events). All were mild in severity with no evidence of distant spread of toxin; almost all resolved by study end and none resulted in discontinuation. The percentages of participants achieving a one-grade or better improvement at maximum contraction on day 14 for each treatment cycle were 83.6%, 92.0%, 90.0%, and 98.0% as assessed by clinicians, and 82.5%, 90.4%, 87.0%, and 94.0% as assessed by participants.
-
-Conclusion: 
-
-Repeated onabotA treatment is well tolerated and improves platysma prominence over the course of multiple treatment cycles.]]></description>
-      <pubDate>Thu, 04 Dec 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):78-87, July 2026. doi: 10.1097/PRS.0000000000012629]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00017</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012629~onabotulinumtoxina-for-platysma-prominence-safety-and"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__onabotulinumtoxina_for_platysma.18.aspx</link>
-      <author><![CDATA[Markowitz, Bernard L.]]></author>
-      <category><![CDATA[Cosmetic: General: Original Article]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012736~discussion-onabotulinumtoxina-for-platysma-prominence-safety</link>
       <title><![CDATA[Discussion: OnabotulinumtoxinA for Platysma Prominence: Safety and Efficacy Results from a Phase 3 Open-Label Repeat Treatment Study]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__onabotulinumtoxina_for_platysma.18.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):88-89, July 2026. doi: 10.1097/PRS.0000000000012736]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00018</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012736~discussion-onabotulinumtoxina-for-platysma-prominence-safety"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/optimizing_neuromuscular_junction_formation_for.19.aspx</link>
-      <author><![CDATA[Chen, Ken Kuan-Wei; Cederna, Paul S.; Huang, Yu-Han; Lu, Johnny Chuieng-Yi]]></author>
-      <category><![CDATA[Experimental]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012616~optimizing-neuromuscular-junction-formation-for-enhanced</link>
       <title><![CDATA[Optimizing Neuromuscular Junction Formation for Enhanced Signal Transduction in the Regenerative Peripheral Nerve Interface]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 17 Nov 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/optimizing_neuromuscular_junction_formation_for.19.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00019.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Regenerative peripheral nerve interface (RPNI) surgery amplifies the motor intent from upstream peripheral nerves, enabling myoelectric prosthetic devices to better capture signals, thereby improving the precision of prosthetic limb control. This study aimed to clarify the mechanisms underlying RPNI motor function through neuromuscular junction (NMJ) evaluation and provide a novel method of enhancing reinnervation to improve signal amplification.
-
-Methods: 
-
-Adult wild-type C57BL/6J mice underwent RPNI surgery using free extensor digitorum longus (EDL) muscle grafts transferred to the thigh and neurotized with the common peroneal nerve (CPN) in 3 ways: RPNI:CPN neurotization; separation of double fascicular RPNI:CPN into 2 fascicles, followed by neurotization; and denervation of the RPNI without CPN neurotization. In the control groups, the EDL muscles remained in situ with intact CPN innervation (healthy EDL) or cut and repaired CPN. The end point assessments were conducted at 8 weeks and 12 weeks postoperatively with electrodiagnostic tests, target muscle weight measurement, whole-mount immunofluorescence staining, and Western blot analysis.
-
-Results: 
-
-The results showed that the RPNI demonstrates adequate NMJ innervation for effective neural signal amplification. Double fascicular RPNI exhibited greater compound muscle action potential, larger target muscle weight, a greater number of reinnervated NMJs, and reduced motor endplate fragmentation compared with RPNI.
-
-Conclusions: 
-
-The degree of NMJ reinnervation and the morphology of the motor endplate within the RPNI reveal information about the innervation. Dividing the neural source enhances NMJ reinnervation within the RPNI, with the added potential of improving signal amplification.
-
-Clinical Relevance Statement: 
-
-By studying NMJ innervation, the authors have gained an understanding of the signal transduction mechanisms of RPNI. NMJ inspection of the DF-RPNI muscle graft could not differentiate the motor end plates reinnervated by the divided neural sources.]]></description>
-      <pubDate>Mon, 17 Nov 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):91-100, July 2026. doi: 10.1097/PRS.0000000000012616]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00019</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012616~optimizing-neuromuscular-junction-formation-for-enhanced"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/progression_of_dupuytren_contracture__a_randomized.20.aspx</link>
-      <author><![CDATA[Karjalainen, Venla-Linnea; Soikkeli, Janne; Räisänen, Mikko P.; Leppänen, Olli V.; Reito, Aleksi; Stjernberg-Salmela, Susanna; Buchbinder, Rachelle; Karjalainen, Teemu]]></author>
-      <category><![CDATA[Hand: Original Articles]]></category>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012666~progression-of-dupuytren-contracture-a-randomized-controlled</link>
       <title><![CDATA[Progression of Dupuytren Contracture: A Randomized Controlled Trial Comparing Surgery, Needle Fasciotomy, and Collagenase Injection]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 04 Dec 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/progression_of_dupuytren_contracture__a_randomized.20.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00020.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Dupuytren contracture can be treated by surgery, needle fasciotomy, or collagenase injection, but how these treatments affect disease progression in both treated and untreated fingers is poorly understood. This study aimed to compare the progression of Dupuytren contracture across these 3 treatments over a 2-year follow-up and identify patients at highest risk for progression and retreatment.
-
-Methods: 
-
-This finger-level analysis used data from DETECT (Dupuytren Treatment Effectiveness Trial) and included 302 participants with 423 initially treated fingers. Progression was defined as an increase in contracture angle between 3 months and 2 years after treatment. Analyses included treated, adjacent untreated, and all untreated fingers. The authors used linear regression models to identify risk factors for progression and retreatment.
-
-Results: 
-
-Of the 302 participants, 279 (92%) completed 3-month contracture measurements and 274 (91%) completed 2-year contracture measurements. In treated fingers, surgery resulted in less progression than needle fasciotomy (mean difference, 9.7 degrees [95% CI, 3.7 to 16]) and collagenase injection (mean difference, 6.0 degrees [95% CI, 0.1 to 12]), and fewer retreatments. No between-group differences were observed in adjacent untreated or all untreated fingers. Younger age at treatment, smoking, dominantly affected proximal interphalangeal joint, and involvement of the little finger were associated with increased risk of progression or retreatment.
-
-Conclusions: 
-
-Surgery offers more durable results in treated fingers compared with percutaneous methods, although progression and retreatment rates in untreated fingers are similar across all treatment groups. Patients at higher risk for progression (ie, young smokers with affected little fingers) may benefit most from surgery.]]></description>
-      <pubDate>Thu, 04 Dec 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):101-112, July 2026. doi: 10.1097/PRS.0000000000012666]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00020</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__progression_of_dupuytren_contracture_.21.aspx</link>
-      <author><![CDATA[Shaheen, Mohammed S.; Chung, Kevin C.]]></author>
-      <category><![CDATA[Hand: Original Articles]]></category>
-      <title><![CDATA[Discussion: Progression of Dupuytren Contracture: A Randomized Controlled Trial Comparing Surgery, Needle Fasciotomy, and Collagenase Injection]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__progression_of_dupuytren_contracture_.21.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):113-115, July 2026. doi: 10.1097/PRS.0000000000012939]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00021</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/comparison_of_spinal_accessory_nerve_transfer.22.aspx</link>
-      <author><![CDATA[Hyttinen, Maria; Rönkkö, Henrikki; Paavilainen, Pasi; Jokihaara, Jarkko]]></author>
-      <category><![CDATA[Hand: Original Articles]]></category>
-      <title><![CDATA[Comparison of Spinal Accessory Nerve Transfer versus C5 Grafting for Suprascapular Nerve Reinnervation in Brachial Plexus Birth Injury]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 11 Nov 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/comparison_of_spinal_accessory_nerve_transfer.22.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00022.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Nerve roots of the upper trunk are usually affected in brachial plexus birth injury. The suprascapular nerve originates from the upper trunk and innervates the infraspinatus muscle, which is the most important external rotator of the shoulder. Two common options for reinnervating the suprascapular nerve are from C5 with an interposition nerve graft or directly from the spinal accessory nerve. The aim of this study was to compare improvement in shoulder external rotation after brachial plexus reconstruction in patients with suprascapular nerve grafted from C5 or with spinal accessory nerve transfer.
-
-Methods: 
-
-The authors retrospectively evaluated improvement of shoulder function in 16 patients after brachial plexus grafting with suprascapular nerve grafted from C5 and in 15 patients with concurrent spinal accessory nerve to suprascapular nerve transfer. In addition, results of secondary suprascapular nerve reinnervations with the spinal accessory nerve after failed nerve grafting (n = 7) were compared with the procedure performed at the primary surgery.
-
-Results: 
-
-Mean improvement in external rotation was better in the nerve transfer group (mean 94 degrees [SD 61]) compared with the nerve graft group (mean 44 degrees [SD 54]; P = 0.023). The nerve graft group had an increased risk of secondary operations to improve active external rotation (P = 0.002), but not for anterior release procedures (P = 0.419). The outcome of spinal accessory nerve transfer was not diminished after primary grafting of the suprascapular nerve from C5 (mean 90 degrees [SD 37]; P = 0.875).
-
-Conclusion: 
-
-Spinal accessory nerve transfer results in better active shoulder external rotation when compared with grafting of the suprascapular nerve from C5 and reduces the risk of secondary surgery.]]></description>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):76e-84e, July 2026. doi: 10.1097/PRS.0000000000012602]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00022</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/differential_compliance_of_patient_reported.23.aspx</link>
-      <author><![CDATA[Calcagni, Maurizio; Gunning, Myrna; Politikou, Olga; Besmens, Inga S.]]></author>
-      <category><![CDATA[Hand: Original Articles]]></category>
-      <title><![CDATA[Differential Compliance of Patient-Reported Outcomes in a Multicenter Hand and Wrist Surgery Registry in Switzerland]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 16 Dec 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/differential_compliance_of_patient_reported.23.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00023.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Outcome registries are essential for assessing treatment effectiveness in hand and wrist surgery, in which both patient-reported outcome measures (PROMs) and clinician-reported outcome measures are commonly used. Consistent patient participation is essential for generating valid and generalizable data. This study investigates age- and sex-related differences in PROM compliance within a multicenter Swiss registry.
-
-Methods: 
-
-Registry data from patients treated between 2020 and 2024 were analyzed. Patients were stratified by age (18 to 30 years, 31 to 40 years, 41 to 50 years, 51 to 60 years, 61 to 70 years, and 70 years or older) and sex. Compliance with PROM completion was evaluated at baseline and 3 and 12 months after treatment.
-
-Results: 
-
-PROM compliance declined over time, with the most pronounced decrease observed in the 18 to 30 years age group (over 90% loss at 12 months). The 61 to 70 years age group showed the highest sustained compliance. Across all age categories, women demonstrated consistently higher completion rates than men.
-
-Conclusions: 
-
-Compliance with PROMs varies significantly by age and sex, leading to potential data bias in outcome registries. Younger patients and men are underrepresented at follow-up, which may compromise the validity and generalizability of registry-based findings. Targeted interventions are needed to enhance participation in these groups and improve the quality of clinical outcome data.]]></description>
-      <pubDate>Tue, 16 Dec 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):85e-91e, July 2026. doi: 10.1097/PRS.0000000000012682]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00023</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/buccal_flap_during_primary_furlow_palatoplasty.24.aspx</link>
-      <author><![CDATA[Wei, Shuyan; Swiekatowski, Kylie R.; Barrera, Jose E.; Wang, Ellen B.; Klugh, James M.; Talanker, Michael M.; Sobol, Danielle L.; Greives, Matthew R.]]></author>
-      <category><![CDATA[Pediatric/Craniofacial: Original Articles]]></category>
-      <title><![CDATA[Buccal Flap during Primary Furlow Palatoplasty Decreases Likelihood of Velopharyngeal Insufficiency in Patients with Cleft Palate]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Mon, 17 Nov 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/buccal_flap_during_primary_furlow_palatoplasty.24.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00024.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-The use of buccal myomucosal flaps during primary palatoplasty has gained popularity, but the impact on surgical outcomes remains debated. This study evaluated whether the use of buccal flaps in primary Furlow palatoplasty for children with cleft lip/palate decreases the likelihood of developing velopharyngeal insufficiency (VPI).
-
-Methods: 
-
-A retrospective cohort study of children with cleft lip/palate who underwent primary palatoplasty from 2015 through 2022 at a single institution was performed. Patients younger than 2 years at surgery who had primary Furlow alone (FA) or Furlow with buccal flap (FB) and had speech-language pathology (SLP) evaluation for VPI were included. Bayesian multivariable logistic regression was used to assess the posterior probability of VPI after FB.
-
-Results: 
-
-Seventy-nine patients were included (68% FA and 32% FB). The median age at palatoplasty was 12 months (interquartile range, 11.25 to 13 months). Baseline characteristics were similar between groups. The median age at SLP assessment was 5 years (range, 3 to 7 years). VPI rates were higher in FA (26.4%) versus FB (8.0%) (P = 0.08). Fistula rates were higher in FA (9.4%) compared with FB (0.0%) (P = 0.17). Patients with VPI had a higher fistula rate (25.0% versus 1.6%; P < 0.01). After adjusting for Veau class and fistula, buccal flaps had an odds ratio of 0.4 (95% credible interval, 0.1 to 1.6) in VPI, with an 89% likelihood of decreasing the odds of VPI.
-
-Conclusions: 
-
-Buccal flaps in primary Furlow palatoplasty were associated with lower VPI and fistula rates, supporting their role in optimizing speech outcomes. They offer advantages as vascularized, autologous tissue; however, multi-institutional, randomized studies are needed to confirm these findings.]]></description>
-      <pubDate>Mon, 17 Nov 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):119-126, July 2026. doi: 10.1097/PRS.0000000000012618]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00024</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/hybrid_auricular_framework_of_autologous_rib_and.25.aspx</link>
-      <author><![CDATA[Deng, Yiwen; Zhang, Zexin; Wang, Ben; Jia, Litao; Pan, Bo; Lin, Lin; Song, Yupeng; Jiang, Haiyue]]></author>
-      <category><![CDATA[Pediatric/Craniofacial: Original Articles]]></category>
-      <title><![CDATA[Hybrid Auricular Framework of Autologous Rib and Ear Cartilage for Microtia Reconstruction through a Preauricular Incision]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 11 Nov 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/hybrid_auricular_framework_of_autologous_rib_and.25.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00025.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Fabrication of the auricular framework is a key aspect of ear reconstruction. The use of autologous rib cartilage, which is considered an ideal grafting material, can minimize harvesting damage and optimize its use. This study introduces a method that combines both rib and ear cartilages to reconstruct the auricular framework using an anterior auricular approach, which can help achieve optimal results.
-
-Methods: 
-
-Between 2020 and 2024, 153 patients with microtia underwent ear reconstruction using a hybrid framework of autologous rib and ear cartilage. Reconstruction was performed through a preauricular incision. Postoperative evaluations focused on the morphology and aesthetics of the reconstructed ears, as well as patient satisfaction.
-
-Results: 
-
-The average follow-up period for this study was 28.94 ± 5.42 months. Plastic surgeons assessed the morphology of the reconstructed ears: 90 (58.82%), 60 (39.21%), and 3 (1.96%) ears had excellent, good, or fair morphologies, respectively. The preoperative visual analog scale satisfaction score was 0.17 ± 0.38, which significantly improved to 8.45 ± 0.94 postoperatively. All the patients expressed satisfaction with their reconstructed ears. There were no significant differences in ear length, width, or circumference between the reconstructed ears and their contralateral counterparts postoperatively (P = 0.080, P = 0.054, and P = 0.051, respectively).
-
-Conclusions: 
-
-Ear reconstruction using hybrid frameworks of autologous rib and ear cartilage performed through preauricular incisions optimally uses the residual ear tissue, minimizes tissue damage, and results in aesthetically favorable reconstructed ears with well-defined substructures and high patient satisfaction.]]></description>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):92e-100e, July 2026. doi: 10.1097/PRS.0000000000012603]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00025</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/surgical_repair_within_24_hours_improves_ocular.26.aspx</link>
-      <author><![CDATA[Takamura, Nariaki; Sato, Akimitsu; Matsunaga, Hiromu; Imai, Toshiro; Yusa, Yu; Hara, Koji; Hayashi, Masanobu; Ishi, Shinyo; Kurosawa, Koreyuki; Imai, Yoshimichi]]></author>
-      <category><![CDATA[Pediatric/Craniofacial: Original Articles]]></category>
-      <title><![CDATA[Surgical Repair within 24 Hours Improves Ocular Motility in Pediatric Orbital Fractures with Muscle Entrapment: Cohort and Systematic Review]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 23 Oct 2025 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/surgical_repair_within_24_hours_improves_ocular.26.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00026.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Pediatric orbital trapdoor and linear fractures may involve entrapment of the extraocular muscles (EOM), potentially causing irreversible ocular motility impairment if surgical intervention is delayed. The optimal timing for surgery in patients with EOM strangulation remains uncertain.
-
-Methods: 
-
-The authors retrospectively reviewed 103 pediatric cases identified from the medical records of 389 patients with orbital fractures. A systematic review was conducted following PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) 2020 guidelines. Data from 10 previous studies and their institutional cohort were combined, including 101 patients younger than 20 years with radiologically confirmed EOM entrapment. Patients were stratified by time to surgery (within 24 hours, 24 to 72 hours, or after 72 hours).
-
-Results: 
-
-Surgical intervention within 24 hours was significantly associated with better postoperative ocular motility outcomes compared with delayed surgery (P < 0.05). In our cohort, patients treated within 8 hours achieved excellent recovery, with Hess area ratio exceeding 85% and no residual diplopia. Patients without EOM entrapment improved with an average of 7 weeks of conservative management.
-
-Conclusions: 
-
-This study supports urgent surgical repair within 24 hours for pediatric orbital fractures with EOM entrapment to maximize functional outcomes. In cases of soft-tissue entrapment without sustained oculocardiac reflex, nonoperative management with close follow-up may be appropriate. Prompt diagnosis and timely referral are critical to avoid permanent sequelae.]]></description>
-      <pubDate>Thu, 23 Oct 2025 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):101e-111e, July 2026. doi: 10.1097/PRS.0000000000012562]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00026</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/long_term_outcomes_following_craniosynostosis.27.aspx</link>
-      <author><![CDATA[Coombs, Demetrius M.; Ditthakasem, Kanlaya; Herbert, Morley; Fearon, Jeffrey A.]]></author>
-      <category><![CDATA[Pediatric/Craniofacial: Original Articles]]></category>
-      <title><![CDATA[Long-Term Outcomes following Craniosynostosis Corrections: A 30-Year Retrospective]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 25 Nov 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/long_term_outcomes_following_craniosynostosis.27.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00027.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Craniosynostosis studies typically focus on perioperative outcomes. Because surgical intervention can negatively affect cranial growth, earlier reviews may overestimate long-term benefit and produce spuriously favorable results. The purpose of this review is to evaluate long-term outcomes following cranial vault remodeling for single-suture craniosynostosis with a focus on skeletal maturity.
-
-Methods: 
-
-A retrospective review was performed of all consecutive patients with single-suture craniosynostosis undergoing remodeling procedures by a single surgeon.
-
-Results: 
-
-Of 924 reviewed patients, 752 underwent primary and 172 secondary corrections. The median length of stay was 2 days, the allogeneic blood transfusion rate was 7.5%, and the complication rate was 0.7%. Among patients receiving primary repairs, 3.4% underwent secondary correction at a mean age of 5.5 years, with this rate rising to 20% by skeletal maturity. Delaying primary surgical intervention and applying overcorrection were associated with a reduction in the secondary correction rate from 2.2% to 0.6%, despite comparable follow-up durations. The odds ratio suggests that for every month of delay in initial correction, there is an expected 15% reduction in secondary procedures. In a cohort of 835 individuals, gross developmental outcomes fell within the normal range, with only 12% demonstrating mild to moderate delays.
-
-Conclusions: 
-
-This review of 924 single-suture craniosynostosis remodeling procedures revealed a predominantly benign perioperative course. The overall secondary surgery rate was 3.4%, rising to 20% by skeletal maturity, suggesting that outcomes cannot be fully appreciated until completion of skeletal growth. Focused analyses suggest that delaying primary interventions and performing overcorrections could reduce secondary correction rates. Most of the affected children exhibited developmental trajectories similar to those of unaffected individuals.]]></description>
-      <pubDate>Tue, 25 Nov 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):112e-119e, July 2026. doi: 10.1097/PRS.0000000000012649]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00027</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/craniofacial_symmetry_progression_following_strip.28.aspx</link>
-      <author><![CDATA[Harrison, Lucas M.; Hallac, Rami R.; Sanati-Mehrizy, Paymon; Seaward, James R.; Kane, Alex A.]]></author>
-      <category><![CDATA[Pediatric/Craniofacial: Original Articles]]></category>
-      <title><![CDATA[Craniofacial Symmetry Progression following Strip Craniectomy in Unilateral Coronal Craniosynostosis]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 11 Dec 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/craniofacial_symmetry_progression_following_strip.28.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00028.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Strip craniectomy in unilateral coronal craniosynostosis (UCS) is associated with shorter operations, fewer complications, reduced transfusions, fewer ophthalmic disorders, and improved craniofacial morphology. However, the tempo and extent of changes in craniofacial features after surgery are less well understood. The purpose of this study is to evaluate the progression of craniofacial symmetry over time after strip craniectomy in UCS.
-
-Methods: 
-
-Eighteen patients with UCS were evaluated before surgery and at 3 months, 6 months, 1 year, and 2 years after strip craniectomy with helmet therapy. Three-dimensional images were used to assess craniofacial asymmetries. Craniofacial composites were created. Eighteen control patients were included for comparison.
-
-Results: 
-
-Before surgery, brow projection asymmetry (92.51% ± 4.23%; P < 0.001), orbital width (89.26% ± 6.57%; P = 0.003) and height asymmetry (118.42% ± 7.79%; P = 0.043), and midface asymmetry (91.42% ± 3.14%; P < 0.001) were significantly different between sides. Cranial asymmetry (91.97% ± 4.36%), decreased height of the ipsilateral orbit (6.50 ± 1.09 degrees), contralateral forehead bossing (10.51 ± 1.64 degrees), and nasal and chin deviation to the contralateral side (7.90 ± 2.30 degrees and 5.86 ± 1.48 degrees, respectively) were present. By 3 months after surgery, all craniofacial measurements had significantly improved from their preoperative values (P < 0.050). Cranial asymmetry (98.73% ± 2.02%), frontal bossing (1.28 ± 0.27 degrees), brow projection asymmetry (98.34% ± 1.27%), orbital height (102.47% ± 8.40%) and vertical asymmetry (0.84 ± 0.46 degrees), and nasal and chin deviation (1.60 ± 0.89 degrees and 1.17 ± 0.59 degrees, respectively) were not significantly different from controls at 2 years. Orbital width and midface asymmetry remained significantly different from controls.
-
-Conclusions: 
-
-Patients with UCS demonstrated significant asymmetry before surgery that significantly improved by 3 months after surgery. Most craniofacial features normalized compared with controls by 2 years after surgery, except for orbital width and midface asymmetry.]]></description>
-      <pubDate>Thu, 11 Dec 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):130-137, July 2026. doi: 10.1097/PRS.0000000000012700]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00028</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__craniofacial_symmetry_progression.29.aspx</link>
-      <author><![CDATA[Flapper, Walter J.]]></author>
-      <category><![CDATA[Pediatric/Craniofacial: Original Articles]]></category>
-      <title><![CDATA[Discussion: Craniofacial Symmetry Progression following Strip Craniectomy in Unilateral Coronal Craniosynostosis]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__craniofacial_symmetry_progression.29.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):138-139, July 2026. doi: 10.1097/PRS.0000000000012751]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00029</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/the_apert_severity_scale__a_quantitative_tool_for.30.aspx</link>
-      <author><![CDATA[Hu, Allison C.; Tolley, Philip D.; Han, Nicholas A.; Ryan, Isabel A.; Liao, Eric C.; Swanson, Jordan W.; Bartlett, Scott P.; Taylor, Jesse A.]]></author>
-      <category><![CDATA[Pediatric/Craniofacial: Original Articles]]></category>
-      <title><![CDATA[The APERT Severity Scale: A Quantitative Tool for Risk Stratification in Apert Syndrome]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 16 Dec 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/the_apert_severity_scale__a_quantitative_tool_for.30.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00030.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Apert syndrome is a rare congenital disorder characterized by craniosynostosis, midface hypoplasia, and syndactyly. The multisystem complexity and lack of standardized surgical guidelines complicate diagnosis and treatment. This study introduces a quantitative severity scale for Apert syndrome to support objective risk stratification and personalized care.
-
-Methods: 
-
-The authors retrospectively reviewed children with Apert syndrome who were at least 11 years of age and treated from 1988 through 2024. A 5-domain severity scale based on literature review and clinical data was developed. Scoring was performed using preoperative photographs and documentation.
-
-Results: 
-
-Of 65 identified patients, 37 (56.9%) met inclusion criteria. The mean follow-up age was 17.0 ± 5.0 years, with an average of 4.4 ± 2.2 craniofacial surgical procedures. Patients were scored from 1 (least severe) to 3 (most severe) in 5 domains: airway compromise, pressure (intracranial), eyes, retrusion of midface, and turribrachycephaly (APERT), with total scores ranging from 5 to 15. Severity categories were defined as mild (5 to 7), moderate (8 to 11), or severe (12 to 15). Fifteen patients (40.5%) had mild disease, 20 (54.1%) moderate, and 2 (5.4%) severe, with a mean score of 8.1 ± 1.8. Higher APERT scores correlated with increased surgical frequency (r = 0.851; P < 0.001). Subscores in airway, pressure, eyes, and skull shape were also predictive. A score of 9 or greater predicted 6 or more surgical procedures with 100% sensitivity and 86.7% specificity.
-
-Conclusions: 
-
-The APERT score is the first quantitative classification of Apert syndrome severity, correlating with phenotypic burden and surgical volume. The APERT score may improve clinical communication, institutional comparisons, and risk-based treatment planning.]]></description>
-      <pubDate>Tue, 16 Dec 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):120e-131e, July 2026. doi: 10.1097/PRS.0000000000012723]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00030</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__the_apert_severity_scale__a.31.aspx</link>
-      <author><![CDATA[Hopper, Richard A.]]></author>
-      <category><![CDATA[Pediatric/Craniofacial: Original Articles]]></category>
-      <title><![CDATA[Discussion: The APERT Severity Scale: A Quantitative Tool for Risk Stratification in Apert Syndrome]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__the_apert_severity_scale__a.31.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):132e-133e, July 2026. doi: 10.1097/PRS.0000000000012783]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00031</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/maxilla_first_versus_mandible_first_in_2_jaw.32.aspx</link>
-      <author><![CDATA[Fukui, Michika; Yao, Chuan-Fong; Mam, Sambovithyea; Lo, Lun-Jou]]></author>
-      <category><![CDATA[Pediatric/Craniofacial: Original Articles]]></category>
-      <title><![CDATA[Maxilla First versus Mandible First in 2-Jaw Orthognathic Surgery: Determining Factors and Outcomes]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 11 Nov 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/maxilla_first_versus_mandible_first_in_2_jaw.32.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00032.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-The choice between maxilla first or mandible first in the double-splint method for orthognathic surgery remains controversial. There is little comprehensive analysis regarding the factors that affect sequence selection, subsequent accuracy, and stability outcomes.
-
-Methods: 
-
-This retrospective study was conducted on patients with jaw deformities who underwent orthognathic surgery at our center from 2020 through 2024. Inclusion criteria were preoperative simulation using 3-dimensional software and either maxilla-first or mandible-first procedures. Exclusion criteria were single-jaw surgery and incomplete data. Data pertaining to patients’ anatomical characteristics and surgical plans were collected. Statistical analysis was performed to identify factors influencing the choice of sequencing. Preoperative plans and cephalometric comparisons of the immediate and long-term postoperative stages were used to evaluate accuracy and stability.
-
-Results: 
-
-A total of 308 patients were included, with 232 undergoing maxilla-first and 76 undergoing mandible-first sequences. Mandible-first sequences were determined by factors such as vertical maxillary lengthening procedure (odds ratio [OR], 42.03), obstructive sleep apnea (OR, 25.7), counterclockwise pitch rotation (OR, 13.74), cleft (OR, 5.89), segmental Le Fort I (OR, 3.21), and asymmetry (OR, 2.58). In the subgroup analysis, the degree of intermediate mandibular autorotation on virtual surgical planning was correlated with the planned pitch rotation. However, this was significantly reduced when the surgical sequence was reversed. Sagittal movement of the maxilla was more accurate with the maxilla-first sequence. Stability was similar for both sequencing approaches.
-
-Conclusions: 
-
-Surgical sequence selection was influenced by a combination of anatomical and planning factors. Virtual surgical planning played an important role in sequence determination. Both sequences achieved acceptable accuracy and stability.]]></description>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):141-153, July 2026. doi: 10.1097/PRS.0000000000012608]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00032</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__maxilla_first_versus_mandible_first_in.33.aspx</link>
-      <author><![CDATA[Coombs, Demetrius M.]]></author>
-      <category><![CDATA[Pediatric/Craniofacial: Original Articles]]></category>
-      <title><![CDATA[Discussion: Maxilla First versus Mandible First in 2-Jaw Orthognathic Surgery: Determining Factors and Outcomes]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__maxilla_first_versus_mandible_first_in.33.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):154-156, July 2026. doi: 10.1097/PRS.0000000000012612]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00033</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/the_paul_flap__prolabial_augmentation_of_the_upper.34.aspx</link>
-      <author><![CDATA[Khosla, Rohit K.; Tevlin, Ruth; Mittermiller, Paul A.]]></author>
-      <category><![CDATA[Pediatric/Craniofacial: Ideas and Innovations]]></category>
-      <title><![CDATA[The PAUL Flap: Prolabial Augmentation of the Upper Lip in Primary Bilateral Cleft Lip Repair]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 25 Nov 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/the_paul_flap__prolabial_augmentation_of_the_upper.34.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00034.F1.jpeg" border="0" align ="left" alt="image"/></a>Summary: 
-
-A whistle deformity is a common secondary deformity of upper lip volume deficiency in the tubercle after bilateral cleft lip repair. This deformity represents a significant aesthetic stigma after bilateral cleft lip repair and is challenging to correct. In severe cases, the whistle deformity can lead to functional speech issues due to a resultant inability to seal the lips while creating plosive consonant sounds. Various secondary surgical methods have been proposed to address secondary tubercle deformities requiring revision surgery. Volume deficiency can occur in the tubercle with any surgical technique used for bilateral cleft lip repair, although some techniques may predispose to this deformity more than others. The authors present a novel fibroadipose tissue flap to improve tubercle fullness during primary bilateral cleft lip repair using tissue that is otherwise normally discarded. The prolabial augmentation of the upper lip (PAUL) flap is a random pattern fibroadipose flap distally based off the undersurface of the prolabial skin flap. The fibroadipose tissue in the premaxillary segment is preserved, dissected, and everted for autoaugmentation of the tubercle. The PAUL flap is inset into a submucosal pocket in the vermilion over the orbicularis muscle repair as one of the final steps of repair. The PAUL flap—an effective adjunct to prevent a whistle deformity—can be used with any skin pattern technique designed for the prolabial skin flap in primary bilateral cleft lip repair.]]></description>
-      <pubDate>Tue, 25 Nov 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):134e-137e, July 2026. doi: 10.1097/PRS.0000000000012644]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00034</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/in_house_in_and_out_technique_for_mandibular.35.aspx</link>
-      <author><![CDATA[Asensio-Salazar, Javier; Alarcón Granero, Alejandro; Rivero Calle, Alvaro; Zubillaga Rodríguez, Ignacio; Gutiérrez Díaz, Ramon; Sánchez Aniceto, Gregorio]]></author>
-      <category><![CDATA[Reconstructive: Head & Neck: Original Articles]]></category>
-      <title><![CDATA[In-House In-and-Out Technique for Mandibular Reconstruction Analysis: A 3D Comparison with CAD-CAM Designs for Fibula Flap Reconstruction]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 30 Oct 2025 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/in_house_in_and_out_technique_for_mandibular.35.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00035.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Mandibular reconstruction after segmental mandibulectomy presents significant functional and aesthetic challenges. Virtual surgical planning and 3-dimensional printing improve surgical precision but are costly and time-consuming. In-house protocols have emerged as alternatives to reduce costs and accelerate workflows. The in-and-out technique is an innovative in-house method that uses a 3-dimensional printed biomodel to transfer reconstruction plate positioning to cutting guides.
-
-Methods: 
-
-This retrospective cohort study compared mandibular reconstruction accuracy using the in-and-out technique versus a computer-aided design and manufacturing protocol of the reconstruction plate. Fourteen patients underwent fibula flap mandibular reconstruction between May of 2022 and February of 2024. There were 7 patients in each group. Postoperative computed tomography scans were compared with preoperative stereolithographic models to evaluate volumetric accuracy using CloudCompare. Intercondylar and intergonial distances were assessed with MeshLab. Nonparametric tests were used for superiority and noninferiority studies.
-
-Results: 
-
-Median stereolithographic deviation was 0.21 mm (interquartile range [IQR], 0.15 to 0.26 mm) for the in-and-out group and 0.18 mm (IQR, 0.17 to 0.21 mm) for the control group. The median intercondylar deviation was 2.11 mm (IQR, 1.26 to 2.32 mm) for the in-and-out group versus 1.89 mm (IQR, 0.92 to 3.41 mm) in the control group. Median intergonial deviation was 1.86 mm (IQR, 1.38 to 2.41 mm) for the in-and-out group versus 1.95 mm (IQR, 1.14 to 2.93 mm) for the control group. With the in-and-out technique, costs were reduced by more than 75%, and workaround time was reduced from 2 weeks to 2 days. Time from biopsy to surgery time was reduced in 8 days.
-
-Conclusions: 
-
-The in-and-out technique may be a viable alternative to outsourced computer-aided design and manufacturing workflows for mandibular reconstruction at a fraction of the cost, especially for simpler cases and those requiring a shorter workaround time.]]></description>
-      <pubDate>Thu, 30 Oct 2025 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):159-166, July 2026. doi: 10.1097/PRS.0000000000012580]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00035</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reconstruction_of_large_full_thickness_medial.36.aspx</link>
-      <author><![CDATA[Gur, Zvi; Shoji, Marissa K.; Dib El Jalbout, Nahia; Liu, Catherine Y.; Korn, Bobby S.; Kikkawa, Don O.]]></author>
-      <category><![CDATA[Reconstructive: Head & Neck: Original Articles]]></category>
-      <title><![CDATA[Reconstruction of Large Full-Thickness Medial Lower Eyelid Defects Using a Medially Based Tarsoconjunctival Pedicle Flap]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 03 Sep 2025 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reconstruction_of_large_full_thickness_medial.36.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00036.F1.jpeg" border="0" align ="left" alt="image"/></a>Summary: 
-
-Reconstruction of large full-thickness medial lower eyelid margin defects often requires centrally based tarsoconjunctival pedicle flaps from the ipsilateral upper eyelid in combination with anterior lamellar grafting. However, centrally based flaps may result in temporary obstruction of the visual axis in the affected eye. The authors present a novel modified surgical technique using a medially based tarsoconjunctival pedicle flap from the upper eyelid for the reconstruction of large full-thickness medial lower eyelid defects. A tarsoconjunctival flap was mobilized and hinged medially by the conjunctiva from the upper eyelid with rotation into the lower eyelid defect. This surgical technique was used in 4 cases of medial lower eyelid defects involving 60% to 65% of the eyelid after basal cell carcinoma excision. Successful reconstruction of the defect was achieved in all 4 cases without graft failure, wound dehiscence, or lagophthalmos. Medially hinged tarsoconjunctival pedicle flaps are an effective technique for the reconstruction of large full-thickness medial lower eyelid defects. This procedure may be considered especially in patients with similar defects who cannot tolerate ocular occlusion.]]></description>
-      <pubDate>Wed, 03 Sep 2025 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):138e-141e, July 2026. doi: 10.1097/PRS.0000000000012425]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00036</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/feasibility_and_safety_of_arterial_transfer_for.37.aspx</link>
-      <author><![CDATA[Katayama, Riku; Yasunaga, Yoshichika; Akazawa, Satoshi; Watarai, Aya; Haga, Yoshitaka; Araki, Jun; Nakao, Junichi; Mori, Hiroaki; Nakagawa, Masahiro; Kishi, Kazuo; Sugiura, Teiichi; Uesaka, Katsuhiko]]></author>
-      <category><![CDATA[Reconstructive: Trunk: Original Articles]]></category>
-      <title><![CDATA[Feasibility and Safety of Arterial Transfer for Microscopic Hepatic Artery Reconstruction after Hepatobiliary and Pancreatic Tumor Resection]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 30 Oct 2025 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/feasibility_and_safety_of_arterial_transfer_for.37.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00037.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Options for microscopic hepatic artery (HA) reconstruction include direct anastomosis (DA), arterial transfer (AT), and graft interposition (GI). Despite the advantage of AT requiring only 1 anastomosis site, its clinical applicability and outcomes in HA reconstruction after hepatobiliary tumor resection remain underexplored. This study aimed to evaluate the feasibility and safety of AT compared with DA.
-
-Methods: 
-
-A retrospective analysis of patients who underwent microscopic HA reconstruction after hepatobiliary tumor resection between 2003 and 2024 was performed. Feasibility was assessed based on the proportion of cases successfully reconstructed without GI and the distribution of cases among the DA, AT, and GI groups. Safety was evaluated by comparing the severity of overall complications, incidence of potential complications related to decreased HA flow, incidence of postoperative anastomotic thrombosis, and survival outcomes between the AT and DA groups.
-
-Results: 
-
-Among 130 patients, 99.2% of cases did not require GI, with the DA, AT, and GI groups accounting for 56%, 43%, and 0.8%, respectively. No significant differences between the AT and DA groups were observed in the severity of overall complications (P = 0.27), incidence of potential complications related to decreased HA flow (P = 0.50), postoperative anastomotic thrombosis (P > 0.99), or 5-year overall survival rate (29.7% versus 35.1%; P = 0.37).
-
-Conclusions: 
-
-AT provides favorable outcomes comparable to DA, even in complex resections. AT is a safe and feasible option for microscopic HA reconstruction when DA is not feasible, effectively minimizing the need for GI.]]></description>
-      <pubDate>Thu, 30 Oct 2025 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):142e-152e, July 2026. doi: 10.1097/PRS.0000000000012582]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00037</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__feasibility_and_safety_of_arterial.38.aspx</link>
-      <author><![CDATA[Iyer, Shridhar Ganpathi; Sebastin, Sandeep Jacob]]></author>
-      <category><![CDATA[Reconstructive: Trunk: Original Articles]]></category>
-      <title><![CDATA[Discussion: Feasibility and Safety of Arterial Transfer for Microscopic Hepatic Artery Reconstruction after Hepatobiliary and Pancreatic Tumor Resection]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__feasibility_and_safety_of_arterial.38.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):153e-154e, July 2026. doi: 10.1097/PRS.0000000000012709]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00038</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/allergy_history_and_psychiatric_diagnoses_as.39.aspx</link>
-      <author><![CDATA[Fine, Keenan S.; O’Shea, Aidan W.; Gupta, Sakar; George, Robert E.; Afifi, Ahmed M.]]></author>
-      <category><![CDATA[Reconstructive: Peripheral Nerve: Original Article]]></category>
-      <title><![CDATA[Allergy History and Psychiatric Diagnoses as Predictors of Postoperative Outcomes in Headache Surgery]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 14 Oct 2025 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/allergy_history_and_psychiatric_diagnoses_as.39.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00039.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Polyallergy, a condition characterized by multiple non–immune-mediated reactions, has been associated with somatic symptom disorder (SSD), a psychiatric diagnosis characterized by excessive anxiety and preoccupation with physical symptoms without objective physical findings. SSD has been linked to a higher incidence of migraines and poorer surgical outcomes. Given these associations, this study examined whether polyallergy could serve as a preoperative marker for predicting outcomes after headache surgery involving peripheral nerve decompression.
-
-Methods: 
-
-A retrospective cohort study was conducted of patients who underwent headache surgery between 2012 and 2017 with a single plastic surgeon. Patient-reported outcomes assessed with the Headache Impact Test–6, Migraine-Specific Quality of Life Questionnaire, and Migraine Disability Assessment; psychiatric diagnoses; and allergy history were collected. Polyallergy was defined as 2 or more allergies without immune-mediated confirmation or anaphylaxis. Subgroup analyses were performed based on polyallergy and psychiatric history.
-
-Results: 
-
-Patients with polyallergy experienced significantly less improvement in Headache Impact Test–6 (11.9% versus 56.3%; P = 0.002) and Migraine Disability Assessment (29.8% versus 93.7%; P = 0.010) scores, with Migraine-Specific Quality of Life Questionnaire scores approaching significance (44.0% versus 138.0%; P = 0.056). Polyallergy was associated with a roughly 50% to 70% lower likelihood of achieving clinically significant improvement. Patients with an anxiety disorder had less improvement, but the differences were not statistically significant. There were no differences in improvement between those with or without a mood disorder.
-
-Conclusions: 
-
-Polyallergy is associated with poorer outcomes after headache surgery and may serve as a chart-accessible marker to identify individuals at risk for suboptimal improvement. These findings offer a novel application of polyallergy as a behavioral proxy for SSD in migraine surgical care and may aid patient selection and preoperative counseling.]]></description>
-      <pubDate>Tue, 14 Oct 2025 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):169-177, July 2026. doi: 10.1097/PRS.0000000000012527]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00039</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/mini_free_flaps_for_diabetic_foot_reconstruction.40.aspx</link>
-      <author><![CDATA[Cha, Han Gyu; Kang, Young Hun; Choi, Eol; Park, Hyun Woo; Nam, Seung Min; Choi, Chang Yong; Park, Eun Soo]]></author>
-      <category><![CDATA[Reconstructive: Lower Extremity: Original Article]]></category>
-      <title><![CDATA[Mini Free Flaps for Diabetic Foot Reconstruction]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 18 Nov 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/mini_free_flaps_for_diabetic_foot_reconstruction.40.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00040.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-Diabetic foot ulcers (DFUs) frequently lead to infections, amputations, and reduced quality of life, and limb salvage through flap reconstruction plays a crucial role in treatment. However, challenges arise in cases requiring soft tissue to cover the metatarsal head or dead space above the amputation stump. This study aims to assess the importance and effectiveness of mini free flap reconstruction for small DFUs to prevent further amputations and preserve foot length.
-
-Methods: 
-
-A retrospective review was conducted of patients with DFUs who underwent mini free flap reconstruction. Preoperative evaluation included computed tomography angiography and high-frequency ultrasonography to assess recipient vessel status and guide flap design. Mini free flaps were harvested and anastomosed to recipient vessels selected from smaller distal arteries rather than major vessels.
-
-Results: 
-
-A total of 20 patients underwent mini free flap reconstruction. The average wound size was 6.8 cm2. The mini flap types included superficial circumflex iliac artery perforator, superficial inferior epigastric artery, anterior tibial artery, and peroneal artery perforator flaps, with an average pedicle length of 6.9 cm and an average artery diameter of 1.4 mm. Recipient vessels used included the dorsal metatarsal artery, arcuate artery, medial and lateral tarsal arteries, and digital artery, with an average diameter of 1.5 mm.
-
-Conclusions: 
-
-Mini free flap reconstruction is an effective solution for small DFUs, offering a reliable method for foot salvage. By using advanced imaging techniques for precise vessel and flap selection, this approach ensures optimal flap survival and improves quality of life by avoiding unnecessary amputations.]]></description>
-      <pubDate>Tue, 18 Nov 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):155e-163e, July 2026. doi: 10.1097/PRS.0000000000012628]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00040</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/beyond_the_diep_flap__thigh_based_autologous.41.aspx</link>
-      <author><![CDATA[Kurlander, David E.; Chu, Carrie K.; Shenaq, Deana S.]]></author>
-      <category><![CDATA[CME]]></category>
-      <title><![CDATA[Beyond the DIEP Flap: Thigh-Based Autologous Breast Reconstruction]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/beyond_the_diep_flap__thigh_based_autologous.41.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00041.F1.jpeg" border="0" align ="left" alt="image"/></a>Learning Objectives: 
-
-After studying this article, the participant should be able to: 1. Define the indications, benefits, and drawbacks of thigh-based flap donor sites for breast reconstruction. 2. Recognize the differences between popular thigh-based flaps and the utility of each. 3. Understand the anatomy of thigh-based free flaps, including their landmarks, vascular pedicles, and techniques of flap harvest. 4. Manage donor-site healing and complications.
-
-Summary: 
-
-Thigh-based free flaps have become a popular flap option for autologous breast reconstruction. Critiques of thigh-based flaps include inadequate flap volume and donor-site concerns, such as poor appearance, sensory changes, and problematic healing; however, refinements in surgical technique have led to more predictable outcomes. The purpose of this article is to review the advantages and disadvantages of the various thigh-based free flaps for breast reconstruction, including gracilis myocutaneous, profunda artery perforator, and lateral thigh perforator flaps. Practical pearls for flap harvest and optimization of aesthetic results are provided.]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):164e-177e, July 2026. doi: 10.1097/PRS.0000000000012954]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00041</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/the_3d_printed_surgical_microscope__an_innovative,.42.aspx</link>
-      <author><![CDATA[Eftekari, Sahand C.; Wu, Elizabeth P.; Zona, Emily E.; Carbullido, M. Kristine; Via, Ellen C.; Zeng, Weifeng; Dingle, Aaron M.; Poore, Samuel O.]]></author>
-      <category><![CDATA[Plastic Surgery Focus: Ideas and Innovations]]></category>
-      <title><![CDATA[The 3D-Printed Surgical Microscope: An Innovative, Low-Cost Solution for Global Microsurgery Education]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/the_3d_printed_surgical_microscope__an_innovative,.42.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00042.F1.jpeg" border="0" align ="left" alt="image"/></a>Summary: 
-
-Microsurgery is a specialized field within plastic surgery constrained by the high cost and limited availability of surgical microscopes, particularly in resource-limited settings. This lack of access hinders trainees from developing essential microsurgical skills. Previous efforts have explored smartphone-based alternatives, but there remains a need for high-fidelity, accessible training microscopes. This study presents a novel, low-cost, travel-friendly surgical microscope designed for microsurgery training. Modified binocular objective lenses enable near-field stereoscopic viewing using a dual-mirror array. A 3D-printed chassis provides the correct top-down orientation, and an integrated light source operates on standard or battery power, ensuring usability in low-resource environments. Initial testing demonstrated a fixed 6.5× magnification, allowing trainees to perform end-to-end anastomoses on 2-mm vessels. Prototypes were deployed for microsurgery training in the United States, Rwanda, Ethiopia, and Vietnam through the SHARE (Surgeons in Humanitarian Alliance for Reconstruction, Research and Education) plastic surgery organization, Nuoy Reconstructive International, and the senior author’s home institution. The authors’ investigation continues to assess the effectiveness of the microscope compared with state-of-the-art surgical microscopes. By offering a low-cost, portable solution without compromising image quality, this innovation has begun to transform microsurgical education and operating room–based microscopy worldwide, increasing accessibility for trainees and patients in diverse settings.]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):181-184, July 2026. doi: 10.1097/PRS.0000000000012671]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00042</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__the_3d_printed_surgical_microscope__an.43.aspx</link>
-      <author><![CDATA[Ranganathan, Kavitha]]></author>
-      <category><![CDATA[Plastic Surgery Focus: Ideas and Innovations]]></category>
-      <title><![CDATA[Discussion: The 3D-Printed Surgical Microscope: An Innovative, Low-Cost Solution for Global Microsurgery Education]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__the_3d_printed_surgical_microscope__an.43.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):185-186, July 2026. doi: 10.1097/PRS.0000000000012676]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00043</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/here_s_to_the_next_80_years_of_plastic_and.44.aspx</link>
-      <author><![CDATA[Lin, Samuel J.]]></author>
-      <category><![CDATA[Editorials]]></category>
-      <title><![CDATA[Here’s to the Next 80 Years of Plastic and Reconstructive Surgery!]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/here_s_to_the_next_80_years_of_plastic_and.44.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00044.F1.jpeg" border="0" align ="left" alt="image"/></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):187-191, July 2026. doi: 10.1097/PRS.0000000000013128]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00044</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/advancing_the_science,_timing,_and_long_term.45.aspx</link>
-      <author><![CDATA[Taylor, Jesse A.]]></author>
-      <category><![CDATA[Editorials]]></category>
-      <title><![CDATA[Advancing the Science, Timing, and Long-Term Impact of Cleft and Craniofacial Care]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/advancing_the_science,_timing,_and_long_term.45.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):192-193, July 2026. doi: 10.1097/PRS.0000000000012992]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00045</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/plastic_and_reconstructive_surgery_highlights_.46.aspx</link>
-      <author><![CDATA[Chao, Albert H.]]></author>
-      <category><![CDATA[Editorials]]></category>
-      <title><![CDATA[Plastic and Reconstructive Surgery Highlights: Plastic Surgery Focus]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/plastic_and_reconstructive_surgery_highlights_.46.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):194-197, July 2026. doi: 10.1097/PRS.0000000000012956]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00046</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/prs_journal_club__craniofacial_symmetry.47.aspx</link>
-      <author><![CDATA[Harrison, Lucas M.; Kalmar, Christopher L.; Naidu, Priyanka]]></author>
-      <category><![CDATA[Journal Article Reviews]]></category>
-      <title><![CDATA[PRS Journal Club: Craniofacial Symmetry Progression, Long-Term Cranial Vault Remodeling Outcomes, and Syndromic Risk Stratification]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/prs_journal_club__craniofacial_symmetry.47.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):198-199, July 2026. doi: 10.1097/PRS.0000000000013058]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00047</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/spotlight_in_plastic_surgery__july_2026.48.aspx</link>
-      <author><![CDATA[Phillips, Brett T.; Alser, Osaid; Alviar Ortiz, Maria P.; Correa, Natalia; Escandón, Joseph M.; Mansour, Shahd H.; Moore, Meredith; Pachano Bravo, AnaMaría; Ramsey, Matthew D.; Saad, Charbel; Shauly, Orr; Shulzhenko, Nikita O.; Spiller, Kelly; Szulia, Agata; Zepeda Torres, José Maria]]></author>
-      <category><![CDATA[Journal Article Reviews]]></category>
-      <title><![CDATA[Spotlight in Plastic Surgery: July 2026]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/spotlight_in_plastic_surgery__july_2026.48.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):200-203, July 2026. doi: 10.1097/PRS.0000000000013059]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00048</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/immediate_hybrid_breast_reconstruction__dual_plane.49.aspx</link>
-      <author><![CDATA[Munhoz, Alexandre Mendonça]]></author>
-      <category><![CDATA[Letters]]></category>
-      <title><![CDATA[Immediate Hybrid Breast Reconstruction: Dual-Plane Approach Using Prepectoral Implants and Retropectoral Fat Grafting]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 07 Oct 2025 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/immediate_hybrid_breast_reconstruction__dual_plane.49.aspx"></a>No abstract available]]></description>
-      <pubDate>Tue, 07 Oct 2025 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):178e-179e, July 2026. doi: 10.1097/PRS.0000000000012497]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00049</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reply__immediate_hybrid_breast_reconstruction_.50.aspx</link>
-      <author><![CDATA[Longo, Benedetto; Giacalone, Martina; D’Orsi, Gennaro; Cervelli, Valerio]]></author>
-      <category><![CDATA[Letters]]></category>
-      <title><![CDATA[Reply: Immediate Hybrid Breast Reconstruction: Dual-Plane Approach Using Prepectoral Implants and Retropectoral Fat Grafting]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reply__immediate_hybrid_breast_reconstruction_.50.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):179e-180e, July 2026. doi: 10.1097/PRS.0000000000012795]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00050</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/assessing_risks_in_intramuscular_fat_grafting__a.51.aspx</link>
-      <author><![CDATA[Bohler, Forrest; Koenig, Zachary A.; Chaiyasate, Kongkrit]]></author>
-      <category><![CDATA[Letters]]></category>
-      <title><![CDATA[Assessing Risks in Intramuscular Fat Grafting: A Systematic Review and Meta-Analysis of Complications]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/assessing_risks_in_intramuscular_fat_grafting__a.51.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):180e-181e, July 2026. doi: 10.1097/PRS.0000000000012499]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00051</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reply__assessing_risks_in_intramuscular_fat.52.aspx</link>
-      <author><![CDATA[Felix, Gabriel de Almeida Arruda; Isoldi, Felipe Contoli; Mourão, Marcelo Oliveira Jr; Ferreira, Lydia Masako]]></author>
-      <category><![CDATA[Letters]]></category>
-      <title><![CDATA[Reply: Assessing Risks in Intramuscular Fat Grafting: A Systematic Review and Meta-Analysis of Complications]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reply__assessing_risks_in_intramuscular_fat.52.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):181e-182e, July 2026. doi: 10.1097/PRS.0000000000012773]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00052</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/toe_transfers_outperform_replantation_after_digit.53.aspx</link>
-      <author><![CDATA[Karamitros, Georgios; Lamaris, Gregory A.; Lineaweaver, William C.]]></author>
-      <category><![CDATA[Letters]]></category>
-      <title><![CDATA[Toe Transfers Outperform Replantation after Digit Amputations: Outcomes of 126 Toe Transfers]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Tue, 02 Dec 2025 00:00:00 GMT-06:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/toe_transfers_outperform_replantation_after_digit.53.aspx"></a>No abstract available]]></description>
-      <pubDate>Tue, 02 Dec 2025 00:00:00 GMT-06:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):183e-184e, July 2026. doi: 10.1097/PRS.0000000000012670]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00053</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reply__toe_transfers_outperform_replantation_after.54.aspx</link>
-      <author><![CDATA[Wei, Fu-Chan; Lo, Steven]]></author>
-      <category><![CDATA[Letters]]></category>
-      <title><![CDATA[Reply: Toe Transfers Outperform Replantation after Digit Amputations: Outcomes of 126 Toe Transfers]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reply__toe_transfers_outperform_replantation_after.54.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):184e-185e, July 2026. doi: 10.1097/PRS.0000000000012866]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00054</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/facial_symmetry_enhancement_and_brain_network.55.aspx</link>
-      <author><![CDATA[Salles, Alessandra Grassi; Mota, Wellington Menezes]]></author>
-      <category><![CDATA[Letters]]></category>
-      <title><![CDATA[Facial Symmetry Enhancement and Brain Network Modifications in Facial Palsy Patients after Botulinum Toxin Type A Treatment]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Fri, 29 Aug 2025 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/facial_symmetry_enhancement_and_brain_network.55.aspx"></a>No abstract available]]></description>
-      <pubDate>Fri, 29 Aug 2025 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):185e-186e, July 2026. doi: 10.1097/PRS.0000000000012398]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00055</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reply__facial_symmetry_enhancement_and_brain.56.aspx</link>
-      <author><![CDATA[Ma, Hao; Zhou, Yu-lu; Wang, Wen-jin; Zhang, Chen-hao; Lu, Ye-chen; Wang, Wei]]></author>
-      <category><![CDATA[Letters]]></category>
-      <title><![CDATA[Reply: Facial Symmetry Enhancement and Brain Network Modifications in Facial Palsy Patients after Botulinum Toxin Type A Treatment]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reply__facial_symmetry_enhancement_and_brain.56.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):186e-187e, July 2026. doi: 10.1097/PRS.0000000000012771]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00056</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/an_educational_blueprint_for_robotic_plastic.57.aspx</link>
-      <author><![CDATA[Ferreira, Beatiz P. V.; Arienzo, Vitor P.; Noronha, Marcos A. N.; Goldenberg, Dov C.]]></author>
-      <category><![CDATA[Viewpoint]]></category>
-      <title><![CDATA[An Educational Blueprint for Robotic Plastic Surgery: From Barrier to Breakthrough]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/an_educational_blueprint_for_robotic_plastic.57.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00057.F1.jpeg" border="0" align ="left" alt="image"/></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):188e-189e, July 2026. doi: 10.1097/PRS.0000000000012689]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00057</guid>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:25 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000012666~progression-of-dupuytren-contracture-a-randomized-controlled"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:25 GMT</pubDate>
     </item>
   </channel>
 </rss>

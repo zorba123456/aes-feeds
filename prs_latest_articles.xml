@@ -1,327 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns="" version="2.0">
+<rss xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" version="2.0">
   <channel>
-    <title><![CDATA[Plastic and Reconstructive Surgery - Latest Articles]]></title>
-    <link>https://journals.lww.com/plasreconsurg/pages/latestarticles.aspx</link>
-    <description><![CDATA[A plastic surgery journal featuring the latest techniques and follow-up for maxillofacial reconstruction, burn repair, cosmetic reshaping and medicolegal issues.]]></description>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 30 Jun 2026 02:03:11 -0500</lastBuildDate>
-    <generator>Wolters Kluwer Health RSS Generator</generator>
-    <image>
-      <url>https://images.journals.lww.com/plasreconsurg/XLargeThumb.00006534-202607000-00000.CV.jpeg</url>
-      <title><![CDATA[Plastic and Reconstructive Surgery - Latest Articles]]></title>
-      <link>https://journals.lww.com/plasreconsurg/pages/latestarticles.aspx</link>
-    </image>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__larger_volume_silicone_breast_implants.3.aspx</link>
-      <author><![CDATA[Harless, Christin A.; Nguyen, Minh-Doan T.]]></author>
-      <category><![CDATA[Breast: Original Articles]]></category>
-      <title><![CDATA[Discussion: Larger-Volume Silicone Breast Implants Are Safe in Breast Reconstruction: The Athena Multicenter Prospective Study of 400 Patients]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__larger_volume_silicone_breast_implants.3.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):24-25, July 2026. doi: 10.1097/PRS.0000000000013033]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00003</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/impact_of_breast_cancer_surgery_on_physical.5.aspx</link>
-      <author><![CDATA[Marco, Eden; Liaqat, Anam; Shamoun, Feras; Hosseini, Benita; Metcalfe, Kelly A.; Lim, David W.; O’Neill, Anne C.; Hofer, Stefan O. P.; Croke, Jennifer; Zhong, Toni]]></author>
-      <category><![CDATA[Breast: Original Articles]]></category>
-      <title><![CDATA[Impact of Breast Cancer Surgery on Physical Well-Being of the Chest: A Longitudinal BREAST-Q Study]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/impact_of_breast_cancer_surgery_on_physical.5.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00005.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
+    <title><![CDATA[prs_latest_articles]]></title>
+    <link>https://journals.lww.com/plasreconsurg/toc/latest</link>
+    <description><![CDATA[Auto-generated from Web Scrape]]></description>
+    <lastBuildDate>Wed, 08 Jul 2026 06:43:31 GMT</lastBuildDate>
 
-Breast-conserving surgery (BCS), mastectomy alone (MA), and mastectomy with immediate breast reconstruction (IBR) offer similar oncologic outcomes in early-stage breast cancer, leading patients to base decisions on nononcologic factors such as chest wall discomfort, tightness, and functional limitations. The authors’ primary objective was to evaluate the effects of these operations on quality of life using the BREAST-Q Physical Well-Being: Chest subscale. The secondary objective was to assess the impact of different radiation regimens on chest physical well-being.
-
-Methods: 
-
-A retrospective review of stage 0 to III breast cancer patients who underwent BCS, MA, or IBR from 2015 to 2019 was conducted. The primary outcome was change in Physical Well-Being: Chest BREAST-Q scores from the preoperative period to 1-year postoperatively. A minimal important difference greater than or equal to 4 points indicated clinical significance.
-
-Results: 
-
-Of 517 patients, 202 underwent BCS, 125 underwent MA, and 190 underwent IBR. BCS patients demonstrated the highest decline of 15.3 points (89.1 to 73.8; P < 0.001) followed by MA with 12.7 points (76.6 to 63.9; P < 0.001). IBR had the smallest decline of 3.7 points (78.0 to 74.3; P = 0.022). A total of 262 radiation patients experienced a mean decline of 15.2 points (84.6 to 69.4; P < 0.001), with the regional node irradiation with boost group exhibiting the greatest decline of 21.5 points (88.5 to 67.0; P < 0.001).
-
-Conclusions: 
-
-BCS patients, despite higher baseline scores, experienced the greatest decline, whereas IBR patients had the smallest. In addition, greater radiation intensity and extent correlated with larger declines. Integrating minimal important difference into clinical practice ensures that patient-reported outcomes capture changes that are meaningful to patients, guiding treatment decisions.]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):27-36, July 2026. doi: 10.1097/PRS.0000000000012624]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00005</guid>
+    <item>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013303~interpretation-matters-common-statistical-pitfalls-in</link>
+      <title><![CDATA[Interpretation Matters: Common Statistical Pitfalls in Retrospective Surgical Research]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013303~interpretation-matters-common-statistical-pitfalls-in"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__impact_of_breast_cancer_surgery_on.6.aspx</link>
-      <author><![CDATA[Shammas, Ronnie L.; Matros, Evan]]></author>
-      <category><![CDATA[Breast: Original Articles]]></category>
-      <title><![CDATA[Discussion: Impact of Breast Cancer Surgery on Physical Well-Being of the Chest: A Longitudinal BREAST-Q Study]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__impact_of_breast_cancer_surgery_on.6.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):37-38, July 2026. doi: 10.1097/PRS.0000000000012731]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00006</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013304~building-practical-artificial-intelligence-tools-for-the</link>
+      <title><![CDATA[Building Practical Artificial Intelligence Tools For The Plastic Surgeon: A Step-By-Step Guide To Cowork]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013304~building-practical-artificial-intelligence-tools-for-the"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__argon_plasma__analysis_of_594.14.aspx</link>
-      <author><![CDATA[Hoyos, Alfredo; Perez, Mauricio]]></author>
-      <category><![CDATA[Cosmetic: Body: Original Articles]]></category>
-      <title><![CDATA[Discussion: Argon Plasma: Analysis of 594 Patients—Safety, Complications, and Satisfaction]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__argon_plasma__analysis_of_594.14.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):74-75, July 2026. doi: 10.1097/PRS.0000000000012787]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00014</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013268~wafer-trial-a-randomized-controlled-trial-comparing</link>
+      <title><![CDATA[WAFER Trial: A randomized controlled trial comparing Wide-awake Local Anesthesia No Tourniquet (WALANT) to General and Regional Anesthesia with tourniquet for Flexor Tendon Repair]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013268~wafer-trial-a-randomized-controlled-trial-comparing"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/efficacy_and_safety_of_botulinum_toxin_type_a_for.15.aspx</link>
-      <author><![CDATA[Chávez-Goicochea, Ana Paula; Lozano-Peralta, Katherine; Caballero-Alvarado, Jose; Lau-Torres, Víctor; Zavaleta-Corvera, Carlos]]></author>
-      <category><![CDATA[Cosmetic: Body: Original Articles]]></category>
-      <title><![CDATA[Efficacy and Safety of Botulinum Toxin Type A for Pathological Scar Prevention: A Systematic Review and Meta-Analysis]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/efficacy_and_safety_of_botulinum_toxin_type_a_for.15.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00015.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-The objective of this study was to evaluate the efficacy of botulinum toxin type A (BoNT-A) in preventing pathological scars and improving scar quality and to assess treatment safety and patient satisfaction.
-
-Methods: 
-
-Randomized controlled trials and cohort studies identified in PubMed, Scopus, Embase, or Web of Science were included. Outcomes analyzed included scar quality, patient satisfaction, and adverse effects. Statistical analysis was performed using mean differences (MDs) and relative risks (RRs). Risk of bias was assessed with the Risk of Bias 2 and Risk of Bias in Nonrandomized Studies of Interventions tools.
-
-Results: 
-
-Nineteen studies with a total of 686 patients were included. BoNT-A showed significant improvements in several outcomes. The MD was −1.07 (95% CI, −1.59 to −0.56; P < 0.0001) on the Vancouver Scar Scale and 1.18 (95% CI, 0.94 to 1.42; P < 0.00001) on the visual analog scale. Scar width was reduced, with an MD of −0.21 (95% CI, −0.33 to −0.09; P = 0.0008). In the Stony Brook Scar Evaluation Scale and Patient and Observer Scar Assessment Scale, the differences favored BoNT-A, with MD of 1.64 (95% CI, 0.78 to 2.50; P = 0.0002) and −1.28 (95% CI, −2.02 to −0.53; P = 0.0008), respectively. Patient satisfaction was higher with BoNT-A (RR, 1.83 [95% CI, 1.10 to 3.07]; P = 0.02). Adverse effects were minimal and transient, with no significant differences between groups.
-
-Conclusions: 
-
-BoNT-A is an effective and safe intervention. Its use reduces the formation of pathological scars and generates high levels of patient satisfaction, without serious adverse effects. However, studies with larger sample sizes and homogeneous designs are required to confirm these findings.]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):53e-64e, July 2026. doi: 10.1097/PRS.0000000000012631]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00015</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013298~inferior-repositioning-of-the-high-riding-nipple-using-a</link>
+      <title><![CDATA[“Inferior Repositioning of the High-Riding Nipple Using a Parenchymal-Based Flap”]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013298~inferior-repositioning-of-the-high-riding-nipple-using-a"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__onabotulinumtoxina_for_platysma.18.aspx</link>
-      <author><![CDATA[Markowitz, Bernard L.]]></author>
-      <category><![CDATA[Cosmetic: General: Original Article]]></category>
-      <title><![CDATA[Discussion: OnabotulinumtoxinA for Platysma Prominence: Safety and Efficacy Results from a Phase 3 Open-Label Repeat Treatment Study]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__onabotulinumtoxina_for_platysma.18.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):88-89, July 2026. doi: 10.1097/PRS.0000000000012736]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00018</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013297~manual-extrusion-of-fat-granules-for-primary-thinning-of-a</link>
+      <title><![CDATA[Manual extrusion of fat granules for primary thinning of a bulky flap]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013297~manual-extrusion-of-fat-granules-for-primary-thinning-of-a"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__progression_of_dupuytren_contracture_.21.aspx</link>
-      <author><![CDATA[Shaheen, Mohammed S.; Chung, Kevin C.]]></author>
-      <category><![CDATA[Hand: Original Articles]]></category>
-      <title><![CDATA[Discussion: Progression of Dupuytren Contracture: A Randomized Controlled Trial Comparing Surgery, Needle Fasciotomy, and Collagenase Injection]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__progression_of_dupuytren_contracture_.21.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):113-115, July 2026. doi: 10.1097/PRS.0000000000012939]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00021</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013295~a-four-step-strategy-for-the-treatment-of-facial-rhytids-a</link>
+      <title><![CDATA[A Four-Step Strategy for the Treatment of Facial Rhytids: A Focus on Upper Facial Wrinkles]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013295~a-four-step-strategy-for-the-treatment-of-facial-rhytids-a"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__craniofacial_symmetry_progression.29.aspx</link>
-      <author><![CDATA[Flapper, Walter J.]]></author>
-      <category><![CDATA[Pediatric/Craniofacial: Original Articles]]></category>
-      <title><![CDATA[Discussion: Craniofacial Symmetry Progression following Strip Craniectomy in Unilateral Coronal Craniosynostosis]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__craniofacial_symmetry_progression.29.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):138-139, July 2026. doi: 10.1097/PRS.0000000000012751]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00029</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013296~impact-of-regional-surgeon-competition-on-use-and-costs-of</link>
+      <title><![CDATA[“Impact of regional surgeon competition on use and costs of carpal tunnel releases”]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013296~impact-of-regional-surgeon-competition-on-use-and-costs-of"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__the_apert_severity_scale__a.31.aspx</link>
-      <author><![CDATA[Hopper, Richard A.]]></author>
-      <category><![CDATA[Pediatric/Craniofacial: Original Articles]]></category>
-      <title><![CDATA[Discussion: The APERT Severity Scale: A Quantitative Tool for Risk Stratification in Apert Syndrome]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__the_apert_severity_scale__a.31.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):132e-133e, July 2026. doi: 10.1097/PRS.0000000000012783]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00031</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013294~evaluating-long-term-retention-of-fresh-frozen-costal</link>
+      <title><![CDATA[Evaluating Long-Term Retention of Fresh-Frozen Costal Cartilage Allograft in An Animal Model]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013294~evaluating-long-term-retention-of-fresh-frozen-costal"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__maxilla_first_versus_mandible_first_in.33.aspx</link>
-      <author><![CDATA[Coombs, Demetrius M.]]></author>
-      <category><![CDATA[Pediatric/Craniofacial: Original Articles]]></category>
-      <title><![CDATA[Discussion: Maxilla First versus Mandible First in 2-Jaw Orthognathic Surgery: Determining Factors and Outcomes]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__maxilla_first_versus_mandible_first_in.33.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):154-156, July 2026. doi: 10.1097/PRS.0000000000012612]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00033</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013293~beyond-flap-survival-aesthetic-satisfaction-and</link>
+      <title><![CDATA[Beyond Flap Survival: Aesthetic Satisfaction and Patient-Reported Outcomes in Microsurgical Lower Limb Reconstruction]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013293~beyond-flap-survival-aesthetic-satisfaction-and"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__feasibility_and_safety_of_arterial.38.aspx</link>
-      <author><![CDATA[Iyer, Shridhar Ganpathi; Sebastin, Sandeep Jacob]]></author>
-      <category><![CDATA[Reconstructive: Trunk: Original Articles]]></category>
-      <title><![CDATA[Discussion: Feasibility and Safety of Arterial Transfer for Microscopic Hepatic Artery Reconstruction after Hepatobiliary and Pancreatic Tumor Resection]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__feasibility_and_safety_of_arterial.38.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):153e-154e, July 2026. doi: 10.1097/PRS.0000000000012709]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00038</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013292~ligasure-assisted-retaining-ligament-release-during</link>
+      <title><![CDATA[LigaSure-assisted Retaining Ligament Release during Composite Deep Plane Face and Neck Lift: A Three-Sign Structured Framework]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013292~ligasure-assisted-retaining-ligament-release-during"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/beyond_the_diep_flap__thigh_based_autologous.41.aspx</link>
-      <author><![CDATA[Kurlander, David E.; Chu, Carrie K.; Shenaq, Deana S.]]></author>
-      <category><![CDATA[CME]]></category>
-      <title><![CDATA[Beyond the DIEP Flap: Thigh-Based Autologous Breast Reconstruction]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/beyond_the_diep_flap__thigh_based_autologous.41.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00041.F1.jpeg" border="0" align ="left" alt="image"/></a>Learning Objectives: 
-
-After studying this article, the participant should be able to: 1. Define the indications, benefits, and drawbacks of thigh-based flap donor sites for breast reconstruction. 2. Recognize the differences between popular thigh-based flaps and the utility of each. 3. Understand the anatomy of thigh-based free flaps, including their landmarks, vascular pedicles, and techniques of flap harvest. 4. Manage donor-site healing and complications.
-
-Summary: 
-
-Thigh-based free flaps have become a popular flap option for autologous breast reconstruction. Critiques of thigh-based flaps include inadequate flap volume and donor-site concerns, such as poor appearance, sensory changes, and problematic healing; however, refinements in surgical technique have led to more predictable outcomes. The purpose of this article is to review the advantages and disadvantages of the various thigh-based free flaps for breast reconstruction, including gracilis myocutaneous, profunda artery perforator, and lateral thigh perforator flaps. Practical pearls for flap harvest and optimization of aesthetic results are provided.]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):164e-177e, July 2026. doi: 10.1097/PRS.0000000000012954]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00041</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013290~wise-pattern-skin-sparing-mastectomy-with-two-stage</link>
+      <title><![CDATA[“Wise Pattern Skin-Sparing Mastectomy with Two-Stage Implant-Based Breast Reconstruction Among Patients with Breast Ptosis”]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013290~wise-pattern-skin-sparing-mastectomy-with-two-stage"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/the_3d_printed_surgical_microscope__an_innovative,.42.aspx</link>
-      <author><![CDATA[Eftekari, Sahand C.; Wu, Elizabeth P.; Zona, Emily E.; Carbullido, M. Kristine; Via, Ellen C.; Zeng, Weifeng; Dingle, Aaron M.; Poore, Samuel O.]]></author>
-      <category><![CDATA[Plastic Surgery Focus: Ideas and Innovations]]></category>
-      <title><![CDATA[The 3D-Printed Surgical Microscope: An Innovative, Low-Cost Solution for Global Microsurgery Education]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/the_3d_printed_surgical_microscope__an_innovative,.42.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00042.F1.jpeg" border="0" align ="left" alt="image"/></a>Summary: 
-
-Microsurgery is a specialized field within plastic surgery constrained by the high cost and limited availability of surgical microscopes, particularly in resource-limited settings. This lack of access hinders trainees from developing essential microsurgical skills. Previous efforts have explored smartphone-based alternatives, but there remains a need for high-fidelity, accessible training microscopes. This study presents a novel, low-cost, travel-friendly surgical microscope designed for microsurgery training. Modified binocular objective lenses enable near-field stereoscopic viewing using a dual-mirror array. A 3D-printed chassis provides the correct top-down orientation, and an integrated light source operates on standard or battery power, ensuring usability in low-resource environments. Initial testing demonstrated a fixed 6.5× magnification, allowing trainees to perform end-to-end anastomoses on 2-mm vessels. Prototypes were deployed for microsurgery training in the United States, Rwanda, Ethiopia, and Vietnam through the SHARE (Surgeons in Humanitarian Alliance for Reconstruction, Research and Education) plastic surgery organization, Nuoy Reconstructive International, and the senior author’s home institution. The authors’ investigation continues to assess the effectiveness of the microscope compared with state-of-the-art surgical microscopes. By offering a low-cost, portable solution without compromising image quality, this innovation has begun to transform microsurgical education and operating room–based microscopy worldwide, increasing accessibility for trainees and patients in diverse settings.]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):181-184, July 2026. doi: 10.1097/PRS.0000000000012671]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00042</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013291~prevention-of-tendon-adhesion-and-preservation-of-healing</link>
+      <title><![CDATA[Prevention of Tendon Adhesion and Preservation of Healing Strength Using a Hydrophobically Modified Alaska Pollock Gelatin Sheet]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013291~prevention-of-tendon-adhesion-and-preservation-of-healing"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__the_3d_printed_surgical_microscope__an.43.aspx</link>
-      <author><![CDATA[Ranganathan, Kavitha]]></author>
-      <category><![CDATA[Plastic Surgery Focus: Ideas and Innovations]]></category>
-      <title><![CDATA[Discussion: The 3D-Printed Surgical Microscope: An Innovative, Low-Cost Solution for Global Microsurgery Education]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/discussion__the_3d_printed_surgical_microscope__an.43.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):185-186, July 2026. doi: 10.1097/PRS.0000000000012676]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00043</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013285~superiority-of-the-dutch-breast-implant-registry-over</link>
+      <title><![CDATA[Superiority of the Dutch Breast Implant Registry over electronic patient records in tracing breast implants: results of a test recall]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013285~superiority-of-the-dutch-breast-implant-registry-over"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/here_s_to_the_next_80_years_of_plastic_and.44.aspx</link>
-      <author><![CDATA[Lin, Samuel J.]]></author>
-      <category><![CDATA[Editorials]]></category>
-      <title><![CDATA[Here’s to the Next 80 Years of Plastic and Reconstructive Surgery!]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/here_s_to_the_next_80_years_of_plastic_and.44.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00044.F1.jpeg" border="0" align ="left" alt="image"/></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):187-191, July 2026. doi: 10.1097/PRS.0000000000013128]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00044</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013289~body-composition-as-an-indicator-of-the-risk-of</link>
+      <title><![CDATA[“Body composition as an indicator of the risk of complications after microvascular DIEP breast reconstruction”]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013289~body-composition-as-an-indicator-of-the-risk-of"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/advancing_the_science,_timing,_and_long_term.45.aspx</link>
-      <author><![CDATA[Taylor, Jesse A.]]></author>
-      <category><![CDATA[Editorials]]></category>
-      <title><![CDATA[Advancing the Science, Timing, and Long-Term Impact of Cleft and Craniofacial Care]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/advancing_the_science,_timing,_and_long_term.45.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):192-193, July 2026. doi: 10.1097/PRS.0000000000012992]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00045</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013084~lip-adhesion-in-the-wide-cleft-lip-indications-and-operative</link>
+      <title><![CDATA[Lip Adhesion in the Wide Cleft Lip: Indications and Operative Technique]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013084~lip-adhesion-in-the-wide-cleft-lip-indications-and-operative"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/plastic_and_reconstructive_surgery_highlights_.46.aspx</link>
-      <author><![CDATA[Chao, Albert H.]]></author>
-      <category><![CDATA[Editorials]]></category>
-      <title><![CDATA[Plastic and Reconstructive Surgery Highlights: Plastic Surgery Focus]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/plastic_and_reconstructive_surgery_highlights_.46.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):194-197, July 2026. doi: 10.1097/PRS.0000000000012956]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00046</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013083~emergence-point-of-the-zygomaticotemporal-nerve-relative-to</link>
+      <title><![CDATA[Emergence Point of the Zygomaticotemporal Nerve Relative to the Marginal Tubercle of the Zygomatic bone: a Cadaveric Study with Clinical Implications]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013083~emergence-point-of-the-zygomaticotemporal-nerve-relative-to"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/prs_journal_club__craniofacial_symmetry.47.aspx</link>
-      <author><![CDATA[Harrison, Lucas M.; Kalmar, Christopher L.; Naidu, Priyanka]]></author>
-      <category><![CDATA[Journal Article Reviews]]></category>
-      <title><![CDATA[PRS Journal Club: Craniofacial Symmetry Progression, Long-Term Cranial Vault Remodeling Outcomes, and Syndromic Risk Stratification]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/prs_journal_club__craniofacial_symmetry.47.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):198-199, July 2026. doi: 10.1097/PRS.0000000000013058]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00047</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013284~cleft-palate-repair-guided-by-cleft-gap-an-institutional</link>
+      <title><![CDATA[Cleft Palate Repair Guided by Cleft Gap: An Institutional Protocol Using Modified Asymmetric Short Limb Z-plasty (MASLZ) and Straight-line Repair]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013284~cleft-palate-repair-guided-by-cleft-gap-an-institutional"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/spotlight_in_plastic_surgery__july_2026.48.aspx</link>
-      <author><![CDATA[Phillips, Brett T.; Alser, Osaid; Alviar Ortiz, Maria P.; Correa, Natalia; Escandón, Joseph M.; Mansour, Shahd H.; Moore, Meredith; Pachano Bravo, AnaMaría; Ramsey, Matthew D.; Saad, Charbel; Shauly, Orr; Shulzhenko, Nikita O.; Spiller, Kelly; Szulia, Agata; Zepeda Torres, José Maria]]></author>
-      <category><![CDATA[Journal Article Reviews]]></category>
-      <title><![CDATA[Spotlight in Plastic Surgery: July 2026]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/spotlight_in_plastic_surgery__july_2026.48.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):200-203, July 2026. doi: 10.1097/PRS.0000000000013059]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00048</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013135~advancements-in-breast-lipofilling-a-12-year-retrospective</link>
+      <title><![CDATA[Advancements in Breast Lipofilling: A 12-Year Retrospective Comparative Analysis of Patient Satisfaction and Complication Rates across Fat Preparation Methods]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013135~advancements-in-breast-lipofilling-a-12-year-retrospective"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reply__immediate_hybrid_breast_reconstruction_.50.aspx</link>
-      <author><![CDATA[Longo, Benedetto; Giacalone, Martina; D’Orsi, Gennaro; Cervelli, Valerio]]></author>
-      <category><![CDATA[Letters]]></category>
-      <title><![CDATA[Reply: Immediate Hybrid Breast Reconstruction: Dual-Plane Approach Using Prepectoral Implants and Retropectoral Fat Grafting]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reply__immediate_hybrid_breast_reconstruction_.50.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):179e-180e, July 2026. doi: 10.1097/PRS.0000000000012795]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00050</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013282~quantitative-analysis-of-facial-sexual-dimorphism</link>
+      <title><![CDATA[“Quantitative Analysis of Facial Sexual Dimorphism: Implications for Ethnicity-Sensitive Facial Gender-Confirming Surgery”]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013282~quantitative-analysis-of-facial-sexual-dimorphism"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/assessing_risks_in_intramuscular_fat_grafting__a.51.aspx</link>
-      <author><![CDATA[Bohler, Forrest; Koenig, Zachary A.; Chaiyasate, Kongkrit]]></author>
-      <category><![CDATA[Letters]]></category>
-      <title><![CDATA[Assessing Risks in Intramuscular Fat Grafting: A Systematic Review and Meta-Analysis of Complications]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/assessing_risks_in_intramuscular_fat_grafting__a.51.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):180e-181e, July 2026. doi: 10.1097/PRS.0000000000012499]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00051</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reply__assessing_risks_in_intramuscular_fat.52.aspx</link>
-      <author><![CDATA[Felix, Gabriel de Almeida Arruda; Isoldi, Felipe Contoli; Mourão, Marcelo Oliveira Jr; Ferreira, Lydia Masako]]></author>
-      <category><![CDATA[Letters]]></category>
-      <title><![CDATA[Reply: Assessing Risks in Intramuscular Fat Grafting: A Systematic Review and Meta-Analysis of Complications]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reply__assessing_risks_in_intramuscular_fat.52.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):181e-182e, July 2026. doi: 10.1097/PRS.0000000000012773]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00052</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reply__toe_transfers_outperform_replantation_after.54.aspx</link>
-      <author><![CDATA[Wei, Fu-Chan; Lo, Steven]]></author>
-      <category><![CDATA[Letters]]></category>
-      <title><![CDATA[Reply: Toe Transfers Outperform Replantation after Digit Amputations: Outcomes of 126 Toe Transfers]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reply__toe_transfers_outperform_replantation_after.54.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):184e-185e, July 2026. doi: 10.1097/PRS.0000000000012866]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00054</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reply__facial_symmetry_enhancement_and_brain.56.aspx</link>
-      <author><![CDATA[Ma, Hao; Zhou, Yu-lu; Wang, Wen-jin; Zhang, Chen-hao; Lu, Ye-chen; Wang, Wei]]></author>
-      <category><![CDATA[Letters]]></category>
-      <title><![CDATA[Reply: Facial Symmetry Enhancement and Brain Network Modifications in Facial Palsy Patients after Botulinum Toxin Type A Treatment]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/reply__facial_symmetry_enhancement_and_brain.56.aspx"></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):186e-187e, July 2026. doi: 10.1097/PRS.0000000000012771]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00056</guid>
-    </item>
-    <item>
-      <link>https://journals.lww.com/plasreconsurg/fulltext/2026/07000/an_educational_blueprint_for_robotic_plastic.57.aspx</link>
-      <author><![CDATA[Ferreira, Beatiz P. V.; Arienzo, Vitor P.; Noronha, Marcos A. N.; Goldenberg, Dov C.]]></author>
-      <category><![CDATA[Viewpoint]]></category>
-      <title><![CDATA[An Educational Blueprint for Robotic Plastic Surgery: From Barrier to Breakthrough]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 24 Jun 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/2026/07000/an_educational_blueprint_for_robotic_plastic.57.aspx"><img src="https://images.journals.lww.com/plasreconsurg/SmallThumb.00006534-202607000-00057.F1.jpeg" border="0" align ="left" alt="image"/></a>No abstract available]]></description>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery. 158(1):188e-189e, July 2026. doi: 10.1097/PRS.0000000000012689]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">00006534-202607000-00057</guid>
+      <link>https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013272~morphology-over-identity-a-call-for-retiring-broad</link>
+      <title><![CDATA[“Morphology Over Identity: A Call for Retiring Broad Demographic Descriptors in Rhinoplasty”]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:31 GMT<br><br><a href="https://journals.lww.com/plasreconsurg/fulltext/10.1097/prs.0000000000013272~morphology-over-identity-a-call-for-retiring-broad"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:31 GMT</pubDate>
     </item>
   </channel>
 </rss>

@@ -1,105 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns="" version="2.0">
+<rss xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" version="2.0">
   <channel>
-    <title><![CDATA[Plastic and Reconstructive Surgery – Global Open - Latest Articles]]></title>
-    <link>https://journals.lww.com/prsgo/pages/latestarticles.aspx</link>
-    <description><![CDATA[Plastic and Reconstructive Surgery—Global Open is an open access, peer reviewed, international journal focusing on global plastic and reconstructive surgery.Plastic and Reconstructive Surgery—Global Open publishes on all areas of plastic and reconstructive surgery, including basic science/experimental studies pertinent to the field and also clinical articles on such topics as: breast reconstruction, head and neck surgery, pediatric and craniofacial surgery, hand and microsurgery, wound healing, and cosmetic and aesthetic surgery. Clinical studies, experimental articles, ideas and innovations, and techniques and case reports are all welcome article types.]]></description>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jul 2026 15:12:21 -0500</lastBuildDate>
-    <generator>Wolters Kluwer Health RSS Generator</generator>
-    <image>
-      <url>https://images.journals.lww.com/prsgo/XLargeThumb.01720096-202606000-00000.CV.jpeg</url>
-      <title><![CDATA[Plastic and Reconstructive Surgery – Global Open - Latest Articles]]></title>
-      <link>https://journals.lww.com/prsgo/pages/latestarticles.aspx</link>
-    </image>
-    <item>
-      <link>https://journals.lww.com/prsgo/fulltext/2026/07000/surgical_management_of_hidradenitis_suppurativa__a.3.aspx</link>
-      <author><![CDATA[Cyuzuzo, Thierry; Emmanuel, Tuyisenge; Sindikubwabo, Eugene; Baramburiye, Clovis; Nezerwa, Yves; Vyas, Raj M.; Furaha, Charles]]></author>
-      <category><![CDATA[Reconstructive: Case Report]]></category>
-      <title><![CDATA[Surgical Management of Hidradenitis Suppurativa: A Hospital Experience in Rwanda]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 02 Jul 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/prsgo/fulltext/2026/07000/surgical_management_of_hidradenitis_suppurativa__a.3.aspx"><img src="https://images.journals.lww.com/prsgo/SmallThumb.01720096-202607000-00003.F1.jpeg" border="0" align ="left" alt="image"/></a>Summary: 
+    <title><![CDATA[prs_go_latest_articles]]></title>
+    <link>https://journals.lww.com/prsgo/toc/latest</link>
+    <description><![CDATA[Auto-generated from Web Scrape]]></description>
+    <lastBuildDate>Wed, 08 Jul 2026 06:43:49 GMT</lastBuildDate>
 
-Hidradenitis suppurativa (HS) is a chronic inflammatory skin disorder characterized by recurrent painful nodules, abscesses, and sinus tract formation. This condition is more prevalent in individuals with darker skin tones and is often underreported in Africa, thus limiting the availability of regional treatment data. We report the case of a 24-year-old man in Rwanda who presented with refractory HS affecting the perineum and the axillae. The patient underwent wide subfascial excision. The perineal wounds were left to heal by secondary intention through wound contraction, whereas the axillary wounds were covered with skin grafts. Postoperative care included antibiotics and sitz baths, which resulted in satisfactory wound healing despite a brief recurrence. This case underscores the effectiveness of wide excision with secondary healing for perineal wounds and skin grafting for axillary wounds as a viable treatment strategy for severe HS in a low-resource setting. The need for further research focusing on HS in African populations is highlighted.]]></description>
-      <pubDate>Thu, 02 Jul 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery – Global Open. 14(7):e7913, July 2026. doi: 10.1097/GOX.0000000000007913]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">01720096-202607000-00003</guid>
+    <item>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/gox.0000000000007874~a-comparative-study-of-satisfaction-anxiety-and-depression</link>
+      <title><![CDATA[A Comparative Study of Satisfaction, Anxiety, and Depression of Postmastectomy Patients With and Without Reconstruction]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/gox.0000000000007874~a-comparative-study-of-satisfaction-anxiety-and-depression"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/prsgo/fulltext/2026/07000/longevity_and_volume_expansion_of_hyaluronic_acid.4.aspx</link>
-      <author><![CDATA[Issa, Alia; Ben Ishai, Meydan; Wilde, Caroline L.; Bull, Adam; Khan, Michelle; Sorkou, Konstantina; Blumgart, Dalia; Morley, Simon; Ezra, Daniel G.]]></author>
-      <category><![CDATA[Cosmetic: Original Article]]></category>
-      <title><![CDATA[Longevity and Volume Expansion of Hyaluronic Acid Dermal Fillers: A Cross-sectional 3-dimensional Magnetic Resonance Imaging Study]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 02 Jul 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/prsgo/fulltext/2026/07000/longevity_and_volume_expansion_of_hyaluronic_acid.4.aspx"><img src="https://images.journals.lww.com/prsgo/SmallThumb.01720096-202607000-00004.F1.jpeg" border="0" align ="left" alt="image"/></a>Background: 
-
-This investigation aims to analyze the volumetric expansion of injectable facial fillers over time using volumetric magnetic resonance imaging (MRI) analysis.
-
-Methods: 
-
-A retrospective cross-sectional study of 14 patients with a recorded history of filler injections underwent quantitative MRI evaluations. The volume measured was then compared with the documented volume of filler injected. This study focused on detailed volume measurements in anatomically critical zones, including the tear trough, malar region, midcheek, zygoma, and nasolabial region.
-
-Results: 
-
-Volumetric analysis revealed that MRI-measured volumes substantially exceeded the injected volume of filler, with a ratio of 1:2.8. Specifically, total MRI-measured volumes varied from 0.7 to 38 cm3, contrasting with initial injected volumes ranging from 0.55 to 11 cm3.
-
-Conclusions: 
-
-This is the first study to compare the initial volume of injected hyaluronic acid (HA) filler with the volume detected using 3-dimensional MRI. Certain HA fillers may undergo significant volumetric expansion after administration rather than gradual diminution. These findings contribute to our understanding of the behavior of HA fillers and may explain postinjection edema. This phenomenon should be carefully considered when planning such treatments. These results also demonstrate the benefits of using advanced imaging modalities such as MRI to aid accurate topographical analysis, assessment of residual filler, and prediction of long-term volumetric outcomes in the relevant aesthetic patient.]]></description>
-      <pubDate>Thu, 02 Jul 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery – Global Open. 14(7):e7894, July 2026. doi: 10.1097/GOX.0000000000007894]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">01720096-202607000-00004</guid>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/gox.0000000000007902~epithelioid-sarcoma-a-hand-surgeons-dilemma</link>
+      <title><![CDATA[Epithelioid Sarcoma: A Hand Surgeon’s Dilemma]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/gox.0000000000007902~epithelioid-sarcoma-a-hand-surgeons-dilemma"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/prsgo/fulltext/2026/07000/do_dedicated_research_years_matter__perspectives.5.aspx</link>
-      <author><![CDATA[Shah, Ananya; Aryanpour, Zain; Ayyala, Haripriya; Lifchez, Scott D.; Kaoutzanis, Christodoulos; Wong, Corrine; Greyson, Mark A.; Mathes, David W.; Egan, Katie G.]]></author>
-      <category><![CDATA[Education: Original Article]]></category>
-      <title><![CDATA[Do Dedicated Research Years Matter? Perspectives From Plastic Surgery Program Leadership]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Thu, 02 Jul 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/prsgo/fulltext/2026/07000/do_dedicated_research_years_matter__perspectives.5.aspx"></a>Background: 
-
-Plastic and reconstructive surgery (PRS) remains highly competitive, with increasing emphasis on research during residency selection. This study evaluates PRS leadership perspectives on dedicated research years.
-
-Methods: 
-
-A web-based survey was distributed to program directors, associate program directors, and department/division chairs of all US integrated PRS programs between January and March 2025. The survey included multiple-choice, Likert-scale, and open-ended items assessing perceptions of research fellowships. Responses were analyzed descriptively and thematically.
-
-Results: 
-
-The survey elicited 65 total responses (26.2% response rate). Most respondents (49.2%) held a neutral perception of dedicated research years, and 81.5% believed their primary purpose was to strengthen applicants’ curricula vitae. Research fellowships were most recommended for international medical graduates (52.3%) and applicants with weaker academic metrics (46.2%). Clinical outcomes research was the most frequently endorsed fellowship type (53.8%), with manuscript publication and first-author papers rated as the strongest indicators of success. Respondents preferred 1-year fellowships (67.7%) and favored completion at nonhome institutions (67.7%). Barriers to pursuing research years included personal finances and lack of funding opportunities. Most respondents (66.2%) recommended a preliminary surgical year over a research year for unmatched applicants.
-
-Conclusions: 
-
-Overall, PRS leadership generally views research fellowships neutrally, favoring individualized decisions. Ensuring equitable access and thoughtful evaluation of research productivity remains critical as selection evolves.]]></description>
-      <pubDate>Thu, 02 Jul 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery – Global Open. 14(7):e7900, July 2026. doi: 10.1097/GOX.0000000000007900]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">01720096-202607000-00005</guid>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/gox.0000000000007914~perils-of-permanent-fillers-a-case-report-of-necrosis-of-the</link>
+      <title><![CDATA[Perils of Permanent Fillers: A Case Report of Necrosis of the Upper and Lower Lip]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/gox.0000000000007914~perils-of-permanent-fillers-a-case-report-of-necrosis-of-the"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/prsgo/fulltext/2026/07000/juvenile_hyaline_fibromatosis_presenting_as.1.aspx</link>
-      <author><![CDATA[Mengistu, Simeon Mulugeta; Gebreegziabher Negussie, Abraham; Elias, Yohannis; Gari Wakjira, Harom; Bore, Tariku Mulatu]]></author>
-      <category><![CDATA[Hand: Case Report]]></category>
-      <title><![CDATA[Juvenile Hyaline Fibromatosis Presenting as Progressive Flexion Contracture of the Middle Finger in a Child: A Case Report]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 01 Jul 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/prsgo/fulltext/2026/07000/juvenile_hyaline_fibromatosis_presenting_as.1.aspx"><img src="https://images.journals.lww.com/prsgo/SmallThumb.01720096-202607000-00001.F1.jpeg" border="0" align ="left" alt="image"/></a>Summary: 
-
-Juvenile fibromatosis is a rare benign fibroproliferative condition that may cause functional impairment when affecting the upper extremity. Deep involvement of flexor tendons in the hand is particularly unusual. An 8-year-old girl presented with a 6-year history of progressive flexion contracture of the left middle finger, causing inability to extend or grasp objects. Examination showed severe proximal interphalangeal and distal interphalangeal contractures of the middle finger and mild proximal interphalangeal contracture of the index finger. Radiographs revealed deformity without bony abnormality. Intraoperatively, extensive fibrosis and thickening of the flexor tendons of the middle and ring fingers were found (zones III–V), with adhesions and tendon shortening. Adhesiolysis, excision of fibrotic tissue, and tendon lengthening were performed, achieving full passive extension. Histopathology confirmed juvenile fibromatosis. Postoperative splinting and physiotherapy resulted in functional improvement. Juvenile fibromatosis is a rare myofibroblastic proliferation that, although histologically benign, is characterized by locally aggressive growth and a high propensity for recurrence. Its presentation within the deep flexor tendons of the hand is exceedingly uncommon and can easily be misdiagnosed as more frequent pediatric conditions, such as camptodactyly or congenital trigger finger. In this case, the six-year progression of the contracture led to significant adaptive shortening of the tendons, necessitating adhesiolysis and tendon lengthening. Juvenile fibromatosis of the flexor tendons is an exceedingly rare cause of progressive digital contracture in children. Early recognition and surgical intervention with rehabilitation can preserve hand function.]]></description>
-      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery – Global Open. 14(7):e7898, July 2026. doi: 10.1097/GOX.0000000000007898]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">01720096-202607000-00001</guid>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/gox.0000000000007920~structural-contour-in-rhinoplasty-a-4-phase-technique-for</link>
+      <title><![CDATA[Structural Contour in Rhinoplasty: A 4-phase Technique for Progressive Dorsal Definition]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/gox.0000000000007920~structural-contour-in-rhinoplasty-a-4-phase-technique-for"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
     </item>
     <item>
-      <link>https://journals.lww.com/prsgo/fulltext/2026/07000/computed_tomographic_angiography_guided_zero_co2.2.aspx</link>
-      <author><![CDATA[Bui, Tuan Anh; Vu, Quang Vinh; Hoang, Thanh Tuan; Vo, Tung; Nguyen, Hong Nhung]]></author>
-      <category><![CDATA[Breast: Case Report]]></category>
-      <title><![CDATA[Computed Tomographic Angiography–guided Zero-CO2 Endoscopic Thoracodorsal Artery Perforator Flap for Salvage Breast Reconstruction After Deep Inferior Epigastric Perforator Flap Loss]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 01 Jul 2026 00:00:00 GMT-05:00<br><br><a href="https://journals.lww.com/prsgo/fulltext/2026/07000/computed_tomographic_angiography_guided_zero_co2.2.aspx"><img src="https://images.journals.lww.com/prsgo/SmallThumb.01720096-202607000-00002.F1.jpeg" border="0" align ="left" alt="image"/></a>Summary: 
-
-Total loss of a free deep inferior epigastric perforator flap is a devastating complication in autologous breast reconstruction, particularly in low–body mass index Asian patients with limited salvage options. A reliable pedicled alternative that minimizes donor-site morbidity is therefore essential. We report a case of a 47-year-old woman who developed complete deep inferior epigastric perforator flap necrosis and was successfully salvaged using a computed tomographic angiography–guided endoscopic thoracodorsal artery perforator (TDAP) flap based on the lateral thoracodorsal artery. Through a single 8-cm posterior axillary incision, the TDAP pedicle was skeletonized endoscopically with minimal muscle harvest and without gas insufflation. The flap survived completely without seroma or shoulder dysfunction, and the donor-site scar was inconspicuous at 6-month follow-up. This case demonstrates that computed tomographic angiography–guided endoscopic TDAP flap harvest without CO2 insufflation is a practical, low-morbidity salvage option after microsurgical failure and is particularly suitable for Asian centers with limited access to standard insufflation equipment.]]></description>
-      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT-05:00</pubDate>
-      <citation><![CDATA[Plastic and Reconstructive Surgery – Global Open. 14(7):e7918, July 2026. doi: 10.1097/GOX.0000000000007918]]></citation>
-      <copyright><![CDATA[(C)2010 Lippincott Williams & Wilkins, Inc.]]></copyright>
-      <guid isPermaLink="false">01720096-202607000-00002</guid>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/gox.0000000000007905~cross-cultural-adaptation-and-validation-of-the-patient-and</link>
+      <title><![CDATA[Cross-cultural Adaptation and Validation of the Patient and Observer Scar Assessment Scale 3.0: Thai Linear Scar Version]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/gox.0000000000007905~cross-cultural-adaptation-and-validation-of-the-patient-and"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/gox.0000000000007850~mwsps-2026-abstracts-supplement-table-of-contents</link>
+      <title><![CDATA[MWSPS 2026 Abstracts Supplement Table of Contents]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/gox.0000000000007850~mwsps-2026-abstracts-supplement-table-of-contents"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207096.16713.2a~concordance-of-the-mangled-digit-severity-score-mdss-with</link>
+      <title><![CDATA[Concordance of the Mangled Digit Severity Score (MDSS) with Surgical Decision-Making and Outcomes in Traumatic Digit and Partial Hand Amputation Injuries]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207096.16713.2a~concordance-of-the-mangled-digit-severity-score-mdss-with"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207100.56181.a6~the-impact-of-dedicated-surgical-teams-on-patient-outcomes</link>
+      <title><![CDATA[The Impact of Dedicated Surgical Teams on Patient Outcomes and Healthcare Cost And Delivery: A Scoping Review With A Focus On Plastic And Reconstructive Surgery]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207100.56181.a6~the-impact-of-dedicated-surgical-teams-on-patient-outcomes"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207104.99855.58~porphyrin-based-optical-sensing-a-new-method-for-flap</link>
+      <title><![CDATA[Porphyrin-Based Optical Sensing: A New Method for Flap Viability Monitoring]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207104.99855.58~porphyrin-based-optical-sensing-a-new-method-for-flap"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207108.17609.c5~tracing-two-decades-of-change-reimbursement-analysis-for</link>
+      <title><![CDATA[Tracing Two Decades of Change: Reimbursement Analysis for Physician Fee and Facility Pricing Reimbursements for Common Pediatric Plastic Surgery Operations]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207108.17609.c5~tracing-two-decades-of-change-reimbursement-analysis-for"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207112.23499.3d~words-that-match-linguistic-analysis-of-plastic-surgery</link>
+      <title><![CDATA[Words That Match: Linguistic Analysis of Plastic Surgery Residency Personal Statements to Predict Match and Identify Bias]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207112.23499.3d~words-that-match-linguistic-analysis-of-plastic-surgery"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207116.17847.8c~frailty-evaluation-score-for-management-of-outcomes-and</link>
+      <title><![CDATA[Frailty Evaluation Score for Management of Outcomes and Pre-operative Optimization of Breast Reconstruction in Surgical Oncology Patients]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207116.17847.8c~frailty-evaluation-score-for-management-of-outcomes-and"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207120.26717.2e~injectable-thermo-responsive-bone-fillers-biomaterial</link>
+      <title><![CDATA[Injectable Thermo-Responsive Bone Fillers: Biomaterial Innovation and Clinical Translation]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207120.26717.2e~injectable-thermo-responsive-bone-fillers-biomaterial"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207124.84290.b1~reduced-opioid-use-and-hospital-stay-in-diep-flap-breast</link>
+      <title><![CDATA[Reduced Opioid Use and Hospital Stay in DIEP Flap Breast Reconstruction after Cost-Effective TAP Block and Local Multimodal Analgesia]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207124.84290.b1~reduced-opioid-use-and-hospital-stay-in-diep-flap-breast"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207128.16070.64~mechanisms-matter-intentional-injury-and-its-impact-on</link>
+      <title><![CDATA[Mechanisms Matter: Intentional Injury and Its Impact on Pediatric Facial Fractures]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207128.16070.64~mechanisms-matter-intentional-injury-and-its-impact-on"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207132.74454.3c~bead-the-odds-reducing-infectious-complications-with</link>
+      <title><![CDATA[Bead the Odds: Reducing Infectious Complications with Absorbable Antibiotic Beads in Implant-Based Breast Reconstruction]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207132.74454.3c~bead-the-odds-reducing-infectious-complications-with"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207136.08305.95~layered-pelvic-bowl-model-for-profunda-artery-perforator</link>
+      <title><![CDATA[Layered Pelvic Bowl Model for Profunda Artery Perforator Flap Perineal Reconstruction: A Consecutive Case Series and Technical Framework]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207136.08305.95~layered-pelvic-bowl-model-for-profunda-artery-perforator"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207140.15442.fa~management-and-outcomes-of-intra-articular-ballistic</link>
+      <title><![CDATA[Management and Outcomes of Intra-articular Ballistic Injuries of the Hand]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207140.15442.fa~management-and-outcomes-of-intra-articular-ballistic"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207144.32442.1a~impact-of-immunotherapy-on-postoperative-outcomes-in</link>
+      <title><![CDATA[Impact of Immunotherapy on Postoperative Outcomes in Patients with Melanoma Undergoing Reconstruction]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207144.32442.1a~impact-of-immunotherapy-on-postoperative-outcomes-in"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207148.26323.ae~adjunctive-use-of-skin-cell-suspension-autograft-with</link>
+      <title><![CDATA[Adjunctive Use of Skin Cell Suspension Autograft with Split-thickness Skin Grafting After Skin Cancer Resection: A Pilot Experience]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> Wed, 08 Jul 2026 06:43:49 GMT<br><br><a href="https://journals.lww.com/prsgo/fulltext/10.1097/01.gox.0001207148.26323.ae~adjunctive-use-of-skin-cell-suspension-autograft-with"></a>No description available.]]></description>
+      <pubDate>Wed, 08 Jul 2026 06:43:49 GMT</pubDate>
     </item>
   </channel>
 </rss>
