@@ -55,23 +55,23 @@ def main():
     page = ChromiumPage(co)
     updated_any = False
     
-    # 🟢 原汁原味：严格对齐你 config.json 中的 14 个真正的原始物理 URL
+    # 🟢 混合模式：已改版的用直抓 (web_scrape=True)，未改版的用原装 XML 接口 (web_scrape=False)
     targets = [
-        {"name": "aswc_current_issue", "rss_url": "https://journals.lww.com/aswcjournal/_layouts/15/OAKS.Journals/feed.aspx?FeedType=CurrentIssue", "output_filename": "aswc_current_issue.xml"},
-        {"name": "aswc_latest_articles", "rss_url": "https://journals.lww.com/aswcjournal/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles&year=9000&issue=00000", "output_filename": "aswc_latest_articles.xml"},
-        {"name": "annals_plast_surg_current", "rss_url": "https://journals.lww.com/annalsplasticsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=CurrentIssue", "output_filename": "annals_plast_surg_current.xml"},
-        {"name": "annals_plast_surg_latest", "rss_url": "https://journals.lww.com/annalsplasticsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint&year=9900&issue=00000", "output_filename": "annals_plast_surg_latest.xml"},
-        {"name": "derm_surgery_ahead", "rss_url": "http://journals.lww.com/dermatologicsurgery/_layouts/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint", "output_filename": "derm_surgery_ahead.xml"},
-        {"name": "derm_surgery_latest", "rss_url": "https://journals.lww.com/dermatologicsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles&year=9000&issue=00000", "output_filename": "derm_surgery_latest.xml"},
-        {"name": "j_craniofacial_surg_latest", "rss_url": "https://journals.lww.com/jcraniofacialsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint&year=9900&issue=00000", "output_filename": "j_craniofacial_surg_latest.xml"},
+        {"name": "aswc_current_issue", "rss_url": "https://journals.lww.com/aswcjournal/_layouts/15/OAKS.Journals/feed.aspx?FeedType=CurrentIssue", "output_filename": "aswc_current_issue.xml", "web_scrape": False},
+        {"name": "aswc_latest_articles", "rss_url": "https://journals.lww.com/aswcjournal/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles&year=9000&issue=00000", "output_filename": "aswc_latest_articles.xml", "web_scrape": False},
+        {"name": "annals_plast_surg_current", "rss_url": "https://journals.lww.com/annalsplasticsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=CurrentIssue", "output_filename": "annals_plast_surg_current.xml", "web_scrape": False},
+        {"name": "annals_plast_surg_latest", "rss_url": "https://journals.lww.com/annalsplasticsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint&year=9900&issue=00000", "output_filename": "annals_plast_surg_latest.xml", "web_scrape": False},
+        {"name": "derm_surgery_ahead", "rss_url": "http://journals.lww.com/dermatologicsurgery/_layouts/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint", "output_filename": "derm_surgery_ahead.xml", "web_scrape": False},
+        {"name": "derm_surgery_latest", "rss_url": "https://journals.lww.com/dermatologicsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles&year=9000&issue=00000", "output_filename": "derm_surgery_latest.xml", "web_scrape": False},
+        {"name": "j_craniofacial_surg_latest", "rss_url": "https://journals.lww.com/jcraniofacialsurgery/toc/latest", "output_filename": "j_craniofacial_surg_latest.xml", "web_scrape": True},
         {"name": "j_craniofacial_surg_web_latest", "rss_url": "https://journals.lww.com/jcraniofacialsurgery/toc/latest", "output_filename": "j_craniofacial_surg_web_latest.xml", "web_scrape": True},
-        {"name": "j_craniofacial_surg_open_latest", "rss_url": "https://journals.lww.com/jcso/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles", "output_filename": "j_craniofacial_surg_open_latest.xml"},
-        {"name": "prs_video", "rss_url": "http://journals.lww.com/plasreconsurg/_layouts/OAKS.Journals/feed.aspx?FeedType=Video", "output_filename": "prs_video.xml"},
-        {"name": "prs_current_issue", "rss_url": "http://journals.lww.com/plasreconsurg/_layouts/OAKS.Journals/feed.aspx?FeedType=CurrentIssue", "output_filename": "prs_current_issue.xml"},
-        {"name": "prs_latest_articles", "rss_url": "https://journals.lww.com/plasreconsurg/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles", "output_filename": "prs_latest_articles.xml"},
-        {"name": "prs_online_first", "rss_url": "https://journals.lww.com/plasreconsurg/_layouts/15/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint&year=9900&issue=00000", "output_filename": "prs_online_first.xml"},
-        {"name": "prs_go_current_issue", "rss_url": "https://journals.lww.com/prsgo/_layouts/15/OAKS.Journals/feed.aspx?FeedType=CurrentIssue", "output_filename": "prs_go_current_issue.xml"},
-        {"name": "prs_go_latest_articles", "rss_url": "https://journals.lww.com/prsgo/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles", "output_filename": "prs_go_latest_articles.xml"}
+        {"name": "j_craniofacial_surg_open_latest", "rss_url": "https://journals.lww.com/jcso/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles", "output_filename": "j_craniofacial_surg_open_latest.xml", "web_scrape": False},
+        {"name": "prs_video", "rss_url": "https://journals.lww.com/plasreconsurg/toc/latest", "output_filename": "prs_video.xml", "web_scrape": True},
+        {"name": "prs_current_issue", "rss_url": "https://journals.lww.com/plasreconsurg/toc/current", "output_filename": "prs_current_issue.xml", "web_scrape": True},
+        {"name": "prs_latest_articles", "rss_url": "https://journals.lww.com/plasreconsurg/toc/latest", "output_filename": "prs_latest_articles.xml", "web_scrape": True},
+        {"name": "prs_online_first", "rss_url": "https://journals.lww.com/plasreconsurg/toc/latest", "output_filename": "prs_online_first.xml", "web_scrape": True},
+        {"name": "prs_go_current_issue", "rss_url": "https://journals.lww.com/prsgo/toc/current", "output_filename": "prs_go_current_issue.xml", "web_scrape": True},
+        {"name": "prs_go_latest_articles", "rss_url": "https://journals.lww.com/prsgo/toc/latest", "output_filename": "prs_go_latest_articles.xml", "web_scrape": True}
     ]
     
     for journal in targets:
@@ -139,6 +139,12 @@ def main():
                     print(f"[REPORT] CHANNEL=LWW ITEM={name} COUNT=0 STATUS=FAIL")
             else:
                 page.get(rss_url)
+                
+                # 为原始 XML 分支也添加 Cloudflare 绕过等待
+                for _ in range(30):
+                    if "Just a moment" not in page.title and "Cloudflare" not in page.title:
+                        break
+                    time.sleep(1)
                 time.sleep(8) 
                 
                 raw_html = page.html
