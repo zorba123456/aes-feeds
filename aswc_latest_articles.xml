@@ -3,271 +3,229 @@
   <channel>
     <title><![CDATA[Advances in Skin & Wound Care - Latest Articles]]></title>
     <link>https://www.ovid.com/jnls/aswcjournal</link>
-    <description><![CDATA[Auto-generated from Ovid Feeds Pipeline]]></description>
-    <lastBuildDate>Thu, 09 Jul 2026 08:59:02 GMT</lastBuildDate>
+    <description><![CDATA[Auto-generated from Ovid TOC Web Scraper]]></description>
+    <lastBuildDate>Thu, 09 Jul 2026 09:27:13 GMT</lastBuildDate>
 
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-990000000-00219</link>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000500~empowering-informal-caregivers-with-the-remindme-app-for</link>
       <title><![CDATA[Empowering Informal Caregivers With the RemindMe App for Pressure Injury Prevention]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 30, 2026<br><br>OBJECTIVE:
-To evaluate the usability of RemindMe, a tablet-based application designed to assist informal caregivers in repositioning patients with or at risk of pressure injuries during hospitalization.
-METHODS:
-This cross-sectional study was conducted in a single acute-tertiary care hospital. Informal caregivers, including family members or foreign domestic helpers of patients with limited mobility, were recruited. Caregivers received a tablet equipped with the RemindMe application, which provided 2-hourly repositioning reminders from 8:00 am to 8:00 pm for up to 4 days. The app featured an audible alarm to signal repositioning times and a pictorial guide highlighting high-risk pressure areas. Utilization information was collected from the app’s log report. Caregivers’ feedback on the app’s usefulness and ease of use on a Likert scale, and suggestions for improvements were gathered via an open-ended survey and analyzed using content analysis.
-RESULTS:
-A total of 40 informal caregivers were recruited, with 1 dropout. Of the 39 remaining, 37 (93%) were foreign domestic helpers. The mean age was 38 years (SD=9.3). The app utilization rate was 16.7% to 61.1%. Twelve caregivers (30%) found the RemindMe app extremely useful, and 14 (35%) found it easy to use. All caregivers found the pictorial guide clear and easy to follow. Suggestions included adding educational content on bed exercises, oral suctioning, tracheostomy, and catheter care. Two caregivers recommended a larger screen and multilingual support.
-CONCLUSIONS:
-The RemindMe app was well received by caregivers of patients with limited mobility, who found it useful and easy to use. Adding educational content, multilingual support, and larger screen options may enhance usability and engagement.
-PAP
-SDC]]></description>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 30, 2026<br><b>作者:</b> Fazila Aloweni, Nanthakumahrie Gunasegaran, Vincent S.H. Chan, Desmond Y.R. Chong, Truls Østbye, Su-Fee Lim, Kee C.E. Siow<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000500~empowering-informal-caregivers-with-the-remindme-app-for"></a>No description available.]]></description>
       <pubDate>Mon, 29 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-990000000-00218</link>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000497~validity-and-reliability-of-barakat-johnson</link>
       <title><![CDATA[Validity and Reliability of Barakat-Johnson Incontinence-Associated Dermatitis Knowledge Tool: A Methodological Study]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 26, 2026<br><br>OBJECTIVE:
-This study aimed to evaluate the validity and reliability of the Turkish version of the Barakat-Johnson Incontinence-Associated Dermatitis Knowledge Tool (Know-IAD).
-METHODS:
-This methodological study was conducted between May 2023 and December 2023. Data were collected from 128 nurses caring for patients with incontinence through the online version of the tool. An expert panel of 6 academics was formed to ensure linguistic validity, and the Turkish version was finalized based on their suggestions. Analyses were performed using the R software’s Multidimensional Item Response Theory (mirt) and Generalized Graded Multidimensional Item Response Theory (ggmirt) packages. Because the fit indices of the 1-factor model were better than the 2- and 3-factor models, the loadings, discrimination, and difficulty parameters were interpreted for this model.
-RESULTS:
-The mean age of the participants was 32.55 years, and 83.6% were females. Most nurses worked in public hospitals and an internal medicine intensive care unit. The stratified α coefficient for the tool was 0.62. Test-retest stability ranged from 0.92 to 0.94. Ten of the 18 items of the tool have negative item difficulty coefficients. Items 1 and 18 were answered correctly by nearly all participants, whereas Items 2, 7, and 17 were the most difficult.
-CONCLUSIONS:
-The findings indicate that further refinement is necessary to adapt the Turkish version of the Know-IAD for utilization within the Turkish community.
-PAP]]></description>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 26, 2026<br><b>作者:</b> Meryem Yildiz Ayvaz, Tuğba Erdem, Ayişe Karadağ<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000497~validity-and-reliability-of-barakat-johnson"></a>No description available.]]></description>
       <pubDate>Thu, 25 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-990000000-00212</link>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000495~predicting-risk-factors-of-pressure-injury-for-perioperative</link>
       <title><![CDATA[Predicting Risk Factors of Pressure Injury for Perioperative Patients Through Machine Learning With SHapley Additive exPlanations Based on Hospital Information System]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 25, 2026<br><br>OBJECTIVE:
-Perioperative pressure injuries (PIs) are a common complication of surgical hospitalization that can lead to serious health problems, compromise wound healing, and cause infections. This study aimed to predict the early risk of PI in perioperative patients by developing an interpretable machine-learning model.
-METHODS:
-Clinical data of perioperative surgical inpatients in a tertiary hospital in Shanghai from 2017 to 2023 were retrospectively analyzed, covering a total of 14,416 patients for screening. Feature variables were selected using the XGBoost model. Seven machine-learning (ML) models were employed to predict these variables. To evaluate the performance of these prediction models, various metrics such as accuracy, recall, and area under the curve were employed. In addition, a 10-fold cross-validation method was implemented to ensure the generalizability of the models. Furthermore, this study incorporated SHapley Additive exPlanations (SHAP) values to visualize and elucidate the significance of each factor involved. This study was reported using the TRIPOD checklist.
-RESULTS:
-In the 7 ML models developed, both the Random Forest model and the XGBoost model exhibited exceptional performance. In addition, the study incorporated the SHAP framework to enhance the interpretability of these models. The importance of SHAP variables in the model from high to low were operation duration, age, serum albumin, body mass index, body temperature, and anesthesia grade.
-CONCLUSIONS:
-The ML model developed in this study demonstrated strong performance in predicting perioperative PIs. Furthermore, the SHAP method offered valuable insights for interpreting the ML model.
-PAP]]></description>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 25, 2026<br><b>作者:</b> Guirong Shi, Xin Xu, Peipei Zhang, Ping Huang, Qingyuan Gong, Ping Liu, Liping Jiang<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000495~predicting-risk-factors-of-pressure-injury-for-perioperative"></a>No description available.]]></description>
       <pubDate>Wed, 24 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-202607000-00001</link>
-      <title><![CDATA[Skin Health and Persons with Diabetes.]]></title>
-      <description><![CDATA[<b>所属期数:</b> Volume 39(6) July 2026<br><b>出版时间:</b> July 2026<br><br><div class="author">
-                    <strong>Author: </strong>
-                    <span>Sibbald, R. Gary MD, MEd, FRCPC (Med Derm), FAAD, MAPWCA, JM; Ayello, Elizabeth A. PhD, MS, RN, CWON, MAPWCA, FAAN</span>
-                    </div>
-                    <div class="page">
-                    <strong>Page: </strong>
-                    <span>285</span>
-                    </div>]]></description>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000486~novel-surgical-approach-for-wound-closure-of-large-livedoid</link>
+      <title><![CDATA[Novel Surgical Approach for Wound Closure of Large Livedoid Vasculopathy Wounds: A Case Series]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 25, 2026<br><b>作者:</b> Camila R. Marquez, Jack L. Knott, Daniel P. deLahunta, Martin Borhani, William J. Ennis<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000486~novel-surgical-approach-for-wound-closure-of-large-livedoid"></a>No description available.]]></description>
+      <pubDate>Wed, 24 Jun 2026 16:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000494~effect-of-hydrocolloid-dressing-and-terpolymer-based</link>
+      <title><![CDATA[Effect of Hydrocolloid Dressing and Terpolymer-Based Alcohol-Free Barrier Film on Pain During Tape Removal in Nasogastric Tube Fixation in Infants: A Randomized Controlled Trial]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 25, 2026<br><b>作者:</b> Özge Eren, Çağrı Çövener Özçelik<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000494~effect-of-hydrocolloid-dressing-and-terpolymer-based"></a>No description available.]]></description>
+      <pubDate>Wed, 24 Jun 2026 16:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000492~malnutrition-in-older-adults-with-chronic-wounds-a</link>
+      <title><![CDATA[Malnutrition in Older Adults With Chronic Wounds: A Prospective Cohort Study]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 25, 2026<br><b>作者:</b> Wisoo Shin, Maria Weatherbee, Zahra Rehan, Eileen Emmott, Laurie Parsons<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000492~malnutrition-in-older-adults-with-chronic-wounds-a"></a>No description available.]]></description>
+      <pubDate>Wed, 24 Jun 2026 16:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000501~lithotomy-position-and-intraoperative-acquired-pressure</link>
+      <title><![CDATA[Lithotomy Position and Intraoperative-acquired Pressure Injury: A Prospective Observational Study]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 25, 2026<br><b>作者:</b> Mehtap Karaca, Aliye Okgün Alcan<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000501~lithotomy-position-and-intraoperative-acquired-pressure"></a>No description available.]]></description>
+      <pubDate>Wed, 24 Jun 2026 16:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000488~a-retrospective-analysis-of-deep-tissue-pressure-injury</link>
+      <title><![CDATA[A Retrospective Analysis of Deep Tissue Pressure Injury Prevalence and Incidence Using a Large-scale Wound Care Database in Long-term Care Settings Across North America]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 25, 2026<br><b>作者:</b> Robert D.J. Fraser, Heba Tallah Mohammed, Matthew Wynn, Rishabh Gupta, Dhanesh Ramachandram, Sharjeel Mustafa, Lucas Goldstone, Celeste Pols, Jose Rameriz-GarciaLuna, Kevin Woo, Joshua Moralejo, Joyce Black, Amy Cassata<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000488~a-retrospective-analysis-of-deep-tissue-pressure-injury"></a>No description available.]]></description>
+      <pubDate>Wed, 24 Jun 2026 16:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000499~postoperative-inflammatory-complications-do-not-increase-the</link>
+      <title><![CDATA[Postoperative Inflammatory Complications Do Not Increase the Risk of Subsequent Primary Skin Cancer]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 24, 2026<br><b>作者:</b> Madelyn Schmidt, Travis S. Dowdle, Richard F. Wagner<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000499~postoperative-inflammatory-complications-do-not-increase-the"></a>No description available.]]></description>
+      <pubDate>Tue, 23 Jun 2026 16:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000484~beyond-the-skin-risk-factors-of-pressure-injury-development</link>
+      <title><![CDATA[Beyond the Skin: Risk Factors of Pressure Injury Development in Premature Infants]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 23, 2026<br><b>作者:</b> Ann Marie Nie<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000484~beyond-the-skin-risk-factors-of-pressure-injury-development"></a>No description available.]]></description>
+      <pubDate>Mon, 22 Jun 2026 16:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000490~burn-epidemiology-and-outcome-disparities-a-study-of</link>
+      <title><![CDATA[Burn Epidemiology and Outcome Disparities: A Study of Patients Hospitalized With Burns in Pakistan]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 15, 2026<br><b>作者:</b> Samman Khalid, Sanjana Butala, Zaryab Alam, Ayesha Nazuk, Noah Musolff, Madeline Tchack, Samavia Khan, Husnain Khan, Babar Rao<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000490~burn-epidemiology-and-outcome-disparities-a-study-of"></a>No description available.]]></description>
+      <pubDate>Sun, 14 Jun 2026 16:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000493~defining-trombley-brennan-terminal-tissue-injury-with</link>
+      <title><![CDATA[Defining Trombley-Brennan Terminal Tissue Injury With Long-Wave Infrared Thermography]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 15, 2026<br><b>作者:</b> Mary R. Brennan, Lily Thomas, Deanna Vargo, Meredith Akerman<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000493~defining-trombley-brennan-terminal-tissue-injury-with"></a>No description available.]]></description>
+      <pubDate>Sun, 14 Jun 2026 16:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000491~a-systematic-review-of-apremilast-as-a-therapeutic-option</link>
+      <title><![CDATA[A Systematic Review of Apremilast as a Therapeutic Option for Lichen Planus]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 15, 2026<br><b>作者:</b> Priyanka Hemrajani, Anmol Godara, Arushi Ghosh, Paschal D’souza<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000491~a-systematic-review-of-apremilast-as-a-therapeutic-option"></a>No description available.]]></description>
+      <pubDate>Sun, 14 Jun 2026 16:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000489~functional-wound-recovery-in-amniotic-band-syndrome-via</link>
+      <title><![CDATA[Functional Wound Recovery in Amniotic Band Syndrome Via Personalized 3D Biomodels: The Case of the Ballet Dancer]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 15, 2026<br><b>作者:</b> Miguel A. Ceccarelli, Regina C. Schechtman, Heron Werner, Clarissa Canella, Sueli Carneiro<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000489~functional-wound-recovery-in-amniotic-band-syndrome-via"></a>No description available.]]></description>
+      <pubDate>Sun, 14 Jun 2026 16:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000487~effectiveness-of-trolamine-in-preventing</link>
+      <title><![CDATA[Effectiveness of Trolamine in Preventing Radiotherapy-Related Skin Toxicity in Breast Cancer: A Meta-Analysis and Trial Sequential Analysis Study of Randomized Controlled Trials]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 9, 2026<br><b>作者:</b> Lufeng Xie, Yu Zeng, Binbin Zhang, Xiaoli Yuan<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000487~effectiveness-of-trolamine-in-preventing"></a>No description available.]]></description>
+      <pubDate>Mon, 08 Jun 2026 16:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000480~argyria-a-case-report-and-review-of-recent-advances</link>
+      <title><![CDATA[Argyria: A Case Report and Review of Recent Advances]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 9, 2026<br><b>作者:</b> Kiran Sethi, Mona Sharma, Priyanka Hemrajani<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000480~argyria-a-case-report-and-review-of-recent-advances"></a>No description available.]]></description>
+      <pubDate>Mon, 08 Jun 2026 16:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000485~evaluation-of-continuous-z-plasty-technique-for-linear-scar</link>
+      <title><![CDATA[Evaluation of Continuous Z-Plasty Technique for Linear Scar Repair on the Face: A Retrospective Analysis]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 9, 2026<br><b>作者:</b> Zhiliang Zhang, Zhihong Fan, Xiaoyun Ren<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000485~evaluation-of-continuous-z-plasty-technique-for-linear-scar"></a>No description available.]]></description>
+      <pubDate>Mon, 08 Jun 2026 16:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000479~the-interplay-of-fatalism-death-anxiety-and-treatment</link>
+      <title><![CDATA[The Interplay of Fatalism, Death Anxiety, and Treatment Compliance in Patients with Diabetes Who Have Undergone Amputation: A Mixed-Methods Study]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 4, 2026<br><b>作者:</b> Tuba Sengul, Dilek Yilmaz Akyaz, Lercan Aslan, Murat Korkmaz, Tugba Cevizci, Elif Lale Pakdil, Ömer Faruk Atalay, Taha Bedir Demir, Holly Kirkland-Kyhn<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000479~the-interplay-of-fatalism-death-anxiety-and-treatment"></a>No description available.]]></description>
+      <pubDate>Wed, 03 Jun 2026 16:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000481~efficacy-of-reactive-oxygen-species-enriched-dressings</link>
+      <title><![CDATA[Efficacy of Reactive Oxygen Species-Enriched Dressings Compared With Antimicrobial Silver-Based Dressings in Chronic Colonized Wounds: A Randomized Clinical Trial]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> June 4, 2026<br><b>作者:</b> Sara Sandroni, Jacopo Fiorini, Maddalena De Maria, Stefania Fabrizi, Elisa Marinelli, Rita Mencherini, Vianella Agostinelli, Alessandro Sili<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000481~efficacy-of-reactive-oxygen-species-enriched-dressings"></a>No description available.]]></description>
+      <pubDate>Wed, 03 Jun 2026 16:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/01.asw.0000931584.75689.df~soap-scrap-technique-a-tissue-preserving-approach-to</link>
+      <title><![CDATA[“Soap Scrap” Technique: A Tissue-Preserving Approach to Treating Wounds With Undermining or Pockets]]></title>
+      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> May 1, 2023<br><b>作者:</b> Igor Melnychuk, Julia Juriga<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/01.asw.0000931584.75689.df~soap-scrap-technique-a-tissue-preserving-approach-to"></a>No description available.]]></description>
+      <pubDate>Sun, 30 Apr 2023 16:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000482~skin-health-and-persons-with-diabetes</link>
+      <title><![CDATA[Skin Health and Persons with Diabetes]]></title>
+      <description><![CDATA[<b>所属期数:</b> Volume 39(6)<br><b>出版时间:</b> July 2026<br><b>页码/出版信息:</b> 285-285<br><b>作者:</b> R. Gary Sibbald, Elizabeth A. Ayello<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000482~skin-health-and-persons-with-diabetes"></a>No description available.]]></description>
       <pubDate>Tue, 30 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-202607000-00002</link>
-      <title><![CDATA[Avoid Wound/Ulcer Management Coding Missteps:  Adopt Correct Coding Steps.]]></title>
-      <description><![CDATA[<b>所属期数:</b> Volume 39(6) July 2026<br><b>出版时间:</b> July 2026<br><br><div class="author">
-                    <strong>Author: </strong>
-                    <span>Schaum, Kathleen D. MS</span>
-                    </div>
-                    <div class="page">
-                    <strong>Page: </strong>
-                    <span>286-287</span>
-                    </div>]]></description>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000478~avoid-woundulcer-management-coding-missteps-adopt-correct</link>
+      <title><![CDATA[Avoid Wound/Ulcer Management Coding Missteps: Adopt Correct Coding Steps]]></title>
+      <description><![CDATA[<b>所属期数:</b> Volume 39(6)<br><b>出版时间:</b> July 2026<br><b>页码/出版信息:</b> 286-287<br><b>作者:</b> Kathleen D. Schaum<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000478~avoid-woundulcer-management-coding-missteps-adopt-correct"></a>No description available.]]></description>
       <pubDate>Tue, 30 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-202607000-00003</link>
-      <title><![CDATA[Early Identification of Pressure Injury:  An Equity-Informed Initiative.]]></title>
-      <description><![CDATA[<b>所属期数:</b> Volume 39(6) July 2026<br><b>出版时间:</b> July 2026<br><br><div class="author">
-                    <strong>Author: </strong>
-                    <span>Neu, Charmaine MSc, PT *; Furtado, Stephanie MClSc-WH, BSCN, RN, NSWOC, WOCC(C) +; Dyck, Rebecca MClSc-WH, BSCN, RN, NSWOC, WOCC(C) +; Sheikh, Fatima PhD, MSc +,++; Tremain, Leanne MA, BSCN, RN, CVAA +; Johnson, Denise MSc, BHSc (PT) *</span>
-                    </div>
-                    <div class="page">
-                    <strong>Page: </strong>
-                    <span>288-293</span>
-                    </div>]]></description>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000475~early-identification-of-pressure-injury-an-equity-informed</link>
+      <title><![CDATA[Early Identification of Pressure Injury: An Equity-Informed Initiative]]></title>
+      <description><![CDATA[<b>所属期数:</b> Volume 39(6)<br><b>出版时间:</b> July 2026<br><b>页码/出版信息:</b> 288-293<br><b>作者:</b> Charmaine Neu, Stephanie Furtado, Rebecca Dyck, Fatima Sheikh, Leanne Tremain, Denise Johnson<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000475~early-identification-of-pressure-injury-an-equity-informed"></a>No description available.]]></description>
       <pubDate>Tue, 30 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-202607000-00004</link>
-      <title><![CDATA[Utilization of Autologous Skin Shave Micrografting for Treatment of Advanced Stage Pressure Injuries:  A Seven-Patient Case Series.]]></title>
-      <description><![CDATA[<b>所属期数:</b> Volume 39(6) July 2026<br><b>出版时间:</b> July 2026<br><br><div class="author">
-                    <strong>Author: </strong>
-                    <span>Melnychuk, Igor MD, CLT, CMET *; Besh, Jordan BS +</span>
-                    </div>
-                    <div class="page">
-                    <strong>Page: </strong>
-                    <span>294-303</span>
-                    </div>]]></description>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000472~utilization-of-autologous-skin-shave-micrografting-for</link>
+      <title><![CDATA[Utilization of Autologous Skin Shave Micrografting for Treatment of Advanced Stage Pressure Injuries: A Seven-Patient Case Series]]></title>
+      <description><![CDATA[<b>所属期数:</b> Volume 39(6)<br><b>出版时间:</b> July 2026<br><b>页码/出版信息:</b> 294-303<br><b>作者:</b> Igor Melnychuk, Jordan Besh<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000472~utilization-of-autologous-skin-shave-micrografting-for"></a>No description available.]]></description>
       <pubDate>Tue, 30 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-202607000-00005</link>
-      <title><![CDATA[Revised Baux Score Identifies a New Risk Factor for Mortality:  History of Diabetes.]]></title>
-      <description><![CDATA[<b>所属期数:</b> Volume 39(6) July 2026<br><b>出版时间:</b> July 2026<br><br><div class="author">
-                    <strong>Author: </strong>
-                    <span>Nehila, Timothy BA *; Mikhael, Marian BS *; Arora, Shreya BS *; Jupudi, Rithvic BA *; Criscione, Jaynie X. BS *; Le, Nicole K. MD, MPH +; Whalen, Kristen MD +; Buller, Kristina DO +; Laun, Jake MD +; Troy, Jared MD +</span>
-                    </div>
-                    <div class="page">
-                    <strong>Page: </strong>
-                    <span>304-307</span>
-                    </div>]]></description>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000471~revised-baux-score-identifies-a-new-risk-factor-for</link>
+      <title><![CDATA[Revised Baux Score Identifies a New Risk Factor for Mortality: History of Diabetes]]></title>
+      <description><![CDATA[<b>所属期数:</b> Volume 39(6)<br><b>出版时间:</b> July 2026<br><b>页码/出版信息:</b> 304-307<br><b>作者:</b> Timothy Nehila, Marian Mikhael, Shreya Arora, Rithvic Jupudi, Jaynie X. Criscione, Nicole K. Le, Kristen Whalen, Kristina Buller, Jake Laun, Jared Troy<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000471~revised-baux-score-identifies-a-new-risk-factor-for"></a>No description available.]]></description>
       <pubDate>Tue, 30 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-202607000-00006</link>
-      <title><![CDATA[Total Contact Casting for Diabetic Foot Ulcers in Partial-Foot Amputations.]]></title>
-      <description><![CDATA[<b>所属期数:</b> Volume 39(6) July 2026<br><b>出版时间:</b> July 2026<br><br><div class="author">
-                    <strong>Author: </strong>
-                    <span>Ruff, Garrett BS *; Syed, Uzaam DPM +; Iannuzzi, Louis DPT ++; Ross, Frank MD [S]</span>
-                    </div>
-                    <div class="page">
-                    <strong>Page: </strong>
-                    <span>308-313</span>
-                    </div>]]></description>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000473~total-contact-casting-for-diabetic-foot-ulcers-in</link>
+      <title><![CDATA[Total Contact Casting for Diabetic Foot Ulcers in Partial-Foot Amputations]]></title>
+      <description><![CDATA[<b>所属期数:</b> Volume 39(6)<br><b>出版时间:</b> July 2026<br><b>页码/出版信息:</b> 308-313<br><b>作者:</b> Garrett Ruff, Uzaam Syed, Louis Iannuzzi, Frank Ross<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000473~total-contact-casting-for-diabetic-foot-ulcers-in"></a>No description available.]]></description>
       <pubDate>Tue, 30 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-202607000-00007</link>
-      <title><![CDATA[The Silent Threat:  How Diabetic Foot Ulcers and the Fear of Amputation Shape Patients' Lives:  A Qualitative Exploration of Patient Experiences.]]></title>
-      <description><![CDATA[<b>所属期数:</b> Volume 39(6) July 2026<br><b>出版时间:</b> July 2026<br><br><div class="author">
-                    <strong>Author: </strong>
-                    <span>Gunbas, Merve PhD, RN; Dervisoglu, Merve PhD, RN; Buyukkaya Besen, Dilek PhD</span>
-                    </div>
-                    <div class="page">
-                    <strong>Page: </strong>
-                    <span>314-320</span>
-                    </div>]]></description>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000470~the-silent-threat-how-diabetic-foot-ulcers-and-the-fear-of</link>
+      <title><![CDATA[The Silent Threat: How Diabetic Foot Ulcers and the Fear of Amputation Shape Patients’ Lives: A Qualitative Exploration of Patient Experiences]]></title>
+      <description><![CDATA[<b>所属期数:</b> Volume 39(6)<br><b>出版时间:</b> July 2026<br><b>页码/出版信息:</b> 314-320<br><b>作者:</b> Merve Günbaş, Merve Dervişoğlu, Dilek Büyükkaya Besen<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000470~the-silent-threat-how-diabetic-foot-ulcers-and-the-fear-of"></a>No description available.]]></description>
       <pubDate>Tue, 30 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-202607000-00008</link>
-      <title><![CDATA[The Relationship Between Frailty and Care Dependency in Patients with Diabetic Foot Ulcers:  A Structural Equation Modeling Approach.]]></title>
-      <description><![CDATA[<b>所属期数:</b> Volume 39(6) July 2026<br><b>出版时间:</b> July 2026<br><br><div class="author">
-                    <strong>Author: </strong>
-                    <span>Gurcay, Busra PhD, RN *; Bilgin, Aylin PhD, RN +; Sert, Havva PhD, RN ++; Taskin Yilmaz, Feride PhD, RN +; Erkin, Alper MD [S]</span>
-                    </div>
-                    <div class="page">
-                    <strong>Page: </strong>
-                    <span>321-328</span>
-                    </div>]]></description>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000461~the-relationship-between-frailty-and-care-dependency-in</link>
+      <title><![CDATA[The Relationship Between Frailty and Care Dependency in Patients with Diabetic Foot Ulcers: A Structural Equation Modeling Approach]]></title>
+      <description><![CDATA[<b>所属期数:</b> Volume 39(6)<br><b>出版时间:</b> July 2026<br><b>页码/出版信息:</b> 321-328<br><b>作者:</b> Busra Gurcay, Aylin Bilgin, Havva Sert, Feride Taskin Yilmaz, Alper Erkin<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000461~the-relationship-between-frailty-and-care-dependency-in"></a>No description available.]]></description>
       <pubDate>Tue, 30 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-202607000-00009</link>
-      <title><![CDATA[Mobile Health App Needs Among Patients With Diabetic Foot Ulcers in China:  A Qualitative Study From the Perceptions of Patients, Caregivers, and Health Care Professionals.]]></title>
-      <description><![CDATA[<b>所属期数:</b> Volume 39(6) July 2026<br><b>出版时间:</b> July 2026<br><br><div class="author">
-                    <strong>Author: </strong>
-                    <span>Yao, Jia-li BSc, RN *; Gu, Ying-jie BSc, RN *; Yin, Yuan-yuan BSc, RN *; Yu, Hai-ping PhD, RN +; Zhuang, Hui-ren PhD, RN *</span>
-                    </div>
-                    <div class="page">
-                    <strong>Page: </strong>
-                    <span>329-335</span>
-                    </div>]]></description>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000477~mobile-health-app-needs-among-patients-with-diabetic-foot</link>
+      <title><![CDATA[Mobile Health App Needs Among Patients With Diabetic Foot Ulcers in China: A Qualitative Study From the Perceptions of Patients, Caregivers, and Health Care Professionals]]></title>
+      <description><![CDATA[<b>所属期数:</b> Volume 39(6)<br><b>出版时间:</b> July 2026<br><b>页码/出版信息:</b> 329-335<br><b>作者:</b> Jia-li Yao, Ying-jie Gu, Yuan-yuan Yin, Hai-ping Yu, Hui-ren Zhuang<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000477~mobile-health-app-needs-among-patients-with-diabetic-foot"></a>No description available.]]></description>
       <pubDate>Tue, 30 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-202607000-00010</link>
-      <title><![CDATA[Validation of the Diabetic Foot Ulcer Scale for Portuguese Patients.]]></title>
-      <description><![CDATA[<b>所属期数:</b> Volume 39(6) July 2026<br><b>出版时间:</b> July 2026<br><br><div class="author">
-                    <strong>Author: </strong>
-                    <span>Pereira, M. Graca PhD *; Ferreira, Gabriela PhD +; Vilaca, Margarida PhD *</span>
-                    </div>
-                    <div class="page">
-                    <strong>Page: </strong>
-                    <span>E263-E269</span>
-                    </div>]]></description>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000466~validation-of-the-diabetic-foot-ulcer-scale-for-portuguese</link>
+      <title><![CDATA[Validation of the Diabetic Foot Ulcer Scale for Portuguese Patients]]></title>
+      <description><![CDATA[<b>所属期数:</b> Volume 39(6)<br><b>出版时间:</b> July 2026<br><b>页码/出版信息:</b> E263-E269<br><b>作者:</b> M. Graça Pereira, Gabriela Ferreira, Margarida Vilaça<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000466~validation-of-the-diabetic-foot-ulcer-scale-for-portuguese"></a>No description available.]]></description>
       <pubDate>Tue, 30 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-202607000-00011</link>
-      <title><![CDATA[Validation of the CAN-WISE (Canadian Wound Program Information, Services, and Evaluation) Questionnaire.]]></title>
-      <description><![CDATA[<b>所属期数:</b> Volume 39(6) July 2026<br><b>出版时间:</b> July 2026<br><br><div class="author">
-                    <strong>Author: </strong>
-                    <span>Heerschap, Corey MScCH, BScN, RN, NSWOC, WOCC(C), IIWCC, CMP *; Butt, Britney MClScWH, BScN, RN, NSWOC, WOCC(C), CWOCN +</span>
-                    </div>
-                    <div class="page">
-                    <strong>Page: </strong>
-                    <span>E270-E275</span>
-                    </div>]]></description>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000465~validation-of-the-can-wise-canadian-wound-program</link>
+      <title><![CDATA[Validation of the CAN-WISE (Canadian Wound Program Information, Services, and Evaluation) Questionnaire]]></title>
+      <description><![CDATA[<b>所属期数:</b> Volume 39(6)<br><b>出版时间:</b> July 2026<br><b>页码/出版信息:</b> E270-E275<br><b>作者:</b> Corey Heerschap, Britney Butt<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000465~validation-of-the-can-wise-canadian-wound-program"></a>No description available.]]></description>
       <pubDate>Tue, 30 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-202607000-00012</link>
-      <title><![CDATA[Barriers to Self-Management of Patients with Diabetic Foot Ulcers:  A Systematic Review and Qualitative Meta-Synthesis.]]></title>
-      <description><![CDATA[<b>所属期数:</b> Volume 39(6) July 2026<br><b>出版时间:</b> July 2026<br><br><div class="author">
-                    <strong>Author: </strong>
-                    <span>Liu, Qin MSc, BSc, RN *; Shi, Lei MSc, BSc, RN *; Wang, Jin BSc, RN +; Zhuang, Huiren MSc, BSc, RN ++</span>
-                    </div>
-                    <div class="page">
-                    <strong>Page: </strong>
-                    <span>E276-E285</span>
-                    </div>]]></description>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000469~barriers-to-self-management-of-patients-with-diabetic-foot</link>
+      <title><![CDATA[Barriers to Self-Management of Patients with Diabetic Foot Ulcers: A Systematic Review and Qualitative Meta-Synthesis]]></title>
+      <description><![CDATA[<b>所属期数:</b> Volume 39(6)<br><b>出版时间:</b> July 2026<br><b>页码/出版信息:</b> E276-E285<br><b>作者:</b> Qin Liu, Lei Shi, Jin Wang, Huiren Zhuang<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000469~barriers-to-self-management-of-patients-with-diabetic-foot"></a>No description available.]]></description>
       <pubDate>Tue, 30 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-202607000-00013</link>
-      <title><![CDATA[Medical Device-Related Pressure Injuries:  A Systematic Review for Prevalence, Causes, and Risk Factors Since the COVID-19 Pandemic.]]></title>
-      <description><![CDATA[<b>所属期数:</b> Volume 39(6) July 2026<br><b>出版时间:</b> July 2026<br><br><div class="author">
-                    <strong>Author: </strong>
-                    <span>Alnaeem, Momhammad Minwer PhD, RN; Alshamlan, Mohammad Jumah MSN, RN</span>
-                    </div>
-                    <div class="page">
-                    <strong>Page: </strong>
-                    <span>E286-E294</span>
-                    </div>]]></description>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000468~medical-devicerelated-pressure-injuries-a-systematic-review</link>
+      <title><![CDATA[Medical Device–Related Pressure Injuries: A Systematic Review for Prevalence, Causes, and Risk Factors Since the COVID-19 Pandemic]]></title>
+      <description><![CDATA[<b>所属期数:</b> Volume 39(6)<br><b>出版时间:</b> July 2026<br><b>页码/出版信息:</b> E286-E294<br><b>作者:</b> Momhammad Minwer Alnaeem, Mohammad Jumah Alshamlan<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000468~medical-devicerelated-pressure-injuries-a-systematic-review"></a>No description available.]]></description>
       <pubDate>Tue, 30 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-202607000-00014</link>
-      <title><![CDATA[Perioperative Applications of Electrical Stimulation in Flap Surgeries:  Mechanisms and Benefits.]]></title>
-      <description><![CDATA[<b>所属期数:</b> Volume 39(6) July 2026<br><b>出版时间:</b> July 2026<br><br><div class="author">
-                    <strong>Author: </strong>
-                    <span>Jiang, Meijun MD; Zhang, Shaoyun MD; Xiao, Cong MD</span>
-                    </div>
-                    <div class="page">
-                    <strong>Page: </strong>
-                    <span>E295-E302</span>
-                    </div>]]></description>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000474~perioperative-applications-of-electrical-stimulation-in-flap</link>
+      <title><![CDATA[Perioperative Applications of Electrical Stimulation in Flap Surgeries: Mechanisms and Benefits]]></title>
+      <description><![CDATA[<b>所属期数:</b> Volume 39(6)<br><b>出版时间:</b> July 2026<br><b>页码/出版信息:</b> E295-E302<br><b>作者:</b> Meijun Jiang, Shaoyun Zhang, Cong Xiao<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000474~perioperative-applications-of-electrical-stimulation-in-flap"></a>No description available.]]></description>
       <pubDate>Tue, 30 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-202607000-00015</link>
-      <title><![CDATA[Topical Table Salt for the Treatment of Pyogenic Granuloma:  A Five-Case Series.]]></title>
-      <description><![CDATA[<b>所属期数:</b> Volume 39(6) July 2026<br><b>出版时间:</b> July 2026<br><br><div class="author">
-                    <strong>Author: </strong>
-                    <span>Karacoban, Melike MD; Senel, Engin MD</span>
-                    </div>
-                    <div class="page">
-                    <strong>Page: </strong>
-                    <span>E303-E307</span>
-                    </div>]]></description>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000462~topical-table-salt-for-the-treatment-of-pyogenic-granuloma-a</link>
+      <title><![CDATA[Topical Table Salt for the Treatment of Pyogenic Granuloma: A Five-Case Series]]></title>
+      <description><![CDATA[<b>所属期数:</b> Volume 39(6)<br><b>出版时间:</b> July 2026<br><b>页码/出版信息:</b> E303-E307<br><b>作者:</b> Melike Karaçoban, Engin Şenel<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000462~topical-table-salt-for-the-treatment-of-pyogenic-granuloma-a"></a>No description available.]]></description>
       <pubDate>Tue, 30 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-202607000-00016</link>
-      <title><![CDATA[Repair of a Large Ear Defect Including the Triangular Fossa.]]></title>
-      <description><![CDATA[<b>所属期数:</b> Volume 39(6) July 2026<br><b>出版时间:</b> July 2026<br><br><div class="author">
-                    <strong>Author: </strong>
-                    <span>Zaayman, Marcus MD *; Shalabi, Mojahed Mohammad K. MD *; Riva, Hannah R. MPAS +; Housewright, Chad D. MD *</span>
-                    </div>
-                    <div class="page">
-                    <strong>Page: </strong>
-                    <span>E308-E309</span>
-                    </div>]]></description>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000463~repair-of-a-large-ear-defect-including-the-triangular-fossa</link>
+      <title><![CDATA[Repair of a Large Ear Defect Including the Triangular Fossa]]></title>
+      <description><![CDATA[<b>所属期数:</b> Volume 39(6)<br><b>出版时间:</b> July 2026<br><b>页码/出版信息:</b> E308-E309<br><b>作者:</b> Marcus Zaayman, Mojahed Mohammad Shalabi, Hannah R. Riva, Chad D. Housewright<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000463~repair-of-a-large-ear-defect-including-the-triangular-fossa"></a>No description available.]]></description>
       <pubDate>Tue, 30 Jun 2026 16:00:00 GMT</pubDate>
     </item>
     <item>
-      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/00129334-202607000-00017</link>
-      <title><![CDATA[Utilization of Autologous Skin Shave Micrografting for Treatment of Advanced Stage Pressure Injuries:  A Seven-Patient Case Series.]]></title>
-      <description><![CDATA[<b>所属期数:</b> Volume 39(6) July 2026<br><b>出版时间:</b> July 2026<br><br><div class="author">
-                    <strong>Author: </strong>
-                    <span></span>
-                    </div>
-                    <div class="page">
-                    <strong>Page: </strong>
-                    <span>E310</span>
-                    </div>]]></description>
+      <link>https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000483~utilization-of-autologous-skin-shave-micrografting-for</link>
+      <title><![CDATA[Utilization of Autologous Skin Shave Micrografting for Treatment of Advanced Stage Pressure Injuries: A Seven-Patient Case Series]]></title>
+      <description><![CDATA[<b>所属期数:</b> Volume 39(6)<br><b>出版时间:</b> July 2026<br><b>页码/出版信息:</b> E310-E310<br><b>作者:</b> Utilization of Autologous Skin Shave Micrografting for Treatment of Advanced Stage Pressure Injuries: A Seven-Patient Case Series<br><br><a href="https://www.ovid.com/jnls/aswcjournal/fulltext/10.1097/asw.0000000000000483~utilization-of-autologous-skin-shave-micrografting-for"></a>No description available.]]></description>
       <pubDate>Tue, 30 Jun 2026 16:00:00 GMT</pubDate>
     </item>
   </channel>
