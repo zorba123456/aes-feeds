@@ -28,7 +28,7 @@ from email.utils import formatdate
 from DrissionPage import ChromiumPage, ChromiumOptions
 from bs4 import BeautifulSoup
 
-__version__ = "5.3.0"
+__version__ = "5.3.1"
 
 # ==================== 物理配置区域 ====================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -242,16 +242,10 @@ def main():
                     if "current" in name:
                         toc_url = f"{base_url}/toc/current"
                         articles = scrape_toc_page(page, toc_url, journal_name)
-                    elif "ahead" in name:
+                    else:
+                        # 所有 latest, ahead, online_first 等目标，均严格只对齐 toc/latest，不进行跨版块融合
                         toc_url = f"{base_url}/toc/latest"
                         articles = scrape_toc_page(page, toc_url, journal_name)
-                    else:
-                        # latest 融合版 (AOP 靠前)
-                        toc_url_latest = f"{base_url}/toc/latest"
-                        toc_url_current = f"{base_url}/toc/current"
-                        aop_articles = scrape_toc_page(page, toc_url_latest, journal_name)
-                        current_articles = scrape_toc_page(page, toc_url_current, journal_name)
-                        articles = aop_articles + current_articles
                         
                     if articles:
                         items_xml = ""
