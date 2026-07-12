@@ -35,6 +35,42 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROXY_SERVER = "http://127.0.0.1:29758"
 # ======================================================
 
+
+CAPTCHA_WAIT_SECS = 600
+
+def wait_for_cloudflare(page, name):
+    for _ in range(3):
+        if "Just a moment" not in page.title and "Cloudflare" not in page.title:
+            return True
+        time.sleep(1)
+        
+    print(f"⚠️ 触发安全验证: {name}")
+    try:
+        subtitle = f"正在抓取: {name}"
+        script = f'display notification "{subtitle}" with title "LWW Cloudflare 验证" sound name "Glass"'
+        import subprocess
+        subprocess.run(["osascript", "-e", script], check=False)
+    except:
+        pass
+
+    try:
+        subprocess.run(["osascript", "-e", 'tell application "Microsoft Edge" to activate'], check=False)
+    except:
+        pass
+
+    print(f"⏳ 等待人工滑过验证 (最长等待 {CAPTCHA_WAIT_SECS // 60} 分钟)...")
+    import time
+    wait_start = time.time()
+    
+    while time.time() - wait_start < CAPTCHA_WAIT_SECS:
+        if "Just a moment" not in page.title and "Cloudflare" not in page.title:
+            print("✅ 验证已通过！")
+            time.sleep(2)
+            return True
+        time.sleep(2)
+    print("❌ 超时！未完成人工验证。")
+    return False
+
 def push_to_github():
     print("\n📤 启动 GitHub 自动同步 (LWW Feeds)...")
     custom_env = os.environ.copy()
@@ -141,10 +177,8 @@ def parse_to_rfc822(date_str):
 def scrape_toc_page(page, url, journal_name):
     print(f"📡 Scraping TOC Page: {url}")
     page.get(url)
-    for _ in range(30):
-        if "Just a moment" not in page.title and "Cloudflare" not in page.title:
-            break
-        time.sleep(1)
+    if not wait_for_cloudflare(page, journal_name):
+        return []
     time.sleep(5)
     
     markers = page.eles('.js-omni-hydrate-marker')
@@ -297,10 +331,9 @@ def main():
                 else:
                     # 🟢 原有 Next.js/journals.lww.com 直抓逻辑后备
                     page.get(rss_url)
-                    for _ in range(30):
-                        if "Just a moment" not in page.title and "Cloudflare" not in page.title:
-                            break
-                        time.sleep(1)
+                    if not wait_for_cloudflare(page, name):
+                        has_failures = True
+                        continue
                     time.sleep(5)
                     
                     raw_html = page.html
@@ -353,10 +386,9 @@ def main():
             else:
                 # 🟢 原始 XML 路由逻辑 (web_scrape=False)
                 page.get(rss_url)
-                for _ in range(30):
-                    if "Just a moment" not in page.title and "Cloudflare" not in page.title:
-                        break
-                    time.sleep(1)
+                if not wait_for_cloudflare(page, name):
+                    has_failures = True
+                    continue
                 time.sleep(8) 
                 
                 raw_html = page.html
@@ -425,13 +457,7 @@ def main():
     if updated_any:
         push_to_github()
         
-    if has_failures:
-        try:
-            msg = "部分 LWW/Ovid 期刊抓取遇到验证码拦截，请双击桌面「LWW一键验证」进行处理。"
-            title = "LWW 爬虫验证提醒"
-            subprocess.run(['osascript', '-e', f'display alert "{title}" message "{msg}" buttons {{"确定"}} default button "确定"'])
-        except:
-            pass
+
 
 if __name__ == "__main__":
     main()
