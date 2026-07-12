@@ -28,7 +28,7 @@ from email.utils import formatdate
 from DrissionPage import ChromiumPage, ChromiumOptions
 from bs4 import BeautifulSoup
 
-__version__ = "5.3.1"
+__version__ = "5.4.0"
 
 # ==================== 物理配置区域 ====================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -202,6 +202,10 @@ def main():
     co.set_argument('--disable-gpu')
     co.set_argument('--remote-debugging-port=9222') 
     co.set_browser_path('/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge')
+    
+    # 🟢 启用本地浏览器缓存持久化目录，复用 Cloudflare 的 cf_clearance 通行证与 Cookie
+    profile_dir = os.path.join(BASE_DIR, "lww_browser_profile")
+    co.set_user_data_path(profile_dir)
     
     page = ChromiumPage(co)
     updated_any = False

@@ -10,3 +10,7 @@ venv/
 
 # 系统文件
 .DS_Store
+
+# 本地浏览器缓存
+lww_browser_profile/
+
