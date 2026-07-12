@@ -2,9 +2,29 @@ from DrissionPage import ChromiumPage, ChromiumOptions
 import os
 import sys
 import subprocess
+import time
+
+def force_kill_edge():
+    """多重手段彻底关闭所有 Edge 浏览器进程"""
+    try:
+        subprocess.run(['osascript', '-e', 'tell application "Microsoft Edge" to quit'], capture_output=True, timeout=5)
+        time.sleep(1)
+    except:
+        pass
+    try:
+        subprocess.run(["pkill", "-9", "-f", "Microsoft Edge"], capture_output=True)
+    except:
+        pass
+    try:
+        subprocess.run(["killall", "-9", "Microsoft Edge"], capture_output=True)
+    except:
+        pass
+    try:
+        subprocess.run(["killall", "-9", "msedge_crashpad_handler"], capture_output=True)
+    except:
+        pass
 
 def show_alert(msg, title):
-    # 弹出 macOS 原生对话框，带“取消”和“继续”按钮
     applescript = f'display dialog "{msg}" buttons {{"取消", "继续"}} default button "继续" with title "{title}" with icon note'
     res = subprocess.run(['osascript', '-e', applescript], capture_output=True, text=True)
     if "User canceled" in res.stderr or "button returned:取消" in res.stdout:
@@ -39,8 +59,7 @@ def main():
         )
         if not ok:
             print("❌ 用户取消了授权流程")
-            page.quit()
-            sys.exit(0)
+            return
             
         # 2. 预热 journals.lww.com 域名
         print("🌐 [第二步] 正在打开 LWW 旧版官网目标页...")
@@ -52,16 +71,16 @@ def main():
         )
         if not ok:
             print("❌ 用户取消了授权流程")
-            page.quit()
-            sys.exit(0)
+            return
             
     finally:
-        page.quit()
-        # 清理可能残留的后台 crashpad 进程
+        # 多重清理，确保 Edge 不残留
         try:
-            subprocess.run(["killall", "msedge_crashpad_handler"], capture_output=True)
+            page.quit()
         except:
             pass
+        time.sleep(1)
+        force_kill_edge()
             
     # 弹出成功提示
     subprocess.run([

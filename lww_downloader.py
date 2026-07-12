@@ -410,7 +410,17 @@ def main():
             print(f"[REPORT] CHANNEL=LWW ITEM={name} COUNT=0 STATUS=FAIL")
             has_failures = True
             
-    page.quit()
+    try:
+        page.quit()
+    except:
+        pass
+    # 多重清理，确保 Edge 不残留
+    import time as _t; _t.sleep(1)
+    try:
+        subprocess.run(["pkill", "-9", "-f", "Microsoft Edge"], capture_output=True)
+        subprocess.run(["killall", "-9", "msedge_crashpad_handler"], capture_output=True)
+    except:
+        pass
     
     if updated_any:
         push_to_github()
