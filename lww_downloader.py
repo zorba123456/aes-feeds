@@ -417,9 +417,9 @@ def main():
         
     if has_failures:
         try:
-            msg = "部分 LWW/Ovid 期刊抓取遇到验证码拦截，请双击桌面程序进行验证。"
-            title = "⚠️ LWW 爬虫验证提醒"
-            subprocess.run(['osascript', '-e', f'display notification "{msg}" with title "{title}"'])
+            msg = "部分 LWW/Ovid 期刊抓取遇到验证码拦截，请双击桌面「LWW一键验证」进行处理。"
+            title = "LWW 爬虫验证提醒"
+            subprocess.run(['osascript', '-e', f'display alert "{title}" message "{msg}" buttons {{"确定"}} default button "确定"'])
         except:
             pass
 
