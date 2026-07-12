@@ -48,7 +48,6 @@ def wait_for_cloudflare(page, name):
     try:
         subtitle = f"正在抓取: {name}"
         script = f'display notification "{subtitle}" with title "LWW Cloudflare 验证" sound name "Glass"'
-        import subprocess
         subprocess.run(["osascript", "-e", script], check=False)
     except:
         pass
@@ -59,7 +58,6 @@ def wait_for_cloudflare(page, name):
         pass
 
     print(f"⏳ 等待人工滑过验证 (最长等待 {CAPTCHA_WAIT_SECS // 60} 分钟)...")
-    import time
     wait_start = time.time()
     
     while time.time() - wait_start < CAPTCHA_WAIT_SECS:
