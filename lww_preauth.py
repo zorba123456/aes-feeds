@@ -1,5 +1,15 @@
 from DrissionPage import ChromiumPage, ChromiumOptions
 import os
+import sys
+import subprocess
+
+def show_alert(msg, title):
+    # 弹出 macOS 原生对话框，带“取消”和“继续”按钮
+    applescript = f'display dialog "{msg}" buttons {{"取消", "继续"}} default button "继续" with title "{title}" with icon note'
+    res = subprocess.run(['osascript', '-e', applescript], capture_output=True, text=True)
+    if "User canceled" in res.stderr or "button returned:取消" in res.stdout:
+        return False
+    return True
 
 def main():
     co = ChromiumOptions()
@@ -8,36 +18,57 @@ def main():
     co.set_browser_path('/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge')
     co.set_argument('--remote-debugging-port=9222')
     
-    # 🟢 严格复用爬虫主程序的本地浏览器缓存目录
     base_dir = os.path.dirname(os.path.abspath(__file__))
     profile_dir = os.path.join(base_dir, "lww_browser_profile")
     co.set_user_data_path(profile_dir)
     
     print("=" * 60)
-    print("      LWW / Ovid 爬虫本地缓存预授权工具 (Cloudflare Pre-Auth)")
-    print("=" * 60)
-    print(f"📂 本地缓存目录: {profile_dir}\n")
-    print("👉 我们将开启浏览器，请在弹出的浏览器窗口中：")
-    print("   1. 如果遇到 Cloudflare [Just a moment...] 验证，请【手动点击验证框】通过验证。")
-    print("   2. 通过后，让页面完全加载出学术目录内容。")
-    print("   3. 随后回到本终端按回车，程序会自动记录下 clearance 授权 Cookie，免去日后重复验证。")
+    print("      LWW / Ovid 爬虫本地缓存预授权工具 (GUI)")
     print("=" * 60)
     
     page = ChromiumPage(co)
     
-    # 1. 预热 Ovid 域名
-    print("\n🌐 [第一步] 正在打开 Ovid 平台目标页...")
-    page.get('https://www.ovid.com/jnls/aswcjournal/toc/current')
-    input("👉 [Ovid] 请在 Edge 窗口中确认已成功加载页面内容。完成后在此终端按 [回车/Enter] 继续...")
-    
-    # 2. 预热 journals.lww.com 域名
-    print("\n🌐 [第二步] 正在打开 LWW 旧版官网目标页...")
-    page.get('https://journals.lww.com/plasreconsurg/toc/current')
-    input("👉 [LWW] 请在 Edge 窗口中确认已成功加载页面内容。完成后在此终端按 [回车/Enter] 继续...")
-    
-    page.quit()
-    print("\n✨ 预授权成功！Cookie 及 clearance 凭证已保存在本地缓存。")
-    print("🚀 现在重新运行爬虫或通过 Cron 定时任务，即可在后台静默通过验证。")
+    try:
+        # 1. 预热 Ovid 域名
+        print("🌐 [第一步] 正在打开 Ovid 平台目标页...")
+        page.get('https://www.ovid.com/jnls/aswcjournal/toc/current')
+        
+        ok = show_alert(
+            "👉【第一步：Ovid】\n\n请在弹出的 Edge 窗口中确认已成功加载页面内容（如遇验证码请手动勾选通过）。\n\n确认加载出文献目录后，点击下方【继续】切换到下一域名。",
+            "LWW/Ovid 预授权 - 步骤 1/2"
+        )
+        if not ok:
+            print("❌ 用户取消了授权流程")
+            page.quit()
+            sys.exit(0)
+            
+        # 2. 预热 journals.lww.com 域名
+        print("🌐 [第二步] 正在打开 LWW 旧版官网目标页...")
+        page.get('https://journals.lww.com/plasreconsurg/toc/current')
+        
+        ok = show_alert(
+            "👉【第二步：LWW / PRS】\n\n请在 Edge 窗口中确认已成功加载 PRS 期刊页面（如遇验证码请手动勾选通过）。\n\n确认加载出文献目录后，点击下方【继续】完成授权流程。",
+            "LWW/Ovid 预授权 - 步骤 2/2"
+        )
+        if not ok:
+            print("❌ 用户取消了授权流程")
+            page.quit()
+            sys.exit(0)
+            
+    finally:
+        page.quit()
+        # 清理可能残留的后台 crashpad 进程
+        try:
+            subprocess.run(["killall", "msedge_crashpad_handler"], capture_output=True)
+        except:
+            pass
+            
+    # 弹出成功提示
+    subprocess.run([
+        'osascript', '-e',
+        'display dialog "✨ 预授权成功！\n\nCookie 通行证已安全保存在本地。爬虫管线现在可以后台静默工作了。" buttons {"确定"} default button "确定" with title "LWW/Ovid 预授权完成" with icon note'
+    ])
+    print("✨ 预授权全部成功完成！")
 
 if __name__ == '__main__':
     main()

@@ -209,6 +209,7 @@ def main():
     
     page = ChromiumPage(co)
     updated_any = False
+    has_failures = False
     
     targets = [
         {"name": "aswc_current_issue", "rss_url": "https://www.ovid.com/jnls/aswcjournal", "output_filename": "aswc_current_issue.xml", "web_scrape": True, "title": "Advances in Skin & Wound Care - Current Issue"},
@@ -292,6 +293,7 @@ def main():
                     else:
                         print(f"❌ 网页提取失败，未检测到任何文章。")
                         print(f"[REPORT] CHANNEL=LWW ITEM={name} COUNT=0 STATUS=FAIL")
+                        has_failures = True
                 else:
                     # 🟢 原有 Next.js/journals.lww.com 直抓逻辑后备
                     page.get(rss_url)
@@ -347,6 +349,7 @@ def main():
                     else:
                         print(f"❌ 网页提取失败，未检测到任何文章链接。")
                         print(f"[REPORT] CHANNEL=LWW ITEM={name} COUNT=0 STATUS=FAIL")
+                        has_failures = True
             else:
                 # 🟢 原始 XML 路由逻辑 (web_scrape=False)
                 page.get(rss_url)
@@ -400,15 +403,25 @@ def main():
                 else:
                     print(f"❌ 页面提取失败，未检测到合规的 XML 根节点。")
                     print(f"[REPORT] CHANNEL=LWW ITEM={name} COUNT=0 STATUS=FAIL")
+                    has_failures = True
                 
         except Exception as e:
             print(f"⚠️ 运行时异常捕获: {e}")
             print(f"[REPORT] CHANNEL=LWW ITEM={name} COUNT=0 STATUS=FAIL")
+            has_failures = True
             
     page.quit()
     
     if updated_any:
         push_to_github()
+        
+    if has_failures:
+        try:
+            msg = "部分 LWW/Ovid 期刊抓取遇到验证码拦截，请双击桌面程序进行验证。"
+            title = "⚠️ LWW 爬虫验证提醒"
+            subprocess.run(['osascript', '-e', f'display notification "{msg}" with title "{title}"'])
+        except:
+            pass
 
 if __name__ == "__main__":
     main()
