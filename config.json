@@ -22,12 +22,24 @@
             "url": "https://journals.lww.com/annalsplasticsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint&year=9900&issue=00000"
         },
         {
+            "name": "derm_surgery_current",
+            "url": "https://journals.lww.com/dermatologicsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=CurrentIssue"
+        },
+        {
             "name": "derm_surgery_latest",
             "url": "https://journals.lww.com/dermatologicsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles&year=9000&issue=00000"
         },
         {
+            "name": "j_craniofacial_surg_current",
+            "url": "https://journals.lww.com/jcraniofacialsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=CurrentIssue"
+        },
+        {
             "name": "j_craniofacial_surg_latest",
             "url": "https://journals.lww.com/jcraniofacialsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint&year=9900&issue=00000"
+        },
+        {
+            "name": "j_craniofacial_surg_open_current",
+            "url": "https://journals.lww.com/jcso/_layouts/15/OAKS.Journals/feed.aspx?FeedType=CurrentIssue"
         },
         {
             "name": "j_craniofacial_surg_open_latest",
