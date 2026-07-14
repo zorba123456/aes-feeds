@@ -253,6 +253,7 @@ def main():
         {"name": "j_craniofacial_surg_open_latest", "rss_url": "https://www.ovid.com/jnls/jcso", "output_filename": "j_craniofacial_surg_open_latest.xml", "web_scrape": True, "title": "Journal of Craniofacial Surgery Open - Latest Articles"},
         {"name": "prs_current_issue", "rss_url": "https://journals.lww.com/plasreconsurg/toc/current", "output_filename": "prs_current_issue.xml", "web_scrape": True, "title": "Plastic and Reconstructive Surgery - Current Issue"},
         {"name": "prs_latest_articles", "rss_url": "https://journals.lww.com/plasreconsurg/toc/latest", "output_filename": "prs_latest_articles.xml", "web_scrape": True, "title": "Plastic and Reconstructive Surgery - Latest Articles"},
+        {"name": "prs_video", "rss_url": "https://journals.lww.com/plasreconsurg/videos", "output_filename": "prs_video.xml", "web_scrape": True, "title": "Plastic and Reconstructive Surgery - Video"},
         {"name": "prs_go_current_issue", "rss_url": "https://journals.lww.com/prsgo/toc/current", "output_filename": "prs_go_current_issue.xml", "web_scrape": True, "title": "Plastic and Reconstructive Surgery Global Open - Current Issue"},
         {"name": "prs_go_latest_articles", "rss_url": "https://journals.lww.com/prsgo/toc/latest", "output_filename": "prs_go_latest_articles.xml", "web_scrape": True, "title": "Plastic and Reconstructive Surgery Global Open - Latest Articles"}
     ]
@@ -335,26 +336,63 @@ def main():
                     soup = BeautifulSoup(raw_html, 'html.parser')
                     
                     items = []
-                    for a in soup.find_all('a'):
-                        href = a.get('href')
-                        if href and ('/fulltext/' in href or '10.1097' in href):
-                            title = a.get_text(strip=True)
-                            if title and len(title) > 10 and 'PDF' not in title:
+                    if "videos" in rss_url:
+                        # 🟢 Video Gallery 专属解析逻辑
+                        cards = soup.find_all('div', class_='omni-card-body')
+                        for card in cards:
+                            title_a = card.find('h3', class_='omni-card__title').find('a') if card.find('h3', class_='omni-card__title') else None
+                            if title_a:
+                                title = title_a.get_text(strip=True)
+                                href = title_a.get('href')
                                 full_url = href if href.startswith('http') else urljoin(rss_url, href)
-                                if not any(i['link'] == full_url for i in items):
-                                    items.append({'title': title, 'link': full_url})
+                                
+                                date_str = "Unknown Date"
+                                misc_div = card.find('div', class_='omni-card__misc')
+                                if misc_div:
+                                    text = misc_div.get_text(strip=True)
+                                    if "Created" in text:
+                                        date_str = text.split("Created")[-1].replace(":", "").strip()
+                                        
+                                items.append({
+                                    'title': title,
+                                    'link': full_url,
+                                    'pub_date': date_str
+                                })
+                    else:
+                        # 普通文献列表解析逻辑
+                        for a in soup.find_all('a'):
+                            href = a.get('href')
+                            if href and ('/fulltext/' in href or '10.1097' in href):
+                                title = a.get_text(strip=True)
+                                if title and len(title) > 10 and 'PDF' not in title:
+                                    full_url = href if href.startswith('http') else urljoin(rss_url, href)
+                                    if not any(i['link'] == full_url for i in items):
+                                        items.append({
+                                            'title': title,
+                                            'link': full_url,
+                                            'pub_date': formatdate(time.time(), localtime=False, usegmt=True)
+                                        })
                     
                     print(f"📦 网页抓取成功捕获 {len(items)} 个文献条目。")
                     if items:
                         pub_date_str = formatdate(time.time(), localtime=False, usegmt=True)
                         items_xml = ""
                         for item in items:
+                            item_pub_date = item.get('pub_date', pub_date_str)
+                            if "GMT" not in item_pub_date:
+                                item_pub_date = parse_to_rfc822(item_pub_date)
+                                
+                            if "videos" in rss_url:
+                                desc_html = f"<b>所属期数:</b> Video Gallery<br><b>出版时间:</b> {item_pub_date}<br><br><a href=\"{item['link']}\"></a>No description available."
+                            else:
+                                desc_html = f"<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> {pub_date_str}<br><br><a href=\"{item['link']}\"></a>No description available."
+                                
                             item_xml = f"""
     <item>
       <link>{item['link']}</link>
       <title><![CDATA[{item['title']}]]></title>
-      <description><![CDATA[<b>所属期数:</b> Ahead of Print<br><b>出版时间:</b> {pub_date_str}<br><br><a href="{item['link']}"></a>No description available.]]></description>
-      <pubDate>{pub_date_str}</pubDate>
+      <description><![CDATA[{desc_html}]]></description>
+      <pubDate>{item_pub_date}</pubDate>
     </item>"""
                             items_xml += item_xml
                             

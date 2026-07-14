@@ -42,6 +42,10 @@
             "url": "https://journals.lww.com/plasreconsurg/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles"
         },
         {
+            "name": "prs_video",
+            "url": "https://journals.lww.com/plasreconsurg/videos"
+        },
+        {
             "name": "prs_go_current_issue",
             "url": "https://journals.lww.com/prsgo/_layouts/15/OAKS.Journals/feed.aspx?FeedType=CurrentIssue"
         },
