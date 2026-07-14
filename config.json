@@ -22,10 +22,6 @@
             "url": "https://journals.lww.com/annalsplasticsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint&year=9900&issue=00000"
         },
         {
-            "name": "derm_surgery_ahead",
-            "url": "http://journals.lww.com/dermatologicsurgery/_layouts/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint"
-        },
-        {
             "name": "derm_surgery_latest",
             "url": "https://journals.lww.com/dermatologicsurgery/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles&year=9000&issue=00000"
         },
@@ -38,20 +34,12 @@
             "url": "https://journals.lww.com/jcso/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles"
         },
         {
-            "name": "prs_video",
-            "url": "http://journals.lww.com/plasreconsurg/_layouts/OAKS.Journals/feed.aspx?FeedType=Video"
-        },
-        {
             "name": "prs_current_issue",
             "url": "http://journals.lww.com/plasreconsurg/_layouts/OAKS.Journals/feed.aspx?FeedType=CurrentIssue"
         },
         {
             "name": "prs_latest_articles",
             "url": "https://journals.lww.com/plasreconsurg/_layouts/15/OAKS.Journals/feed.aspx?FeedType=LatestArticles"
-        },
-        {
-            "name": "prs_online_first",
-            "url": "https://journals.lww.com/plasreconsurg/_layouts/15/OAKS.Journals/feed.aspx?FeedType=PublishAheadofPrint&year=9900&issue=00000"
         },
         {
             "name": "prs_go_current_issue",
