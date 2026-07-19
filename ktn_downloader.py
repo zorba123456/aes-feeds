@@ -230,12 +230,14 @@ def write_channel_xml(keyword, source_type, articles):
     rss_items = []
     
     for art in articles:
+        safe_url = art['url'].replace('&', '&amp;')
+        safe_desc = (art['description'] or '暂无摘要').replace('&', '&amp;')
         item_xml = f"""        <item>
             <title><![CDATA[{art['title']}]]></title>
-            <link>{art['url']}</link>
-            <guid isPermaLink="true">{art['url']}</guid>
+            <link>{safe_url}</link>
+            <guid isPermaLink="true">{safe_url}</guid>
             <pubDate>{art.get('pubDate', pub_date_str)}</pubDate>
-            <description><![CDATA[📡 AES-INTEL 细分源监测 [来源: {keyword} @ {source_type}]<br><br><b>文献标题:</b> {art['title']}<br><b>上下文摘要:</b> {art['description'] if art['description'] else '暂无摘要'}<br><b>源链接:</b> <a href="{art['url']}">点击跳转物理原文</a>]]></description>
+            <description><![CDATA[📡 AES-INTEL 细分源监测 [来源: {keyword} @ {source_type}]<br><br><b>文献标题:</b> {art['title']}<br><b>上下文摘要:</b> {safe_desc}<br><b>源链接:</b> <a href="{safe_url}">点击跳转物理原文</a>]]></description>
         </item>"""
         rss_items.append(item_xml)
 
@@ -299,17 +301,18 @@ def generate_opml_directory(channel_meta_list):
         item = f'            <outline text="{safe_title}" title="{safe_title}" type="rss" xmlUrl="{raw_github_url}" htmlUrl="https://github.com/zorba123456/aes-feeds"/>'
         outline_items.append(item)
         
-    opml_content = f"""<?xml version="1.0" encoding="utf-8"?>
+    outline_body = "\n".join(outline_items)
+    opml_content = f'''<?xml version="1.0" encoding="utf-8"?>
 <opml version="2.0">
     <head>
         <title>AES-INTEL KTN 谷歌学术细分源总目录</title>
     </head>
     <body>
         <outline text="AES-INTEL 谷歌学术情报网" title="AES-INTEL 谷歌学术情报网">
-{"\n".join(outline_items)}
+{outline_body}
         </outline>
     </body>
-</opml>"""
+</opml>'''
 
     with open(opml_path, 'w', encoding='utf-8') as f:
         f.write(opml_content)
