@@ -246,8 +246,14 @@ def main():
             '--disable-background-timer-throttling',
             '--disable-backgrounding-occluded-windows',
             '--disable-renderer-backgrounding',
+            '--disable-blink-features=AutomationControlled',
+            '--disable-automation',
         ],
     )
+    # 隐藏自动化标记，防止 reCAPTCHA 检测到自动化浏览器
+    context.add_init_script("""
+        Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+    """)
     page = context.new_page()
     updated_any = False
     has_failures = False
