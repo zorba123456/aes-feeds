@@ -25,8 +25,8 @@ from datetime import datetime
 import email.utils
 from urllib.parse import urljoin
 from email.utils import formatdate
-from DrissionPage import ChromiumPage, ChromiumOptions
 from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
 __version__ = "5.4.0"
 
@@ -40,7 +40,11 @@ CAPTCHA_WAIT_SECS = 600
 
 def wait_for_cloudflare(page, name):
     for _ in range(3):
-        if "Just a moment" not in page.title and "Cloudflare" not in page.title:
+        try:
+            title = page.title()
+        except Exception:
+            title = ""
+        if "Just a moment" not in title and "Cloudflare" not in title:
             return True
         time.sleep(1)
         
@@ -61,7 +65,11 @@ def wait_for_cloudflare(page, name):
     wait_start = time.time()
     
     while time.time() - wait_start < CAPTCHA_WAIT_SECS:
-        if "Just a moment" not in page.title and "Cloudflare" not in page.title:
+        try:
+            title = page.title()
+        except Exception:
+            title = ""
+        if "Just a moment" not in title and "Cloudflare" not in title:
             print("✅ 验证已通过！")
             time.sleep(2)
             return True
@@ -83,15 +91,6 @@ def push_to_github():
         print("✅ 同步成功！LWW 提纯数据已安全送达 GitHub 独立仓库。")
     except Exception as e:
         print(f"ℹ️ 发布管线返回: 无变更或推送被跳过 ({e})")
-
-def get_clean_props(m):
-    props_str = m.attr('data-hydrate-props')
-    if props_str:
-        try:
-            return json.loads(props_str)
-        except Exception:
-            pass
-    return None
 
 def get_full_title(content):
     if isinstance(content, dict):
@@ -174,17 +173,18 @@ def parse_to_rfc822(date_str):
 
 def scrape_toc_page(page, url, journal_name):
     print(f"📡 Scraping TOC Page: {url}")
-    page.get(url)
+    page.goto(url)
     if not wait_for_cloudflare(page, journal_name):
         return []
     time.sleep(5)
     
-    markers = page.eles('.js-omni-hydrate-marker')
+    markers = page.locator('.js-omni-hydrate-marker').all()
     articles = []
     seen_urls = set()
     
     for m in markers:
-        props = get_clean_props(m)
+        props_str = m.get_attribute('data-hydrate-props')
+        props = json.loads(props_str) if props_str else None
         if not props or not props.get('url'):
             continue
             
@@ -199,17 +199,20 @@ def scrape_toc_page(page, url, journal_name):
         card_text = ""
         curr = m
         for depth in range(4):
-            curr = curr.parent()
-            if not curr:
+            try:
+                curr = curr.locator('xpath=..')
+            except Exception:
                 break
-            class_str = str(curr.attr('class'))
+            class_str = curr.get_attribute('class') or ""
             if 'omni-card-body' in class_str or 'collection-item' in class_str:
-                card_text = curr.text.strip()
+                card_text = curr.text_content() or ""
                 break
         else:
-            p2 = m.parent().parent()
-            if p2:
-                card_text = p2.text.strip()
+            try:
+                p2 = m.locator('xpath=../..')
+                card_text = p2.text_content() or ""
+            except Exception:
+                card_text = ""
                 
         authors, issue, pub_date, pages = parse_card_metadata(card_text, journal_name)
         
@@ -227,21 +230,28 @@ def scrape_toc_page(page, url, journal_name):
     return articles
 
 def main():
-    print(f"=== [LWW] Start ({__version__}): {time.ctime()} ===")
+    print(f"=== [LWW] Start ({__version__}): {time.ctime()} ===\n")
     
-    co = ChromiumOptions()
-    co.set_argument('--no-sandbox')
-    co.set_argument('--disable-gpu')
-    co.set_argument('--remote-debugging-port=9222') 
-    co.set_browser_path('/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge')
-    
-    # 🟢 启用本地浏览器缓存持久化目录，复用 Cloudflare 的 cf_clearance 通行证与 Cookie
     profile_dir = os.path.join(BASE_DIR, "lww_browser_profile")
-    co.set_user_data_path(profile_dir)
     
-    page = ChromiumPage(co)
-    updated_any = False
-    has_failures = False
+    print("🚀 启动 Playwright 浏览器实例 (Edge)...")
+    with sync_playwright() as pw:
+        context = pw.chromium.launch_persistent_context(
+            user_data_dir=profile_dir,
+            channel="msedge",
+            headless=False,
+            args=[
+                '--no-sandbox',
+                '--disable-gpu',
+                '--disable-background-timer-throttling',
+                '--disable-backgrounding-occluded-windows',
+                '--disable-renderer-backgrounding',
+            ],
+            no_viewport=True,
+        )
+        page = context.new_page()
+        updated_any = False
+        has_failures = False
     
     targets = [
         {"name": "aswc_current_issue", "rss_url": "https://www.ovid.com/jnls/aswcjournal", "output_filename": "aswc_current_issue.xml", "web_scrape": True, "title": "Advances in Skin & Wound Care - Current Issue"},
@@ -329,13 +339,13 @@ def main():
                         has_failures = True
                 else:
                     # 🟢 原有 Next.js/journals.lww.com 直抓逻辑后备
-                    page.get(rss_url)
+                    page.goto(rss_url)
                     if not wait_for_cloudflare(page, name):
                         has_failures = True
                         continue
                     time.sleep(5)
                     
-                    raw_html = page.html
+                    raw_html = page.content()
                     soup = BeautifulSoup(raw_html, 'html.parser')
                     
                     items = []
@@ -421,13 +431,13 @@ def main():
                         has_failures = True
             else:
                 # 🟢 原始 XML 路由逻辑 (web_scrape=False)
-                page.get(rss_url)
+                page.goto(rss_url)
                 if not wait_for_cloudflare(page, name):
                     has_failures = True
                     continue
                 time.sleep(8) 
                 
-                raw_html = page.html
+                raw_html = page.content()
                 xml_match = re.search(r'<rss.*?</rss>', raw_html, re.DOTALL | re.IGNORECASE)
                 
                 if xml_match:
@@ -479,7 +489,7 @@ def main():
             has_failures = True
             
     try:
-        page.quit()
+        context.close()
     except:
         pass
     # 多重清理，确保 Edge 不残留
