@@ -235,23 +235,22 @@ def main():
     profile_dir = os.path.join(BASE_DIR, "lww_browser_profile")
     
     print("🚀 启动 Playwright 浏览器实例 (Edge)...")
-    with sync_playwright() as pw:
-        context = pw.chromium.launch_persistent_context(
-            user_data_dir=profile_dir,
-            channel="msedge",
-            headless=False,
-            args=[
-                '--no-sandbox',
-                '--disable-gpu',
-                '--disable-background-timer-throttling',
-                '--disable-backgrounding-occluded-windows',
-                '--disable-renderer-backgrounding',
-            ],
-            no_viewport=True,
-        )
-        page = context.new_page()
-        updated_any = False
-        has_failures = False
+    pw = sync_playwright().start()
+    context = pw.chromium.launch_persistent_context(
+        user_data_dir=profile_dir,
+        channel="msedge",
+        headless=False,
+        args=[
+            '--no-sandbox',
+            '--disable-gpu',
+            '--disable-background-timer-throttling',
+            '--disable-backgrounding-occluded-windows',
+            '--disable-renderer-backgrounding',
+        ],
+    )
+    page = context.new_page()
+    updated_any = False
+    has_failures = False
     
     targets = [
         {"name": "aswc_current_issue", "rss_url": "https://www.ovid.com/jnls/aswcjournal", "output_filename": "aswc_current_issue.xml", "web_scrape": True, "title": "Advances in Skin & Wound Care - Current Issue"},
@@ -488,8 +487,9 @@ def main():
             print(f"[REPORT] CHANNEL=LWW ITEM={name} COUNT=0 STATUS=FAIL")
             has_failures = True
             
+    # 清理：Playwright 的 context 由外层的 killall 处理，不在此优雅关闭
     try:
-        context.close()
+        pw.stop()
     except:
         pass
     # 多重清理，确保 Edge 不残留
