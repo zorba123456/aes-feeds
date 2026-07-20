@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--CMA-FINGERPRINT:4fffa63cb36e529170235420c18c40d0-->
+<!--CMA-FINGERPRINT:6bd28afdb88a071faf9a97d3c9f4b0ab-->
 <rss version="2.0">
     <channel>
         <title>KTN_"中华整形外科杂志" @ CMA</title>
         <link>https://www.yiigle.com/Journal/ZHZXWKZZ</link>
         <description>中华整形外科杂志 - 自动聚合源</description>
-        <lastBuildDate>Wed, 15 Jul 2026 18:30:26 +0800</lastBuildDate>
+        <lastBuildDate>Mon, 20 Jul 2026 18:30:35 +0800</lastBuildDate>
         
+        <item>
+            <title><![CDATA[[优先出版] 高能聚焦超声在面部年轻化领域的应用]]></title>
+            <link>https://rs.yiigle.com/cmaid/1687725</link>
+            <guid isPermaLink="false">https://rs.yiigle.com/cmaid/1687725</guid>
+            <author><![CDATA[王晓安, 黄绿萍]]></author>
+            
+            <description><![CDATA[<b>期数：</b>最新优先发表<br><b>出版日期：</b>未知时间<br><b>作者：</b>王晓安, 黄绿萍<br><br><b>摘要：</b>面部年轻化已逐渐成为医疗美容领域备受关注的研究热点。其治疗方式主要分为传统手术治疗与非手术治疗，后者中以光声电技术的发展最为迅速。这类技术通过能量刺激产生安全、有效的组织效应以实现治疗目标，因其微创或无创的特点，更契合当下求美者的需求。近10余年来，聚焦超声在面部年轻化的非手术治疗中逐渐凸显出独特优势。该技术通过选择性热效应诱导胶原重塑，是目前少数能够作用于浅表肌腱膜系统层面的非侵入性能量治疗技术之一。该文围绕聚焦超声技术的基本原理、基础研究及临床应用现状展开阐述，分析目前存在的问题，并对其未来应用前景进行展望。]]></description>
+        </item>
         <item>
             <title><![CDATA[[优先出版] 低氧预处理脂肪来源间充质干细胞条件培养基对衰老成纤维细胞功能的影响]]></title>
             <link>https://rs.yiigle.com/cmaid/1687429</link>
@@ -418,14 +426,6 @@ RPAS可成为评估实时疼痛程度的一种客观检测手段。]]></descript
             <author><![CDATA[王正昊, 牛峰]]></author>
             
             <description><![CDATA[<b>期数：</b>2026年42卷05期<br><b>出版日期：</b>未知时间<br><b>作者：</b>王正昊, 牛峰<br><br><b>摘要：</b>对于成年骨性Ⅲ类、Ⅱ类错患者，传统的治疗顺序为术前正畸-正颌手术-术后正畸，即正畸先行模式。手术先行模式(SFA)则跳过术前正畸环节，直接进行正颌手术，不仅缩短了整体治疗时长，还能让患者早期获得面部美学改善。但是SFA开展难度较高，对临床医生的技术水平、操作经验，以及患者自身的骨骼条件、咬合情况有一定的要求。近年来，随着计算机辅助正颌外科的发展以及手术经验的积累，SFA在骨性Ⅲ类、Ⅱ类错畸形治疗中的应用范围不断扩大。该文对SFA的适应证与禁忌证、治疗效果、应用进展及术后稳定性等核心问题进行了综述，旨在为临床医生开展SFA治疗提供参考依据。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[鼻基底凹陷形态学的研究进展]]></title>
-            <link>https://rs.yiigle.com/cmaid/1681108</link>
-            <guid isPermaLink="false">https://rs.yiigle.com/cmaid/1681108</guid>
-            <author><![CDATA[吕欣, 杨旭东, 章茜]]></author>
-            
-            <description><![CDATA[<b>期数：</b>2026年42卷05期<br><b>出版日期：</b>未知时间<br><b>作者：</b>吕欣, 杨旭东, 章茜<br><br><b>摘要：</b>作为面中部的美学中心，鼻基底凹陷可影响面部整体轮廓的美学效果并带来老年化的改变，因此成为很多牙颌面畸形或具有年轻化诉求患者就诊的重要原因。但由于鼻基底凹陷成因复杂，涉及面部多个解剖结构，且患者审美差异性明显，因此，如何对鼻基底区域进行量化评价备受关注。该综述介绍了鼻基底区域划分和凹陷成因，并对鼻基底凹陷的评价方法及优劣进行总结对比，以期为评价及治疗鼻基底凹陷提供帮助。]]></description>
         </item>
     </channel>
 </rss>
