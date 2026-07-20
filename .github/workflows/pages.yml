@@ -1,11 +1,12 @@
 name: Deploy to GitHub Pages
 
-on:
-  # 每次推送到 main 分支时触发部署
-  push:
-    branches: ["main"]
-  # 允许手动在 Actions 页面触发
-  workflow_dispatch:
+# 暂时禁用：GitHub Pages 部署服务 Node.js 24 兼容性问题导致部署失败
+# 数据推送不受影响，Inoreader 直接从 raw.githubusercontent.com 拉取 XML
+# on:
+#   push:
+#     branches: ["main"]
+#   workflow_dispatch:
+on: workflow_dispatch
 
 # 设置权限，允许 GITHUB_TOKEN 发布到 Pages
 permissions:
