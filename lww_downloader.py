@@ -28,7 +28,7 @@ from email.utils import formatdate
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
-__version__ = "5.4.0"
+__version__ = "5.5.0"
 
 # ==================== 物理配置区域 ====================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
