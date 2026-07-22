@@ -173,7 +173,7 @@ def parse_to_rfc822(date_str):
 
 def scrape_toc_page(page, url, journal_name):
     print(f"📡 Scraping TOC Page: {url}")
-    page.goto(url)
+    page.goto(url, timeout=60000)
     if not wait_for_cloudflare(page, journal_name):
         return []
     time.sleep(5)
