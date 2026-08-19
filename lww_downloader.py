@@ -146,7 +146,7 @@ def parse_card_metadata(card_text, journal_name, title=""):
         card_text, re.I)
     if m_print:
         month = m_print.group(1)
-        pub_date = f"{month.capitalize()} {m_print.group(2)}"
+        pub_date = _month_to_iso(m_print.group(1), m_print.group(2))   # "2026-07"(仅到月)
         issue = f"Volume {m_print.group(3)}({m_print.group(4)})"
         pages = re.sub(r'\s*Article.*$', '', m_print.group(5)).strip().rstrip('.,')
         return authors, issue, pub_date, pages
@@ -156,21 +156,28 @@ def parse_card_metadata(card_text, journal_name, title=""):
     m_ahead = re.search(r'(%s)\s+(\d{1,2}),\s+(\d{4})' % _MONTHS_ALL, card_text, re.I)
     if m_ahead:
         month = m_ahead.group(1)
-        pub_date = f"{_canon_month(month)} {m_ahead.group(2)}, {m_ahead.group(3)}"
+        pub_date = _date_to_iso(m_ahead.group(1), m_ahead.group(2), m_ahead.group(3))  # "2026-08-17"(到天)
         return authors, issue, pub_date, pages
 
     return authors, issue, pub_date, pages
 
 
-def _canon_month(tok: str) -> str:
-    """把月份缩写/全拼统一成全拼首字母大写（如 'aug' -> 'August'）。"""
-    full = {
-        'jan': 'January', 'feb': 'February', 'mar': 'March', 'apr': 'April',
-        'may': 'May', 'jun': 'June', 'jul': 'July', 'aug': 'August',
-        'sep': 'September', 'oct': 'October', 'nov': 'November', 'dec': 'December',
-    }
-    t = tok.strip()[:3].lower()
-    return full.get(t, tok)
+_ISO_MONTHS = {
+    'jan': '01', 'feb': '02', 'mar': '03', 'apr': '04', 'may': '05', 'jun': '06',
+    'jul': '07', 'aug': '08', 'sep': '09', 'oct': '10', 'nov': '11', 'dec': '12',
+}
+
+
+def _month_to_iso(month_tok: str, year: str) -> str:
+    """月份 → 'YYYY-MM'（仅到月，无日）。来源为期刊月，字段本就无日。"""
+    mm = _ISO_MONTHS.get(month_tok.strip()[:3].lower(), month_tok.strip())
+    return f"{year}-{mm}"
+
+
+def _date_to_iso(month_tok: str, day: str, year: str) -> str:
+    """月日年 → 'YYYY-MM-DD'（到天）。"""
+    mm = _ISO_MONTHS.get(month_tok.strip()[:3].lower(), month_tok.strip())
+    return f"{year}-{mm}-{int(day):02d}"
 
 def parse_to_rfc822(date_str):
     if not date_str or "Unknown" in date_str:
@@ -419,7 +426,9 @@ def main():
                                 desc_html += f"<br><b>作者:</b> {item['authors']}"
                             desc_html += f"<br><br><a href=\"{item['link']}\"></a>No description available."
                             
-                            rfc_pub_date = parse_to_rfc822(item['pub_date'])
+                            # §出版日期语义：current 期刊月→"2026-07"(仅到月)/latest→"2026-08-17"(到天)。
+                            # 直接写原始串，不转 RFC822(那会丢失"仅到月"语义且引入时区偏移)。
+                            rfc_pub_date = item['pub_date']
                             
                             item_xml = f"""
     <item>
