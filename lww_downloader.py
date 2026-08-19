@@ -159,6 +159,26 @@ def parse_card_metadata(card_text, journal_name, title=""):
         pub_date = _date_to_iso(m_ahead.group(1), m_ahead.group(2), m_ahead.group(3))  # "2026-08-17"(到天)
         return authors, issue, pub_date, pages
 
+    # 形态③: 双月合订 current → "Month/Month YYYY"(如 "July/August 2026")。合订期本无日，
+    # 取前一个月的月末语义（保守靠前，避免把出版日造到未来的后月首日）。到月无日。
+    m_bimonth = re.search(
+        r'(%s)\s*/\s*(%s)\s+(\d{4})' % (_MONTHS_FULL, _MONTHS_FULL),
+        card_text, re.I)
+    if m_bimonth:
+        first = m_bimonth.group(1)
+        pub_date = _month_to_iso(first, m_bimonth.group(3))   # "2026-07"(取前月, 到月)
+        issue = f"{first}/{m_bimonth.group(2)} {m_bimonth.group(3)}"
+        return authors, issue, pub_date, pages
+
+    # 形态④: 无逗号单月 → "Month YYYY"(如 "August 2026"，ahead-of-print 但官网只给到月)。
+    # 仅当卡片不含 Volume 卷期(形态①已拦走)才走此分支——避免把已分配期号的 current 卡片
+    # 误判为"无期号"。到月无日。
+    m_mon = re.search(r'(%s)\s+(\d{4})' % _MONTHS_FULL, card_text, re.I)
+    if m_mon:
+        month = m_mon.group(1)
+        pub_date = _month_to_iso(month, m_mon.group(2))   # "2026-08"(仅到月)
+        return authors, issue, pub_date, pages
+
     return authors, issue, pub_date, pages
 
 
