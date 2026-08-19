@@ -89,6 +89,35 @@ def save_dedup_log(log_data):
     with open(LOG_FILE_PATH, 'w', encoding='utf-8') as f:
         json.dump(cleaned_data, f, ensure_ascii=False, indent=2)
 
+def _fetch_detail_meta(link):
+    """从 CMA 文章详情页(rs.yiigle.com/cmaid/...)抓 citation_* 元数据。
+    返回 dict: {pub_date(YYYY-MM-DD到天或""), volume, issue, first, last}。
+    详情页无反爬(urllib 可读)。失败/无字段返回空。优先出版等无发布日期时 pub_date 为空字符串。"""
+    import urllib.request as _ur
+    meta = {"pub_date": "", "volume": "", "issue": "", "first": "", "last": ""}
+    if not link or "yiigle.com" not in link:
+        return meta
+    try:
+        req = _ur.Request(link, headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124.0 Safari/537.36"})
+        with _ur.urlopen(req, timeout=20) as r:
+            html = r.read().decode("utf-8", "ignore")
+    except Exception:
+        return meta
+    def _get(name):
+        m = re.search(r'(?:name|property)="' + re.escape(name) + r'"[^>]*content="([^"]*)"', html, re.I)
+        return m.group(1).strip() if m else ""
+    pd = (_get("citation_publication_date") or _get("DC.date") or "").strip()
+    if pd:
+        dm = re.search(r'(\d{4})[-/](\d{1,2})[-/](\d{1,2})', pd)
+        if dm:
+            meta["pub_date"] = f"{dm.group(1)}-{int(dm.group(2)):02d}-{int(dm.group(3)):02d}"
+    meta["volume"] = _get("citation_volume")
+    meta["issue"] = _get("citation_issue")
+    meta["first"] = _get("citation_firstpage")
+    meta["last"] = _get("citation_lastpage")
+    return meta
+
+
 def parse_blocks_dict(soup, base_url, is_priority=False):
     """
     解析文献特征块，提取标题、链接、期数、出版日期、作者和摘要。
@@ -125,7 +154,8 @@ def parse_blocks_dict(soup, base_url, is_priority=False):
             seen_links.add(link)
 
             node_text = node.get_text(" ", strip=True)
-            
+
+            # 列表页日期：优先出版/当期若列表节点带 YYYY-MM-DD 直接取(罕见)；否则当期下面补进详情页真日期
             pub_date_gmt = ""
             display_date = "未知时间"
             date_match = re.search(r'(\d{4}-\d{2}-\d{2})', node_text)
@@ -136,13 +166,28 @@ def parse_blocks_dict(soup, base_url, is_priority=False):
                     pub_date_gmt = dt.strftime("%a, %d %b %Y 00:00:00 GMT")
                 except ValueError:
                     pass
-            
-            issue_info = "最新优先发表" if is_priority else "未知期数"
-            issue_match = re.search(r'(\d{4}年\d+卷\d+期)', node_text)
+
+            # 期数：优先出版条目列表标注"2026年59卷网络预发表"(无"期")→ 补抓；当期常规"2026年42卷07期"
+            issue_match = re.search(r'(\d{4}年\d+卷(?:\d+期|\s*网络预发表)?)', node_text)
             if not issue_match:
                 issue_match = re.search(r'(\d{4},\s*\d+\(\d+\))', node_text)
-            if issue_match:
-                issue_info = issue_match.group(1)
+            issue_info = issue_match.group(1) if issue_match else ("最新优先发表" if is_priority else "未知期数")
+
+            # 当期：进详情页补真实出版日期(到天) + 卷期；优先出版详情页无发布日期(仅卷期占位)，不覆写已有标注
+            detail_meta = {}
+            if not is_priority:
+                detail_meta = _fetch_detail_meta(link)
+                if detail_meta.get("pub_date"):
+                    display_date = detail_meta["pub_date"]
+                    try:
+                        dt = datetime.strptime(display_date, "%Y-%m-%d")
+                        pub_date_gmt = dt.strftime("%a, %d %b %Y 00:00:00 GMT")
+                    except ValueError:
+                        pass
+                if detail_meta.get("volume") and detail_meta.get("issue"):
+                    # 详情页卷期仅当列表未给出完整"年卷期"时补用(当期列表通常已带全"2026年42卷07期")
+                    if "期" not in issue_info:
+                        issue_info = f"{detail_meta['volume']}卷{int(detail_meta['issue']):02d}期"
 
             if is_priority:
                 enhanced_title = f"[优先出版] {title}"

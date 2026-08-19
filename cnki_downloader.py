@@ -197,6 +197,17 @@ def generate_hash(journal_code, title):
     raw = f"{journal_code.lower()}_{clean_title}".encode('utf-8')
     return hashlib.md5(raw).hexdigest()
 
+def cnki_issue_to_month(issue_txt):
+    """当期目录期数 "2026年08期" → 到月字符串 "2026-08"（对齐 LWW 月/日自明字符串语义）。
+    无期数/解析失败返回 None。"""
+    if not issue_txt:
+        return None
+    m = re.search(r'(\d{4})年\s*(\d{1,2})\s*期', issue_txt)
+    if not m:
+        return None
+    return f"{m.group(1)}-{int(m.group(2)):02d}"
+
+
 def parse_cnki_pubdate(date_str):
     """
     解析知网的发布日期。
@@ -675,8 +686,11 @@ def _scrape_journal_views(page, code, name, journal_start, has_net_first, has_pr
                 pub_date = parse_cnki_pubdate(company_txt)
                 desc = f"<b>期数：</b>网络首发<br><b>出版日期/发布时间：</b>{company_txt}<br><b>作者：</b>{author or '未标明'}"
             else:
-                enhanced_title = f"[当期目录] [{issue_txt}] {raw_title}"
-                pub_date = parse_cnki_pubdate(company_txt)
+                # 当期目录：去掉无意义的 "[当期目录]" 前缀（期数已由 [{issue_txt}] 体现）。
+                # pub_date 改用"期数月"字符串（如 "2026年08期" → "2026-08"，对齐 LWW 月/日自明字符串语义），
+                # 不再用 datetime.now() 兜底（那是 XML 生成时刻、是假日期）。无期数→None。
+                enhanced_title = f"[{issue_txt}] {raw_title}"
+                pub_date = cnki_issue_to_month(issue_txt)
                 desc = f"<b>期数：</b>{issue_txt}<br><b>出版日期/页码：</b>{company_txt}<br><b>作者：</b>{author or '未标明'}"
             if not pub_date:
                 pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
