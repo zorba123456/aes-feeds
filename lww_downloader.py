@@ -186,20 +186,24 @@ def parse_to_rfc822(date_str):
     return email.utils.formatdate(time.time(), localtime=False, usegmt=True)
 
 def _set_per_page_and_maybe_paginate(page, url):
-    """把 TOC 翻页栏的『每页条数』设到最大可见量，必要时翻一页补齐（仅 current，且仅翻 1 次封顶）。
+    """把 TOC 翻页栏的『每页条数』设到最大可见量。
 
     实测(LWW 官网, 2026-08-19):
       - 翻页栏是原生 <select>，选项 ['20','50','100']，select_option 可靠改选。
       - 页面 URL 用查询参数控制：`?pageSize={N}&page={M}`（翻页 <a> href 即此形态）。
       - 总量标记形如 "1 - 20 of 52 results"（current 有限；latest 是无限累加、数字无意义）。
-      - current: 设 100 → 总量≤100 一次全量；总量>100 翻 1 页(第2页)补齐。
+      - current: 设 100 → 总量≤100 一次全量；总量>100 需再翻 1 页(第2页)补齐。
       - latest: 设 50 → 取第一页 50 条（覆盖单次更新量；不翻页、不看总量）。
-    无 select（如视频页）自动跳过，不影响原逻辑。
+
+    本函数只负责改选每页条数 + 判定是否需要翻第 2 页；翻页动作由调用方(scrape_toc_page)
+    在抓完第 1 页后执行并把两页合并，避免"跳页后丢弃第 1 页"。
+    返回 dict: {"paginate": bool, "target": int}——paginate=True 表示总量>target、需抓第 2 页。
+    无 select（如视频页）返回 {"paginate": False, "target": None}。
     """
     try:
         sel = page.locator("select").first
         if sel.count() == 0:
-            return False
+            return {"paginate": False, "target": None}
         options = [o.text_content().strip() for o in sel.locator("option").all()]
         print(f"  [翻页] 每页条数下拉: {options}")
         # 读总量标记 "X - Y of N results"
@@ -216,7 +220,6 @@ def _set_per_page_and_maybe_paginate(page, url):
         is_current = "/toc/current" in url
         target = 100 if is_current else 50
 
-        # 用 select 改选真的每页条数（比猜 URL 参数稳）
         if str(target) in options:
             try:
                 sel.select_option(value=str(target))
@@ -225,21 +228,14 @@ def _set_per_page_and_maybe_paginate(page, url):
             except Exception as e:
                 print(f"  [翻页] select 改选失败: {e}")
 
-        # current 且总量>100 → 翻一页(第2页)补齐，仅 1 次
-        if is_current and total is not None and total > 100:
-            try:
-                page2_url = f"{url.split('?')[0]}?pageSize={target}&page=2"
-                page.goto(page2_url, timeout=60000)
-                if not wait_for_cloudflare(page, journal_name_of_url(url)):
-                    return True
-                page.wait_for_timeout(5000)
-                print(f"  [翻页] current 总量>{target}，已翻到第 2 页({page2_url}) 补齐")
-            except Exception as e:
-                print(f"  [翻页] 翻第2页失败(仅取第1页): {e}")
-        return True
+        # current 且总量>target → 需翻第 2 页补齐
+        need_paginate = bool(is_current and total is not None and total > target)
+        if need_paginate:
+            print(f"  [翻页] current 总量>{target}，需翻第 2 页补齐全量")
+        return {"paginate": need_paginate, "target": target}
     except Exception as e:
         print(f"  [翻页] 处理异常(跳过,维持原状): {e}")
-        return False
+        return {"paginate": False, "target": None}
 
 
 def journal_name_of_url(url):
@@ -248,34 +244,23 @@ def journal_name_of_url(url):
     return m.group(1) if m else "LWW"
 
 
-def scrape_toc_page(page, url, journal_name):
-    print(f"📡 Scraping TOC Page: {url}")
-    page.goto(url, timeout=60000)
-    if not wait_for_cloudflare(page, journal_name):
-        return []
-    time.sleep(5)
-
-    # 抓取范围优化（每页条数 + current 超量翻 1 次页）
-    _set_per_page_and_maybe_paginate(page, url)
-
+def _extract_articles_from_page(page, journal_name, seen_urls, articles):
+    """从当前页所有 .js-omni-hydrate-marker 解析条目，追加到 articles（按 url 去重）。"""
     markers = page.locator('.js-omni-hydrate-marker').all()
-    articles = []
-    seen_urls = set()
-    
+    added = 0
     for m in markers:
         props_str = m.get_attribute('data-hydrate-props')
         props = json.loads(props_str) if props_str else None
         if not props or not props.get('url'):
             continue
-            
         url_val = props.get('url')
         if url_val in seen_urls:
             continue
         seen_urls.add(url_val)
-        
+
         title_val = get_full_title(props.get('content'))
         an_val = props.get('accessionNumber')
-        
+
         card_text = ""
         curr = m
         for depth in range(4):
@@ -293,9 +278,8 @@ def scrape_toc_page(page, url, journal_name):
                 card_text = p2.text_content() or ""
             except Exception:
                 card_text = ""
-                
+
         authors, issue, pub_date, pages = parse_card_metadata(card_text, journal_name, title_val)
-        
         articles.append({
             'title': title_val,
             'link': url_val,
@@ -303,9 +287,44 @@ def scrape_toc_page(page, url, journal_name):
             'authors': authors,
             'issue': issue,
             'pub_date': pub_date,
-            'pages': pages
+            'pages': pages,
         })
-        
+        added += 1
+    return added
+
+
+def scrape_toc_page(page, url, journal_name):
+    print(f"📡 Scraping TOC Page: {url}")
+    page.goto(url, timeout=60000)
+    if not wait_for_cloudflare(page, journal_name):
+        return []
+    time.sleep(5)
+
+    # 改选每页条数 + 判定是否需翻第 2 页(current 总量>target)
+    paginfo = _set_per_page_and_maybe_paginate(page, url)
+
+    articles = []
+    seen_urls = set()
+
+    # 第 1 页
+    n1 = _extract_articles_from_page(page, journal_name, seen_urls, articles)
+    print(f"📦 第 1 页解析 {n1} 条")
+
+    # current 总量>target → 翻第 2 页补齐并合并
+    if paginfo.get("paginate"):
+        target = paginfo.get("target") or 100
+        page2_url = f"{url.split('?')[0]}?pageSize={target}&page=2"
+        try:
+            print(f"  [翻页] 翻第 2 页: {page2_url}")
+            page.goto(page2_url, timeout=60000)
+            if not wait_for_cloudflare(page, journal_name):
+                print("  [翻页] 第2页触发验证，跳过补齐")
+            page.wait_for_timeout(5000)
+            n2 = _extract_articles_from_page(page, journal_name, seen_urls, articles)
+            print(f"📦 第 2 页补充 {n2} 条（去重后总 {len(articles)} 条）")
+        except Exception as e:
+            print(f"  [翻页] 翻第2页失败(仅保留第1页 {len(articles)} 条): {e}")
+
     print(f"📦 Successfully parsed {len(articles)} articles from {url}")
     return articles
 
@@ -366,18 +385,22 @@ def main():
         
         try:
             if journal.get("web_scrape", False):
-                if "ovid.com" in rss_url:
-                    # 🟢 Ovid 平台专属的新子页面 TOC 抓取逻辑
+                # 平台统一：所有 TOC 源（ovid.com 或 journals.lww.com 的 current/latest）都走
+                # scrape_toc_page（每页条数改选 + 总量翻页合并 + 真实出版日期）；仅视频页(/videos/)走旧 soup 分支。
+                # 注：ovid 源 rss_url 不含 /toc/（main 内拼 /toc/current|latest），故按 "videos" 排除判定。
+                is_toc_page = "videos" not in rss_url
+                if is_toc_page:
+                    # 🟢 TOC 抓取逻辑（Ovid + journals.lww.com 通用，含每页条数改选 + 总量翻页 + 真实出版日期）
                     base_url = rss_url.rstrip('/')
                     journal_name = journal.get('title', name).split(' - ')[0]
                     
                     articles = []
                     if "current" in name:
-                        toc_url = f"{base_url}/toc/current"
+                        toc_url = f"{base_url}/toc/current" if not base_url.endswith('/toc/current') else base_url
                         articles = scrape_toc_page(page, toc_url, journal_name)
                     else:
                         # 所有 latest, ahead, online_first 等目标，均严格只对齐 toc/latest，不进行跨版块融合
-                        toc_url = f"{base_url}/toc/latest"
+                        toc_url = f"{base_url}/toc/latest" if not base_url.endswith('/toc/latest') else base_url
                         articles = scrape_toc_page(page, toc_url, journal_name)
                         
                     if articles:
