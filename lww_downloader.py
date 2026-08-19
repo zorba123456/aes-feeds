@@ -180,7 +180,12 @@ def parse_to_rfc822(date_str):
     for fmt in ("%B %d, %Y", "%b %d, %Y", "%d %B %Y", "%d %b %Y", "%B %Y", "%b %Y"):
         try:
             dt = datetime.strptime(date_str, fmt)
-            return email.utils.formatdate(dt.timestamp(), localtime=False, usegmt=True)
+            # §时区修复：strptime 得到无时区 naive datetime，dt.timestamp() 会按本地时区(UTC+8)解释，
+            # 导致 "July 2026" 被偏移成前一天 UTC(6/30)、月份错位。改用 calendar.timegm 把 naive
+            # 日期按"当天 00:00 UTC"语义转时间戳，避免时区偏移——"July 2026" 输出 01 Jul 2026 GMT。
+            import calendar as _cal
+            ts = _cal.timegm(dt.timetuple())
+            return email.utils.formatdate(ts, localtime=False, usegmt=True)
         except ValueError:
             pass
             
