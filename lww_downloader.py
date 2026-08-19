@@ -151,8 +151,9 @@ def parse_card_metadata(card_text, journal_name, title=""):
         pages = re.sub(r'\s*Article.*$', '', m_print.group(5)).strip().rstrip('.,')
         return authors, issue, pub_date, pages
 
-    # 形态②: latest/ahead → "Show More {Month D, YYYY} Article"
-    m_ahead = re.search(r'Show\s*More\s*(%s)\s+(\d{1,2}),\s+(\d{4})' % _MONTHS_ALL, card_text, re.I)
+    # 形态②: latest/ahead → "Month D, YYYY"(到天)。不依赖 Show More——Comment/Letter 等
+    # 特殊卡片无作者列表、日期紧跟在标题后。全文搜 "Month D, YYYY" 即可。
+    m_ahead = re.search(r'(%s)\s+(\d{1,2}),\s+(\d{4})' % _MONTHS_ALL, card_text, re.I)
     if m_ahead:
         month = m_ahead.group(1)
         pub_date = f"{_canon_month(month)} {m_ahead.group(2)}, {m_ahead.group(3)}"
