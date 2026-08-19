@@ -104,58 +104,72 @@ def get_full_title(content):
         return "".join(parts).strip()
     return str(content).strip()
 
-def parse_card_metadata(card_text, journal_name):
-    lines = [l.strip() for l in card_text.split('\n') if l.strip()]
-    if not lines:
-        return "Unknown Authors", "Unknown Issue", "Unknown Date", ""
-        
-    meta_line = None
-    meta_idx = -1
-    for idx, line in enumerate(lines):
-        if '.' in line and any(keyword in line.lower() for keyword in ['surgery', 'skin', 'wound', 'craniofacial']):
-            meta_line = line
-            meta_idx = idx
-            break
-        if re.search(r'\b(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2},\s+\d{4}\b', line, re.IGNORECASE):
-            meta_line = line
-            meta_idx = idx
-            break
-            
-    if not meta_line:
-        meta_line = lines[-1]
-        meta_idx = len(lines) - 1
-        
+_MONTHS_FULL = r'(?:January|February|March|April|May|June|July|August|September|October|November|December)'
+_MONTHS_ALL = r'(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)'
+
+
+def parse_card_metadata(card_text, journal_name, title=""):
+    """从 Ovid/LWW TOC 卡片文本提取 作者/期数/出版时间/页码。
+
+    实测两种卡片元信息形态(PRS 官网, 2026-08-19):
+      - latest/ahead(无期号):  "...{标题}{作者}Show More{Month D, YYYY}Article Action bar..."
+               → 日期精确到天 (如 "August 17, 2026")，期数="Ahead of Print"
+      - current/正式出版(有期号): "...{标题}{作者}Show More{期刊}. {Month} {Year}: {卷}({期}):{页码}Article..."
+               → 日期精确到月 (如 "August 2026")，另含期号与页码
+
+    旧实现只按 ':' 与 '.' 切 meta_line，对 latest 卡片整体失败 → 日期兜底成
+    parse_to_rfc822 的当前时刻（生成时间），导致镜像 XML 出版时间成了"爬取时刻"。
+    作者：卡片整体 = "{标题}{作者}Show More..."，作者 = 标题后、Show More 前那段。
+    """
     authors = "Unknown Authors"
-    for line in lines:
-        if "Show More" in line:
-            authors = line.replace("Show More", "").strip()
-            break
-    else:
-        if meta_idx > 0:
-            authors = lines[meta_idx - 1]
-            
+    # 作者区 = "Show More" 之前、去掉标题(若有)后的剩余
+    pre_show_idx = card_text.find("Show More")
+    pre = card_text[:pre_show_idx] if pre_show_idx > 0 else card_text
+    if title and title in pre:
+        # 去掉标题前缀(含其后可能紧跟的换行/空白)
+        pre = pre.replace(title, "", 1).lstrip()
+    pre = pre.strip()
+    if pre:
+        # 截断收尾于 ':'(期刊.期串) 或末尾空白
+        pre = re.split(r'\s*:\s*', pre)[0].strip()
+        pre = pre.rstrip(',')
+        if pre:
+            authors = pre
+
     issue = "Ahead of Print"
     pub_date = "Unknown Date"
     pages = ""
-    
-    if ':' in meta_line and '.' in meta_line:
-        parts = meta_line.split('.', 1)
-        date_block = parts[1].strip() if len(parts) > 1 else meta_line
-        
-        if ':' in date_block:
-            date_part, issue_part = date_block.split(':', 1)
-            pub_date = date_part.strip()
-            
-            issue_subparts = issue_part.strip().split(':')
-            volume_issue = issue_subparts[0].strip()
-            pages = issue_subparts[1].strip() if len(issue_subparts) > 1 else ""
-            
-            issue = f"Volume {volume_issue}"
-    else:
-        pub_date = meta_line.strip()
-        issue = "Ahead of Print"
-        
+
+    # 形态①: current/正式出版 → "Month Year: 卷(期):页码"
+    m_print = re.search(
+        r'(%s)\s+(\d{4})\s*:\s*(\d+)\s*\(\s*(\d+)\s*\)\s*:\s*([0-9A-Za-z\-]+)' % _MONTHS_FULL,
+        card_text, re.I)
+    if m_print:
+        month = m_print.group(1)
+        pub_date = f"{month.capitalize()} {m_print.group(2)}"
+        issue = f"Volume {m_print.group(3)}({m_print.group(4)})"
+        pages = re.sub(r'\s*Article.*$', '', m_print.group(5)).strip().rstrip('.,')
+        return authors, issue, pub_date, pages
+
+    # 形态②: latest/ahead → "Show More {Month D, YYYY} Article"
+    m_ahead = re.search(r'Show\s*More\s*(%s)\s+(\d{1,2}),\s+(\d{4})' % _MONTHS_ALL, card_text, re.I)
+    if m_ahead:
+        month = m_ahead.group(1)
+        pub_date = f"{_canon_month(month)} {m_ahead.group(2)}, {m_ahead.group(3)}"
+        return authors, issue, pub_date, pages
+
     return authors, issue, pub_date, pages
+
+
+def _canon_month(tok: str) -> str:
+    """把月份缩写/全拼统一成全拼首字母大写（如 'aug' -> 'August'）。"""
+    full = {
+        'jan': 'January', 'feb': 'February', 'mar': 'March', 'apr': 'April',
+        'may': 'May', 'jun': 'June', 'jul': 'July', 'aug': 'August',
+        'sep': 'September', 'oct': 'October', 'nov': 'November', 'dec': 'December',
+    }
+    t = tok.strip()[:3].lower()
+    return full.get(t, tok)
 
 def parse_to_rfc822(date_str):
     if not date_str or "Unknown" in date_str:
@@ -171,13 +185,79 @@ def parse_to_rfc822(date_str):
             
     return email.utils.formatdate(time.time(), localtime=False, usegmt=True)
 
+def _set_per_page_and_maybe_paginate(page, url):
+    """把 TOC 翻页栏的『每页条数』设到最大可见量，必要时翻一页补齐（仅 current，且仅翻 1 次封顶）。
+
+    实测(LWW 官网, 2026-08-19):
+      - 翻页栏是原生 <select>，选项 ['20','50','100']，select_option 可靠改选。
+      - 页面 URL 用查询参数控制：`?pageSize={N}&page={M}`（翻页 <a> href 即此形态）。
+      - 总量标记形如 "1 - 20 of 52 results"（current 有限；latest 是无限累加、数字无意义）。
+      - current: 设 100 → 总量≤100 一次全量；总量>100 翻 1 页(第2页)补齐。
+      - latest: 设 50 → 取第一页 50 条（覆盖单次更新量；不翻页、不看总量）。
+    无 select（如视频页）自动跳过，不影响原逻辑。
+    """
+    try:
+        sel = page.locator("select").first
+        if sel.count() == 0:
+            return False
+        options = [o.text_content().strip() for o in sel.locator("option").all()]
+        print(f"  [翻页] 每页条数下拉: {options}")
+        # 读总量标记 "X - Y of N results"
+        total = None
+        try:
+            body = page.locator("body").inner_text()
+            m = re.search(r'(\d+)\s*[-\u2013]\s*\d+\s+of\s+(\d+)\s+results', body, re.I)
+            if m:
+                total = int(m.group(2))
+                print(f"  [翻页] 总量标记: {m.group(0).strip()} (N={total})")
+        except Exception:
+            total = None
+
+        is_current = "/toc/current" in url
+        target = 100 if is_current else 50
+
+        # 用 select 改选真的每页条数（比猜 URL 参数稳）
+        if str(target) in options:
+            try:
+                sel.select_option(value=str(target))
+                page.wait_for_timeout(3500)
+                print(f"  [翻页] 已改选每页 {target} 条")
+            except Exception as e:
+                print(f"  [翻页] select 改选失败: {e}")
+
+        # current 且总量>100 → 翻一页(第2页)补齐，仅 1 次
+        if is_current and total is not None and total > 100:
+            try:
+                page2_url = f"{url.split('?')[0]}?pageSize={target}&page=2"
+                page.goto(page2_url, timeout=60000)
+                if not wait_for_cloudflare(page, journal_name_of_url(url)):
+                    return True
+                page.wait_for_timeout(5000)
+                print(f"  [翻页] current 总量>{target}，已翻到第 2 页({page2_url}) 补齐")
+            except Exception as e:
+                print(f"  [翻页] 翻第2页失败(仅取第1页): {e}")
+        return True
+    except Exception as e:
+        print(f"  [翻页] 处理异常(跳过,维持原状): {e}")
+        return False
+
+
+def journal_name_of_url(url):
+    import re as _re
+    m = _re.search(r'/(?:ovid\.com/jnls|journals\.lww\.com)/([^/]+)', url)
+    return m.group(1) if m else "LWW"
+
+
 def scrape_toc_page(page, url, journal_name):
     print(f"📡 Scraping TOC Page: {url}")
     page.goto(url, timeout=60000)
     if not wait_for_cloudflare(page, journal_name):
         return []
     time.sleep(5)
-    
+
+    # 抓取范围优化（每页条数 + current 超量翻 1 次页）
+    _set_per_page_and_maybe_paginate(page, url)
+
     markers = page.locator('.js-omni-hydrate-marker').all()
     articles = []
     seen_urls = set()
@@ -214,7 +294,7 @@ def scrape_toc_page(page, url, journal_name):
             except Exception:
                 card_text = ""
                 
-        authors, issue, pub_date, pages = parse_card_metadata(card_text, journal_name)
+        authors, issue, pub_date, pages = parse_card_metadata(card_text, journal_name, title_val)
         
         articles.append({
             'title': title_val,
