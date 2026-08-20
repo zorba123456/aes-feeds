@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--CMA-FINGERPRINT:4424ac0054aff63abaeed2685668add1-->
+<!--CMA-FINGERPRINT:46070fcd526748d5e11e680fb078293f-->
 <rss version="2.0">
     <channel>
         <title>KTN_"中华整形外科杂志" @ CMA</title>
         <link>https://www.yiigle.com/Journal/ZHZXWKZZ</link>
         <description>中华整形外科杂志 - 自动聚合源</description>
-        <lastBuildDate>Tue, 04 Aug 2026 18:30:35 +0800</lastBuildDate>
+        <lastBuildDate>Thu, 20 Aug 2026 10:30:50 +0800</lastBuildDate>
         
+        <item>
+            <title><![CDATA[[优先出版] 皮肤纤维化疾病中上皮-间充质转化的研究现状]]></title>
+            <link>https://rs.yiigle.com/cmaid/1693366</link>
+            <guid isPermaLink="false">https://rs.yiigle.com/cmaid/1693366</guid>
+            <author><![CDATA[莫王菲, 孙怡馨, 俞楠泽]]></author>
+            
+            <description><![CDATA[<b>期数：</b>2026年42卷网络预发表<br><b>出版日期：</b>未知时间<br><b>作者：</b>莫王菲, 孙怡馨, 俞楠泽<br><br><b>摘要：</b>皮肤纤维化疾病主要包括增生性瘢痕、瘢痕疙瘩及局限性硬皮病等类型，这类疾病不仅会影响患者皮肤正常外观，还常伴随局部功能受限等问题，目前尚缺乏有效的治疗手段。上皮-间充质转化(EMT)是指上皮细胞在一系列信号通路的级联调控下，逐渐丧失上皮细胞特征、获得间充质细胞表型的动态生物学过程，在皮肤纤维化疾病的发生发展中发挥重要作用。该文梳理了近年来EMT在皮肤纤维化疾病谱中的相关研究成果，对现有调控机制、潜在靶向干预方向进行了阐述，旨在为研发新的临床治疗策略提供理论参考。]]></description>
+        </item>
         <item>
             <title><![CDATA[内窥镜辅助游离下腹部皮瓣移植行单侧乳房再造和对侧自体组织隆乳术的效果]]></title>
             <link>https://rs.yiigle.com/cmaid/1690952</link>
@@ -418,14 +426,6 @@ PLLA注射填充鼻唇沟凹陷具有显著且对称的改善效果，疗效可�
             <author><![CDATA[高雨菲, 赵晓科]]></author>
             
             <description><![CDATA[<b>期数：</b>2026年42卷06期<br><b>出版日期：</b>未知时间<br><b>作者：</b>高雨菲, 赵晓科<br><br><b>摘要：</b>Pierre-Robin综合征(PRS)是一种相对罕见的疾病。吞咽障碍是PRS患儿主要的功能障碍，若不及时识别和治疗，会使患儿营养的摄入与需求失衡，影响患儿生长发育，降低其免疫力。该文就PRS患儿吞咽障碍的发生机制、评估以及康复治疗进行综述，为进一步展开相关研究、改善PRS患儿吞咽障碍提供参考。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[围手术期加速康复外科理念在无水乙醇治疗头颈部动静脉畸形中的应用进展]]></title>
-            <link>https://rs.yiigle.com/cmaid/1685520</link>
-            <guid isPermaLink="false">https://rs.yiigle.com/cmaid/1685520</guid>
-            <author><![CDATA[李楠溪, 周子芙, 王璐颖]]></author>
-            
-            <description><![CDATA[<b>期数：</b>2026年42卷06期<br><b>出版日期：</b>未知时间<br><b>作者：</b>李楠溪, 周子芙, 王璐颖<br><br><b>摘要：</b>加速康复外科(ERAS)理念已在外科学多个亚专业学科推广并取得良好效果，但鲜见涉及动静脉畸形领域。对于接受无水乙醇治疗的头颈部动静脉畸形患者，围手术期的疼痛、心理障碍及术后恶心、呕吐等问题，严重影响术后康复进程。该文归纳总结了围手术期促进患者康复的处理措施，分析了ERAS措施在无水乙醇治疗头颈部动静脉畸形中应用的可行性，为整形外科ERAS的临床探索，以及国内外脉管畸形ERAS专家共识与指南的制定提供理论基础。]]></description>
         </item>
     </channel>
 </rss>
