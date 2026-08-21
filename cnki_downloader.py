@@ -480,7 +480,20 @@ def generate_rss_xml(items, journal_code, journal_name, upgrade_items=None):
         
         guid_val = item.get("guid") or item.get("hash") or generate_hash(journal_code, item.get("title", ""))
         ET.SubElement(item_el, "guid", isPermaLink="false").text = guid_val
-        
+
+        # §issue 期数(v2.19)：优先 item["issue"]；存量/合并 item 无该字段时从 description "期数：</b>xxx" 兜底提取。
+        #   <category> 是工作台 rss_aggregator 读 entries.issue 的标准载体（feedparser entry.category）。
+        issue_val = item.get("issue")
+        if not issue_val:
+            _dm = re.search(r"期数[:：]\s*</?b?>\s*([^<\n]+)", item.get("description", "") or "")
+            if _dm:
+                issue_val = _dm.group(1).strip()
+        # 网络首发/无正式期号：issue 语义为空（有真实 pubDate 到天，不填假期号）。
+        if issue_val and issue_val.strip() in ("网络首发", "最新优先发表", "最新捕获", "未知期数", "Ahead of Print"):
+            issue_val = ""
+        if issue_val:
+            ET.SubElement(item_el, "category").text = issue_val
+
         pub_date = item.get("pubDate")
         if pub_date:
             ET.SubElement(item_el, "pubDate").text = pub_date
@@ -689,6 +702,9 @@ def _scrape_journal_views(page, code, name, journal_start, has_net_first, has_pr
                 "link": link,
                 "description": desc,
                 "pubDate": pub_date,
+                # §issue 期数(v2.19)：当期目录期数是 issue 原文(如"2026年13期")；网络首发无期刊期数→None。
+                #   期数与 pub_date 分开，pub_date 只承载真实发布日期(网络首发到天)，期数由 <category> 传工作台 issue 列。
+                "issue": None if view_name == "网络首发" else issue_txt,
                 "hash": h
             })
     return all_scraped_items

@@ -211,6 +211,8 @@ def parse_blocks_dict(soup, base_url, is_priority=False):
                 "link": link,
                 "author": authors,
                 "pubDate": pub_date_gmt,
+                # §issue 期数(v2.19)：当期=期数原文(如"2026年42卷07期")；优先出版=网络预发表标注。期数与 pub_date(到天)分开。
+                "issue": issue_info,
                 "description": desc
             })
     else:
@@ -244,6 +246,7 @@ def parse_blocks_dict(soup, base_url, is_priority=False):
                 "link": link,
                 "author": "本刊编辑部",
                 "pubDate": "",
+                "issue": "最新优先发表" if is_priority else "最新捕获",
                 "description": desc
             })
             
@@ -411,12 +414,25 @@ def fetch_cma_journal(playwright_context, base_url, journal_name, output_filenam
     rss_items_xml = []
     for item in merged_items:
         pub_date_xml = f"<pubDate>{item['pubDate']}</pubDate>" if item['pubDate'] else ""
-        item_xml = f"""
+        # §issue 期数(v2.19)：<category>{期数原文}</category> 是工作台读 entries.issue 的标准载体(feedparser entry.category)。
+        #   优先出版等无正式期号的标注也原样承载；期数与 pubDate(到天/详情页) 分开。
+        #   存量/合并 item(无 issue 字段)从 description "期数：xxx" 兜底提取。
+        if not item.get('issue'):
+            _m = re.search(r"期数[:：]\s*(?:</?b>)?\s*([^<\n]+)", item.get('description', '') or "")
+            if _m:
+                item['issue'] = _m.group(1).strip()
+        # 纯占位期号(无卷期信息)不写 category；"2026年59卷网络预发表" 等带卷期标注保留。
+        _iv = (item.get('issue') or '').strip()
+        if _iv in ("最新优先发表", "最新捕获", "未知期数", "Ahead of Print", ""):
+            _iv = ""
+        cat_xml = f"<category>{_iv}</category>" if _iv else ""
+        item_xml = f""""
         <item>
             <title><![CDATA[{item['title']}]]></title>
             <link>{item['link']}</link>
             <guid isPermaLink="false">{item['link']}</guid>
             <author><![CDATA[{item['author']}]]></author>
+            {cat_xml}
             {pub_date_xml}
             <description><![CDATA[{item['description']}]]></description>
         </item>"""

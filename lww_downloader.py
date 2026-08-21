@@ -445,17 +445,24 @@ def main():
                             if item.get('authors') and item['authors'] != "Unknown Authors":
                                 desc_html += f"<br><b>作者:</b> {item['authors']}"
                             desc_html += f"<br><br><a href=\"{item['link']}\"></a>No description available."
-                            
-                            # §出版日期语义：current 期刊月→"2026-07"(仅到月)/latest→"2026-08-17"(到天)。
-                            # 直接写原始串，不转 RFC822(那会丢失"仅到月"语义且引入时区偏移)。
-                            rfc_pub_date = item['pub_date']
-                            
-                            item_xml = f"""
+
+                            # §issue/pub_date 分开(v2.19)：期数≠月份。
+                            #   parse_card_metadata 的 issue 已是期数原文(如 "Volume 14(8)"/"July/August 2026")；
+                            #   pub_date 若是"仅到月"(YYYY-MM, 如 current 期 "2026-07"=Vol14(7) 期刊月) → 是期数的别称,
+                            #   不写 <pubDate>(避免期数当日期), 期数由 <category> 承载; 仅到天(YYYY-MM-DD, latest 首发日)才写入 <pubDate>。
+                            import re as _lwre
+                            issue_val = (item.get('issue') or "").strip()
+                            _is_aop = issue_val in ("Ahead of Print", "Unknown", "Unknown Date", "Unknown Issue", "") or issue_val.lower() in ("ahead of print", "ahead of print")
+                            _pd = (item.get("pub_date") or "").strip()
+                            _has_day = bool(_lwre.match(r"^\d{4}-\d{2}-\d{2}", _pd)) or ("-" not in _pd and _lwre.search(r"\d{1,2}, \d{4}", _pd))
+                            _cat_xml = "" if (_is_aop or not issue_val) else f"\n      <category>{issue_val}</category>"
+                            _pub_xml = f"\n      <pubDate>{_pd}</pubDate>" if (_has_day and _pd) else ""
+
+                            item_xml = f""""
     <item>
       <link>{item['link']}</link>
       <title><![CDATA[{item['title']}]]></title>
-      <description><![CDATA[{desc_html}]]></description>
-      <pubDate>{rfc_pub_date}</pubDate>
+      <description><![CDATA[{desc_html}]]></description>{_cat_xml}{_pub_xml}
     </item>"""
                             items_xml += item_xml
                             
