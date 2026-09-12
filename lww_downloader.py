@@ -458,8 +458,17 @@ def main():
                             _cat_xml = "" if (_is_aop or not issue_val) else f"\n      <category>{issue_val}</category>"
                             _pub_xml = f"\n      <pubDate>{_pd}</pubDate>" if (_has_day and _pd) else ""
 
+                            # §guid 稳定化(2026-09-12)：guid 固定为 link 中的 DOI（10.xxxx/...），
+                            # 替代早期的无 guid（下游按 link 兜底）。link 含 slug/参数可能波动，
+                            # 同篇文章重抓若 link 有细微差异会产生重复行；DOI 天然稳定，重推同 guid
+                            # 被下游 feed_id|guid 键自然挡住（与官方源行为一致，见刊重推不重复显示）。
+                            # 无 DOI 的条目（Video Gallery 等）退回 link 兜底。
+                            _m_doi = _lwre.search(r"10\.\d{4,5}/[^~/?#\\s]+", item.get('link') or "")
+                            _guid_xml = (f"\n      <guid>{_m_doi.group(0).rstrip('.').lower()}</guid>"
+                                         if _m_doi else f"\n      <guid>{item['link']}</guid>")
+
                             item_xml = f""""
-    <item>
+    <item>{_guid_xml}
       <link>{item['link']}</link>
       <title><![CDATA[{item['title']}]]></title>
       <description><![CDATA[{desc_html}]]></description>{_cat_xml}{_pub_xml}
