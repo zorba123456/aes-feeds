@@ -189,7 +189,9 @@ def load_targets():
 def get_clean_title(t):
     """去掉来源前缀与期数标签，得到用于去重/升级的裸标题。"""
     t_clean = clean_text_noise(t)
-    return re.sub(r'^\[(?:网络首发|当期目录)\]\s*(?:\[[^\]]+\]\s*)?', '', t_clean).strip()
+    # 2026-09-17：不依赖特定前缀字面量（官网曾把 [当期目录] 前缀去掉导致 hash 变化→下游整批判新重复）。
+    # 统一剥掉开头的所有 [...] 标签段（[网络首发]/[当期目录]/[2026年XX期] 等），得到裸标题。
+    return re.sub(r'^(?:\[[^\]]*\]\s*)+', '', t_clean).strip()
 
 def generate_hash(journal_code, title):
     """基于期刊代码和标题生成唯一哈希，避免因 URL 中的动态 v 参数导致去重失效"""
