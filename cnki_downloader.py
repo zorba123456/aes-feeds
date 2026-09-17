@@ -187,15 +187,29 @@ def load_targets():
     return {}
 
 def get_clean_title(t):
-    """去掉来源前缀与期数标签，得到用于去重/升级的裸标题。"""
-    t_clean = clean_text_noise(t)
-    return re.sub(r'^\[(?:网络首发|当期目录)\]\s*(?:\[[^\]]+\]\s*)?', '', t_clean).strip()
+    """去掉来源前缀与期数标签，得到用于去重/升级的裸标题。
 
-def generate_hash(journal_code, title):
-    """基于期刊代码和标题生成唯一哈希，避免因 URL 中的动态 v 参数导致去重失效"""
+    §2026-09-17：统一剥掉开头的所有 [...] 标签段（[网络首发]/[当期目录]/[2026年XX期]）。
+    旧正则只认 [网络首发]|[当期目录] 开头，'[2026年09期] 标题' 剥不动 → 升级匹配键
+    （裸标题）不一致 → 首发→编期替换失效，两条并存且共用同一 guid（ZBFX 兰州市篇实锤）。
+    """
+    t_clean = clean_text_noise(t)
+    return re.sub(r'^(?:\[[^\]]*\]\s*)+', '', t_clean).strip()
+
+def generate_hash(journal_code, title, issue=None):
+    """基于期刊代码和标题生成唯一哈希，避免因 URL 中的动态 v 参数导致去重失效。
+
+    §guid 掺期数(2026-09-17)：公告类文章可跨期连载（03期登、04期再登），是两条独立
+    发布的真实条目。裸标题不含期数会导致两期算出同一 guid → 同一身份证两条 item
+    共存 → Inoreader 按标准丢弃后到的一条（04期永远收不到），下游塌缩防御误触发。
+    因此当期目录条目（有期数）guid 掺入期数，连载各立各户；
+    网络首发条目（无期数）维持原算法，与升级保留逻辑兼容。
+    """
     clean_title = get_clean_title(title)
-    raw = f"{journal_code.lower()}_{clean_title}".encode('utf-8')
-    return hashlib.md5(raw).hexdigest()
+    raw = f"{journal_code.lower()}_{clean_title}"
+    if issue:
+        raw += f"_{issue}"
+    return hashlib.md5(raw.encode('utf-8')).hexdigest()
 
 def parse_cnki_pubdate(date_str):
     """
@@ -382,7 +396,11 @@ def classify_scraped_items(all_scraped_items, dedup_log, existing_items):
         seen_hashes_this_run.add(h)
 
         title = item.get("title", "")
-        if title.startswith("[当期目录]"):
+        # §2026-09-17：升级判定改用 issue 字段（当期目录条目必有期数）。
+        # 旧条件 title.startswith("[当期目录]") 在标题前缀改为 "[2026年09期] …"（前缀革新后）
+        # 永远不成立 → 首发→编期升级整条路径失效（ZBFX 兰州市篇两条并存共用 guid 的根因之一）。
+        is_current_issue = bool(item.get("issue"))
+        if is_current_issue:
             ck = get_clean_title(title)
             existing_entry = existing_by_clean.get(ck)
             old_title = dedup_log.get(h, {}).get("title", "") if h in dedup_log else ""
@@ -696,7 +714,9 @@ def _scrape_journal_views(page, code, name, journal_start, has_net_first, has_pr
                 enhanced_title = f"[{issue_txt}] {raw_title}"
                 pub_date = None
                 desc = f"<b>期数：</b>{issue_txt}<br><b>出版日期/页码：</b>{company_txt}<br><b>作者：</b>{author or '未标明'}"
-            h = generate_hash(code, raw_title)
+            # §guid 掺期数(2026-09-17)：当期目录条目 hash 掺期数 → 公告跨期连载各立各户 guid；
+            # 网络首发不掺（issue=None），与「首发→编期升级沿用旧 guid」逻辑兼容。
+            h = generate_hash(code, raw_title, issue=None if view_name == "网络首发" else issue_txt)
             all_scraped_items.append({
                 "title": enhanced_title,
                 "link": link,
