@@ -77,6 +77,15 @@ def wait_for_cloudflare(page, name):
     print("❌ 超时！未完成人工验证。")
     return False
 
+def atomic_write_xml(path: str, text: str):
+    """§原子落盘(2026-10-12)：先写 .tmp 再 os.replace，杜绝下游(C 聚合器/订阅方)
+    读到半截 XML 的撕裂窗口。"""
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        f.write(text)
+    os.replace(tmp, path)
+
+
 def push_to_github():
     print("\n📤 启动 GitHub 自动同步 (LWW Feeds)...")
     custom_env = os.environ.copy()
@@ -330,7 +339,7 @@ def scrape_toc_page(page, url, journal_name):
     print(f"📡 Scraping TOC Page: {url}")
     page.goto(url, timeout=60000)
     if not wait_for_cloudflare(page, journal_name):
-        return []
+        return [], True
     time.sleep(5)
 
     # 改选每页条数 + 判定是否需翻第 2 页(current 总量>target)
@@ -344,9 +353,11 @@ def scrape_toc_page(page, url, journal_name):
     print(f"📦 第 1 页解析 {n1} 条")
 
     # current 总量>target → 翻第 2 页补齐并合并
+    complete = True
     if paginfo.get("paginate"):
         target = paginfo.get("target") or 100
         page2_url = f"{url.split('?')[0]}?pageSize={target}&page=2"
+        page2_ok = False
         try:
             print(f"  [翻页] 翻第 2 页: {page2_url}")
             page.goto(page2_url, timeout=60000)
@@ -354,12 +365,18 @@ def scrape_toc_page(page, url, journal_name):
                 print("  [翻页] 第2页触发验证，跳过补齐")
             page.wait_for_timeout(5000)
             n2 = _extract_articles_from_page(page, journal_name, seen_urls, articles)
+            page2_ok = True
             print(f"📦 第 2 页补充 {n2} 条（去重后总 {len(articles)} 条）")
         except Exception as e:
             print(f"  [翻页] 翻第2页失败(仅保留第1页 {len(articles)} 条): {e}")
+        # §完整性闸门(2026-10-12)：第2页失败绝不伪装成功——旧逻辑把只有第1页的
+        # 半份当期目录照常写盘发布（JCS 37(10) 实证：100/144 半份快照被 Inoreader
+        # 抓走，44 条永久漏抓）。不完整 = 不写盘，保旧文件。
+        if not page2_ok:
+            complete = False
 
-    print(f"📦 Successfully parsed {len(articles)} articles from {url}")
-    return articles
+    print(f"📦 Successfully parsed {len(articles)} articles from {url} (complete={complete})")
+    return articles, complete
 
 def main():
     print(f"=== [LWW] Start ({__version__}): {time.ctime()} ===\n")
@@ -428,15 +445,21 @@ def main():
                     journal_name = journal.get('title', name).split(' - ')[0]
                     
                     articles = []
+                    scrape_complete = True
                     if "current" in name:
                         toc_url = f"{base_url}/toc/current" if not base_url.endswith('/toc/current') else base_url
-                        articles = scrape_toc_page(page, toc_url, journal_name)
+                        articles, scrape_complete = scrape_toc_page(page, toc_url, journal_name)
                     else:
                         # 所有 latest, ahead, online_first 等目标，均严格只对齐 toc/latest，不进行跨版块融合
                         toc_url = f"{base_url}/toc/latest" if not base_url.endswith('/toc/latest') else base_url
-                        articles = scrape_toc_page(page, toc_url, journal_name)
-                        
-                    if articles:
+                        articles, scrape_complete = scrape_toc_page(page, toc_url, journal_name)
+
+                    if articles and not scrape_complete:
+                        # §完整性闸门：抓取不完整(翻页失败等)时保旧文件，绝不用半份覆盖。
+                        print(f"🛑 抓取不完整，放弃写盘并保留旧文件: {output_filename}")
+                        print(f"[REPORT] CHANNEL=LWW ITEM={name} COUNT={len(articles)} STATUS=INCOMPLETE")
+                        has_failures = True
+                    elif articles:
                         items_xml = ""
                         for item in articles:
                             desc_html = f"<b>所属期数:</b> {item['issue']}<br><b>出版时间:</b> {item['pub_date']}"
@@ -463,9 +486,21 @@ def main():
                             # 同篇文章重抓若 link 有细微差异会产生重复行；DOI 天然稳定，重推同 guid
                             # 被下游 feed_id|guid 键自然挡住（与官方源行为一致，见刊重推不重复显示）。
                             # 无 DOI 的条目（Video Gallery 等）退回 link 兜底。
-                            _m_doi = _lwre.search(r"10\.\d{4,5}/[^~/?#\\s]+", item.get('link') or "")
-                            _guid_xml = (f"\n      <guid>{_m_doi.group(0).rstrip('.').lower()}</guid>"
-                                         if _m_doi else f"\n      <guid>{item['link']}</guid>")
+                            # §guid 稳定化(2026-09-12) → §再修复(2026-10-12)：
+                            # 0912 版用 DOI 截取作 guid，但正则误写成 r"[^~/?#\\s]+"——raw 串里
+                            # `\\s` 是"字面反斜杠+字面 s"，把小写 s 当排除符，DOI 码含 s 的刊
+                            # (prs/dss/asw/01.scs...) guid 全被截断成 10.1097/pr 等前缀，整刊
+                            # 共享同一 guid 被下游判重吞到只剩 1 条（prs 62 条共 1 guid 实证）。
+                            # 定案：guid 直接用整链 link——天然唯一、跨重抓稳定，且与下游
+                            # (C 模块 feed_id|guid 键 / Inoreader) 已有历史键无缝，换 guid 形态
+                            # 会引发下游整刊重复入库。仅当 link 非 http 时才退回 DOI 截取。
+                            _link_val = (item.get('link') or '').strip()
+                            if _link_val.startswith('http'):
+                                _guid_val = _link_val
+                            else:
+                                _m_doi = _lwre.search(r"10\.\d{4,5}/[^~/?#\s]+", _link_val)
+                                _guid_val = _m_doi.group(0).rstrip('.').lower() if _m_doi else _link_val
+                            _guid_xml = f"\n      <guid>{_guid_val}</guid>"
 
                             item_xml = f""""
     <item>{_guid_xml}
@@ -487,8 +522,7 @@ def main():
 {items_xml}
   </channel>
 </rss>"""
-                        with open(output_path, 'w', encoding='utf-8') as f:
-                            f.write(pure_xml)
+                        atomic_write_xml(output_path, pure_xml)
                         print(f"✅ 成功完美合成存盘: {output_path}")
                         print(f"[REPORT] CHANNEL=LWW ITEM={name} COUNT={len(articles)} STATUS=SUCCESS")
                         updated_any = True
@@ -579,8 +613,7 @@ def main():
 {items_xml}
   </channel>
 </rss>"""
-                        with open(output_path, 'w', encoding='utf-8') as f:
-                            f.write(pure_xml)
+                        atomic_write_xml(output_path, pure_xml)
                         print(f"✅ 成功完美合成存盘: {output_path}")
                         print(f"[REPORT] CHANNEL=LWW ITEM={name} COUNT={len(items)} STATUS=SUCCESS")
                         updated_any = True
@@ -631,9 +664,8 @@ def main():
                     
                     raw_xml = '<?xml version="1.0" encoding="utf-8"?>\n' + pure_xml
                     raw_xml = raw_xml.replace('\u2028', '\n').replace('\u2029', '\n')
-                    
-                    with open(output_path, 'w', encoding='utf-8') as f:
-                        f.write(raw_xml)
+
+                    atomic_write_xml(output_path, raw_xml)
                     print(f"✅ 成功完美提纯存盘: {output_path}")
                     print(f"[REPORT] CHANNEL=LWW ITEM={name} COUNT={len(items)} STATUS=SUCCESS")
                     updated_any = True
